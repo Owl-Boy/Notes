@@ -1,0 +1,9901 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Shortest%20Path%20using%20Primal-Dual/">
+      
+      
+        <link rel="next" href="../Simply%20Connected/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>Simple let expressions to Ordinary Lambda Calculus - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#simple-let-expressions-to-ordinary-lambda-calculus" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Simple let expressions to Ordinary Lambda Calculus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obsidian Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%28Weighted%29%20Vertex%20Cover%20using%20LP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    (Weighted) Vertex Cover using LP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-Forms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 Forms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-04-11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023 04 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-04-13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023 04 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24th%20October%20Classwork/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24th October Classwork
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25th%20October%20stuff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    25th October stuff
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30%20Oct%20Work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    30 Oct Work
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A%20Proof%20System%20for%20FOL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Proof System for FOL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A%20Simple%20Example%20-%20cat%20theory%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Simple Example   cat theory 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Abelian%20Groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abelian Groups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Adal%20week%203/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adal week 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Adjacency%20Algebra%20of%20a%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adjacency Algebra of a Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Alg3%20class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alg3 class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Algebraic%20Closure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebraic Closure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Algebraic%20Extension/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebraic Extension
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Algebraic%20Integers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algebraic Integers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Algorithmic%20Coding%20Theory%20Lec%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithmic Coding Theory Lec 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Algorithmic%20Coding%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithmic Coding Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Almost%20All%20Automorphism%20Groups%20are%20Trivial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Almost All Automorphism Groups are Trivial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Alt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Alternating%20Finite%20Automaton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alternating Finite Automaton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Alternating%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alternating Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analytic%20Function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analytic Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Applications%20of%20Error%20Correcting%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applications of Error Correcting Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Approximation%20Algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Approximation Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Arc-Transitivity%20and%20Girth%20Relation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arc Transitivity and Girth Relation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Arc-Transitivity%20and%20diameter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arc Transitivity and diameter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Arc-Transitivity%20of%20a%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arc Transitivity of a Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Arrow%20Type/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrow Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Asymmetric%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asymmetric Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Atomic%20Types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atomic Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Automorphism%20Group%20of%20a%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automorphism Group of a Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Autonomous%20System/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autonomous System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BPP%20Complexity%20Class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BPP Complexity Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Banach-Mazur%20Games/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Banach Mazur Games
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bases%20for%20a%20topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bases for a topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Block-Graph%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Block Graph Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Boolean%20Algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Boolean Algebra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Borsuk%20Ulam%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Borsuk Ulam Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Brouwer%27s%20Fixed%20Point%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brouwer's Fixed Point Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Burnside%27s%20Lemma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Burnside's Lemma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CANA-HW-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CANA HW 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CANA-HW-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CANA-HW-5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calc%20-%20Problem%20Session%20-%207%20Oct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calc   Problem Session   7 Oct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculus%20Assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calculus Assignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Caley%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caley Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cana%20Assignment%204/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cana Assignment 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category%20Theory%20Introduction%20Page/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Category Theory Introduction Page
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cauchy-Reimann%20Equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cauchy Reimann Equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cayley-Graph-Examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cayley Graph Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cesaro%20Summability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cesaro Summability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Channel%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Channel Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Characterisic%20of%20a%20field/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Characterisic of a field
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Church%20Booleans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Church Booleans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Church%20Numerals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Church Numerals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Church-Style%20typing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Church Style typing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Circulant%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circulant Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Closed%20sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Closed sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Closure%20and%20Interior%20and%20Limit%20Points/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Closure and Interior and Limit Points
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coherence%20Spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coherence Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Combinatorial%20%20Proofs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combinatorial  Proofs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Combinatory%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combinatory Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compactness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compactness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complex%20Analysis%20Assignment%203/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex Analysis Assignment 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complex%20Convergence%20Results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex Convergence Results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complex%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complex%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complex%20Rational%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex Rational Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complexity%20Assignment%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complexity Assignment 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complexity%20Assignment%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complexity Assignment 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complexity%20Classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complexity Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complexity%20of%20an%20FO%20formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complexity of an FO formula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Composite%20Field/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composite Field
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Computable%20and%20Uncomputable%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computable and Uncomputable Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Computational%20History/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computational History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cones%20and%20Suspensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cones and Suspensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conformality%20Transformation%20on%20let%28rec%29%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conformality Transformation on let(rec) expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Connectedness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connectedness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Constant%20Pattern%20to%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constant Pattern to Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Constructible%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constructible Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Constructor%20Rule%20for%20Match%20Function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constructor Rule for Match Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Continuous%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Convergence%20of%20Fourier%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Convergence of Fourier Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Converting%20Case%20Expressions%20to%20Ordinary%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Converting Case Expressions to Ordinary Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Converting%20Enriched%20Lambda%20Calculus%20to%20Ordinary%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Converting Enriched Lambda Calculus to Ordinary Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Convolutions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Convolutions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coproducts%20in%20Category%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coproducts in Category Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Correspondence%20of%20Topological%20and%20Probabilistic%20Semantics%20for%20LTL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Correspondence of Topological and Probabilistic Semantics for LTL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Countably%20Compact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Countably Compact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Counter%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Counter Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Covering%20Spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Covering Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Curry%20Howard%20Isomorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Curry Howard Isomorphism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Curry-Style%20typing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Curry Style typing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cyclotomic%20Fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cyclotomic Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../D-Timed%20Automata%20to%20Timed%20Automata%20Construction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D Timed Automata to Timed Automata Construction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DTIME%28f%29%20Complexity%20Class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DTIME(f) Complexity Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Decidability%20of%20Presburger%20Arithmetic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decidability of Presburger Arithmetic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dedekind%20Domains/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dedekind Domains
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deformation%20Retracts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deformation Retracts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Denotational%20Semantics%20for%20lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Denotational Semantics for lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dependency%20analysis%20for%20letrec%20expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependency analysis for letrec expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Determinants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Determinants
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deterministic%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deterministic Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Diagonal%20Constraints%20Offer%20Exponential%20Succinctness./" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagonal Constraints Offer Exponential Succinctness.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Diff%20Eq%20-%20Nice%20Info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diff Eq   Nice Info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dimension%20of%20a%20Path/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimension of a Path
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dinic%27s%20algo%20for%20max-flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dinic's algo for max flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dirichlet%20Kernels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dirichlet Kernels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discriminant%20of%20an%20n-tuple/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discriminant of an n tuple
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Distance%20of%20a%20Code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distance of a Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Distances%20in%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distances in Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EXP%20Complexity%20Class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EXP Complexity Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Edge-Transitive%2C%20Non%20Transitive%20is%20Bipartite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edge Transitive, Non Transitive is Bipartite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Edmonds-Karp%20algo%20for%20max%20flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edmonds Karp algo for max flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ehrenfeucht-Fraisse%20Games%20Proof/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ehrenfeucht Fraisse Games Proof
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ehrenfeucht-Fra%C3%AFss%C3%A9%20Game/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ehrenfeucht Fraïssé Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ehrenfeucht-Fra%C3%AFss%C3%A9%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ehrenfeucht Fraïssé Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Emptiness%20for%20Updatable%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emptiness for Updatable Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Empty%20Rule%20for%20Match%20Function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Empty Rule for Match Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Emulating%20a%20Multi-tape%20Turing%20machine%20on%20a%20Single%20Tape%20Turing%20Machine%20Effeciently/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emulating a Multi tape Turing machine on a Single Tape Turing Machine Effeciently
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Encoding%20and%20Decoding%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encoding and Decoding Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Endsem%20ACT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endsem ACT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Enriched%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enriched Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Enumeration%20Machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enumeration Machine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Equations%20over%20Finite%20Fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Equations over Finite Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Error%20Correcting%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Correcting Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Evaluating%20Pattern%20Matching%20in%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluating Pattern Matching in Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Even%20is%20not%20FO-definable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Even is not FO definable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Event%20Clock%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Event Clock Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Event%20Predicting%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Event Predicting Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Event%20Recording%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Event Recording Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Example%20for%20Proof%20System%20in%20FOL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example for Proof System in FOL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Existence%20and%20uniqueness%20for%20linear%20systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Existence and uniqueness for linear systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Existence%20of%20Gomory-Hu%20trees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Existence of Gomory Hu trees
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Expander%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Expander Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exponential%20Generating%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponential Generating Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exponential%20of%20a%20Matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponential of a Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Expressability%20of%20One-Clock%20Alternating%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Expressability of One Clock Alternating Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Expressive%20Power%20Of%20Event%20Clock%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Expressive Power Of Event Clock Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Expressive%20Power%20of%20G%C3%B6del%27s%20system%20T/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Expressive Power of Gödel's system T
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Extension%20Field/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extension Field
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Extension%20of%20Proper%20Filter%20to%20Prime%20Filter%20in%20Heyting%20Algebras/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extension of Proper Filter to Prime Filter in Heyting Algebras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exterior%20Algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exterior Algebra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exterior%20Differentiation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exterior Differentiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Extrapolation%20for%20Zone%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extrapolation for Zone Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FOL%20Inexpressibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FOL Inexpressibility
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FOL-Examples%20for%20Definability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FOL Examples for Definability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../False%20Assumptions%20easy%20to%20make%20about%20Patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    False Assumptions easy to make about Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fejer%20Kernel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fejer Kernel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Filters%20in%20Heyting%20Algebras/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filters in Heyting Algebras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Finite%20Essentially%20Uninterpreted%20%28FEU%29%20fragment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finite Essentially Uninterpreted (FEU) fragment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Finite%20Fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finite Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Finite%20Intersection%20Property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finite Intersection Property
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Finite%20Sat%20for%20FOL%20Motivation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finite Sat for FOL Motivation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Finite%20Sat%20for%20FOL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finite Sat for FOL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../First%20Countable%20space/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Countable space
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../First%20Order%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Order Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fourier%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fourier%20series%20is%20the%20best%20approximation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier series is the best approximation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frechet%20Property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frechet Property
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Free%20Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Free Group
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Free%20Module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Free Module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Functions%20Computable%20in%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions Computable in Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fundamental%20Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Group
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fundamental%20Groupoid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Groupoid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Galois%20Correspondence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galois Correspondence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Galois%20Extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galois Extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gauss%20sums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gauss sums
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Generating%20Effects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating Effects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Generating%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Generously%20Transitive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generously Transitive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Good%20Kernels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Good Kernels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Group%20Testing%20problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group Testing problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Groups%20In%20First%20Order%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Groups In First Order Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guruswami-Sudan%27s%20list%20decoding%20of%20RS%20codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guruswami Sudan's list decoding of RS codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../G%C3%B6del%27s%20system%20T/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gödel's system T
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hamming%20Bound/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hamming Bound
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hamming%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hamming Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hamming%20Distance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hamming Distance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hardness%20of%20LTL%20Model%20Checking%20using%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardness of LTL Model Checking using Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hausdorff%20Property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hausdorff Property
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Heyting%20Algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Heyting Algebra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Higman%27s%20Lemma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Higman's Lemma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hilbert%20Style%20Proofs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hilbert Style Proofs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hilbert%27s%20cube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hilbert's cube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Homeomorphisms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homeomorphisms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Homework%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homework 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Homework%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex Analysis Homework 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Homogenous%20Linear%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homogenous Linear Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Homotopy%20Equivalence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homotopy Equivalence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Homotopy%20of%20paths/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homotopy of paths
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How%20to%20count/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to count
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IFPL%20Lec%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IFPL Lec 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IFPL%20Note%20Order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IFPL Note Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inapproximability%20of%20Max%20Independent%20Set/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inapproximability of Max Independent Set
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Incidence%20Matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incidence Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Independence%20of%20meaning%20from%20changing%20the%20order%20on%20the%20left%20hand%20side%20implies%20uniform%20definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Independence of meaning from changing the order on the left hand side implies uniform definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inhomogenous%20Linear%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inhomogenous Linear Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integers%20in%20Simply%20Typed%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integers in Simply Typed Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integral%20Curves/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integral Curves
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integrality%20Gap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrality Gap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intermediate%20Value%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intermediate Value Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intuitionistic%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intuitionistic Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Irrefutable%20let%28rec%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Irrefutable let(rec)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Irrefutable%20let%28rec%29s%20to%20Simple%20let%28rec%29s/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Irrefutable let(rec)s to Simple let(rec)s
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Isomorphism%20Between%20First%20Order%20Interpretations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Isomorphism Between First Order Interpretations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jacobi%20Sums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jacobi Sums
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Johnson%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Johnson Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Karger%27s%20min-cut%20algorithm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Karger's min cut algorithm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kneser%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kneser Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kolmogorov%20Property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kolmogorov Property
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kolmogorov%20Translation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kolmogorov Translation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kripke%20Models%20are%20Equivalent%20to%20Heyting%20Algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kripke Models are Equivalent to Heyting Algebra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kripke%20Models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kripke Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LECTURE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LECTURE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lambda%20Calculus%20Evaluation%20Rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda Calculus Evaluation Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lambda%20Calculus%20Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda Calculus Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lambda%20Calculus%20Syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda Calculus Syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lambda%20Mu%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda Mu Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lambda%20Term%20In%20Combinatory%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda Term In Combinatory Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lattice%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lattice Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lattice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lattice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lebesgue%20Number%20Lemma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lebesgue Number Lemma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lecture%20local%20fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture local fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Legendre%20Symbol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Legendre Symbol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lemma-Number%20of%20isomorphism%20classes%20on%20graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lemma Number of isomorphism classes on graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lifted%20Reed%20Solomon%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lifted Reed Solomon Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lifting%20Correspondence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lifting Correspondence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lifts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lifts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lindelof%20Space/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lindelof Space
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Line%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Line Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Line%20Integral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Line Integral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Linear%20Programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Linear%20Temporal%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Temporal Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Linear%20systems%20with%20constant%20coefficients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear systems with constant coefficients
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../List%20decoding%20Folded%20RS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List decoding Folded RS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../List%20decoding%20RS%20codes%20up%20to%20the%20Johnson%20radius/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List decoding RS codes up to the Johnson radius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Local%20Compactness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Compactness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Local%20Connectedness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Connectedness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Local%20Correcting%20and%20Decoding%20of%20RM%20codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Correcting and Decoding of RM codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Local%20Decoding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Decoding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Local%20Path%20Connectedness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Path Connectedness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Local%20Self-correction%20of%20Bivariate%20Multiplicity%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Self correction of Bivariate Multiplicity Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Local%20problems%20on%20codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local problems on codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Los-Vaught%20Test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Los Vaught Test
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lovasz%20Local%20Lemma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lovasz Local Lemma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machinery%20for%20Probabilistic%20Semantics%20for%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machinery for Probabilistic Semantics for Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Match%20Function%20for%20Enriched%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Match Function for Enriched Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mealy%20Machines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mealy Machines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Measurement%20of%20Redundancy%20in%20a%20code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement of Redundancy in a code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Metric%20Topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metric Topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Metrizable%20Spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metrizable Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Minimum%20k-cut%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Minimum k cut Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mixture%20Rule%20for%20Match%20Expression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mixture Rule for Match Expression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Monolithic%20Timed%20Automaton%20for%20a%20Network%20of%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monolithic Timed Automaton for a Network of Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Monotone%20Domination%20Order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monotone Domination Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mu-Recursion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mu Recursion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Multi-choose/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multi choose
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Multiplicative%20Characters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiplicative Characters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Multiplicity%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiplicity Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Multiset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Multivariate%20Polynomial%20Interpolation%20on%20Lines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multivariate Polynomial Interpolation on Lines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NP%20Complete/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NP Complete
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NP%20Complexity%20Class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NP Complexity Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NTIME%28f%29%20Complexity%20Class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NTIME(f) Complexity Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../N_L%20admits%20Quantifier%20Elimination/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    N L admits Quantifier Elimination
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Naive%20Algorithm%20for%20Reachability%20in%20Zone%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Naive Algorithm for Reachability in Zone Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Natural%20Deduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Natural Deduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Natural%20Numbers%20with%20Successor%20Function%20is%20Complete/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Natural Numbers with Successor Function is Complete
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Natural%20Numbers%20with%20Successor%20and%20Ordering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Natural Numbers with Successor and Ordering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Natural%20Numbers%20with%20Successor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Natural Numbers with Successor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Network%20Flows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network Flows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Network%20Reliability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network Reliability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Networks%20of%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networks of Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Newman%27s%20Lemma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Newman's Lemma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Normal%20Extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Normal%20Spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Normalization%20Theorem%20for%20G%C3%B6del%27s%20system%20T/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normalization Theorem for Gödel's system T
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Not%20Unification%20Algorithm%20For%20Type%20Inference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Not Unification Algorithm For Type Inference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Number%20Field/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Field
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Number%20Of%20Roots%20and%20Poles%20of%20a%20Rational%20Function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Of Roots and Poles of a Rational Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Number%20Rings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Rings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ODE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ODE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Olog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Olog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../One%20Parameter%20Group%20Of%20Diffeomorphisms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    One Parameter Group Of Diffeomorphisms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../One%20Point%20Compactification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    One Point Compactification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Open%20and%20Closed%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open and Closed Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Optimal%20Reachability%20in%20Weighted%20Timed%20Games/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimal Reachability in Weighted Timed Games
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Optimisations%20for%20Expressions%20containing%20FAIL%20and%20I%3E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimisations for Expressions containing FAIL and I>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Optimisations%20for%20Overlapping%20Patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimisations for Overlapping Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Orbits%20in%20X%20%2A%20X%20being%20strongly%20connected%20under%20transitive%20automorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Orbits in X * X being strongly connected under transitive automorphism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Orbits%20on%20X%20and%20X%20%2A%20X/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Orbits on X and X * X
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Order%20Topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order Topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ordering%20Equations%20in%20Uniform%20Definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ordering Equations in Uniform Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ordinary%20Generating%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ordinary Generating Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../P%20Complexity%20Class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P Complexity Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../P%20implies%20not-not%20P%20-%20Intuitionistic%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P implies not not P   Intuitionistic Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PLC%20Assignment%203/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PLC Assignment 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSPACE-Hardness%20of%20LTL%20Model%20Checking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSPACE Hardness of LTL Model Checking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pairs%20in%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pairs in Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Partial%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Partial Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Partial%20Isomorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Partial Isomorphism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Path%20Connectedness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Connectedness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pattern%20Matching%20to%20Ordinary%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pattern Matching to Ordinary Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perfect%20Fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perfect Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Permutation%20Matrix%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Permutation Matrix Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Phase%20Flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phase Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Phase%20Space/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phase Space
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Power%20Series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Preorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preorder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Primitive%20Element%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primitive Element Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Primitive%20Recursion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primitive Recursion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Primitive%20Transitive%20Permutation%20Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primitive Transitive Permutation Group
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Probabilistic%20Semantics%20for%20LTL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probabilistic Semantics for LTL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Probabilistic%20and%20Topological%20Semantics%20of%20Timed%20Automata%20are%20Equivalent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scientific Data Science
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Probabilistically%20Checkable%20Proof/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probabilistically Checkable Proof
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Probability%20Measure%20over%20Finite%20Paths%20in%20a%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability Measure over Finite Paths in a Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Product%20Constructor%20Pattern%20Matching%20to%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Constructor Pattern Matching to Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Product%20Type/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Product%20in%20Category%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product in Category Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Product%20topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Proof%20that%20L2%20cannot%20be%20accepted%20by%20a%201%20Clock%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proof that L2 cannot be accepted by a 1 Clock Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Push%20Down%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Push Down Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quadratic%20Reciprocity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadratic Reciprocity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quanitifier%20Elimination%20for%20Natural%20Numbers%20With%20Successor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quanitifier Elimination for Natural Numbers With Successor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quantifier%20rank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantifier rank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quotient%20Topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quotient Topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../R%20with%20Lower%20Limit%20topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    R with Lower Limit topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../R%5Ew/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    R^w
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../R_K/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    R K
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rank%20of%20a%20module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rank of a module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rank-k%20Types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rank k Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reachability%20Algorithm%20for%20Zone%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reachability Algorithm for Zone Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reachability%20in%20Lossy%20Channel%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reachability in Lossy Channel Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Recursive%20and%20Recursively%20Eumberable%20Sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recursive and Recursively Eumberable Sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reducibility%20Theorems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reducibility Theorems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reducibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reducibility
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reed-Solomon%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reed Solomon Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Region%20Automata%20Alternate%20Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Region Automata Alternate Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Regular%20Permutation%20Groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regular Permutation Groups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Regular%20Spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regular Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Removable%20Singularities%20in%20Analytic%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Removable Singularities in Analytic Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Result%20of%20Expressive%20Power%20of%20G%C3%B6del%27s%20system%20T/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Result of Expressive Power of Gödel's system T
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Retractions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Retractions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Runtime/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Runtime
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S%5E1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    S^1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sankalp%20Talk%20-%20Ax%20Grothediek%20Raw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sankalp Talk   Ax Grothediek Raw
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Satisfiability%20in%20First%20Order%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Satisfiability in First Order Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Second%20Countability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Second Countability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Semantics%20for%20LTL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semantics for LTL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Semantics%20of%20First%20Order%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semantics of First Order Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Separable%20Extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Separable Extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Separable%20Polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Separable Polynomials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Separable%20Spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Separable Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Separation%20Axioms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Separation Axioms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sequent%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sequent Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sequentially%20Compact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sequentially Compact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Set%20Cover%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Cover Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Shortest%20Path%20using%20Primal-Dual/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shortest Path using Primal Dual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Simple let expressions to Ordinary Lambda Calculus
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simply%20Connected/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simply Connected
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simply%20Typed%20Lambda%20Calculus%20Syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simply Typed Lambda Calculus Syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simulation%20for%20Zone%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simulation for Zone Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Slide%20Plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slide Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Slides%20for%20Timed%20Automata%20Presentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Almost certain model checking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Smallest%20Filter%20Heyting%20Algebras/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Smallest Filter Heyting Algebras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Solution%20of%20a%20differential%20equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solution of a differential equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Solving%20a%20First%20Order%20ODE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solving a First Order ODE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Solving%20a%20linear%20differential%20equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solving a linear differential equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sparse%20recovery-compressed%20sensing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sparse recovery compressed sensing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spectrum%20of%20The%20adjacency%20Matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spectrum of The adjacency Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spectrum%20of%20a%20Cube%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spectrum of a Cube Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spectrum%20of%20the%20complement%20of%20a%20graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spectrum of the complement of a graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Splitting%20Fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Splitting Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Splitting%20of%20Primes%20in%20extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Splitting of Primes in extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spooky%20Day%20Logic%20stuff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spooky Day Logic stuff
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Steiner%20Tree%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Steiner Tree Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Stoke%27s%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stoke's Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Stone%27s%20Representation%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stone's Representation Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strong%20Normalization%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strong Normalization Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strongly%20Regular%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strongly Regular Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Structure%20Preserving%20Maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structure Preserving Maps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sub-basis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sub basis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Subset%20Relation%20between%20Timed%20Regular%20Languages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Subset Relation between Timed Regular Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Subspace%20Topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Subspace Topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Successor%20invariant%20FOL%20on%20finite%20structures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Successor invariant FOL on finite structures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sum%20Constructor%20Pattern%20Matching%20to%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sum Constructor Pattern Matching to Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Support%20of%20an%20Automorphism%20on%20a%20Graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support of an Automorphism on a Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Syntax%20of%20First%20Order%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Syntax of First Order Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../System%20of%20First%20Order%20Differential%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System of First Order Differential Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../T-Transitiviy%20of%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T Transitiviy of Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TOC%20Problem%20Set%201%20%28not%20graded%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TOC Problem Set 1 (not graded)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TUE%207%20Lec%20Notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TUE 7 Lec Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tensors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tensors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Textbook%20review%208%20math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Textbook review 8 math
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Riemann%20Sphere/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Riemann Sphere
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20fundamental%20theorem%20of%20Galois%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The fundamental theorem of Galois Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Theorem-%20Bipartite%20Graph%20Eigen%20Value%20Pairs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Theorem  Bipartite Graph Eigen Value Pairs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tietze%20Extension%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tietze Extension Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Time%20Table%20Planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time Table Planning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Timed%20Automata%20Alternate%20Definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timed Automata Alternate Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Timed%20Automata%20Homework%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timed Automata Homework 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Timed%20Automata%20Plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timed Automata Course Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Timed%20Automata%20with%20Diagonal%20Constraints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timed Automata with Diagonal Constraints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topological%20Groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Groups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topological%20Invariants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Invariants
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topological%20Semantics%20for%20LTL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Semantics for LTL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topological%20Space%20of%20Paths%20in%20a%20Timed%20Automata%20is%20Baire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Space of Paths in a Timed Automata is Baire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topological%20Spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topology%20over%20Finite%20Paths%20in%20a%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topology over Finite Paths in a Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Torsion%20submodule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Torsion submodule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Trace%20and%20Norm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trace and Norm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Traces%20of%20Powers%20of%20Adjacency%20Matrices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Traces of Powers of Adjacency Matrices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Train%20Track%20Crossing%20for%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Train Track Crossing for Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Translating%20Haskell%20Programs%20to%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translating Haskell Programs to Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Translation%20Scheme%20from%20Haskell%20to%20Lambda%20Calculus%20for%20Definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translation Scheme from Haskell to Lambda Calculus for Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Translation%20Scheme%20from%20Haskell%20to%20Lambda%20Calculus%20for%20Expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translation Scheme from Haskell to Lambda Calculus for Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Translation%20Scheme%20from%20Haskell%20to%20Lambda%20Calculus%20for%20Some%20RHS%20only%20options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translation Scheme from Haskell to Lambda Calculus for Some RHS only options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Travelling%20Salesman%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Travelling Salesman Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Triangular%20Graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Triangular Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Trigonometric%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometric Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tube%20Lemma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tube Lemma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Turing%20Machine%20Configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turing Machine Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Turing%20Machines%20with%20multiple%20tapes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turing Machines with multiple tapes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Turing%20Machines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turing Machines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Two%20Stacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two Stacks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Two-Way%20Infinite%20Tape%20Turing%20Machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two Way Infinite Tape Turing Machine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tychonoff%27s%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tychonoff's Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Type%20Inhabitation%20in%20P-SPACE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Type Inhabitation in P SPACE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Typed%20Combinatory%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Typed Combinatory Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Uncapacitated%20Facility%20location/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uncapacitated Facility location
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Undecidability%20of%20the%20Halting%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Undecidability of the Halting Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Undecidability%20of%20the%20Membership%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Undecidability of the Membership Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Uniform%20Definition%20of%20Haskell%20Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uniform Definition of Haskell Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Uniform%20Topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uniform Topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Uniqueness%20of%20fourier%20series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uniqueness of fourier series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Universal%20Property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Universal Property
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Universal%20Turing%20Machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Universal Turing Machine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Universality%20is%20Decidable%20for%20One-Clock%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Universality is Decidable for One Clock Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Untiming%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Untiming Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Updatable%20Timed%20Automata%20with%20only%20update%20being%20x%3Dx-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updatable Timed Automata with only update being x=x 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Updatable%20Timed%20Automata%20with%20only%20x%3Dc%20and%20x%3Dy%20updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updatable Timed Automata with only x=c and x=y updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Updatable%20Timed%20Automata%20without%20Diagonal%20Constraints%20and%20c%20in%20N/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updatable Timed Automata without Diagonal Constraints and c in N
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Updatable%20Timed%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updatable Timed Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Urysohn%20Lemma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Urysohn Lemma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Urysohn%20Metrization%20Theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Urysohn Metrization Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Variable%20Rule%20for%20Match%20Function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable Rule for Match Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Vertex%20Cover%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vertex Cover Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Well-Preorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Well Preorder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../What%20are%20Differential%20equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What are Differential equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../What%20is%20Topology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Why%20Differential%20Equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why Differential Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Winning%20Strategy%20for%20Player%201%20in%20Banach-Mazur%20games/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Winning Strategy for Player 1 in Banach Mazur games
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Winning%20Strategy%20for%20Player%202%20in%20Banach-Mazur%20games/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Winning Strategy for Player 2 in Banach Mazur games
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zone%20Automata%20Example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zone Automata Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zone%20Automata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zone Automata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../let-expressions%20in%20Enriched%20Lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    let expressions in Enriched Lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../letrec-expressions%20in%20Enriched%20lambda%20Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    letrec expressions in Enriched lambda Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../letrec-expressions%20to%20Irrefurtable%20let-expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    letrec expressions to Irrefurtable let expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../similar%20tunes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Similar tunes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ww%20where%20w%20is%20any%20word/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ww where w is any word
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_470" >
+        
+          
+          <label class="md-nav__link" for="__nav_470" id="__nav_470_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_470_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_470">
+            <span class="md-nav__icon md-icon"></span>
+            Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Features/LaTeX%20Math%20Support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaTeX Math Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Features/Mermaid%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mermaid diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Features/Text%20Formatting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text Formatting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_471" >
+        
+          
+          <label class="md-nav__link" for="__nav_471" id="__nav_471_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Topic 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_471_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_471">
+            <span class="md-nav__icon md-icon"></span>
+            Topic 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topic%201/Note%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Note 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Topic%201/Note%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Note 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>202311072011</p>
+<p>Tags : [[Programming Languages]]</p>
+<h1 id="simple-let-expressions-to-ordinary-lambda-calculus">Simple let expressions to Ordinary Lambda Calculus<a class="headerlink" href="#simple-let-expressions-to-ordinary-lambda-calculus" title="Permanent link">&para;</a></h1>
+<hr />
+<p>It is trivial to convert <em>Simple let-expressions</em> to Ordinary Lambda Calculus</p>
+<div class="highlight"><pre><span></span><code><span class="kr">let</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">B</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="kt">E</span><span class="w">     </span><span class="o">===</span><span class="w">     </span><span class="p">(</span><span class="nf">\</span><span class="n">v</span><span class="o">.</span><span class="kt">B</span><span class="p">)</span><span class="w"> </span><span class="kt">E</span>
+</code></pre></div>
+<hr />
+<h1 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h1>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
