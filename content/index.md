@@ -19,6 +19,7 @@ The section below gives a quick access to things that would be useful to me, and
 ## College Work
 - 📚 Things I am working on beside Course Work!
 	- [[Category Theory]]
+	- [[Topology via Logic]]
 
 - 📓 Course Work
 	- [[Set Theory]]
