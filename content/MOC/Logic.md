@@ -35,6 +35,10 @@ It is used to create a syntax that is used to describe mathematical statements a
 	- [[Natural Numbers with Successor Function is Complete]]
 	- [[Los-Vaught Test]]
 - [[Ordering between Axiomatic Theories]]
+- [[Lindenbaum-Tarski Algebra]]
+	- [[Boolean Algebra]]
+	- [[Heyting Algebra]]
+	- [[Frames(Algebra)]]
 
 --- 
 ## MOCs
