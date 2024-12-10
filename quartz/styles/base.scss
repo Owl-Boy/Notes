@@ -221,7 +221,7 @@ a {
         height: unset;
         width: 100%;
         flex-direction: row;
-        padding: 0;
+        padding: 0 calc($baseMargin * 2);
         & > * {
           flex: 1;
         }
@@ -463,7 +463,7 @@ pre {
 }
 
 code {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   color: var(--dark);
   font-family: var(--codeFont);
   border-radius: 5px;

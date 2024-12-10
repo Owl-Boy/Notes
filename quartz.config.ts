@@ -29,7 +29,7 @@ const config: QuartzConfig = {
       colors: {
         lightMode: {
           light: "#eff1f5",
-          lightgray: "#bcc0cc",
+          lightgray: "#ccd0da",
           gray: "#8c8fa1",
           darkgray: "#5c5f77",
           dark: "#4c4f69",
@@ -40,7 +40,7 @@ const config: QuartzConfig = {
         },
         darkMode: {
           light: "#1e1e2e",
-          lightgray: "#45475a",
+          lightgray: "#313244",
           gray: "#7f849c",
           darkgray: "#bac2de",
           dark: "#cdd6f4",
