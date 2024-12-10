@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "owl-boy.github.io/Notes",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "Templates", ".obsidian", "Excalidraw"],
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
