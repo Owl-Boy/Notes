@@ -1,6 +1,6 @@
 ---
 tags:
-  - MOC
+  - MOC/Project
 sticker: lucide//map-pin
 ---
 # Model Repair and Conformance Checking of Time Aware Models

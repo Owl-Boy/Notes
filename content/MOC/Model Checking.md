@@ -1,6 +1,6 @@
 ---
 tags:
-  - MOC
+  - MOC/Project
 sticker: lucide//map-pin
 ---
 # Model Checking

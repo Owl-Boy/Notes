@@ -1,0 +1,7 @@
+- Game:2 matrices
+	- 2 players
+	- Actions a, b at the same time
+	- reward per state is a functions of both 
+	- one maximizer player, one minimizer player
+- Reachability : probabliity
+- parity - $\omega$ regular objective

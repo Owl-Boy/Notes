@@ -1,6 +1,6 @@
 ---
 tags:
-  - MOC
+  - MOC/Presentation
 sticker: lucide//map-pin
 ---
 # Revisiting Complexity of First-Order and Monadic-Second-Order Logic

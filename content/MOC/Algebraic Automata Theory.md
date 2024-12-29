@@ -1,11 +1,12 @@
 ---
 tags:
-  - MOC
+  - MOC/Course
 sticker: lucide//map-pin
 ---
 # Algebraic Automata Theory
 ---
-## About Section
+## Course Description
+*Algebraic Automata Theory*, or more correctly *Semi Group Theory* is the study of the algebraic structure [[Semi-Groups|Semi Group]] which is a set with an associative operator on it. Semi Groups are of interest to Automata Theorists because the set of words forms an Semi Group under concatenation and different representation of Semi Groups correspond to automata theoretic descriptions of languages, like finite Semi Groups describe regular languages. And its pretty based on its own too :3 
 
 --- 
 ## Notes

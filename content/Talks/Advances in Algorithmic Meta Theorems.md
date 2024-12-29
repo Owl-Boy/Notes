@@ -1,0 +1,36 @@
+- Meta Theorem: Algorithms that provide tractability for classes or problems.
+- Problems can be described in logic
+	- Dominating set (FO)
+	- 3-colourability (MSO)
+- Parameterized Complexity
+	- Standard complexity theory seems pretty useless when wanting to classify problems in polynomial hierarchy
+	- Big sad problem para plexi is also not very helpful here
+- Every MSO property can be tested in linear time on every class of graphs with bounded tree width : $f(|\phi|)\cdot|G|$
+- Every FO property can be tested in almost linear time on every nowhere dense class : $f(|\phi|, \epsilon) \cdot|G|^{1+\epsilon}$
+- A subgraph closed class $\cal C$
+	- has bounded tree width $\iff$ no MSO formula can define all graphs from $\cal C$
+	- is nowhere dense $\iff$ no FO formjla can define all graphs from $\cal C$
+- Research  Agenda: find the most general classes that admit tractable model checking
+- FO solves Local problem
+- The splitter game
+	- Two players connector and splitter on a graph $G$
+	- In each round
+		- Connected chooses a vertex :lemme tell u how complex the neighbourhood is here
+		- splitter chooses a vertex and deletes it: see, so simple now
+		- and they keep picking neighbourhoods inside for $k$ rounds
+	- A class is nonwhere dense if for every radius the splitter has a winning strategy.
+	- This is a game version of uniform quazi flatness
+- Flipper Game
+	- You  parition the vertices into 2 parts, and you flip the vertices in the aprts
+	- Connector and flipper
+	- In each round:
+		- Connector picks a vertex
+		- flipper flips
+	- This is the game version of the uniform flip flatness
+- Compound logic: made for graph modification problems
+- Seperator Logic:
+	- FO
+	- Unbounuded, finite connectivity predicates $\text{conn}(x, y, z_{1}\dots z_n)$ which states $x$ and $y$ are connected after all $z$ are deleted
+- Unbreakable graphs:
+	- Speration: divide the graohs into 2 parts, such that there is an intersection and there are no edges between the 2 parts of the symmetric difference.
+	- 

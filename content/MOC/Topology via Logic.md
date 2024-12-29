@@ -1,6 +1,6 @@
 ---
 tags:
-  - MOC
+  - MOC/Topic
 sticker: lucide//map-pin
 ---
 # Topology via Logic

@@ -1,0 +1,10 @@
+- Hyper properties are sets of sets of traces where properties are sets of traces
+	- For example we want a system where lights are on at the same time (Hyper LTL)
+		- $\forall x_{1} x_{2}, P(x_{1}) \leftrightarrow P(x_{2})$
+		- satisfiability is undecidable
+	- Asynch extension for Hyperltl with Fixpoint operator and alternating automata
+		- model checking is decidable, so we look at a decidable fragment.
+		- How to compare different extensions
+	- Context HyperLTL
+		- which has teh extra temporal operator $\langle C \rangle \psi$ where $\phi$ is a temporal formula and the operator says only extend the traces in $C$
+		- 

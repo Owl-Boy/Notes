@@ -1,6 +1,7 @@
 ---
 tags:
-  - MOC
+  - MOC/Course
+  - MOC/Topic
 sticker: lucide//map-pin
 ---
 # Logic
@@ -16,7 +17,7 @@ It is used to create a syntax that is used to describe mathematical statements a
 >cannot think of an introduction, if you have ideas, send send.
 
 --- 
-## Notes
+## Course Notes
 - [[First Order Logic]]
 	- [[Syntax of First Order Logic]]
 	- [[Semantics of First Order Logic]]
@@ -34,6 +35,9 @@ It is used to create a syntax that is used to describe mathematical statements a
 	- [[N_L admits Quantifier Elimination]]
 	- [[Natural Numbers with Successor Function is Complete]]
 	- [[Los-Vaught Test]]
+
+---
+## Notes
 - [[Ordering between Axiomatic Theories]]
 - [[Lindenbaum-Tarski Algebra]]
 	- [[Boolean Algebra]]

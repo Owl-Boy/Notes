@@ -1,6 +1,6 @@
 ---
 tags:
-  - MOC
+  - MOC/Course
 sticker: lucide//map-pin
 ---
 # Set Theory
@@ -46,11 +46,13 @@ sticker: lucide//map-pin
 	- [[Valuation of a P-name]]
 	- [[Generic Extensions of Set Theory Models]]
 	- [[Axioms Satisfied in M[G] ]]
+- [[Continuum Hypothesis]]
 
 
 --- 
 ## MOCs
 - [[Logic]]
+- [[Independence of CH - Dana Scott]]
 
 ---
 # References

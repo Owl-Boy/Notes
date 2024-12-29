@@ -1,0 +1,16 @@
+- Model Checking : $\text{System} \times \text{Logical Sentence} \to \text{True} + \text{False, CounterExample}$
+	- If answer is no, then we can present it by a counter example
+- Problem is errors are kinda shit, because the reason of the error and where it is reported can be very different from the location where the action happened
+- *Causality* : How one thing contributes to the production of another thing. Cause is party repsonsible for the effect and the effect is partly dependent on the cause
+- Counterfactual concept : primitve idea of causality that David Hume came up with.
+- Causality in CS : 
+	- Program dependency analysis
+	- reducing counter examples
+	- HP causality for LTL
+	- Extended to HyperLTL
+	- From verification to Causality based Explications
+	- Clock bounds and delay ranges
+- Causality Nonsene for real time systems:
+	- Represented as Timed Automata
+	- Effect is a MITL formula $\phi$
+	- Event is either an action event (alphabet) or a delay event

@@ -1,0 +1,8 @@
+- LIA is Presburger Arithmetic
+- Frobenius Coin Problem
+	- You have some denominations, what is the largest amount that cannot be created using these denominations
+- Presburger Arithmetic is decidable
+- Geometry : Semilinear Sets
+- Automata Theory : Finite Automata
+- Symbolic Computation : Logical Formulas
+- 

@@ -9,7 +9,7 @@ tags :
 
 #  {{title}}
 ---
-## Question:
-##  Answer:
+
+
 ---
 # Related

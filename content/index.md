@@ -14,7 +14,8 @@ banner: "![[topog.png]]"
 Well, Hello! 
 These are my notes for Maths and CS and whatever I think is related to this side of the Academia I am interested in. 
 
-The section below gives a quick access to things that would be useful to me, and potentially to other people that have requested me for some of my notes.
+
+For the full collection of maps look at [[Atlas]]. The section below gives a quick access to things that would be useful to me, and potentially to other people that have requested me for some of my notes.
 
 ## College Work
 - 📚 Things I am working on beside Course Work!

@@ -1,6 +1,6 @@
 ---
 tags:
-  - MOC
+  - MOC/Course
 sticker: lucide//map-pin
 ---
 # Undecidability in Algebra and Topology

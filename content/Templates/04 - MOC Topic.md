@@ -1,10 +1,12 @@
 ---
-tags: MOC
 sticker: lucide//map-pin
+tags:
+  - MOC/Topic
 ---
+
 # {{title}}
 ---
-## About Section
+## About
 
 --- 
 ## Notes

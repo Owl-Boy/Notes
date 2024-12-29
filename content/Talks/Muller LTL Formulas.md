@@ -1,0 +1,9 @@
+- Muller Formulas are only allowed to use "Infinitely Often" temporal operator
+	- Co-NP Completeness
+- Short coming of the "Infinitely Often" temporal operator is that it does not imply  non-zero frequency
+	- so we add a new fancy operator $F^\infty_{p}$ which claims that a sliding window of size $p$ will always have an element that satisfies the property.
+	- Counter examples in general look like windows where the property is not satisfied.
+- Failure of a model to satisfy the model means there is some length larger than $p$ where the formulas isnot satisfied, so pumping arguments work really well.
+- Given the counter example they can be checking in polytime, which makes the problem CoNP, and the problem also happens to be CoNP complete.
+- This model also gives a nice model of fairness
+	- Fair Model checking is PSPACE Compelte
