@@ -20,7 +20,7 @@ In the classic *Ehrenfeucht-Fraïssé Game*, the players play a certain number o
 2. Then *spoiler* makes a move by picking a point in the structure.
 3. the *duplicator* responds to the move by picking a point in the other structure.
 
-An example game is given in [[Even is not FO-definable]].
+An example game is given in [[Even is not FO-definable for Linear Orders]].
 
 ## Winning
 After $n$ rounds of an *Ehrenfeucht-Fraïssé Game*, we have the move $\vec{a}=(a_{1},a_{2}\dots a_{n})$ and $\vec{b}=(b_{1},b_{2}\dots b_{n})$. And let $c_{1},c_{2}\dots c_{k}$ be the set of constants in the language.
@@ -35,6 +35,6 @@ The Application of *Ehrenfeucht-Fraïssé Games* is given by the [[Ehrenfeucht-F
 
 ---
 # References
-- [[Even is not FO-definable]]
+- [[Even is not FO-definable for Linear Orders]]
 - [[Quantifier rank]]
 - [[Ehrenfeucht-Fraïssé Theorem]]

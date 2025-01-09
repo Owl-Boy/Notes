@@ -50,4 +50,4 @@ Given an $m-$ tuple $\overline{a}$ of elements in a structure $A$, the *rank-$k$
 ---
 # References
 [[First Order Logic]]
-[[Even is not FO-definable]]
+[[Even is not FO-definable for Linear Orders]]

@@ -11,7 +11,7 @@ Tags : [[Algebraic Automata Theory]]
 
 For this implication, one can use [[Ehrenfeucht-Fraïssé Game]] over words.
 
-The idea is similar to the game [[Even is not FO-definable]], where if a word is long enough, first order formulas cannot differentiate between $N$ and $N+1$ which directly gives us that the language is aperiodic.
+The idea is similar to the game [[Even is not FO-definable for Linear Orders]], where if a word is long enough, first order formulas cannot differentiate between $N$ and $N+1$ which directly gives us that the language is aperiodic.
 
 ---
 # References

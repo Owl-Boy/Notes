@@ -19,7 +19,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Ehrenfeucht-Fraïssé Theorem]]
 	- [[Ehrenfeucht-Fraisse Games Proof]]
 	- [[Partial Isomorphism]]
-- [[Even is not FO-definable]]
+- [[Even is not FO-definable for Linear Orders]]
 
 --- 
 ## MOCs

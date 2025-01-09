@@ -23,13 +23,8 @@ For the full collection of maps look at [[Atlas]]. The section below gives a qui
 	- [[Topology via Logic]]
 
 - 📓 Course Work
-	- [[Set Theory]]
-	- [[Creative Writing]]
-	- [[Concurrent Programming]]
-	- [[Software Verification and Analysis]]
-	- [[Measure Theoretic Probability]]
-	- [[Algebraic Automata Theory]]
-
+	- [[Finite Model Theory]]
+	- [[Weighted Automata and Transducers]]
 - 🤓 Requested Notes
 	- [[Logic]]
 
