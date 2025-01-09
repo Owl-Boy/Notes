@@ -1,0 +1,41 @@
+### Topics in Algorithms
+- Some topics that will be covered
+	- Spanning trees and network design
+		- Fib heaps!
+		- Faster and more sophisticated algos
+		- Directed spanning trees? Arborescences!
+		- Steiner trees: optional vertices : NP hard
+	- Network Flow
+		- Min cost flows
+		- flows with demand
+		- multi-commodity flow : NP hard
+	- Cuts and metrics
+		- Gomory Hu trees
+	- Applications
+		- matchings
+		- market design
+- Some techniques
+	- Amortized Analysis
+	- LP
+	- multiplicative weight update method
+	- scaling technique 
+- Evaluations
+	- midsem
+	- endsem 
+	- assignments
+	- presentations if there are very few people
+- Minimum spanning trees
+	- Undirected Graph, conneccted
+	- Weight function: to positive without loss of generality
+	- find a minimum weight tree that includes all vertices
+	- Underlying rule
+		- Cut rule: If you have a cut, then the minimum weight edge of the cut must be there in the tree.
+		- Cycle rule: The max weight edge on any cycle cannot be in any MST
+- History
+	- Boruvka
+	- Jarnik, Prim and Dijstkra independently
+	- Kruska
+	- Yao $O(E \log \log V)$
+	- Fredman, Tarjan $O(E \log^*(V))$
+	- Karger, Klein, Tarjan $O(E)$ randomized.
+	- Pettie, Ramachandran : Optimal but no known running time.
