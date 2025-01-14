@@ -20,7 +20,7 @@ A category is called concrete if the members of the family it wants to represent
 - $\mathbf{Ring}$ has [[Ring|Rings]] as objects and [[Ring Homomorphism]] as morphisms
 - $\mathbf{Field}$ as [[Fields]] as its object and Field Homomorphisms as morphisms
 - $\mathbf{Mod}_{R}$ has modules over the ring $R$ as its object and module homomorphisms as its morphisms.
-- $\mathbf{Meas}$ has [[Measure of a Set|Measureable Spaces]] as objects and [[Measurable Functions]] as morpisms
+- $\mathbf{Meas}$ has [[Measure Space|Measureable Spaces]] as objects and [[Measurable Functions]] as morpisms
 - $\mathbf{Graph}$ has Graphs as objects and graph homomorphisms as morphisms
 - $\mathbf{Man}$ has smooth manifolds as objects and smooth functions as morhpisms
 - $\mathbf{Poset}$ has Partially Ordered Sets as morphisms and monotonous functions as homomorphisms

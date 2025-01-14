@@ -1,0 +1,15 @@
+- # Intro to Martingales
+	- some baby definition of a measure space, omega is countable.
+	- Exercise : $E(X)=\sum_{a: P(X=a) \geq 0} a \cdot P(X=a)$
+	- $P(B | A)  = \frac{P(B\cap A)}{P(A)}$
+	- $E(X|A)= \sum_{t} t \cdot P(X=t|A)$
+	- Suppose finite expectation, then $E((X-t)^2)$ will be min when $t$ is the mean of  $X$.
+	- Let $X$ be sum of 2 dice,, and $Y$ be the max of 2 die.
+		- $E(X|Y=u)$ is well defined as $Y=u$ is a set
+		- this will give different answers for different values of $u$ so $E(X|Y) = Z$ then $g(Y)=Z$, $Z$ is a random variable.
+		- $\min_{h} E((x-h(Y))^2)=E((X-Z)^2)$
+	- Read the preface of Probability by Leo Brieman
+	- **Martingale:**
+		- A sequence of RV is said to be a martingale if $E[M_{n+1}| M_{1} \dots M_{n}]=M_{n}$
+		- Stopping time something something
+	- Doob's optional stop time theorem

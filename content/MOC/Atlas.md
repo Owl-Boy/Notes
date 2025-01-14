@@ -9,7 +9,10 @@
 ---
 ## Courses
 #### Current
-None :3 
+- [[Weighted Automata and Transducers]]
+- [[Finite Model Theory]]
+- [[Topics in Algorithms]]
+- [[Intro to Martingales]]
 
 #### All
 - [[Algebraic Automata Theory]]

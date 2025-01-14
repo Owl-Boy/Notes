@@ -25,8 +25,11 @@ For the full collection of maps look at [[Atlas]]. The section below gives a qui
 - 📓 Course Work
 	- [[Finite Model Theory]]
 	- [[Weighted Automata and Transducers]]
+	- [[Intro to Martingales]]
+	- [[Topics in Algorithms]]
 - 🤓 Requested Notes
 	- [[Logic]]
+	- [[Logic, Automata and Games]]
 
 ---
 ## Important Stuff

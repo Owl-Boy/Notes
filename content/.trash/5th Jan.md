@@ -34,8 +34,11 @@
 - History
 	- Boruvka
 	- Jarnik, Prim and Dijstkra independently
-	- Kruska
+	- Kruskal
 	- Yao $O(E \log \log V)$
 	- Fredman, Tarjan $O(E \log^*(V))$
 	- Karger, Klein, Tarjan $O(E)$ randomized.
 	- Pettie, Ramachandran : Optimal but no known running time.
+
+Amortized Analysis
+- 

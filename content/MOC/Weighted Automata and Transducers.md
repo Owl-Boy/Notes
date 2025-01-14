@@ -21,7 +21,7 @@ sticker: lucide//map-pin
 ---
 ## Practicle Information
 - Professor : Aiswarya 
-- Timings : 11:50 am on Tue and Thu
+- Timings : 9:10 MWF?
 - Location: LH6
 
 ---
