@@ -24,14 +24,18 @@ Along with their applications which would involve discussions on techniques like
 
 --- 
 ## Notes
+- [[Randomized Algorithms]]
 - [[Minimum Spanning Trees]]
 	- [[Properties of Minimum Spanning Trees]]
 	- [[Some Algorithms for finding the Minimum Spanning Trees]]
-	- [[Kruskal's Algorithm]]
-	- [[Prim's Algorithm]]
-		- [[Binary Heaps]]
-		- [[Binomial Heaps]]
-		- [[Fibonacci Heap]]
+		- [[Kruskal's Algorithm]]
+		- [[Prim's Algorithm]]
+			- [[Binary Heaps]]
+			- [[Binomial Heaps]]
+			- [[Fibonacci Heap]]
+		- [[Boruvka's Algorithm]]
+		- [[Fredmen and Tarjan's Algorithm]]
+		- [[Karger, Klein and Tarjan's Algorithm]]
 
 --- 
 ## MOCs

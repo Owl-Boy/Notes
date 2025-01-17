@@ -1,0 +1,6 @@
+- # Weighted Automata
+	- Emptiness variant
+		- checking the support is non empty
+		- To do so, we look at the subspace the vectors can be in and multiplying by the $F$ vector kills all of them.
+		- Take the initial vector. Multiply it by the matrices and whenver you get new vectors add them to the set of vecs if it is linearly independent, stop if there are no more linearly independent vectors
+		- check if those vectors are there, because all others can be formed as linear combinatoin of the ones in the set (if we extend the universe to be a vector space that contains out universe.)

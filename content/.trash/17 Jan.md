@@ -1,0 +1,43 @@
+- # Topics in Algorithm : Randomized O(m) Algo
+	- Randomized Algorithms
+		- Las Vegas Algorithm : Output is always current/optimal but the running time is a random variable which is bounded.
+			- Running time can either be that of expected value or can be bounded with high probability.
+		- Monte Carlo Algorithm: Output could be incorrect or sub-optimal with small probability but the running time is deterministic.
+	- Algo
+		- F be a forest
+		- e not in F
+		- e is F heavy iff F union E has a cycle and e is max weight edge of cycle. Then e will not be in the MST.
+	- KKT Algo
+		- Find a "Good" Forest]
+			- How do you find a good forest, smaller weight is better.
+		- Discard all F heavy edges
+			- How to quickly identify F heavy edges.. quadratic???
+			- Komlos :1986 O(M) ... deterministic! damn
+		- recurse on the remaining edge set.
+	- KKT Algo (G)
+		- Run Boruvka for $3$ rounds (any constant is fine, increases the constant for complexity)
+		- If it gives an MST return yay
+		- Pick each edge in $E'$ with probability $\frac{1}{2}$, and called the picked subset as $E_{1}$.
+		- F1 = KKT(V', E1), we can discard whatever is not picked here.
+		- $E_{2}$ be al $F_{1}$ light edges of E : Use Komlos
+		- F2 = KKT(V', E2)
+		- return f2 with all step 1 edges.
+	- Correctness if fine because boruvka is being used for picking edges and we are only solidly discarding bad edges, only if F heavy
+	- Running Time:
+		- T_G =  time of KKT(G)
+		- T_m,n = max time taken by kkt on any n-vertex m-edge graph
+		- $T_m,n = E[T_{m1, n'}] + E[T_{m_{2}, n'}]+c(m+n)$
+			- try $T_{m, n}\geq 2c(m+n)$
+		- $\leq E[2c(m_{1} + n')]+E[2c(m_{2}+n')]+2c(m + n)$
+		- $= 2c(E(m_{1}) + E(m_{2})) + 2cn' + 2c(m+n)$
+		- $= 2c \frac{m'}{2} +2cn' + 2c (2n'-1) + 2cn' +c (m+n)$
+		- $= cm' + 8cn' + c(m+n)$ -- This step forces at least 3 boruvka.
+			- principle of deferred decision, change the ordering to use randomness as late as possible, trying to find a dual algorithm.
+			- All edges that are going to be a part of the MST will never be discarded.
+			- Proc 2
+				- We do step 1 and 2
+				- Then we start doing Kruskals
+					- We start from the smallest edgge
+					- If it is heavy wrt to tree constructed at the moment, then we discard, otherwise we toss a coin
+					- We add it to E2, then coin toss, if head we add it to the tree for checking other edges.
+				- Then the expected number of coin tosses will be 2 (n' - 1)
