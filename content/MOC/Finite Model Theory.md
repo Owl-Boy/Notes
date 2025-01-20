@@ -16,10 +16,18 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 - [[Connectivity is not FO Definable]]
 - [[Connectivity is not FO definable for Finite Graphs]]
 - [[Ehrenfeucht-Fraïssé Game]]
+	- [[Partial Isomorphism]]
+	- [[Rank-k Types]]
 	- [[Ehrenfeucht-Fraïssé Theorem]]
 	- [[Ehrenfeucht-Fraisse Games Proof]]
-	- [[Partial Isomorphism]]
 - [[Even is not FO-definable for Linear Orders]]
+- [[Locality (Finite Model Theory)]]
+	- [[Gaifman Graph]]
+	- [[Neighborhood (Finite Model Theory)]]
+	- [[Local Equivalence]]
+	- [[Isomorphism Types of Models]]
+	- [[Hanf-Locality]]
+		- [[Graph Connectivity is not Hanf-Local]]
 
 --- 
 ## MOCs

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202501172101
 
@@ -18,7 +17,7 @@ The idea behind the algorithm
 - Then it deletes half the edges (randomly) and finds a good enough minimum spanning tree for that
 - Using that it removes most of the bad edges and repeats the process until the minimum spanning tree is formed.
 
-This algorithm relies on a key ideas:
+This algorithm relies on a key idea:
 - Given a forest $F$, an edge $e$ is called $F$-heavy if adding it to $F$ creates a cycle with $e$ as its largest weighted edge. By cycle rule we get that an MST will have no e-weight edges. All other edges are called $F$-light edges.
 - The above idea is not trivial to implement, there is an algorithm by [[Komlos's Algorithm|Komlos]] which is deterministic and finds all the $F$-light edges in $O(|E|)$ time. The algorithm shall use that.
 
