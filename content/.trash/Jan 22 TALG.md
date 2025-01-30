@@ -1,0 +1,23 @@
+- # Steiner Trees
+	- We need to make a tree and have some vertices which are optional.
+	- The problem is NP complete
+		- Reduction from exact 3 cover
+			- Given a set with multiple of 3 elements, and you are given a collection of subsets of size 3. can you find a collection of subsets that partition 3.
+		- Steiner tree instance:
+			- The vertex sets are : extra vertex, all elements in the set and all collections
+			- edge set: for every $c_{i}$ edge is between ci and elements of that ci, then we connect $v$ to all $c_{i}$. get diagram from Sreevani.
+			- Now we find a steiner tree of weight $\leq 4q$.
+	- Algorithm:
+		- Given $G$ we can construct a graph $G'$ such that
+			- $G'$ is complete
+			- and triangle inequality.
+			- Solutoin of $G'$ should be on no larger cost than $G$.
+		- We do that by adding all the edges, and setting weight of the new edges as the minimum path.
+		- We drop the edges that are in cycles where triangle inequality is not maintained.
+	- Analysis
+		- Do thihingy to construct $G'$.
+		- Then consider the opt stiener tree, then double the edges, this lets us have an euler tour.
+		- shortcut euler tree
+		- shortcut to hamiltonian cycle
+		- shortcut hamiltonina again to drop stiener edges
+		- cut cycle.

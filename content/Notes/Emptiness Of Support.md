@@ -23,7 +23,7 @@ Hence, the weight of the word $w$ can be represented as a linear multiplication 
 
 Here we break the multiplication into $2$ parts $(I \times m_{w}) \times F$, This is because we can now *represent each word by a vector* $(I \times m_{w})$. And we apply a linear transformation $F$ to get its weight. Hence checking if all words are in the kernel of $F$ is the same as checking if the [[Threshold Languages|support]] of the automata is empty.
 
-If the [[Semi Ring]] was a [[Fields|Field]], then the set of possible weights would be in a subspace of the $|Q|$ dimensional vector space over $S$. We only need to find a basis of the subspace and check if it falls in the kernel.
+If the [[Semi Ring]] was a [[Fields|Field]], then the set of possible weights would be in a subspace of the $|Q|$ dimensional vector space over $S$. We only need to find a basis of the subspace and check if it falls in the kernel. Check [[Reachable Vectors]].
 
 Turns out this idea can be extended to any semi-ring that is a sub-semi-ring of a field.
 
@@ -53,3 +53,4 @@ Turns out this idea can be extended to any semi-ring that is a sub-semi-ring of 
 - [[Semi Ring]]
 - [[Threshold Languages]]
 - [[Algorithm for Finding the Weight of a Word]]
+- [[Reachable Vectors]]

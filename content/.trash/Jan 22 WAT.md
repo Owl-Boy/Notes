@@ -1,0 +1,17 @@
+- Support of min plus automata
+	- checking for equality is undecidable over tropical fields
+	- checking for empty support is undecidable.
+	- proof is b y reduction from 2CM reachability.
+- We have words that represent a valid computation history, 
+		- Our alphabet is transitions, and 2 extra letters that hold the values of the counter
+	- A word will be valid if
+		- not of the form $(a^* b^* \Delta)^*$
+		- does not start with init
+		- does not end with final
+		- inconsistent transition seq
+		- does not start with $0,0$
+		- invalid zero tests
+		- Counter value inconsistency: This is the only non-regular condition
+			- We do this by treating weighted automata as a counter automata.
+	- If there is a run with weight 0 then we can claim that the target is reachable.
+	- Since reachability for 2 counters in undecidable, checking if all paths are negative is undecidable. So $f \leq -1$ is undecidable. But that would mean $f \leq g$ is undecidable because it is harder. This would imply that $f=g$ is undeciable because $f=g \iff f \leq \min(f, g)$.

@@ -32,4 +32,4 @@ This means that give any $k$ one can find 2 models such that one of them is even
 # References
 [[First Order Logic]]
 [[FOL Inexpressibility]]
-[[Ehrenfeucht-Fraisse Games Proof]]
+[[Ehrenfeucht-Fraïssé Games Proof]]

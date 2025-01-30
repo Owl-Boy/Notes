@@ -70,4 +70,4 @@ title: Combinatorial interpretation of the dual
 ---
 # References
 [[Linear Programming]]
--> [[Steiner Tree Problem]]
+-> [[Generalized Steiner Tree-Forest Problem]]

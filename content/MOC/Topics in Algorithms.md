@@ -37,10 +37,21 @@ Along with their applications which would involve discussions on techniques like
 		- [[Fredmen and Tarjan's Algorithm]]
 		- [[Karger, Klein and Tarjan's Algorithm]]
 			- [[Complexity of KKT Algorithm]]
+	- [[Steiner Trees]]
+		- [[Steiner Trees are NP Complete]]
+		- [[Polytime Approx Algo for Steiner Trees]]
+		- [[Generalized Steiner Tree-Forest Problem]]
+	- [[Arborescence]]
+		- [[Algorithm for Arborescence]]
+	- [[Matroids]]
+		- [[Examples of Matroids]]
+		- [[Representable Matroids]]
 
 --- 
 ## MOCs
 - [[Data Structures]]
+- [[Complexity Theory]]
+- [[Combinatorial Optimisation]]
 
 ---
 ## Practicle Information

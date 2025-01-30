@@ -1,0 +1,11 @@
+- Sum of martingales is not necessarily a martingales: exercise
+	- If Xn is a martingales and Yn is a martingale, then Xn+Yn need not be one.
+- You have a bunch of observables.
+	- objects are functions on observables.
+	- Given a bunch of martingales over a fixed set of obserables
+		- Sum of 2 martingales is a martingale
+		- scaling a martingale is a martingale anyway
+		- so they form a vector space
+- In a lot of stopping time scenarios, one would want to figure out if they can turn the game in their favour. Turn out it  is possible in a lot of cases if you have an infinite amount of resources and an unbounded amount of time. As soon as one has an upper bound on the above two, one can no longer turn it over, it forces the game to be fair.
+- net gain over time $m$ would be 
+	- $Z_{m}= \sum_{k=1}^{m-1} f_{k}(v_{1},v_{2}\dots v_{k})(M_{k+1}-M_{k})$

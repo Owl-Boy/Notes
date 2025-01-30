@@ -1,0 +1,49 @@
+- Type is like a collection $a : T$
+- Given 2 types $A, B$ one can construct elements of the type $A \to B$ which need to be defined using lambda calc
+- Universe is a type whose elements are type.
+- Everything is closed under operations like function, arbitrarty products, products, sums and arbitrary sims
+- Dependent functions are functions whose co-domain depends on the input, which is precisely what Arbitrary products are like.
+- Types:
+	- Elements
+	- Universal Principle, recursion principle
+	- Induction Principle
+- Example:
+	- K = 2
+	- $K^n: \mathbb{N} \to \cal U$ from $0 \mapsto K$ and $K^n: \cal U \to \cal U$ from $A \mapsto A \times K$
+	- By induction $\prod_{n:N} K^n$
+		- $1: K^1$
+		- $v: K^n \to K^{n+1}$ where $v \mapsto (v, 0)$.
+- $\Sigma$ Type, AKA depended pair type. (Arb Disjoint Union)
+	- E
+		- Given a family of types $B:A \to \cal U$ then there is $\sum_{x:A} B(x) : U$
+		- If $a : A$ and $b: B(a)$, then $(a, b): \sum_{a:A}(x)$
+	- R
+		- $g: \prod_{x:A}B(x) \to C$, then there is a function
+		- $\hat{g}: \sum_{x:A}B(x) \to C$ such that $\hat{g}((a, b)) \equiv g(a)(b)$
+		- $P_{1}: \prod_{x:A} B(x) \to C$ then we can create the $\text{Pr}_{1} \sum_{x:A}B(x) \to A$.
+		- This is equivalent to getting the tag in functional programming
+	- I
+- Co-product
+	- E
+		- for $a:A$ we have $\text{inA}(a):A+B$ 
+		- for $b:B$ we have $\text{inB}(b):A+B$ 
+	- R
+		- Given $f_{A}:A\to$ and $f_{B}: B\to C$ then
+		- $f:A+B \to C$ such that $f \circ \text{inA}=f_{A}$ and same for $b$
+	- I
+		- Let $P: A + B \to U$, $g_{A}: \prod_{a:A}P(\text{inA}(A))$ and same for $B$
+		- then $g: \prod_{x:A+B}$ where $g\circ \text{inA}$ and same for $B$
+- Logic of Types
+	- A type is defined to bee true if it is inhabited
+	- Suppose $A$ has an element and $f:A \to B$ then $B$ is inhabited.
+	- product type is 'and'
+	- sum type is 'or'
+	- $P: A \to \cal U$, then an element is $g:\prod_{x:A}P(x)$, this behaves like forall
+	- $g: \sum_{x:A}P(x)$, then $\text{Pr}_{2}(g): \text{Pr}_{1}(g)$, so this behaves as there exists. as for some tag we found some element.
+	- $\mathbb{1}$ is tautologically true.
+	- $\mathbb 0$ having an element , then every type has an element, hence it is false. Because recursion principle is that this has a function to everything else.
+	- We define $\lnot A$ to be functions from $A \to 0$.
+	- Exercise $A \to \lnot \lnot A$
+		- It is just $A \to ((A \to 0) \to 0)$
+		- This is inhabityed by $a \mapsto(f \mapsto f\ a)$
+	- 

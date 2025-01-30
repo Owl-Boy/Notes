@@ -1,0 +1,19 @@
+# Extending FO
+- Given a signature, one can add 2 symbols $+, <$ such that addition respects the total order
+	- Then even cardinality is definable
+	- Is it possible without the plus, what are the properties that you can express with a linear order, which don't depend on which linear order it is.
+- Consider signatures $\sigma, \sigma'$ which are disjoint
+	- So the models here look like $A, A'$
+	- A formula $\varphi$ is called $\mathcal{C}$ invariant if $A, A' \vDash \varphi \iff A,A'' \vDash \varphi$
+	- Is there some query that can be expressed in $\sigma, <$ that cannot be expressed by $\sigma$. The notation is $(\text{FO} + <)_{\text{inv}}$.
+- Consider the case where we have a powerset for model and inclusion as operator and we have enough axioms to give it the intended meaning.
+	- we can define emtpy set
+	- top element
+	- atom can be defined
+	- we can define union, intersection complement.
+	- Now we add the linear orderer to this
+		- Now we can write the expression that there exists 2 disjoint sets where first one contains an atom, the next one contains the next atom and they alternate, and second set contains the last atom
+	- We also have that checking for emptiness for boolean lattices on their own is not definable, we can give EF game for that. Locality arguments don't seem to work, in general ordering relations fuck up locality argument.
+		- dupli  cab always play empty for empty set and full set with full set.
+		- Strat is to see if spoily pics a set that is bigger than $2^k$, if yes we pick same size. If complement has that size then we make sure out complement has the same size
+		- Each tiem we split the game in 2 and on each part we can play indep.

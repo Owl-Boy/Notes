@@ -1,6 +1,7 @@
 ---
 tags:
   - MOC/Course
+  - MOC/Topic
 sticker: lucide//map-pin
 ---
 # Finite Model Theory
@@ -19,7 +20,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Partial Isomorphism]]
 	- [[Rank-k Types]]
 	- [[Ehrenfeucht-Fraïssé Theorem]]
-	- [[Ehrenfeucht-Fraisse Games Proof]]
+	- [[Ehrenfeucht-Fraïssé Games Proof]]
 - [[Even is not FO-definable for Linear Orders]]
 - [[Locality (Finite Model Theory)]]
 	- [[Gaifman Graph]]
@@ -28,6 +29,10 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Isomorphism Types of Models]]
 	- [[Hanf-Locality]]
 		- [[Graph Connectivity is not Hanf-Local]]
+		- [[Local Equivalence Lemma]]
+		- [[FO Queries are Hanf Local]]
+	- [[Gaifman-Locality]]
+		- [[Hanf-local Queries are Gaifman-local]]
 
 --- 
 ## MOCs

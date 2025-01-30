@@ -1,0 +1,3 @@
+- Consider models $A$ and $B$ which a $d$ equiv, then we can pick sets $\vec{a}$ and $\vec{b}$, if the neighbour hood of those sets are equiv in a regiouns much larger than $d$ then $A, a$ and $B, b$ are also d equiv.
+- Let there be a $3d+1$ eqiov around the set, and let $f$ be the isomorphism on the $2d+1$ neighbourhood. Then on that the d neighbourhood of a point is isomorphic to its image under the bijection.
+- Let $g'$ be a map that preserves neighborhood, Let $f$ be $g'$ everywhere it is not defined.

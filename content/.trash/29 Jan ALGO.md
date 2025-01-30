@@ -1,0 +1,11 @@
+# Arboreaescences
+- [x] $G=V, E$ is a directed graph where each edge has a weight, and a root node $r$.
+- [x] Goal is to compute a min cost tree such that each path is directed towards $r$.
+- [x] Can also write it as, each vertex has a directed path to $r$ and all vertices except for $r$ has exactly 1 outgoing edge, and graph should be of min weight
+- [x] Existence: reverse the direction then DFS
+- [x] No properties hold, cut, cycle etc etc
+- [x] Alog
+	- [ ] Take all out going vertices from f, and remove the min weight from outgoing edges. This preserves the min cost arborescence.
+	- [ ] Take min edge from each vertecx
+	- [ ] Collapse all cycles
+	- [ ] recurse

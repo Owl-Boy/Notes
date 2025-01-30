@@ -5,31 +5,7 @@ tags:
 202309211309
 
 Tags : [[Advanced Algorithms]]
-# Steiner Tree Problem
----
-$G=(V,E)$,
-costs $c_{uv}\geq 0$ $\forall(u,v)\in E$,
-two types of vertices: required and Steiner
-
-**Goal:** To find a min-cost subset $T \subset E$ st $T$ is a tree that includes all required vertices and any subset of Steiner vertices.
-
-> [!note] **Lemma:** Any approximation for metric case $\implies$ the same approximation for non metric case
-
-## Algorithm
----
-Find an $MST$ on terminal vertices.
-
-## Analysis
----
-Let $T$ be an optimal Steiner tree.
-Double all edges of $T$ and find an Euler tour (so that later you can go over an edge at most twice).
-Obtain a $TSP$ tour by short cutting and eliminating Steiner vertices.
-
-$\text{cost}(MST) \le \text{cost}(TSP \text{ tour}) \le 2.OPT$
-
-> [!success] So we get a $2-$approximation.
-
-# Generalised Steiner tree/Steiner forest problem
+# Generalized Steiner Tree/ Forest Problem
 ---
 $G=(V,E)$
 costs $c_{e}\ge 0$ $\forall e \in E$
