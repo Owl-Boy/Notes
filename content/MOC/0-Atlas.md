@@ -13,6 +13,7 @@
 - [[Finite Model Theory]]
 - [[Topics in Algorithms]]
 - [[Intro to Martingales]]
+- [[Homotopy Type Theory]]
 
 #### All
 - [[Algebraic Automata Theory]]
