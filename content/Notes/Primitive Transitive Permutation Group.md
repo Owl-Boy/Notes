@@ -6,10 +6,8 @@ Tags : [[Algebraic Graph Theory]]
 ---
 # Primitive Transitive Permutation Group
 
-```ad-info
-title:
-If the only blocks of Transitive permutation group are trivial, then it called **Primitive**.
-```
+> [!info]
+> If the only blocks of Transitive permutation group are trivial, then it called **Primitive**.
 
 _Lemma:_ If $(\Gamma,X)$ is $2-$transitive, then it is primitive
 _Proof:_ consider a block $B$, if it is non trivial, then $\exists x, y\in B$ and $\exists z\notin B$, then consider $\sigma: (x, y)\to (x, z)$. This is a contradiction.

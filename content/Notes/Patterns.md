@@ -8,15 +8,13 @@ Tags : [[Programming Languages]]
 
 ---
 # Patterns
-```ad-info
-title:Definition
-A pattern $p$ is either
-- a variable $v$
-- a constant $k$
-- a constructor pattern of the form $(c\;p_1\;p_{2\dots}p_n)$ where $p_{i}$ are also patterns
-
-In case of *Haskell* all variables should be distinct
-```
+> [!info] Definition
+> A pattern $p$ is either
+> - a variable $v$
+> - a constant $k$
+> - a constructor pattern of the form $(c\;p_1\;p_{2\dots}p_n)$ where $p_{i}$ are also patterns
+> 
+> In case of *Haskell* all variables should be distinct
 ---
 Consider the following Haskell function
 ```haskell
@@ -25,12 +23,10 @@ f p2 = E2
 ...
 f p3 = E3
 ```
-```ad-summary
-title:Intuition
-The intuitive semantics of pattern matching are  "Try the first pattern, if that fails then try the next, and so on". This suggests that all of them might fail, in which case an error.
-
-We introduce values $\text{FAIL}$ and $\text{ERROR}$
-```
+> [!summary] Intuition
+> The intuitive semantics of pattern matching are  "Try the first pattern, if that fails then try the next, and so on". This suggests that all of them might fail, in which case an error.
+> 
+> We introduce values $\text{FAIL}$ and $\text{ERROR}$
 The following is the definition of `f` into [[Enriched Lambda Calculus]].
 
 ```
@@ -45,10 +41,8 @@ here `x` is a new variable which is not free in any `E`.
 ---
 ## Semantics for the $\triangleright$ operator
 
-```ad-warning
-title: Notation Difference
-The book uses a symbol called fatbar instead of $\triangleright$, I cannot find the latex definition for it.
-```
+> [!warning] Notation Difference
+> The book uses a symbol called fatbar instead of $\triangleright$, I cannot find the latex definition for it.
 
 The function `|>` is an infix function whose behavior is described by
 $$

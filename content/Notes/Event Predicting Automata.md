@@ -13,13 +13,12 @@ In an *Event Predicting Automata* given an *Alphabet* $\Sigma$, we have A set *E
 ## Event Predicting Clocks
 Let $Y_{\Sigma}$ be the set of *Event Predicting Clocks*. The value of Every $Y_{a}$ gives the time stamp after which the _timed automata_ accepts the letter $a$.
 
-```ad-example
-Let $L=\{aa^*b\}$ where the time gap between the first $a$ and $b$ is $10$. 
-
-![[Drawing 2023-09-23 15.24.58.excalidraw]]
-
-There is no [[Event Recording Automata]] which can have the above language(It cannot talk about the first occurence of a letter)
-```
+> [!example]
+> Let $L=\{aa^*b\}$ where the time gap between the first $a$ and $b$ is $10$. 
+> 
+> ![[Drawing 2023-09-23 15.24.58.excalidraw]]
+> 
+> There is no [[Event Recording Automata]] which can have the above language(It cannot talk about the first occurence of a letter)
 
 ## Semantics of Event Predicting Automata
 

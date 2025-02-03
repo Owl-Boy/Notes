@@ -5,16 +5,14 @@ Tags : [[Topology]]
 
 ---
 # Fundamental Groupoid
-```ad-note
-title:
-If $f$ is a path in $X$ from $x$ to $y$ and $g$ is a path from $y$ to $z$, then $f * g$ is defined as a path from $x$ to $z$ with concatenates $f,g$.
-$$
-(f*g)(s) = \begin{cases}
-f(2s) \ 0 \le t \le \frac{1}{2} \\
-g(2s-1) \ \frac{1}{2} \le t \le 1
-\end{cases}
-$$
-```
+> [!note]
+> If $f$ is a path in $X$ from $x$ to $y$ and $g$ is a path from $y$ to $z$, then $f * g$ is defined as a path from $x$ to $z$ with concatenates $f,g$.
+> $
+> (f*g)(s) = \begin{cases}
+> f(2s) \ 0 \le t \le \frac{1}{2} \\
+> g(2s-1) \ \frac{1}{2} \le t \le 1
+> \end{cases}
+> $
 ##### This also gives a binary operation on the set of path-homotopy classes as well, as long as $f(1) = g(0)$.
 If $f \simeq_{p} f'$ and $g \simeq_{p} g'$ with homotopies $F(s,t)$ and $G(s,t)$ then $f*g \simeq_{p} f'*g'$ using $$
 (F*G)(s,t) = \begin{cases}

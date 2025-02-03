@@ -26,22 +26,20 @@ $T$ is a **Gomory-Hu tree** for $G$ if:
 - $T=(V,F)$, weights $w'\geq 0$, and
 - for every $(u,v)\in F$, $w'(u,v)=w(\text{a }u-v\text{ min-cut in }G)$ and $T \setminus \{ (u,v) \}$ is the $u-v$ mincut in $G$.
 
-```ad-tip
-title:
-**Theorem:** Let $(s-t)$ be a min wt edge on the path between $u$ and $v$ in $T$.
-Then $w'(s,t)=w(\text{a }u-v\text{ min-cut in }G)$.
-*Proof:* Induction on the length of $u-v$ path
-Length = 1; it follows from definition.
-
-$\text{mincut}_{G}(a,b)\geq \min\{ \text{mincut}_{G}(a,c),\text{mincut}_{G}(b,c) \}$
-$w$ is the neighbour of $u$ on a $u-v$ path in $T$.
-$$
-\begin{align*}
-\text{mincut}_{G}(u,v)&\geq \min\{ \text{mincut}_{G}(u,w),\text{mincut}_{G}(w,v) \}\\
-&\geq \text{mincut}_{G}(s,t)=w'(s,t)
-\end{align*}
-$$
-```
+> [!tip]
+> **Theorem:** Let $(s-t)$ be a min wt edge on the path between $u$ and $v$ in $T$.
+> Then $w'(s,t)=w(\text{a }u-v\text{ min-cut in }G)$.
+> *Proof:* Induction on the length of $u-v$ path
+> Length = 1; it follows from definition.
+> 
+> $\text{mincut}_{G}(a,b)\geq \min\{ \text{mincut}_{G}(a,c),\text{mincut}_{G}(b,c) \}$
+> $w$ is the neighbour of $u$ on a $u-v$ path in $T$.
+> $
+> \begin{align*}
+> \text{mincut}_{G}(u,v)&\geq \min\{ \text{mincut}_{G}(u,w),\text{mincut}_{G}(w,v) \}\\
+> &\geq \text{mincut}_{G}(s,t)=w'(s,t)
+> \end{align*}
+> $
 
 ### Construction:
 Maintain a tree on subsets of vertices $S_{1},\dots S_{k}\subset V$, $S_{1}=V$.

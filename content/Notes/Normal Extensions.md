@@ -5,34 +5,26 @@ Tags :[[Algebra]]
 
 ---
 # Normal Extensions
-```ad-note
-title:
-A field extension $L/K$ is called _normal_ if every irreducible poly in $K[X]$ that has a root in $L$ splits completely in $L[X]$.
-```
+> [!note]
+> A field extension $L/K$ is called _normal_ if every irreducible poly in $K[X]$ that has a root in $L$ splits completely in $L[X]$.
 
 ### Theorem 1:
-```ad-note
-title:
-If $|\mathrm{Aut}(L /K)| = [L : K]$ then $L/K$ is normal
-```
+> [!note]
+> If $|\mathrm{Aut}(L /K)| = [L : K]$ then $L/K$ is normal
 ##### Proof:
 Look at Theorem 4 in [[Galois Correspondence]] for a proof.
 
 ### Theorem 2:
-```ad-note
-title:
-The splitting field of a separable polynomial is a normal extension.
-```
+> [!note]
+> The splitting field of a separable polynomial is a normal extension.
 ##### Proof:
 This is just theorem 3 in [[Galois Correspondence]] followed by an application of theorem 1 above.
 
 ### Theorem 3:
-```ad-note
-title:
-For a finite extension $L/K$, TFAE:
-1) $L/K$ is normal
-2) $L$ is the splitting field over $K$ of a polynomial in $K[X]$
-```
+> [!note]
+> For a finite extension $L/K$, TFAE:
+> 1) $L/K$ is normal
+> 2) $L$ is the splitting field over $K$ of a polynomial in $K[X]$
 ##### Proof:
 (1) $\implies$(2)
 Write $L = K(\alpha_{1},\alpha_{2},\dots,\alpha_{n})$, take the minimal polynomial of all the $\alpha_{i}$'s, and take their product (get rid of repeated factors in the product). Now $L$ is the splitting field of this polynomial over $K$.

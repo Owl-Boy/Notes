@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # Continuous Functions
-```ad-info
-title: Idea
-The idea is to convert the eqsilon delta definitions for metric spaces to topology, with closeness between points is represented by being in a common open set
-```
+> [!info] Idea
+> The idea is to convert the eqsilon delta definitions for metric spaces to topology, with closeness between points is represented by being in a common open set
 Let $(X, \mathcal T_X)$ and $(Y, \mathcal T_Y)$ be $2$ Topological Spaces and let $f:X\to Y$ be a Topological Space be a function between them. We say $f$ is continuous if $f^{-1}(V)\in \mathcal T_X$ for every $V\in \mathcal T_Y$.
 
 This is a Global Definition, a Local Definition will be given later
@@ -30,25 +28,19 @@ __Equivalent statements for continuous functions:__
 - For every subset $A\subset X$, $f(Cl \ A) \subset Cl \ f(A)$. 
 
 **Continuity at a point**:
-```ad-note
-title: 
-$f: X \to Y$ is continuous at a point $x \in X$ if for every open set $V \in \mathscr{T}_Y$ containing $f(x)$, there exists an open set $U \in \mathscr{T}_X$ containing $x$ such that $f(U) \subset V$.
-```
+> [!note]
+> $f: X \to Y$ is continuous at a point $x \in X$ if for every open set $V \in \mathscr{T}_Y$ containing $f(x)$, there exists an open set $U \in \mathscr{T}_X$ containing $x$ such that $f(U) \subset V$.
 
 **Local formulation of continuity**:
-```ad-note
-title:
-The map $f : X \to Y$ is continuous iff $X = \bigcup\limits_{\alpha} U_{\alpha}$ for open sets $U_{\alpha}$ such that $f|_{U_{\alpha}}$ is continuous for all $\alpha$.
-```
+> [!note]
+> The map $f : X \to Y$ is continuous iff $X = \bigcup\limits_{\alpha} U_{\alpha}$ for open sets $U_{\alpha}$ such that $f|_{U_{\alpha}}$ is continuous for all $\alpha$.
 - Apparantly, this is useful in Algebraic geometry. (Grothendieck topology)
 
 **Pasting Lemma**:
-```ad-note
-title:
-Let $X = A \cup B$ where A and B are closed (or open) in X. Let $f : A \to Y$
-and $g : B \to Y$ be continuous functions. If $f(x) = g(x)$ for all $x \in A \cap B$, then f and g ‘glue together’ to
-give a continuous function $h : X \to Y$ obtained by setting $h(x) = f(x)$ if $x \in A$ and h(x) = g(x) if $x \in B$.
-```
+> [!note]
+> Let $X = A \cup B$ where A and B are closed (or open) in X. Let $f : A \to Y$
+> and $g : B \to Y$ be continuous functions. If $f(x) = g(x)$ for all $x \in A \cap B$, then f and g ‘glue together’ to
+> give a continuous function $h : X \to Y$ obtained by setting $h(x) = f(x)$ if $x \in A$ and h(x) = g(x) if $x \in B$.
 - Basically this says that if $X$ is a disjoint union of two clopen sets, then I can define a continuous function on $X$ by defining it independently on A and B.
 - The infinite analogue of this for the closed case is not necessarily true, for example: just take the closed sets to be singletons in $\mathbb{R}$, standard topology. Being continuous on these closed sets tells us nothing about the continuity of the function as a whole.
 ---

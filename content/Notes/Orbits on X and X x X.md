@@ -24,10 +24,8 @@ we can take $(u, v)$ to $(x, v')$ which can be sent to some $x, y_{i}$ for some 
 \end{document}
 ```
 
-```ad-note
-title: Number of orbits.
-The above Claim Shows that given any $x$, the number of orbits of $\Gamma_{x}$ on $X$ is the same as the number of orbits on $\Gamma$ on $X\times X$ hence the number of orbits of $\Gamma_{x}$ is the same $x$ for all $x\in X$
-```
+> [!note] Number of orbits.
+> The above Claim Shows that given any $x$, the number of orbits of $\Gamma_{x}$ on $X$ is the same as the number of orbits on $\Gamma$ on $X\times X$ hence the number of orbits of $\Gamma_{x}$ is the same $x$ for all $x\in X$
 
 
 ---

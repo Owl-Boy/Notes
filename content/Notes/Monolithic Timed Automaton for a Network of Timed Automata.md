@@ -28,9 +28,8 @@ For the transitions, we need to be careful about synchronizations.
 Given a state $\langle p_{1}, p_{2}\dots p_{k}\rangle$ and a letter $\alpha$. Without Loss of dots generality, let $\alpha\in \Sigma_{1}\dots \Sigma_{i}$ and $\alpha\notin \Sigma_{i+1}\dots \Sigma_{k}$.
 If There exists transitions from $p_{x}$ to $q_{x}$ accepting $\alpha$ with guard $G_x$ and resets $R_{x}$ for all $x\le i$. we can make the transition from $\langle p_{1}\dots p_{i},p_{i+1}\dots p_{k}\rangle$ to $\langle q_{1}\dots q_{i},p_{i+1}\dots p_{k}\rangle$ accepting $\alpha$ with guards $\bigwedge\limits_{x\le i}G_{x}$ and resets $\bigsqcup\limits_{x\le i}R_{x}$.
 
-```ad-warning
-The number of states this leads to is $\prod |Q_{i}|$ which gets big very quickly. Evaluating the states lazily can give significantly better results.
-```
+> [!warning]
+> The number of states this leads to is $\prod |Q_{i}|$ which gets big very quickly. Evaluating the states lazily can give significantly better results.
 
 ---
 # References

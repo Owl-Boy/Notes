@@ -19,14 +19,12 @@ The reason why redicibility works where combinatorial intuition fails is because
 $t\in RED_{U\to V}\iff\forall u(u\in RED_{U}\implies t\ u\in RED_{V})$
 
 ## Properties
-```ad-note
-title:Neutrality
-A term is called _neutral_ if it is not of the form $\langle u,v\rangle$ or $\lambda x.v$. In other words, neutral terms are those which are of the form
-- $x$
-- $\pi^{1}t$
-- $\pi^{2}t$
-- $t\ u$
-```
+> [!note] Neutrality
+> A term is called _neutral_ if it is not of the form $\langle u,v\rangle$ or $\lambda x.v$. In other words, neutral terms are those which are of the form
+> - $x$
+> - $\pi^{1}t$
+> - $\pi^{2}t$
+> - $t\ u$
 
 ^e70af2
 

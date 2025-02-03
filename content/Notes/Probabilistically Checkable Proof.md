@@ -18,9 +18,8 @@ Verifier $V$ uses $r(n)$ random bits, reads $q(n)$ bits of $y$.
 If $x$ is a 'yes' instance, then for some $y$, $V$ accepts $x$ with probability $\geq c$.
 If $x$ is a 'no' instance, then for any proof $y$, $V$ accepts $x$ with probability $\leq s<c$.
 
-```ad-important
-**PCP theorem:** $NP=PCP_{1, \frac{1}{2}}(O(\log n),k)$ for some constant $k$.
-```
+> [!important]
+> **PCP theorem:** $NP=PCP_{1, \frac{1}{2}}(O(\log n),k)$ for some constant $k$.
 
 $PCP_{c,s}(r(n),q(n))$
 

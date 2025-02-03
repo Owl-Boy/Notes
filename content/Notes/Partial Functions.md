@@ -6,10 +6,8 @@ Tags : [[PLC]]
 ---
 # Partial Functions
 
-```ad-note
-title:
-A _Partial Function_ is a function that has values on some arguments but not on all arguments
-```
+> [!note]
+> A _Partial Function_ is a function that has values on some arguments but not on all arguments
 The reason why a function would not return all values are :
 - _Error Termination:_ Evaluation of a function cannot proceed because of a conflict between the operator and an operand.
 - _Nontermination:_ Evaluation of a function proceeds indefinitely.

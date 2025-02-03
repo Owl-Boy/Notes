@@ -33,9 +33,8 @@ The idea is, we make a timed automata whose language is the complement of the ab
 
 To do that, we just make an automata to fail a condition for every condition, and then take the union of all of them.
 
-```ad-todo
-Make the automata for all the conditions.
-```
+> [!todo]
+> Make the automata for all the conditions.
 
 
 ---

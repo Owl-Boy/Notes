@@ -28,10 +28,8 @@ R_1(z) &= z^{m-n}{a_0z^n + a_1z^{n-1}+\cdots+a_n\over b_0z^m+b_1z^{m-1}+\cdots+b
 $$
 If $m>n$,  $R(z)$ has a zero of order $m-n$ at $\infty$; if $m<n$, $R(z)$ has a pole of order $n-m$ at $\infty$.
 
-```ad-note 
-title: Lemma
-order($R$) = order($R-a$), $a \in \mathbb{C}$
-```
+> [!note] Lemma
+> order($R$) = order($R-a$), $a \in \mathbb{C}$
 This gives that order($R$) = $1 \implies R$ is injective. (Since if not then order($R-a) \ge 2$ for some $a$, but that's a contradiction to the lemma).
 We will see that $R$ is surjective too.
 

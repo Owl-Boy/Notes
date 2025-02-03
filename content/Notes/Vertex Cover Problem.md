@@ -12,11 +12,9 @@ Tags : [[Advanced Algorithms]]
 **Given:** Graph $G=(V,E)$
 **Goal:** If $S\subset V$ is s.t. every edge has at least one endpoint in $S$, it is called a *Vertex Cover*. Minimise $|S|$.
 
-```ad-success
-title: Idea: Lower Bounds
-1. Find a lower bound (efficiently computable).
-2. $A(I)\le\alpha.LB(I)\le\alpha.OPT(I)$.
-```
+> [!success] Idea: Lower Bounds
+> 1. Find a lower bound (efficiently computable).
+> 2. $A(I)\le\alpha.LB(I)\le\alpha.OPT(I)$.
 
 $OPT\ge$ size of any matching
 **Algorithm:** Take a maximal matching, and pick both endpoints and add them to $S$.

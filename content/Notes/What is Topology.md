@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # What is Topology
-```ad-note
-title:
-It is the study of topological properties of topological spaces.
-```
+> [!note]
+> It is the study of topological properties of topological spaces.
 
 **Topological Properties** are properties that can be expressed in terms of continuity.
 [[Topological Spaces]] are sets which have some notion of nearness between elements.

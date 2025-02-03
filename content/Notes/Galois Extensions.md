@@ -5,20 +5,16 @@ Tags : [[Algebra]]
 
 ---
 # Galois Extensions
-```ad-note
-title:
-A finite extension is called _Galois_ when it is both normal and separable. When $L /K$ is Galois, the group $\mathrm{Aut}(L /K)$ is denoted $\mathrm{Gal}(L /K)$ and is called the _Galois group_ of the extension.
-```
+> [!note]
+> A finite extension is called _Galois_ when it is both normal and separable. When $L /K$ is Galois, the group $\mathrm{Aut}(L /K)$ is denoted $\mathrm{Gal}(L /K)$ and is called the _Galois group_ of the extension.
 
 ### Theorem 1:
-```ad-note
-title:
-For a finite extension $L /K$, TFAE:
-1. $|\mathrm{Aut}(L /K)| = [L : K]$
-2. $L ^{\mathrm{Aut}(L /K)} = K$
-3. $L /K$ is normal and separable.
-4. $L$ is the splitting field over $K$ of a separable polynomial in $K[X]$.
-```
+> [!note]
+> For a finite extension $L /K$, TFAE:
+> 1. $|\mathrm{Aut}(L /K)| = [L : K]$
+> 2. $L ^{\mathrm{Aut}(L /K)} = K$
+> 3. $L /K$ is normal and separable.
+> 4. $L$ is the splitting field over $K$ of a separable polynomial in $K[X]$.
 ##### Proof:
 We know from Theorem 4 in [[Galois Correspondence]] that (1) implies (2),(3),(4).
 We also showed in the proof of this theorem that (3) implies (4)
@@ -28,10 +24,8 @@ We know from [[Splitting Fields]] (corollary to theorem 3) that (4) implies (1).
 $mathrm{Aut}()$
 
 ### Corollary:
-```ad-note
-title:
-If $L/K$ is a finite extension then $|\mathrm{Aut}(L/K)| \mid [L:K]$.
-```
+> [!note]
+> If $L/K$ is a finite extension then $|\mathrm{Aut}(L/K)| \mid [L:K]$.
 ##### Proof:
 Since $L /K$ is finite, the order of the group $\mathrm{Aut}(L /K)$ is finite.
 Let $F = L ^{\mathrm{Aut}(L /K)}$, we know $\mathrm{Aut}(L /F) = \mathrm{Aut}(L /K)$.
@@ -40,24 +34,18 @@ $$
 |\mathrm{Aut}(L /K)| \mid [L:K]
 $$
 ### Corollary:
-```ad-note
-title:
-If $L /K$ is a finite extension which is either inseparable or not normal, then $|\mathrm{Aut}(L/K)| < [L:K]$
-```
+> [!note]
+> If $L /K$ is a finite extension which is either inseparable or not normal, then $|\mathrm{Aut}(L/K)| < [L:K]$
 
 ### Theorem 2:
-```ad-note
-title:
-Every finite separable extension of a field can be enlarged to a finite Galois extension of the field. In particular, every finite extension of a field with characteristic 0 can be enlarged to a finite galois extension.
-```
+> [!note]
+> Every finite separable extension of a field can be enlarged to a finite Galois extension of the field. In particular, every finite extension of a field with characteristic 0 can be enlarged to a finite galois extension.
 ##### Proof:
 Take $L = K(\alpha)$ ([[Primitive Element Theorem]]), then we can extend $L$ by adding all roots of the minimal polyomial of $\alpha$ over $K$, to $K$. This gives a galois extension of $K$ extending $L$ as well.
 
 ### Theorem 3:
-```ad-note
-title:
-If $L /K$ is a finite galois extension and $F$ is an intermediate field, then $L /F$ is galois as well.
-```
+> [!note]
+> If $L /K$ is a finite galois extension and $F$ is an intermediate field, then $L /F$ is galois as well.
 ##### Proof:
 Take $\alpha \in L$, take its min poly over $K$, call it $\pi_{\alpha}$, since $\alpha$ is separable over $K$, $\pi_{\alpha}$ is separable. 
 Then the min poly of $\alpha$ over $F$ divides $\pi_{\alpha}$, and hence it has distinct roots since $\pi_{\alpha}$ does, and so is separable. This means $L /F$ is separable.
@@ -66,10 +54,8 @@ Now take any irreducible poly $f$ in $F$, let it have a root $\gamma$ in $L$. Th
 ###### NOTE: The bottom part of the tower $F /K$ need not be galois when $L /K$ is. Also, if $L /F$ and $F /K$ are galois, $L /K$ need not be galois (See example 3)
 
 ### Theorem 4:
-```ad-note
-title:
-If $L_{1},L_{2}$ are finite galois extensions of $K$ inside a common field then $L_{1}L_{2}$ and $L_{1} \cap L_{2}$ are both finite galois extensions of $K$.
-```
+> [!note]
+> If $L_{1},L_{2}$ are finite galois extensions of $K$ inside a common field then $L_{1}L_{2}$ and $L_{1} \cap L_{2}$ are both finite galois extensions of $K$.
 ##### Proof:
 Call the common field $L$.
 Due to Corollary 2.2 of [[Separable Extensions]], we get that $L_{1}, L_{2}$ are subfields of the field of separable elements in $L$ over $K$ (call this $F$). Hence $L_{1}L_{2}$ and $L_{1} \cap L_{2}$ are subfields of $F$, hence separable over $K$.

@@ -7,21 +7,17 @@ Tags : [[Complex Analysis]]
 # Analytic Function
 
 ### Complex Derivative
-```ad-note
-title: 
-let $f:U\to\mathbb C$ where $U$ is an open subset of $\mathbb C$, then the derivative of $f$ exists at $a\in U$ if the following limit exists
-$$
-\lim_{z\to a}\frac{f(z)-f(a)}{z-a}
-$$
-```
+> [!note]
+> let $f:U\to\mathbb C$ where $U$ is an open subset of $\mathbb C$, then the derivative of $f$ exists at $a\in U$ if the following limit exists
+> $
+> \lim_{z\to a}\frac{f(z)-f(a)}{z-a}
+> $
 
 If $f, g$ are differentiable at $a$ then $f\pm g, fg$ are differentiable; $\frac fg$ is differentiable at $a$ if $g(a)\ne 0$
 
 ### Analytic Function
-```ad-note
-title:
-A function $f:U\to \mathbb C$ is said to be **Analytic**(or **Holomorphic**) if $f'(z)$ exists $\forall z\in U$
-```
+> [!note]
+> A function $f:U\to \mathbb C$ is said to be **Analytic**(or **Holomorphic**) if $f'(z)$ exists $\forall z\in U$
 Some examples are
 - Identity Function
 - Constant Functions

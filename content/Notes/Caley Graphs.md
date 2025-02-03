@@ -75,9 +75,8 @@ $$
 \end{align*}
 $$
 
-```ad-todo
-break apart into different files
-```
+> [!todo]
+> break apart into different files
 
 
 

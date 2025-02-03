@@ -10,13 +10,11 @@ Tags : [[Logic]]
 ---
 // stuff from last lecture: definition etc
 
-```ad-info
-title:Lemma: TFAE
-1. $(A,\overline{a})\equiv_{k}(B,\overline{b})$.
-2. $(A,\overline{a}),(B,\overline{b})$ agree on FO$[k]$.
-
-$\overline{a}$ is an $m-$tuple.
-```
+> [!info] Lemma: TFAE
+> 1. $(A,\overline{a})\equiv_{k}(B,\overline{b})$.
+> 2. $(A,\overline{a}),(B,\overline{b})$ agree on FO$[k]$.
+> 
+> $\overline{a}$ is an $m-$tuple.
 
 ---
 

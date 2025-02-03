@@ -6,10 +6,8 @@ Tags : [[Complexity Theory]]
 # NP (Complexity Class)
 ---
 ## NP
-```ad-note
-title:
-Class of decision problems that can be *verified* in a [[Turing Machines|deterministic turing machine]] in polynomial time, or the the problems that can be decided by a non deterministic turing machine in polynomial time.
-```
+> [!note]
+> Class of decision problems that can be *verified* in a [[Turing Machines|deterministic turing machine]] in polynomial time, or the the problems that can be decided by a non deterministic turing machine in polynomial time.
 
 $\Sigma=\{ 0,1 \}$ is our alphabet.
 $A\subseteq\Sigma^{*}$ is in $NP$ if there exists a binary predicate $R(x,y)$ s.t. $x,y\in\Sigma^{*}$ and $R$ is in $P$, and there is a polynomial $p(n)$ s.t. $\forall x \in\Sigma^{*}$, $x \in A \iff \exists y \in\Sigma^{p(|x|)}$ s.t. $R(x,y)=1$.

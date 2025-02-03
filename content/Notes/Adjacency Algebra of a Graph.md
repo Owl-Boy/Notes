@@ -5,14 +5,12 @@ Tags : [[Algebraic Graph Theory]]
 
 ---
 # Adjacency Algebra of a Graph
-```ad-note
-title:
-Let $A$ be the adjacency matric os $G$
-Then the adjacency algebra of $G$ is
-$$
-\mathcal A(G) = \sum\limits_{t} r_{t}A^{t} : r_{t}\in\mathbb R
-$$
-```
+> [!note]
+> Let $A$ be the adjacency matric os $G$
+> Then the adjacency algebra of $G$ is
+> $
+> \mathcal A(G) = \sum\limits_{t} r_{t}A^{t} : r_{t}\in\mathbb R
+> $
 
 ## Theorem
 Let $d=diam(G)$, then $\dim(\mathcal A(G))>d$

@@ -5,34 +5,28 @@ Tags : [[Analysis]]
 
 ---
 # Good Kernels
-```ad-note
-title: Definition
-Let $\{K_n\}$ be a sequence of functions defined on $\mathbb{T}$ satisfying:
-- $\dfrac{1}{2\pi} \displaystyle\int_{-\pi}^{\pi} K_n(t)dt = 1  \ \forall \ n \ge 1$
-- $\exists M > 0, \ s.t.\ \displaystyle\int\limits_{-\pi}^{\pi}|K_n(t)| \le M$
-- $\forall \ \delta > 0, \displaystyle\int\limits_{\delta \le |x| \le \pi} |K_n(x)|dx \to 0 \ as\ n \to \infty$
-
-Such a sequence of functions is called a family of *good kernels* or *approximate identity*.
-```
+> [!note] Definition
+> Let $\{K_n\}$ be a sequence of functions defined on $\mathbb{T}$ satisfying:
+> - $\dfrac{1}{2\pi} \displaystyle\int_{-\pi}^{\pi} K_n(t)dt = 1  \ \forall \ n \ge 1$
+> - $\exists M > 0, \ s.t.\ \displaystyle\int\limits_{-\pi}^{\pi}|K_n(t)| \le M$
+> - $\forall \ \delta > 0, \displaystyle\int\limits_{\delta \le |x| \le \pi} |K_n(x)|dx \to 0 \ as\ n \to \infty$
+> 
+> Such a sequence of functions is called a family of *good kernels* or *approximate identity*.
 
 --- 
 ## Properties:
-```ad-note
-title: Proposition
-If $f$ is integrable over $\mathbb{T}$, and $\{K_n\}$ be a family of good kernels, then: 
-	  $$lim_{n\to\infty} (f*K_n)(x) = f(x) \ \forall \ x$$
-	 where $f$ is continuous at x. If $f$ is continuous on $\mathbb{T}$, then the convergence is uniform.
-```
+> [!note] Proposition
+> If $f$ is integrable over $\mathbb{T}$, and $\{K_n\}$ be a family of good kernels, then: 
+> 	  $lim_{n\to\infty} (f*K_n)(x) = f(x) \ \forall \ x$
+> 	 where $f$ is continuous at x. If $f$ is continuous on $\mathbb{T}$, then the convergence is uniform.
 ### Proof:
 - Look at $|(f*K_n)(x) - f(x)|$, write it as $\displaystyle\left|\dfrac{1}{2\pi} \int \limits_{-\pi}^{\pi}(f(x-y)-f(x))K_n(y)dy\right|$
 - Split this up into $[-\pi,-\delta],[-\delta,\delta],[\delta,\pi]$ 
 - Show that each of them is small.
 
 ---
-```ad-note
-title: Proposition
-The [[Dirichlet Kernels]] are not good kernels.
-```
+> [!note] Proposition
+> The [[Dirichlet Kernels]] are not good kernels.
 ## Proof:
 - They violate the second property of good kernels.
 - Use $D_N(x) = \dfrac{sin(N + 1/2)x}{sin(x/2)}$
@@ -45,10 +39,8 @@ The [[Dirichlet Kernels]] are not good kernels.
 
 ---
 # Related Problems
-```ad-note
-title: Examples
-[[Fejer Kernel]]
-```
+> [!note] Examples
+> [[Fejer Kernel]]
 
 ---
 # References

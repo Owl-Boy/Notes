@@ -12,10 +12,8 @@ Roll Number: BMC202107
 
 Run the nearest neighbour algorithm. Arrange the edges in non increasing order of their weights. $E = \{l_{1},\dots,l_{n}\}.$
 
-```ad-attention
-title:  Abuse of notation
-We use $l_{i}$ to denote both the edge and the weight of that edge.
-```
+> [!attention] Abuse of notation
+> We use $l_{i}$ to denote both the edge and the weight of that edge.
 
 **Claim:** $l_{1}\le \frac{OPT}{2}$.
 *Proof:* Let $a,b$ be the endpoints of $l_{1}$. $OPT$ contains two paths from $a$ to $b$ (one of which might be $l_{1}$ itself). By metric property each of these paths has total weight at least as much as $l_{1}$. So we get $OPT \ge 2l_{1}$.

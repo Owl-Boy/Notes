@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # Simply Connected
-```ad-note
-title:
-A topological space $X$ is **simply connected** if $X$ is path connected and for every $x_0 \in X$, $\Pi_1(X,x_0) = {1}$.
-```
+> [!note]
+> A topological space $X$ is **simply connected** if $X$ is path connected and for every $x_0 \in X$, $\Pi_1(X,x_0) = {1}$.
 
 ---
 # Examples:

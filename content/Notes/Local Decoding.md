@@ -17,9 +17,8 @@ For all $w \in \mathbb{F}_{q}^{n}$ s.t. $\exists c \in C$ s.t. $\Delta(c,w)\le\d
 
 If we have a deterministic algorithm, an adversary can ensure that there is no codeword satisfying the given parameters. So we appeal to *randomised algorithms*! We allow for a failure with low probability. So we want $A^{(w)}(i)=C_{i}$ with probability at least $1-\gamma$, **locally decodable codes**.
 
-```ad-note
-Any linear $LCC$ is also $LDC$.
-```
+> [!note]
+> Any linear $LCC$ is also $LDC$.
 
 | Q               | $n$ (as a function of $k$)                   |
 | --------------- | -------------------------------------------- |

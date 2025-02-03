@@ -6,10 +6,8 @@ Tags : [[Analysis]]
 ---
 # Convergence of Fourier Series
 
-```ad-note 
-title: Theorem 
-Suppose that $f$ is integrable on the circle, with $\hat{f}(n) = 0 \ \forall \ n \in \mathbb{Z}$. Then $f(\theta_0) = 0$ for all points of continuity $\theta_0$ of $f$.
-```
+> [!note] Theorem
+> Suppose that $f$ is integrable on the circle, with $\hat{f}(n) = 0 \ \forall \ n \in \mathbb{Z}$. Then $f(\theta_0) = 0$ for all points of continuity $\theta_0$ of $f$.
 ### Proof:
 
 ### Corollary: 

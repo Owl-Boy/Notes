@@ -5,58 +5,52 @@ Tags : [[Number Theory]]
 
 ---
 # Jacobi Sums
-```ad-info
-title: Idea
-Consider the equation $x^{2}+y^{2} = 1$ in the field $\mathbb{F}_{p}$. Since $\mathbb{F}_{p}$ is finite, the equation only has finitely many solutions.
-Let $N(x^{2}+y^{2} = 1)$ be the number of solutions.
-Then,
-$$
-\begin{align}
-N(x^{2}+y^{2} = 1) = \sum_{a+b=1}N(x^{2} =a)N(y^{2}=b)
-\end{align}
-$$
-where $a,b \in \mathbb{F}_{p}$.
-Since $N(x^{2} = a) = 1 + \left( \frac{a}{p} \right)$ (refer to [[Multiplicative Characters]]), substituting we get:
-$$
-\begin{align}
-N(x^{2}+y^{2}=1) &= \sum_{a+b=1}1 + \left( \frac{a}{p} \right) +\left( \frac{b}{p} \right) +\left( \frac{ab}{p} \right) \\
-&= p + \sum_{a}\left( \frac{a}{p} \right) +\sum_{b}\left( \frac{b}{p} \right) +\sum_{a+b=1}\left( \frac{ab}{p} \right)  \\
-&= p + \sum_{a+b=1}\left( \frac{a}{p} \right) \left( \frac{b}{p} \right) 
-\end{align}
-$$
+> [!info] Idea
+> Consider the equation $x^{2}+y^{2} = 1$ in the field $\mathbb{F}_{p}$. Since $\mathbb{F}_{p}$ is finite, the equation only has finitely many solutions.
+> Let $N(x^{2}+y^{2} = 1)$ be the number of solutions.
+> Then,
+> $
+> \begin{align}
+> N(x^{2}+y^{2} = 1) = \sum_{a+b=1}N(x^{2} =a)N(y^{2}=b)
+> \end{align}
+> $
+> where $a,b \in \mathbb{F}_{p}$.
+> Since $N(x^{2} = a) = 1 + \left( \frac{a}{p} \right)$ (refer to [[Multiplicative Characters]]), substituting we get:
+> $
+> \begin{align}
+> N(x^{2}+y^{2}=1) &= \sum_{a+b=1}1 + \left( \frac{a}{p} \right) +\left( \frac{b}{p} \right) +\left( \frac{ab}{p} \right) \\
+> &= p + \sum_{a}\left( \frac{a}{p} \right) +\sum_{b}\left( \frac{b}{p} \right) +\sum_{a+b=1}\left( \frac{ab}{p} \right)  \\
+> &= p + \sum_{a+b=1}\left( \frac{a}{p} \right) \left( \frac{b}{p} \right) 
+> \end{align}
+> $
+> 
+> Another example,
+> $
+> \begin{align}
+> N(x^{3}+y^{3}=1) &= \sum_{a+b=1}N(x^{3}=a)N(y^{3}=b)  \\
+> &= \sum_{a+b=1}\left(\sum_{i=0}^{2}\chi^{i}(a)\right)\left( \sum_{j=0}^{2} \chi^{j}(b) \right) \\
+> &= \sum_{a+b=1}\left( \sum_{i,j} \chi^{i}(a)\chi^{j}(b) \right)  \\
+> &= \sum_{i,j}\left( \sum_{a+b=1}\chi^{i}(a)\chi^{j}(b) \right)   
+> \end{align}
+> $
+> where $\chi$ is a character of order 3. 
+> 
+> This means that understanding sums of the form $\sum_{a+b=1}\chi(a)\lambda(b)$ where $\chi$ and $\lambda$ are characters, will help us understand the number of solutions of equations in $\mathbb{F}_{p}$.
 
-Another example,
-$$
-\begin{align}
-N(x^{3}+y^{3}=1) &= \sum_{a+b=1}N(x^{3}=a)N(y^{3}=b)  \\
-&= \sum_{a+b=1}\left(\sum_{i=0}^{2}\chi^{i}(a)\right)\left( \sum_{j=0}^{2} \chi^{j}(b) \right) \\
-&= \sum_{a+b=1}\left( \sum_{i,j} \chi^{i}(a)\chi^{j}(b) \right)  \\
-&= \sum_{i,j}\left( \sum_{a+b=1}\chi^{i}(a)\chi^{j}(b) \right)   
-\end{align}
-$$
-where $\chi$ is a character of order 3. 
-
-This means that understanding sums of the form $\sum_{a+b=1}\chi(a)\lambda(b)$ where $\chi$ and $\lambda$ are characters, will help us understand the number of solutions of equations in $\mathbb{F}_{p}$.
-```
-
-```ad-note
-title:
-Let $\chi$ and $\lambda$ be characters on $\mathbb{F}_{p}$ and set $J(\chi,\gamma) = \sum_{a+b=1}\chi(a)\lambda(b)$. 
-
-$J(\chi,\lambda)$ is called a **Jacobi sum**.
-```
+> [!note]
+> Let $\chi$ and $\lambda$ be characters on $\mathbb{F}_{p}$ and set $J(\chi,\gamma) = \sum_{a+b=1}\chi(a)\lambda(b)$. 
+> 
+> $J(\chi,\lambda)$ is called a **Jacobi sum**.
 
 ### Theorem 1:
-```ad-note
-title:
-Let $\chi$ and $\lambda$ be non trivial characters. Then
-1. $J(\varepsilon,\varepsilon) = p$
-2. $J(\chi,\varepsilon) = 0$
-3. $J(\chi,\chi^{-1}) = -\chi(-1)$
-4. If $\chi\lambda \neq \varepsilon$, then $$
-J(\chi,\lambda) = \frac{g(\chi)g(\lambda)}{g(\chi\lambda)}
-$$
-```
+> [!note]
+> Let $\chi$ and $\lambda$ be non trivial characters. Then
+> 1. $J(\varepsilon,\varepsilon) = p$
+> 2. $J(\chi,\varepsilon) = 0$
+> 3. $J(\chi,\chi^{-1}) = -\chi(-1)$
+> 4. If $\chi\lambda \neq \varepsilon$, then $
+> J(\chi,\lambda) = \frac{g(\chi)g(\lambda)}{g(\chi\lambda)}
+> $
 ###### Proof:
 3. $$
 \begin{align}
@@ -81,10 +75,8 @@ $$
 In the last equality we use the fact that $\chi \lambda$ is non trivial.
 
 ### Corollary:
-```ad-note
-title:
-If $\chi,\lambda,\chi\lambda \neq \varepsilon$ then $|J(\chi,\lambda)| = \sqrt[]{ p }$
-```
+> [!note]
+> If $\chi,\lambda,\chi\lambda \neq \varepsilon$ then $|J(\chi,\lambda)| = \sqrt[]{ p }$
 
 #### NOTE:
 - Observe that $\sum_{a+b=1}\left( \frac{a}{p} \right)\left( \frac{b}{p} \right) = J(\chi,\chi^{-1})$ where $\chi$ is the Legendre symbol (character of order 2). And so the value of the sum is $-\chi(-1) = -(-1)^{(p-1)/2}$. This gives a precise value of the number of solutions of the concerned equation.
@@ -96,11 +88,9 @@ Giving us $|N(x^{3}+y^{3}=1) - p+ 2| \le 2 \sqrt[]{ p }$
 Which gives us asymptotic information about the number of solutions.
 
 ### Proposition 1:
-```ad-note
-title:
-If $p \equiv 1 (\mathrm{mod} \ 4)$ then there exists integers $a,b$ such that $p = a^{2}+b^{2}$.
-If $p \equiv 1(\mathrm{mod} \ 3)$ then there exists integers $a,b$ such that $p = a^{2}+b^{2}-ab$.
-```
+> [!note]
+> If $p \equiv 1 (\mathrm{mod} \ 4)$ then there exists integers $a,b$ such that $p = a^{2}+b^{2}$.
+> If $p \equiv 1(\mathrm{mod} \ 3)$ then there exists integers $a,b$ such that $p = a^{2}+b^{2}-ab$.
 ###### Proof:
 If $p\equiv 1(\mathrm{mo d} \ 4)$, there is a character $\chi$ of order $4$ on $\mathbb{F}_{p}$, since the order of the group of characters is $p-1$. 
 The values this character takes belongs to $\{ \pm {1},\pm i \}$. Hence, $J(\chi,\chi) = \sum_{a+b=1}\chi(a)\chi(b) \in \mathbb{Z}[i]$. 
@@ -126,10 +116,8 @@ $$
 
 This gives the following proposition:
 ### Proposition 2:
-```ad-note
-title:
-If $p \equiv 1(\mathrm{ mo d}\ 3)$ then there are integers $A,B$ such that $4p = A^{2}+27B^{2}$. In this representation of $4p$, $A,B$ are uniquely determined up to sign.
-```
+> [!note]
+> If $p \equiv 1(\mathrm{ mo d}\ 3)$ then there are integers $A,B$ such that $4p = A^{2}+27B^{2}$. In this representation of $4p$, $A,B$ are uniquely determined up to sign.
 ###### Proof:
 Since $A$ is not divisible by $3$, $A \equiv 1,2(\mathrm{mo d}\ 3)$. But since we can replace $A$ by $-A$, WLOG we can assume that $A \equiv 1 (\mathrm{mo d}\ 3)$.
 So we show that under the assumption $A \equiv 1(\mathrm{mo d} \ 3)$, the representation is unique.
@@ -162,12 +150,10 @@ is the only possibility.
 Hence, $A = C$ as desired.
 
 ### Proposition 3:
-```ad-note
-title:
-Suppose that $p \equiv 1(\mathrm{mo d}\ n)$ and that the character $\chi$ is of order $n > 2$. Then $$
-g(\chi)^{n} = p\chi(-1)J(\chi,\chi)J(\chi,\chi^{2})\dots J(\chi,\chi^{n-2})
-$$
-```
+> [!note]
+> Suppose that $p \equiv 1(\mathrm{mo d}\ n)$ and that the character $\chi$ is of order $n > 2$. Then $
+> g(\chi)^{n} = p\chi(-1)J(\chi,\chi)J(\chi,\chi^{2})\dots J(\chi,\chi^{n-2})
+> $
 ###### Proof:
 We know that $g(\chi)^{2} = g(\chi^{2})J(\chi,\chi)$ (by part (4) of theorem 1).
 $g(\chi)^{3} = J(\chi,\chi)g(\chi^{2})g(\chi) = J(\chi,\chi)J(\chi,\chi^{2})g(\chi^{3})$
@@ -180,25 +166,21 @@ Hence, $g(\chi)^{n} = J(\chi,\chi)\dots J(\chi,\chi^{n-2})|g(\chi)|^{2}\chi(-1)$
 $\implies g(\chi)^{n} = p\chi(-1)J(\chi,\chi)\dots J(\chi,\chi^{p-2})$.
 
 ### Corollary:
-```ad-note
-title:
-If $\chi$ is a cubic character, then $$
-g(\chi)^{3} = pJ(\chi,\chi)
-$$
-```
+> [!note]
+> If $\chi$ is a cubic character, then $
+> g(\chi)^{3} = pJ(\chi,\chi)
+> $
 
 #### Note:
 Looking at $N(x^{3}+y^{3}=1)$ again, we have seen that $J(\chi,\chi) = a+b \omega$ where $\chi$ is a character of order 3.
 
 ### Proposition 4:
-```ad-note
-title:
-Suppose $p \equiv 1(\mathrm{mo d}\ 3)$ and that $\chi$ is a cubic character. Set $J(\chi,\chi) = a+b \omega$. Then 
-
-a) $b\equiv 0(\mathrm{mo d}\ 3)$
-
-b) $a \equiv 2(\mathrm{mo d}\ 3)$
-```
+> [!note]
+> Suppose $p \equiv 1(\mathrm{mo d}\ 3)$ and that $\chi$ is a cubic character. Set $J(\chi,\chi) = a+b \omega$. Then 
+> 
+> a) $b\equiv 0(\mathrm{mo d}\ 3)$
+> 
+> b) $a \equiv 2(\mathrm{mo d}\ 3)$
 ###### Proof:
 $$
 \begin{align}
@@ -210,10 +192,8 @@ $$
 This gives $pJ(\chi,\chi) \equiv J(\chi,\chi) \equiv 2 \ (3)$. This gives the result.
 
 ### Corollary:
-```ad-note
-title:
-Let $A = 2a-b$ and $B = \frac{b}{3}$. Then $A\equiv 1 \ (3)$ and $4p =A^{2}+27B^{2}$.
-```
+> [!note]
+> Let $A = 2a-b$ and $B = \frac{b}{3}$. Then $A\equiv 1 \ (3)$ and $4p =A^{2}+27B^{2}$.
 ###### Proof:
 Since $J(\chi,\chi) = a+b \omega$ and $|J(\chi,\chi)|^{2} = p$, we have $p = a^{2}+b^{2}-ab$.
 Thus $4p = (2a-b)^{2}+3b^{2}$ and $4p = A^{2}+27B^{2}$.
@@ -221,12 +201,10 @@ Thus $4p = (2a-b)^{2}+3b^{2}$ and $4p = A^{2}+27B^{2}$.
 By the previous proposition, $3 \mid b$ and $a \equiv 2 \ (3)$, hence $A \equiv 1 \ (3)$.
 
 ### Theorem 2:
-```ad-note
-title:
-Suppose that $p \equiv 1 \ (3)$. Then there are integers $A,B$ such that $4p = A^{2}+27B^{2}$. If we require that $A \equiv 1 \ (3)$ then $A$ is uniquely determined and $$
-N(x^{3}+y^{3}=1) = p-2 + A
-$$
-```
+> [!note]
+> Suppose that $p \equiv 1 \ (3)$. Then there are integers $A,B$ such that $4p = A^{2}+27B^{2}$. If we require that $A \equiv 1 \ (3)$ then $A$ is uniquely determined and $
+> N(x^{3}+y^{3}=1) = p-2 + A
+> $
 ###### Proof:
 We have shown that $N(x^{3}+y^{3}=1) = p-2 + 2 \mathrm{Re}(J(\chi,\chi))$. Since $J(\chi,\chi) = a+b \omega$, $\mathrm{Re}(J(\chi,\chi)) = \mathrm{Re}\left( a + b\left( \frac{-1 + \sqrt[]{ 3 }}{2}\right) \right) = \frac{2a-b}{2}$.
 This gives the required formula since $A = 2a-b$. We have also shown uniqueness before.
@@ -235,31 +213,25 @@ This gives the required formula since $A = 2a-b$. We have also shown uniqueness 
 # Generalised Jacobi Sums
 
 ### Definition:
-```ad-note
-title:
-Let $\chi_{1},\chi_{2},\dots \chi_{l}$ be characters on $\mathbb{F}_{p}$. A Jacobi sum is defined by $$
-J(\chi_{1},\chi_{2},\dots \chi_{l}) = \sum_{t_{1}+\dots+t_{l} = 1}\chi_{1}(t_{1})\chi_{2}(t_{2})\dots \chi_{l}(t_{l})
-$$
-```
+> [!note]
+> Let $\chi_{1},\chi_{2},\dots \chi_{l}$ be characters on $\mathbb{F}_{p}$. A Jacobi sum is defined by $
+> J(\chi_{1},\chi_{2},\dots \chi_{l}) = \sum_{t_{1}+\dots+t_{l} = 1}\chi_{1}(t_{1})\chi_{2}(t_{2})\dots \chi_{l}(t_{l})
+> $
 
 ### Definition:
-```ad-note
-title:
-$J_{0}(\chi_{1},\dots \chi_{l}) = \sum_{t_{1}+\dots+t_{l}=0}\chi_{1}(t_{1})\dots \chi_{l}(t_{l})$.
-```
+> [!note]
+> $J_{0}(\chi_{1},\dots \chi_{l}) = \sum_{t_{1}+\dots+t_{l}=0}\chi_{1}(t_{1})\dots \chi_{l}(t_{l})$.
 
 ### Proposition 5:
-```ad-note
-title:
-1. $J_{0}(\varepsilon,\varepsilon,\dots,\varepsilon) = J(\varepsilon,\varepsilon, \dots,\varepsilon) = p ^{l-1}$
-2. If some but not all of the $\chi_{i}'s$ are trivial, then $J_{0} = J = 0$.
-3. Assume that $\chi_{l} \neq \varepsilon$. Then $$
-J_{0}(\chi_{1},\dots \chi_{l}) = \begin{cases}
-0, \ \ &\text{if } \chi_{1}\chi_{2}\dots \chi_{l} \neq \varepsilon  \\
-\chi_{l}(-1)(p-1)J(\chi_{1},\dots \chi_{l-1}), \ &\text{otherwise}
-\end{cases}
-$$
-```
+> [!note]
+> 1. $J_{0}(\varepsilon,\varepsilon,\dots,\varepsilon) = J(\varepsilon,\varepsilon, \dots,\varepsilon) = p ^{l-1}$
+> 2. If some but not all of the $\chi_{i}'s$ are trivial, then $J_{0} = J = 0$.
+> 3. Assume that $\chi_{l} \neq \varepsilon$. Then $
+> J_{0}(\chi_{1},\dots \chi_{l}) = \begin{cases}
+> 0, \ \ &\text{if } \chi_{1}\chi_{2}\dots \chi_{l} \neq \varepsilon  \\
+> \chi_{l}(-1)(p-1)J(\chi_{1},\dots \chi_{l-1}), \ &\text{otherwise}
+> \end{cases}
+> $
 ###### Proof:
 1. $$
 \begin{align}
@@ -287,16 +259,13 @@ $$
 This gives the desired result.
 
 ### Theorem 3:
-```ad-note
-title:
-```
-```ad-note
-title:
-Assume that $\chi_{1},\chi_{2},\dots \chi_{l}$ are non trivial and their product is also non trivial.
-Then $$
-g(\chi_{1})g(\chi_{2})\dots g(\chi_{l}) = J(\chi_{1},\chi_{2},\dots \chi_{l})g(\chi_{1}\chi_{2}\dots \chi_{l})
-$$
-```
+> [!note]
+> 
+> [!note]
+> Assume that $\chi_{1},\chi_{2},\dots \chi_{l}$ are non trivial and their product is also non trivial.
+> Then $
+> g(\chi_{1})g(\chi_{2})\dots g(\chi_{l}) = J(\chi_{1},\chi_{2},\dots \chi_{l})g(\chi_{1}\chi_{2}\dots \chi_{l})
+> $
 ###### Proof:
 $$
 \begin{align}
@@ -309,13 +278,11 @@ g(\chi_{1})\dots g(\chi_{l}) &= \prod_{i=1}^{l}\sum_{t}\chi_{i}(t)\zeta^{t}  \\
 $$
 
 ### Corollary 1:
-```ad-note
-title:
-Suppose that $\chi_{1},\chi_{2},\dots \chi_{l}$ were non trivial but their product is trivial.
-Then $$
-g(\chi_{1})\dots g(\chi_{l})= \chi_{l}(-1)p J(\chi_{1},\dots \chi_{l-1})
-$$ 
-```
+> [!note]
+> Suppose that $\chi_{1},\chi_{2},\dots \chi_{l}$ were non trivial but their product is trivial.
+> Then $
+> g(\chi_{1})\dots g(\chi_{l})= \chi_{l}(-1)p J(\chi_{1},\dots \chi_{l-1})
+> $ 
 ###### Proof:
 We know $$
 \begin{align}
@@ -326,12 +293,10 @@ g(\chi_{1})\dots g(\chi_{l-1}) &= g(\chi_{1}\dots \chi_{l-1})J(\chi_{1},\dots \c
 \end{align}
 $$
 ### Corollary 2:
-```ad-note
-title:
-Let the hypotheses as in corollary 1, then $$
-J(\chi_{1},\dots \chi_{l}) = - \chi_{l}(-1)J(\chi_{1},\dots \chi_{l-1})
-$$
-```
+> [!note]
+> Let the hypotheses as in corollary 1, then $
+> J(\chi_{1},\dots \chi_{l}) = - \chi_{l}(-1)J(\chi_{1},\dots \chi_{l-1})
+> $
 ###### Proof:
 We know $(\sum_{s=1}^{p-1}\zeta^{s} )J(\chi_{1},\dots ,\chi_{l}) + J_{0}(\chi_{1},\dots \chi_{l}) = g(\chi_{1})g(\chi_{2})\dots g(\chi_{l})$, from the proof of theorem 3.
 This means $$

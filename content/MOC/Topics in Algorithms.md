@@ -46,6 +46,10 @@ Along with their applications which would involve discussions on techniques like
 	- [[Matroids]]
 		- [[Examples of Matroids]]
 		- [[Representable Matroids]]
+	- [[Linear Programming]]
+		- [[Primal - Dual LP]]
+		- [[Duality Theorems for LP]]
+		- Urgh really don't wanna write LP for spanning Tree and Arborescence, if someone seeing this wants to write, it will be great help!
 
 --- 
 ## MOCs

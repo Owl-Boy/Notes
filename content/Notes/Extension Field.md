@@ -17,9 +17,8 @@ $$
 
 $F$ is sometimes called the _base field_ of the extension.
 
-```ad-note
-The notation $K/F$ is short hand for "$K$ over $F$" and not quotient of $K$ by $F$
-```
+> [!note]
+> The notation $K/F$ is short hand for "$K$ over $F$" and not quotient of $K$ by $F$
 
 The _Degree_ of the field extension $K/F$, denoted by $[K:F]$, is the dimension of $K$ as a vector space over $F$. The extensions is said to be finite if $[K:F]$ is finite, infinite otherwise.
  

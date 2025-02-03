@@ -8,14 +8,12 @@ Tags : [[Logic]]
 
 ---
 # Isomorphism Between First Order Interpretations
-```ad-note
-title: Motivation
-Let $R=\{<\}, F=\emptyset$
-Consider two structures, one where $S=\mathbb{Q}\cap(0,1)$ and one where $S=\mathbb{Q}\cap(0,\infty)$
-Then we cannot have any **First Order Formula** which is valid for one of the model and not for the other one, hence that is not strong enough to differentiate between the two models.
-
-Here we show that the two models are isomorphic.
-```
+> [!note] Motivation
+> Let $R=\{<\}, F=\emptyset$
+> Consider two structures, one where $S=\mathbb{Q}\cap(0,1)$ and one where $S=\mathbb{Q}\cap(0,\infty)$
+> Then we cannot have any **First Order Formula** which is valid for one of the model and not for the other one, hence that is not strong enough to differentiate between the two models.
+> 
+> Here we show that the two models are isomorphic.
 
 
 Let $\mathcal I_{1} = \{\mathcal{M}_{1},\sigma_{1}\}$ and $\mathcal I_{2} = \{\mathcal M_{2},\sigma_{2}\}$
@@ -25,12 +23,10 @@ Then we say that the above two [[Semantics of First Order Logic#Interpretation|i
 - For every $c\in C$ we have $\tau(c^{\mathcal M_{1}})=c^{\mathcal M_{2}}$
 - For every $x\in Var$ we have $\tau(\sigma_{1}(x))=\sigma_{2}(x)$
 
-```ad-question
-title:Lemma
-If $\mathcal I_{1},\mathcal I_{2}$ are isomorphic, then for every formula $\varphi$, $\mathcal I_{1}\models\varphi$ iff $I_{2}\models\varphi$.
-
-*Proof:* Induction on structure of $\varphi$
-```
+> [!question] Lemma
+> If $\mathcal I_{1},\mathcal I_{2}$ are isomorphic, then for every formula $\varphi$, $\mathcal I_{1}\models\varphi$ iff $I_{2}\models\varphi$.
+> 
+> *Proof:* Induction on structure of $\varphi$
 
 
 

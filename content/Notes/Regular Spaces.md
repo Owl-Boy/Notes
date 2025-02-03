@@ -5,19 +5,15 @@ Tags : [[Topology]]
 
 ---
 # Regular Spaces
-```ad-note
-title:
-A topological space $X$ is _regular_ if 
-1) Every singleton is closed in $X$.
-2) for each point $x \in X$ and closed subset $A \subseteq X$, there is a pair of disjoint open subsets $U,V$ of $X$ such that $x \in U$ and $A \subseteq V$.
-We then say that $U,V$ separate $x$ and $A$.
-```
+> [!note]
+> A topological space $X$ is _regular_ if 
+> 1) Every singleton is closed in $X$.
+> 2) for each point $x \in X$ and closed subset $A \subseteq X$, there is a pair of disjoint open subsets $U,V$ of $X$ such that $x \in U$ and $A \subseteq V$.
+> We then say that $U,V$ separate $x$ and $A$.
 
 ### Lemma:
-```ad-note
-title:
-Let $X$ be $T_{1}$, then $X$ is regular iff for every $x$ and every open nbhd U of $x$, there is a nbhd $V$ of $x$ contained in $U$ such that $Cl(V) \subseteq U$. 
-```
+> [!note]
+> Let $X$ be $T_{1}$, then $X$ is regular iff for every $x$ and every open nbhd U of $x$, there is a nbhd $V$ of $x$ contained in $U$ such that $Cl(V) \subseteq U$. 
 ##### Proof:
 Suppose $X$ is regular, then for any $x$ and every open nbhd $U$ of $x$, take $U^{c}$ to be the closed set, then there is a separation of $x$, $U^{c}$ $\implies \exists V,W$ s.t. $x \in V, U^{c} \subseteq W$, this gives $V \subset Cl(V) \subset W^{c} \subset U$. We are done.
 
@@ -25,16 +21,12 @@ Conversely, given $x, A$ disjoint from $x$ and closed, take $U = A^{c}$ and find
 
 
 ### Lemma:
-```ad-note
-title:
-Any subspace of a regular space is regular. An arbitrary product of regular spaces is regular.
-```
+> [!note]
+> Any subspace of a regular space is regular. An arbitrary product of regular spaces is regular.
 
 ### Lemma:
-```ad-note
-title:
-Any space admitting a basis with clopen sets is regular.
-```
+> [!note]
+> Any space admitting a basis with clopen sets is regular.
 ##### Proof:
 Suppose $X$ is a space with all basis sets clopen, then take $x$ and $C$ closed, disjoint from $x$. Then $C^{c}$ is open, so there is a basic clopen set $U$ containing $x$. Then $U, U^{c}$ forms a separation.
 

@@ -9,41 +9,35 @@ Tags : [[Logic]]
 
 ---
 # Satisfiability in First Order Logic
-```ad-question
-title: Goal
-When do we know if set $X\subseteq\Phi_{L}$ of sentences in a [[Syntax of First Order Logic#First Order Languages|First Order Language]] have a corresponding [[Semantics of First Order Logic#First Order Structures|First Order Structure]] $\mathcal M$ such that for each $\varphi\in X,\mathcal M\models\varphi$.
-In other words, when do we say that a set is *Satisfiable*.
-```
+> [!question] Goal
+> When do we know if set $X\subseteq\Phi_{L}$ of sentences in a [[Syntax of First Order Logic#First Order Languages|First Order Language]] have a corresponding [[Semantics of First Order Logic#First Order Structures|First Order Structure]] $\mathcal M$ such that for each $\varphi\in X,\mathcal M\models\varphi$.
+> In other words, when do we say that a set is *Satisfiable*.
 
 Henkin's Solution to the question reduces the question of [[Satisfiability in Propositional Logic]]
 
-```ad-failure
-title: Approaches that do not work
-Just replacing all the Formulas that cannot be modeled with propositional logic using new propositional variables does not directly work.
-
-For example
-$$
-\exists x\ r(x)\land\forall x\ r'(x) 
-$$
-where $r'$ is defined to be $\lnot r$
-
-Here putting two different propositional variables in case of the two quantified terms gives a sentence that is satisfiable, even though the First Order Sentence is clearly not.
-```
+> [!failure] Approaches that do not work
+> Just replacing all the Formulas that cannot be modeled with propositional logic using new propositional variables does not directly work.
+> 
+> For example
+> $
+> \exists x\ r(x)\land\forall x\ r'(x) 
+> $
+> where $r'$ is defined to be $\lnot r$
+> 
+> Here putting two different propositional variables in case of the two quantified terms gives a sentence that is satisfiable, even though the First Order Sentence is clearly not.
 
 Henkin's approach is to keep expanding the language by adding more constants to it to eventually replace the quantified formulas. This will also blow up the size of $X$ because we need to check for more formulas, but then we would be able to use **Propositional Satisfiability** Instead.
 
-```ad-tldr
-title: Plan
-To replace all _Prime Formulas_ by propositional variables, but also add extra valid formulas to provide more information about the structure without altering the satifiability.
-
-- Case: Equality
-  For every pair of equality $X\equiv Y$ and $Y\equiv Z$ we add $X\equiv Y\land Y\equiv Z\rightarrow X\equiv Z$ to add information about transitivity of Equality
-- $\exists x\; \varphi(x)$
-  This formula means that there is a _witnessing term_ $t$ that satisfies $\varphi$, so we can add the formula $\exists x\; \varphi(x)\rightarrow\varphi(t)$
-- $\lnot\exists x\; \varphi(x)$ means that no valuation of $x$ satisfies $\varphi$, so we can safely add $\lnot\exists x\;\varphi(x)\rightarrow\lnot\varphi(t)$ for any arbitrary $t$
-
-The only place where we need to be careful is case 2, where we need to find a witnessing element, there might not be enough constants in out language to work as witnessing elments. So we need to systematically add elements to our language.
-```
+> [!tldr] Plan
+> To replace all _Prime Formulas_ by propositional variables, but also add extra valid formulas to provide more information about the structure without altering the satifiability.
+> 
+> - Case: Equality
+>   For every pair of equality $X\equiv Y$ and $Y\equiv Z$ we add $X\equiv Y\land Y\equiv Z\rightarrow X\equiv Z$ to add information about transitivity of Equality
+> - $\exists x\; \varphi(x)$
+>   This formula means that there is a _witnessing term_ $t$ that satisfies $\varphi$, so we can add the formula $\exists x\; \varphi(x)\rightarrow\varphi(t)$
+> - $\lnot\exists x\; \varphi(x)$ means that no valuation of $x$ satisfies $\varphi$, so we can safely add $\lnot\exists x\;\varphi(x)\rightarrow\lnot\varphi(t)$ for any arbitrary $t$
+> 
+> The only place where we need to be careful is case 2, where we need to find a witnessing element, there might not be enough constants in out language to work as witnessing elments. So we need to systematically add elements to our language.
 
 Let the language be $L=\langle R, F, C\rangle$. 
 We add new constants in steps, and name the sets of constants added $C_{0},C_{1}\dots$ and change the language along with it as $L_{0},L_{1}\dots$
@@ -55,9 +49,8 @@ With the modified $L_{H}$ we get more machinery to work with
 - The _quantifier axioms_ which is $\varphi(t)\rightarrow\exists x\;\varphi(x)$ which is valid in all languages
 - The _Henkin axioms_ which are sentences of $L_H$ of the form $\exists x\; \varphi(x)\rightarrow\varphi(c_{\varphi(x)})$ 
 
-```ad-info
-I think the quantifier axioms are important because they let us use non quatifier formula for modus ponens which requires quantifier formulas.
-```
+> [!info]
+> I think the quantifier axioms are important because they let us use non quatifier formula for modus ponens which requires quantifier formulas.
 
 The Henkin axioms are not automatically true, we need to carefully interpret the _witnessing constant_ for it to be true.
 
@@ -78,13 +71,11 @@ Let $\Phi_{\text{Eq}}$ be the set of all equality axioms. They are valid in all 
 
 Now with all the machinery built, we can prove the following claim.
 
-```ad-tip
-title: First Order Satisfiability
-The following statements are equivalent:
-1. There is an $L-$ interpretation $\mathcal I=(\mathcal M,\sigma)$ which satifies $X$
-2. There is an $L_{H}-$ interpretation $(\mathcal M,\sigma)$ which sastifies $X$
-3. $X\cup \Phi_{H}\cup\Phi_{Q}\cup\Phi_{\text{Eq}}$ is propositionally satisfiable.
-```
+> [!tip] First Order Satisfiability
+> The following statements are equivalent:
+> 1. There is an $L-$ interpretation $\mathcal I=(\mathcal M,\sigma)$ which satifies $X$
+> 2. There is an $L_{H}-$ interpretation $(\mathcal M,\sigma)$ which sastifies $X$
+> 3. $X\cup \Phi_{H}\cup\Phi_{Q}\cup\Phi_{\text{Eq}}$ is propositionally satisfiable.
 
 2 implies 1 is immediate. Given an interpretation which satisfies $X$ in $L_{H}$ we just drop definition of constants that are used in $L_{H}$ which are not in $L$ as $X$ does not use any of those. This gives an interpretation in $L$ which satisfies $X$.
 

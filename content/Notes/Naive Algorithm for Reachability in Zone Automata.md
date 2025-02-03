@@ -21,18 +21,14 @@ Tags : [[Timed Automata]]
 The above algorithm does not compute the entire zone graph, it does some optimizations to reduce the search space by not considering zones that already covered by a *Passed* node.
 
 ---
-```ad-note
-title:Soundess
-If the algorithm finds a path from starting state to one of the final states, then there will be a corresponding path in the timed automata.
-```
+> [!note] Soundess
+> If the algorithm finds a path from starting state to one of the final states, then there will be a corresponding path in the timed automata.
 
 This is because every transition suggest by the algorithm corresponds to a transition in the Zone Automaton, and reachability in Zone Automaton implies reachability in the corresponsing Timed Automata.
 
 ---
-```ad-note
-title:Completeness
-Let $\rho:=(q_{0},v_{0})\xrightarrow{\delta_{0},t_{0}}(q_{1},v_{1})\xrightarrow{\delta_{1},t_{1}}\cdots\xrightarrow{\delta_{n-1},t_{n-1}}(q_{n}, v_{n})$  be a run on the Timed Automata to one of the final states where $q_{0}\dots q_{n-1}$ are not final states and $q_{n}$ might or might not be one. Then for each configuration in the run, there is a a node $(q_{i},Z_{i})$ such that $v_{i}\in Z_{i}$
-```
+> [!note] Completeness
+> Let $\rho:=(q_{0},v_{0})\xrightarrow{\delta_{0},t_{0}}(q_{1},v_{1})\xrightarrow{\delta_{1},t_{1}}\cdots\xrightarrow{\delta_{n-1},t_{n-1}}(q_{n}, v_{n})$  be a run on the Timed Automata to one of the final states where $q_{0}\dots q_{n-1}$ are not final states and $q_{n}$ might or might not be one. Then for each configuration in the run, there is a a node $(q_{i},Z_{i})$ such that $v_{i}\in Z_{i}$
 
 Proof is by Induction on length of run to $(q_{n}, v_{n})$
 
@@ -47,10 +43,8 @@ Since it a possible transition, we have $Z_{n}=\text{Post}_{\tau}(Z_{n-1})\ne \e
 ---
 Although we did show that our algorithm is *Complete* and *Sound*, this does not mean that our algorithm will terminate.
 
-```ad-warning
-title: Non-termination
-There exists a Timed Automata for which the above algorithm might not terminate.
-```
+> [!warning] Non-termination
+> There exists a Timed Automata for which the above algorithm might not terminate.
 
 Consider the following Timed Automata
 ![[Pasted image 20231019021126.png]]

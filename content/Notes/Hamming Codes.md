@@ -14,10 +14,8 @@ $$
 C_{H}:q=2,k=4,n=7,R=4/7
 $$
 
-```ad-note
-title: Hamming Weight
-Given any code $v$, its Hamming weight is the number of non zero entires in the code. It is denoted by $\text{wt}(v)$
-```
+> [!note] Hamming Weight
+> Given any code $v$, its Hamming weight is the number of non zero entires in the code. It is denoted by $\text{wt}(v)$
 
 The minimum Hamming weight is the minimum hamming distance between two codes.
 

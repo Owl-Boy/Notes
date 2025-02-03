@@ -20,9 +20,8 @@ Let $\text{Voc}(\Phi)$ be the set of propositional letters occurring in $\Phi$.
 For every $p \in \text{Voc}(\Phi)$ let $\alpha_{p},\alpha_{\lnot p}$ be two propositional letters.
 For every $\varphi\in \text{sf}(\Phi)$ let $\alpha_{\varphi}$ be a propositional letter.
 
-```ad-todo
-write types in $\Gamma_{\Phi}$ for logical operators
-```
+> [!todo]
+> write types in $\Gamma_{\Phi}$ for logical operators
  
 
 ---

@@ -5,10 +5,8 @@ Tags : [[Number Theory]]
 
 ---
 # Number Rings
-```ad-note
-title:
-A number ring is the ring of integers of a number field, in other words, the set of algebraic integers in the number field.
-```
+> [!note]
+> A number ring is the ring of integers of a number field, in other words, the set of algebraic integers in the number field.
 
 - An element of a number ring is a unit iff it has norm $\pm 1$.
 - An element of a number ring is irreducible if its norm is a prime in $\mathbb{Z}$.
@@ -25,14 +23,12 @@ $$
 and this is abelian of rank $n$.
 
 ### Theorem 1
-```ad-note
-title:
-Let $\{ \alpha_{1},\dots,\alpha_{n} \}$ be a basis for $K$ over $\mathbb{Q}$ consisting entirely of algebraic integers, and set $d = \mathrm{disc}(\alpha_{1},\dots,\alpha_{n})$. Then every $\alpha \in R$ can be expressed in the form 
-$$
-\frac{m_{1}\alpha_{1} + \dots m_{n}\alpha_{n}}{d}
-$$
-with all $m_{j} \in \mathbb{Z}$ and $d \mid m_{j}^{2}$.
-```
+> [!note]
+> Let $\{ \alpha_{1},\dots,\alpha_{n} \}$ be a basis for $K$ over $\mathbb{Q}$ consisting entirely of algebraic integers, and set $d = \mathrm{disc}(\alpha_{1},\dots,\alpha_{n})$. Then every $\alpha \in R$ can be expressed in the form 
+> $
+> \frac{m_{1}\alpha_{1} + \dots m_{n}\alpha_{n}}{d}
+> $
+> with all $m_{j} \in \mathbb{Z}$ and $d \mid m_{j}^{2}$.
 ###### Proof:
 Let $\alpha = x_{1}\alpha_{1} + \dots + x_{n}\alpha_{n}$, $x_{i} \in \mathbb{Q}$. 
 We need to show that $dx_{i} \in \mathbb{Z}$ for all $i$, and $d | d^{2}x_{i}^{2}$ or equivalently, $dx_{i}^{2} \in \mathbb{Z}.$
@@ -51,10 +47,8 @@ Now $dx_{j}^{2} \in \mathbb{Q} \cap \overline{\mathbb{Z}} = \mathbb{Z}$.
 ---
 # Discriminant of a number ring
 ### Theorem 2:
-```ad-note
-title:
-Let $\{ \beta_{1},\dots,\beta_{n} \}$ and $\{ \gamma_{1},\dots,\gamma_{n} \}$ be two integral bases for $R = \overline{\mathbb{Z}} \cap K$. Then $\mathrm{disc}(\beta_{1},\dots,\beta_{n}) = \mathrm{disc}(\gamma_{1},\dots ,\gamma_{n}).$
-```
+> [!note]
+> Let $\{ \beta_{1},\dots,\beta_{n} \}$ and $\{ \gamma_{1},\dots,\gamma_{n} \}$ be two integral bases for $R = \overline{\mathbb{Z}} \cap K$. Then $\mathrm{disc}(\beta_{1},\dots,\beta_{n}) = \mathrm{disc}(\gamma_{1},\dots ,\gamma_{n}).$
 ###### Proof:
 Writing the $\beta$'s in terms of the $\gamma$'s, we get $$
 \begin{pmatrix}
@@ -82,10 +76,8 @@ Thus $\mathrm{disc}(\beta)=\mathrm{disc}(\gamma)$.
 #### Therefore, the discriminant of an integral basis can be regarded as an invariant of the ring $R$. Denote it by $\mathrm{disc}(R)$.
 
 ### Proposition 1:
-```ad-note
-title:
-Assuming $\alpha_{1},\dots,\alpha_{n} \in R$, they form an integral basis iff $\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) = \mathrm{disc}(R)$.
-```
+> [!note]
+> Assuming $\alpha_{1},\dots,\alpha_{n} \in R$, they form an integral basis iff $\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) = \mathrm{disc}(R)$.
 ###### Proof:
 One direction is clear.
 For the other direction, write $\alpha_{i}$'s in terms of an integral basis, which, following the proof of theorem 2, gives $$
@@ -94,21 +86,17 @@ $$where $A \in M_{n}(\mathbb{Z})$.
 Since the discriminants are equal by assumption, $|A| = \pm {1}$, and hence $A$ is invertible, giving the original integral basis in terms of the $\alpha_{i}$'s, which means $\alpha_{1},\dots,\alpha_{n}$ forms an integral basis.
 
 ### Theorem 3:
-```ad-note
-title:
-Given 2 number fields $K,L$ and their respective number rings $R,S$. And let $T$ be the number ring of the composite field $KL$, then $RS \subset T$. 
-
-Let $[K:\mathbb{Q}] = m, [L :\mathbb{Q}] = n$, $d = \mathrm{gcd}(\mathrm{disc} \ R, \mathrm{disc} \ S)$.
-Assume $[KL : \mathbb{Q}] = mn$ then $T \subset \frac{1}{d}RS$.
-```
+> [!note]
+> Given 2 number fields $K,L$ and their respective number rings $R,S$. And let $T$ be the number ring of the composite field $KL$, then $RS \subset T$. 
+> 
+> Let $[K:\mathbb{Q}] = m, [L :\mathbb{Q}] = n$, $d = \mathrm{gcd}(\mathrm{disc} \ R, \mathrm{disc} \ S)$.
+> Assume $[KL : \mathbb{Q}] = mn$ then $T \subset \frac{1}{d}RS$.
 ###### Proof:
 The first part that $RS \subset T$ is clear.
 
 ### Lemma 1:
-```ad-note
-title:
-Given an embedding $\sigma$ of $K$ in $\mathbb{C}$, and $\tau$ of $L$ in $\mathbb{C}$, there is an extension of $\sigma$ to $KL$, such that its restriction to $L$ is $\tau$.
-```
+> [!note]
+> Given an embedding $\sigma$ of $K$ in $\mathbb{C}$, and $\tau$ of $L$ in $\mathbb{C}$, there is an extension of $\sigma$ to $KL$, such that its restriction to $L$ is $\tau$.
 ###### Proof:
 Since there are $n$ distinct extensions of $\sigma$ to $KL$, they must all be distinct on $L$ since any automorphism on $KL$ is determined by its action on $K$ and $L$ separately.
 Thus there are $n$ possible restrictions to $L$ and one of them must be $\tau$ since there are exactly $n$ possible embeddings of $L$ in the first place.
@@ -153,29 +141,23 @@ Thus, $x_{i}\mathrm{disc}(R) = \sum_{j}\mathrm{disc}(R) \frac{m_{ij}}{r}\gamma_{
 Giving $r \mid \mathrm{disc}(R)m_{ij} \implies r \mid \mathrm{disc}(R)$.
 
 ### Corollary 1:
-```ad-note
-title:
-If $[KL : \mathbb{Q}] = mn$ and $d = 1$ then $T = RS$.
-```
+> [!note]
+> If $[KL : \mathbb{Q}] = mn$ and $d = 1$ then $T = RS$.
 
 ### Corollary 2:
-```ad-note
-title:
-Let $K = \mathbb{Q}(\omega), \omega = e ^{2\pi i/m}, R = \overline{\mathbb{Z}}\cap K$. Then $R = \mathbb{Z}[\omega]$.
-```
+> [!note]
+> Let $K = \mathbb{Q}(\omega), \omega = e ^{2\pi i/m}, R = \overline{\mathbb{Z}}\cap K$. Then $R = \mathbb{Z}[\omega]$.
 ###### Proof:
 Refer to [[Cyclotomic Fields]], theorem 3.
 
 ---
 ### Theorem 4: 
-```ad-note
-title:
-Let $\alpha \in R$ and suppose $\alpha$ has degree $n$ over $\mathbb{Q}$. Then there is an integral basis 
-$$
-1, \frac{f_{1}(\alpha)}{d_{1}}, \dots \frac{f_{n-1}(\alpha)}{d_{n-1}}
-$$
-where the $d_{i} \in \mathbb{Z}$ and satisfy $d_{1}  \mid d_{2}\mid\dots\mid d_{n-1}$; the $f_{i}$ are monic polynomials over $\mathbb{Z}$, and $f_{i}$ has degree $i$. The $d_{i}$ are uniquely determined.
-```
+> [!note]
+> Let $\alpha \in R$ and suppose $\alpha$ has degree $n$ over $\mathbb{Q}$. Then there is an integral basis 
+> $
+> 1, \frac{f_{1}(\alpha)}{d_{1}}, \dots \frac{f_{n-1}(\alpha)}{d_{n-1}}
+> $
+> where the $d_{i} \in \mathbb{Z}$ and satisfy $d_{1}  \mid d_{2}\mid\dots\mid d_{n-1}$; the $f_{i}$ are monic polynomials over $\mathbb{Z}$, and $f_{i}$ has degree $i$. The $d_{i}$ are uniquely determined.
 ###### Proof:
 For each $k, 1\le k\le n$ let $F_{k}$ be the free abelian group of rank $k$ generated by $1/d, \alpha/d, \dots \alpha^{k-1}/d$, where $d = \mathrm{disc}(\alpha)$, and set $R_k = R \cap F_{k}$. 
 Thus we have $R_1 = \mathbb{Z}$ and $R_n = R$. 
@@ -214,10 +196,8 @@ Now observe that the conditions in the theorem imply that $d_{k}$ is the smalles
 ---
 # Properties of Number Rings
 ### Theorem 5:
-```ad-note
-title:
-Every number ring is a dedekind domain.
-```
+> [!note]
+> Every number ring is a dedekind domain.
 ###### Proof:
 1. To prove that a number ring is noetherian, note that $R$ is a free abelian group of rank $n$ (say).
    Now any ideal $I$ is an additive subgroup of this group, hence is free of rank $m \le n$, and therefore it is finitely generated.

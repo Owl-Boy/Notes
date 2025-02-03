@@ -5,12 +5,10 @@ Tags : [[Lambda Calculus]], [[Type Theory]]
 
 ---
 # Newman's Lemma
-```ad-note
-title: Lemma
-$$
-\text{SN + WCR = CR}
-$$
-```
+> [!note] Lemma
+> $
+> \text{SN + WCR = CR}
+> $
 
 Newman's Lemma states that [[Strong Normalization Theorem]] and *Weak Church Rosser Theorem* Implies the *Church Rosser Theorem*
 

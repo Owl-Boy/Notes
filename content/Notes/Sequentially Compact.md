@@ -5,24 +5,18 @@ Tags : [[Topology]]
 
 ---
 # Sequentially Compact
-```ad-note
-title:
-A space $X$ is called _sequentially compact_ when every sequence in $X$ has a convergent subsequence.
-```
+> [!note]
+> A space $X$ is called _sequentially compact_ when every sequence in $X$ has a convergent subsequence.
 
 ### Proposition
-```ad-note
-title:
-A first countable space is countably compact iff it is sequentially compact.
-```
+> [!note]
+> A first countable space is countably compact iff it is sequentially compact.
 ###### Proof:
 TODO
 
 ### Theorem
-```ad-note
-title:
-Let $X$ be a metrizable space. Then $X$ is compact iff it is sequentially compact.
-```
+> [!note]
+> Let $X$ be a metrizable space. Then $X$ is compact iff it is sequentially compact.
 #### Proof:
 1. First show that a sequential compact space satisfies the [[Lebesgue Number Lemma]].
 2. Then show that a sequentially compact space is totally bounded.

@@ -22,9 +22,9 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Ehrenfeucht-Fraïssé Theorem]]
 	- [[Ehrenfeucht-Fraïssé Games Proof]]
 - [[Even is not FO-definable for Linear Orders]]
-- [[Locality (Finite Model Theory)]]
+- [[Locality (Finite Model Theory)|Locality]]
 	- [[Gaifman Graph]]
-	- [[Neighborhood (Finite Model Theory)]]
+	- [[Neighborhood (Finite Model Theory)|Neighborhood]]
 	- [[Local Equivalence]]
 	- [[Isomorphism Types of Models]]
 	- [[Hanf-Locality]]
@@ -33,6 +33,19 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 		- [[FO Queries are Hanf Local]]
 	- [[Gaifman-Locality]]
 		- [[Hanf-local Queries are Gaifman-local]]
+- [[Bounded Number of Degrees Property]]
+	- [[Degree of a Structure (FMT)|Degree of a Structure]]
+	- [[Gaifman-Locality implies BNDP]]
+	- [[Bijective Ehrenfeucht-Fraïssé Game]]
+		- [[Lemma for BEF Games]]
+- [[Gaifman Theorem]]
+- [[Threshold Equivalence]]
+	- [[Lemma for Threshold Equivalence]]
+- [[Extending FO]]
+- [[Invariant Queries]]
+- [[Order Invariant FO]]'
+	- [[Even Atoms in Boolean Algebras]]
+		- [[Definablity of Even Atoms]]
 
 --- 
 ## MOCs

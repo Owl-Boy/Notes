@@ -25,14 +25,12 @@ You can take a look at this [[Example for Proof System in FOL|example]].
 ## Soundness
 If $X\vdash\varphi$ then $X\vDash\varphi$.
 
-```ad-hint
-title: Motivation
-We just need to prove that
-- the axioms are true
-- the derivation rules preserve validity (i.e. if a formula is valid, MP or Gen on it will be valid)
-
-Then we look at the derivation of $\varphi$ from $X$ and be like every step in the derivation is either an axiom, which we have shown is sound, or uses previous stuff and a derivation rule, which we have also shown is sound.
-```
+> [!hint] Motivation
+> We just need to prove that
+> - the axioms are true
+> - the derivation rules preserve validity (i.e. if a formula is valid, MP or Gen on it will be valid)
+> 
+> Then we look at the derivation of $\varphi$ from $X$ and be like every step in the derivation is either an axiom, which we have shown is sound, or uses previous stuff and a derivation rule, which we have also shown is sound.
 
 **Proof:** By induction on the length of the derivation $X\vdash\varphi$.
 - Propositional axioms:

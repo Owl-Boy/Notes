@@ -25,10 +25,8 @@ We can define a $\text{SUCC}$ function which finds the successor of a given chur
 $$\text{SUCC}:=\lambda\;n.(\lambda\; fx.\;f(n\;f\;x))$$
 
 which add one $f$ behind the chain of applied $f$s
-```ad-info
-title:Infix Notation
-we can write $SUCC(n)$ as $n++$
-```
+> [!info] Infix Notation
+> we can write $SUCC(n)$ as $n++$
 
 ### Addition
 Adding a number by $n$ can be thought of repeatedly applying the successor function to it $n$ times. Hence an addition function can be written as 
@@ -41,10 +39,8 @@ ADD := \lambda\; mnfx.\;\underbrace{m\;f}_{(i)}\;\underbrace{(n\;f\;x)}_{(ii)}
 $$
   (i)  applying $f$ $m$ many times to 
   (ii) $f$ applied to $x$ $n$ times.
-```ad-info
-title: Infix Notation
-we can write $ADD(m,n)$ as $m+n$
-```
+> [!info] Infix Notation
+> we can write $ADD(m,n)$ as $m+n$
 
 ### Multiplication
 We can define Multiplication as repeated addition as
@@ -59,10 +55,8 @@ $$
 $$
 MULT:= \lambda\; mn.(\lambda f. n (mf))
 $$
-```ad-info
-title: Infix Notation
-we can write $MULT(m,n)$ as $m\times n$
-```
+> [!info] Infix Notation
+> we can write $MULT(m,n)$ as $m\times n$
 
 ### Exponentiation
 Exponentiation can be defined as repeated multiplication, and that definition can be written as 
@@ -82,10 +76,8 @@ and applying eta reduction would simply give
 $$
 \text{EXP}:=\lambda mn.\; n\;m
 $$
-```ad-info
-title: Infix Notation
-we can write $EXP(m,n)$ as $m^n$
-```
+> [!info] Infix Notation
+> we can write $EXP(m,n)$ as $m^n$
 
 ### Predecessor
 The predecessor function returns the precessor of the number in the normal sense except at $0$ where it returns $0$.
@@ -106,18 +98,14 @@ $$
 at which point the second elment of the tuple is returned
 we know when to stop because there are exactly $n$ steps taken, so we can write the precessor function as 
 $$PRED:=\lambda n.(n\; \underbrace{\lambda p.(p.2, p.2++)}_\text{next step function}\; (0,0)).2$$
-```ad-info
-title: Infix Notation
- we can write $PRED(n)$ as $n--$
-```
+> [!info] Infix Notation
+>  we can write $PRED(n)$ as $n--$
 
 ### Subtraction
 Subtraction can be defined as repeatedly applying the precessor function.
 $$SUB:=\lambda \;mn.\;n\text{ PRED }m$$
-```ad-info
-title: Infix notation
-we can write $SUB(m,n)$ as $m-n$
-```
+> [!info] Infix notation
+> we can write $SUB(m,n)$ as $m-n$
 
 
 ---

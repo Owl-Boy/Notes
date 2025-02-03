@@ -9,25 +9,19 @@ Tags : [[Calc]]
 Let $U\subset \mathbb R^2$ be a connected, non empty and open. A vector field on $U$ is a map $\vec v: U\to \mathbb R^2$.
 We can write $\vec v(x, y) = \big(v_x(x,y), v_y(x,y)\big)$ where $v_x, v_y$ are real valued function. We will suppose that $\vec v$ is $C^1$, equivalently $v_x, v_y$ are continuous.
 
-```ad-info
-title: Vector Field as Fluids
-Think of a fluid flowing in $U$, the vector field $\vec v$ can be thought of as the vecocity field for the fluid
-```
+> [!info] Vector Field as Fluids
+> Think of a fluid flowing in $U$, the vector field $\vec v$ can be thought of as the vecocity field for the fluid
 
-```ad-note
-title: Curl
-$$
-\nabla \times \vec v = \frac{\partial v_y}{\partial x} - \frac{\partial v_x}{\partial y}
-$$
-Curl can be thought of as the amount of "swirl" in the fluid or the amount of "spin" in the fluid around a point
-```
-```ad-note
-title: Divergence
-$$
-\nabla \cdot \vec v = \frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y}
-$$
-Divergence can be thought of as the volume of fluid created or destroyed at a point.
-```
+> [!note] Curl
+> $
+> \nabla \times \vec v = \frac{\partial v_y}{\partial x} - \frac{\partial v_x}{\partial y}
+> $
+> Curl can be thought of as the amount of "swirl" in the fluid or the amount of "spin" in the fluid around a point
+> [!note] Divergence
+> $
+> \nabla \cdot \vec v = \frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y}
+> $
+> Divergence can be thought of as the volume of fluid created or destroyed at a point.
 Let $R\subset U$ be a rectangle (Represented by ABCD) then the Stoke's theorem says
 $$
 \begin{aligned}

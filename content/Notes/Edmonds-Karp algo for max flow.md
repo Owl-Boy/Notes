@@ -22,11 +22,9 @@ $m=|E|,n=|V|,|f^{*}|=$ value of the max flow
 ---
 Same as Ford-Fulkerson except choose a path with maximum capacity in each iteration.
 
-```ad-info
-title:**Claim:**
-If $f^{*}$ is a max-flow, then $\exists$ an $s-t$ path with capacity $\geq \frac{|f^{*}|}{m}$.
-*Proof:* Remove all edges of capacity $< \frac{|f^{*}|}{m}$ from $G$. Either $s-t$ are still connected, or we have a cut of capacity $<|f^{*}|$.
-```
+> [!info] **Claim:**
+> If $f^{*}$ is a max-flow, then $\exists$ an $s-t$ path with capacity $\geq \frac{|f^{*}|}{m}$.
+> *Proof:* Remove all edges of capacity $< \frac{|f^{*}|}{m}$ from $G$. Either $s-t$ are still connected, or we have a cut of capacity $<|f^{*}|$.
 
 $G$ has max flow of size $|f^{*}|$.
 After the first iteration, $G_{f_{1}}$ has max flow of size $\left( 1- \frac{1}{m} \right)|f^{*}|$, and so on.
@@ -46,19 +44,17 @@ We find a max-flow in $m\log |f^{*}|$ iterations.
 ---
 Find an augmenting path by BFS i.e. every iteration, choose a shortest augmenting path.
 
-```ad-info
-title: **Lemma:**
-Number of iterations $\le mn$.
-$d=\text{dist}(s,t)$ at any point.
-
-To prove:
-1. $d$ does not decrease.
-2. After $\le m$ augmentations, $d$ increases by at least $1$.
-
-The algo finds an augmenting path using only forward edges as long as possible.
-After each augmentation, one forward edge gets saturated and disappears from $G$.
-After $\le m$ iterations, there is either no $s-t$ path or all $s-t$ paths use a back or cross edge. Thus $d$ increases.
-```
+> [!info] **Lemma:**
+> Number of iterations $\le mn$.
+> $d=\text{dist}(s,t)$ at any point.
+> 
+> To prove:
+> 1. $d$ does not decrease.
+> 2. After $\le m$ augmentations, $d$ increases by at least $1$.
+> 
+> The algo finds an augmenting path using only forward edges as long as possible.
+> After each augmentation, one forward edge gets saturated and disappears from $G$.
+> After $\le m$ iterations, there is either no $s-t$ path or all $s-t$ paths use a back or cross edge. Thus $d$ increases.
 
 This algorithm takes $O((m+n)mn)$ time.
 

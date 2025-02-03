@@ -6,10 +6,8 @@ Tags : [[Differential Equations]]
 ---
 # Solution of a differential equation
 
-```ad-note
-title:
-A function relation between the independent and the dependent variable which satisfies a differential equation is called the _Solution_ of the differential equation.
-```
+> [!note]
+> A function relation between the independent and the dependent variable which satisfies a differential equation is called the _Solution_ of the differential equation.
 
 __Eq__: $xy'' + 3y = 6x^3$
 

@@ -32,13 +32,11 @@ We can also define iterator in the following way
 $\text{it}(f) x=\text R\ \overline1(\lambda z^{\text{Int}}.z'^{\text{Int}}.f\ z)x$
 where $f:\text {Int}\to\text{Int}$ which gives $\text{it}$ the type $(\text{Int}\to\text{Int})\to(\text{Int}\to\text{Int})$ and $\text{it}(f)x:= f^{x}\left(\overline 1\right)$
 
-```ad-info
-title:Ackerman's function in System T
-Functions like Ackerman's function is also easily definable as we can have recursive function of complex types like $\text{Int}\to\text{Int}$ .
-$$
-A := \lambda m.\;\;\; \text R\;\;\;\; \text S\;\;\;\; (\lambda z.\lambda z'. (\lambda n. \text{it}(z)n))\;\;\;\; m
-$$
-```
+> [!info] Ackerman's function in System T
+> Functions like Ackerman's function is also easily definable as we can have recursive function of complex types like $\text{Int}\to\text{Int}$ .
+> $
+> A := \lambda m.\;\;\; \text R\;\;\;\; \text S\;\;\;\; (\lambda z.\lambda z'. (\lambda n. \text{it}(z)n))\;\;\;\; m
+> $
 
 Iterators an be used to make the recursion function.
 To do so, modify the iterator to make it take more kinds of inputs

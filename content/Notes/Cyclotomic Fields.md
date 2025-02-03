@@ -5,19 +5,15 @@ Tags : [[Number Theory]]
 
 ---
 # Cyclotomic Fields
-```ad-note
-title:
-Let $\omega = e ^{2\pi i/m}$, where $m > 1$ is an integer. Then the field $\mathbb{Q}(\omega)$ is called the $m ^{th}$ cyclotomic field.
-```
+> [!note]
+> Let $\omega = e ^{2\pi i/m}$, where $m > 1$ is an integer. Then the field $\mathbb{Q}(\omega)$ is called the $m ^{th}$ cyclotomic field.
 It can be seen that:
 - For odd $m$, the $m ^{th}$ cyclotomic field is equal to the $2m ^{th}$ one. ($e ^{2\pi i/2m} = -e ^{2\pi i(m+1)/2m} \in \mathbb{Q}[e ^{2\pi i/m}]$).
 - The field is a finite extension of $\mathbb{Q}$.
 
 ### Theorem 1:
-```ad-note
-title:
-All $\omega^{k}$, $1 \le k \le m$, $(m,k) = 1$, are exactly the conjugates of $\omega$.
-```
+> [!note]
+> All $\omega^{k}$, $1 \le k \le m$, $(m,k) = 1$, are exactly the conjugates of $\omega$.
 ###### Proof:
 It is easy to see that every conjugate of $\omega$ is also a root of $x^{m}-1$ but not of $x ^{n}-1$ for all $n < m$.
 But these are the numbers $\omega^{k}$ with $1 \le k \le m, \ (m,k) = 1$. Thus the set of conjugates is contained in the set $S = \{ \omega^{k} : 1 \le k \le m, (m,k) = 1 \}$.
@@ -32,16 +28,12 @@ This makes $\sigma$ a member of $\mathrm{Gal}(\mathbb{Q}(\omega) /\mathbb{Q})$, 
 This means $|\mathrm{Gal}(\mathbb{Q}(\omega) / \mathbb{Q})| = \varphi(m) = deg(\omega)$, and so $S =$ the set of conjugates of $\omega$.
 
 ### Corollary:
-```ad-note
-title:
-$\mathbb{Q}(\omega)$ has degree $\varphi(m)$ over $\mathbb{Q}$.
-```
+> [!note]
+> $\mathbb{Q}(\omega)$ has degree $\varphi(m)$ over $\mathbb{Q}$.
 
 ### Corollary:
-```ad-note
-title:
-$\mathrm{Gal}(\mathbb{Q}(\omega) / \mathbb{Q})$ is isomorphic to the multiplicative group of integers mod $m$. For each $k$, the corresponding automorphism sends $\omega$ to $\omega^{k}$ as in the proof.
-```
+> [!note]
+> $\mathrm{Gal}(\mathbb{Q}(\omega) / \mathbb{Q})$ is isomorphic to the multiplicative group of integers mod $m$. For each $k$, the corresponding automorphism sends $\omega$ to $\omega^{k}$ as in the proof.
 
 #### Note:
 By the fundamental theorem of galois theory, we find that subfields of $\mathbb{Q}(\omega)$ and subgroups of $\mathbb{Z}_{m}^{*}$ are in correspondence with each other. In particular, for $p ^{th}$ cyclotomic fields, with $p$ an odd prime, there is a unique quadratic field (since $\mathbb{Z}_{p}^{*}$ is of order $p-1$ and cyclic).
@@ -49,10 +41,8 @@ It turns out that this field is in fact $\mathbb{Q}[\sqrt[]{ \pm p }]$.
 The proof follows from Theorem 1 in [[Gauss sums]]
 
 ### Corollary:
-```ad-note
-title:
-Let $\omega = e ^{2\pi i/m}$. If $m$ is even, the only roots of $1$ in $\mathbb{Q}[\omega]$ are the $m ^{th}$ roots of unity. If $m$ is odd, the only ones are the $2m ^{th}$ roots of unity.
-```
+> [!note]
+> Let $\omega = e ^{2\pi i/m}$. If $m$ is even, the only roots of $1$ in $\mathbb{Q}[\omega]$ are the $m ^{th}$ roots of unity. If $m$ is odd, the only ones are the $2m ^{th}$ roots of unity.
 ###### Proof:
 The second part follows from the first and the fact that $2m ^{th}$ cyclotomic field is equal to the $m ^{th}$ one, if $m$ is odd.
 
@@ -60,25 +50,19 @@ To prove the first part, suppose $\theta$ is a primitive $k ^{th}$ root of unity
 Hence, $k \mid m$ and $\theta$ is an $m ^{th}$ root of unity.
 
 ### Corollary:
-```ad-note
-title:
-The $m ^{th}$ cyclotomic fields, for $m$ even, are all distinct, and pairwise non isomorphic.
-```
+> [!note]
+> The $m ^{th}$ cyclotomic fields, for $m$ even, are all distinct, and pairwise non isomorphic.
 
 ---
 # Ring of integers of Cyclotomic fields
 ### Theorem 2:
-```ad-note
-title:
-Let $\omega = e ^{2\pi i/m}$, where $m = p ^{r},p$ a prime. Then $\overline{\mathbb{Z}}\cap \mathbb{Q}(\omega) = \mathbb{Z}[\omega]$.
-```
+> [!note]
+> Let $\omega = e ^{2\pi i/m}$, where $m = p ^{r},p$ a prime. Then $\overline{\mathbb{Z}}\cap \mathbb{Q}(\omega) = \mathbb{Z}[\omega]$.
 
 ### Lemma 1:
-```ad-note
-title:
-For $m \ge 3$,
-$\mathbb{Z}[\omega] = \mathbb{Z}[1-\omega]$ and $\mathrm{disc}(\omega) = \mathrm{disc}(1-\omega)$.
-```
+> [!note]
+> For $m \ge 3$,
+> $\mathbb{Z}[\omega] = \mathbb{Z}[1-\omega]$ and $\mathrm{disc}(\omega) = \mathrm{disc}(1-\omega)$.
 ###### Proof:
 $\mathbb{Z}[\omega] = \mathbb{Z}[1-\omega]$ is clear.
 $$
@@ -86,14 +70,12 @@ $$
 $$
 
 ### Lemma 2:
-```ad-note
-title:
-For $m = p ^{r}$, 
-$$
-\prod_{k}(1-\omega^{k}) = p
-$$
-where the product is over all $1\le k \le m$ such that $(k,p) = 1$
-```
+> [!note]
+> For $m = p ^{r}$, 
+> $
+> \prod_{k}(1-\omega^{k}) = p
+> $
+> where the product is over all $1\le k \le m$ such that $(k,p) = 1$
 ###### Proof:
 Set $f(x) = \frac{x ^{p ^{r}}-1}{x ^{p ^{r-1}}-1} = 1+ x ^{p ^{r-1}} + \dots + x ^{(p-1)p ^{r-1}}$.
 Then all $\omega^{k}$ ($k$ as above) are roots of $f$.
@@ -116,10 +98,8 @@ Lemma 2 gives $\frac{p}{(1-\omega)^{n}} \in \mathbb{Z}[\omega]$. Then $\frac{p}{
 Thus $R = \mathbb{Z}[1-\omega] = \mathbb{Z}[\omega]$.
 
 ### Theorem 3:
-```ad-note
-title:
-Let $K = \mathbb{Q}(\omega), \omega = e ^{2\pi i/m}, R = \overline{\mathbb{Z}}\cap K$. Then $R = \mathbb{Z}[\omega]$.
-```
+> [!note]
+> Let $K = \mathbb{Q}(\omega), \omega = e ^{2\pi i/m}, R = \overline{\mathbb{Z}}\cap K$. Then $R = \mathbb{Z}[\omega]$.
 ###### Proof:
 We know this holds for $m = p ^{r}$.
 We induct on the number of distinct prime factors.

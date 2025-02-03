@@ -8,11 +8,9 @@ Tags : [[Complex Analysis]]
 
 
 ### Fundamental Theorem of Algebra
-```ad-note
-title:
-Every polynomial $p(z)\in \mathbb C[z]$ has a root.
-Hence, every polynomial factors into a product of linear polynomials.
-```
+> [!note]
+> Every polynomial $p(z)\in \mathbb C[z]$ has a root.
+> Hence, every polynomial factors into a product of linear polynomials.
 A polynomial has a **Zero of order $m$**  at $a\in \mathbb C$ if $p(z) = (z-a)^m\cdot q(z)$ where $q(a) \ne 0$.
 
 ### Lucas Theorem

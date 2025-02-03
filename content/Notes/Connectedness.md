@@ -5,35 +5,25 @@ Tags : [[Topology]]
 
 ---
 # Connectedness
-```ad-note
-title:
-$X$ is non empty, topological space.
-$A$ _separation_ of $X$ is a pair of subsets $U,V$ which are disjoint, open and non empty.
-```
+> [!note]
+> $X$ is non empty, topological space.
+> $A$ _separation_ of $X$ is a pair of subsets $U,V$ which are disjoint, open and non empty.
 
-```ad-note
-title:
-$X$ is _connected_ if $\nexists$ a separation of $X$. Otherwise it's called _disconnected_.
-```
+> [!note]
+> $X$ is _connected_ if $\nexists$ a separation of $X$. Otherwise it's called _disconnected_.
 
-```ad-note
-title:
-$X$ is called _totally disconnected_ if only singleton subsets of $X$ are connected.
-```
+> [!note]
+> $X$ is called _totally disconnected_ if only singleton subsets of $X$ are connected.
 
-```ad-note
-title: Proposition
-The following are equivalent:
-1) $X$ is disconnected.
-2) $\exists$ nonempty, disjoint, closed subsets $A, B$ s.t. $X = A \sqcup B$.
-3) $\exists$ a subset $A \subset X$ both open and closed s.t. $A \neq \phi$ or $X$.
-4) $\exists$ a non trivial clopen set.
-```
+> [!note] Proposition
+> The following are equivalent:
+> 1) $X$ is disconnected.
+> 2) $\exists$ nonempty, disjoint, closed subsets $A, B$ s.t. $X = A \sqcup B$.
+> 3) $\exists$ a subset $A \subset X$ both open and closed s.t. $A \neq \phi$ or $X$.
+> 4) $\exists$ a non trivial clopen set.
 
-```ad-note
-title: Lemma
-If $T \subset X$ is connected, then $Cl(T)$ is connected too. And if $T \subset T' \subset Cl(T)$ then T' is also connected.
-```
+> [!note] Lemma
+> If $T \subset X$ is connected, then $Cl(T)$ is connected too. And if $T \subset T' \subset Cl(T)$ then T' is also connected.
 #### Proof:
 Assume to the contrary that it is not connected.
 Then $Cl(T) = T_1 \sqcup T_2$, Then $T = (T_1 \cap T) \sqcup (T_2 \cap T) \implies$ T is disconnected. $T_i \cap T \neq \phi$ because they are open sets of $Cl(T)$ and so intersect T non trivially.
@@ -43,10 +33,8 @@ Contradiction.
 
 ---
 
-```ad-note
-title: Theorem
-$\mathbb{R}$ is connected.
-```
+> [!note] Theorem
+> $\mathbb{R}$ is connected.
 
 #### Proof:
 Suppose not, then $\mathbb{R} = X \sqcup Y$ where X and Y are open. Let $a \in X, b \in Y$ such that $a < b$. Let $A = X \cap (-\infty,b]$, Let $p = \sup A$. 
@@ -54,39 +42,29 @@ If p is in X, then $(p-\epsilon,p+\epsilon) \subset X$ and since $p \neq b$, the
 If p is not in $X$, then since $Y$ is open,  $(p-\epsilon,p+\epsilon) \subset Y$, then $p-\epsilon$ is also an upperbound to $A$. Contradiction.
 
 
-```ad-note
-title: Definition
-A linearly ordered set $L$ having more than one element is called a _linear continuum_ if
-1) $L$ has the least upper bound property
-2) If $x < y$, $\exists z$ s.t. $x < z < y$.
-```
+> [!note] Definition
+> A linearly ordered set $L$ having more than one element is called a _linear continuum_ if
+> 1) $L$ has the least upper bound property
+> 2) If $x < y$, $\exists z$ s.t. $x < z < y$.
 
-```ad-note
-title: Theorem
-If $L$ is a linear continuum then it is connected in the order topology and so are the rays and intervals of $L$.
-```
+> [!note] Theorem
+> If $L$ is a linear continuum then it is connected in the order topology and so are the rays and intervals of $L$.
 
 #### proof:
 Same as the proof for connectedness of $\mathbb{R}$.
 
 --- 
-```ad-note
-title: Intermediate Value Theorem
-Let $f : X \to \mathbb{R}$ be a continuous map where $X$ is connected. If $a,b\in X$ and $r \in \mathbb{R}$ such that $f(a) < r < f(b)$ then $\exists c \in X$ with $f(c) = r$.
-```
+> [!note] Intermediate Value Theorem
+> Let $f : X \to \mathbb{R}$ be a continuous map where $X$ is connected. If $a,b\in X$ and $r \in \mathbb{R}$ such that $f(a) < r < f(b)$ then $\exists c \in X$ with $f(c) = r$.
 #### Proof:
 Assume to the contrary that there was no c s.t. $f(c) = r$. Then $X = f^{-1}((-\infty,r) \sqcup f^{-1}((r,\infty))$, contradiction.
 
-```ad-note
-title: Theorem
-The continuous image of a connected space is connected.
-```
+> [!note] Theorem
+> The continuous image of a connected space is connected.
 
-```ad-note
-title: Theorem
-A topological space X is connected iff every [[Continuous Functions|continuous function]] 
-$f: X \to \{0,1\}$ is constant.
-```
+> [!note] Theorem
+> A topological space X is connected iff every [[Continuous Functions|continuous function]] 
+> $f: X \to \{0,1\}$ is constant.
 
 ---
 
@@ -113,10 +91,8 @@ $f: X \to \{0,1\}$ is constant.
    #### Proof:
    Quotient map is continuous and surjective, cts maps take connected spaces to connected spaces.
 ---
-```ad-note
-title: Proposition
-The connected components of a space X are connected disjoint spaces of X, whose union is X, s.t. each non empty connected subspace of X intersects only one of them.
-```
+> [!note] Proposition
+> The connected components of a space X are connected disjoint spaces of X, whose union is X, s.t. each non empty connected subspace of X intersects only one of them.
 
 ---
 # Related Problems

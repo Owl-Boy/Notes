@@ -7,10 +7,8 @@ Tags : [[Lambda Calculus]]
 # Functions Computable in Lambda Calculus
 Computability in $\lambda-$calculus is generally defined by the set of function of the type $\mathbb N^{k}\to\mathbb N$
 
-```ad-info
-title: Recursive Functions
-This is a set of functions which was defined by Dedikendm, Skolem, Gödel, Kleen, etc. and this is equivalent to the set of functions computable by [[Turing Machines]].
-```
+> [!info] Recursive Functions
+> This is a set of functions which was defined by Dedikendm, Skolem, Gödel, Kleen, etc. and this is equivalent to the set of functions computable by [[Turing Machines]].
 $f:\mathbb N^{k}\to \mathbb N$ is obtained by composition of function $g:\mathbb N^{l}\to\mathbb N$ and functions $h_1,h_2\dots h_{l}:\mathbb N^{k}\to \mathbb N$ if
 $$
 f(\vec n)=g(h_{1}(\vec n), h_{2}(\vec n)\dots h_{l}(\vec n))

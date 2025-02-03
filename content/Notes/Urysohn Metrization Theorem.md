@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # Urysohn Metrization Theorem
-```ad-note
-title:
-Every regular second countable space is metrizable.
-```
+> [!note]
+> Every regular second countable space is metrizable.
 
 ##### Proof:
 We prove two claims and the result follows from them.

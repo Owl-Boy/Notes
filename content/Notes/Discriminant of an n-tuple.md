@@ -5,20 +5,16 @@ Tags : [[Number Theory]]
 
 ---
 # Discriminant of an n-tuple
-```ad-note
-title:
-Let $K$ be a number field of degree $n$ over $\mathbb{Q}$. Let $\sigma_1,\dots,\sigma_n$ denote the n embeddings of $K \in \mathbb{C}$. For any $n$-tuple of elements $\alpha_1,\dots,\alpha_n \in K$, define the discriminant as follows:
-$$\mathrm{disc}(\alpha_1,\dots,\alpha_n) = |\sigma_i(\alpha_j)|^2$$
-where $|M|$ denotes the determinant of the matrix $M$.
-```
+> [!note]
+> Let $K$ be a number field of degree $n$ over $\mathbb{Q}$. Let $\sigma_1,\dots,\sigma_n$ denote the n embeddings of $K \in \mathbb{C}$. For any $n$-tuple of elements $\alpha_1,\dots,\alpha_n \in K$, define the discriminant as follows:
+> $\mathrm{disc}(\alpha_1,\dots,\alpha_n) = |\sigma_i(\alpha_j)|^2$
+> where $|M|$ denotes the determinant of the matrix $M$.
 
 ### Theorem 1:
-```ad-note
-title: 
-$$
-\mathrm{disc}(\alpha_{1},\alpha_{2},\dots,\alpha_{n}) = \mid T(\alpha_{i}\alpha_{j})\mid
-$$
-```
+> [!note]
+> $
+> \mathrm{disc}(\alpha_{1},\alpha_{2},\dots,\alpha_{n}) = \mid T(\alpha_{i}\alpha_{j})\mid
+> $
 ### Proof:
 $$
 \begin{align}
@@ -28,16 +24,12 @@ $$
 \end{align}
 $$
 ### Corollary
-```ad-note
-title: 
-If $\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) \in \mathbb{Q}$, and if all $\alpha_{i}'s$ are integers then $\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) \in \mathbb{Z}$.
-```
+> [!note]
+> If $\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) \in \mathbb{Q}$, and if all $\alpha_{i}'s$ are integers then $\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) \in \mathbb{Z}$.
 
 ### Theorem 2
-```ad-note
-title:
-$\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) = 0$ iff $\alpha_{1},\dots,\alpha_{n}$ are linearly dependent over $\mathbb{Q}$.
-```
+> [!note]
+> $\mathrm{disc}(\alpha_{1},\dots,\alpha_{n}) = 0$ iff $\alpha_{1},\dots,\alpha_{n}$ are linearly dependent over $\mathbb{Q}$.
 ### Proof:
 If they are linearly dependent, then the columns of the matrix $[\sigma_{i}(\alpha_{j})]$ are too, hence discriminant is 0.
 If disc is 0, then the rows of $[T(\alpha_{i}\alpha_{j})]$ are linearly dependent, hence there are $a_{1},a_{2},\dots,a_{n} \in \mathbb{Q}$ such that:
@@ -52,15 +44,13 @@ But then $T(\alpha\alpha_{j}) = 0$ for all $j$, implying $T(\beta) = 0$ for all 
 Contradiction.
 
 ### Theorem 3:
-```ad-note
-title:
-Suppose $K = \mathbb{Q}(\alpha)$, and let $\alpha = \alpha_{1},\dots,\alpha_{n}$ denote the conjugates of $\alpha$ over $\mathbb{Q}$. Then 
-$$
-\mathrm{disc}(1,\alpha, \dots, \alpha^{n-1}) = \prod_{1 \le r < s \le n} (\alpha_{r}-\alpha_{s})^{2} = \pm N ^{K}(f'(\alpha))
-$$
-where $f$ is the minimal polynomial of $\alpha$ over $\mathbb{Q}$.
-The plus sign holds iff $n \equiv 0 \ \text{or} \ 1 (\mathrm{mod}\ 4)$
-```
+> [!note]
+> Suppose $K = \mathbb{Q}(\alpha)$, and let $\alpha = \alpha_{1},\dots,\alpha_{n}$ denote the conjugates of $\alpha$ over $\mathbb{Q}$. Then 
+> $
+> \mathrm{disc}(1,\alpha, \dots, \alpha^{n-1}) = \prod_{1 \le r < s \le n} (\alpha_{r}-\alpha_{s})^{2} = \pm N ^{K}(f'(\alpha))
+> $
+> where $f$ is the minimal polynomial of $\alpha$ over $\mathbb{Q}$.
+> The plus sign holds iff $n \equiv 0 \ \text{or} \ 1 (\mathrm{mod}\ 4)$
 ###### Proof:
 Note that $$
 \begin{align}
@@ -87,12 +77,10 @@ Thus we are done.
 #### NOTE: We write $\mathrm{disc}(\alpha)$ to denote $\mathrm{disc}(1,\alpha, \dots ,\alpha^{n-1})$, for any algebraic number $\alpha$ of degree $n$ over $\mathbb{Q}$.
 
 ### Theorem 4:
-```ad-note
-title:
-If $\alpha_{1},\dots\alpha_{n} \in R$, then they form an integral basis iff $\mathrm{disc}(R) = \mathrm{disc(\alpha_{1},\dots,\alpha_{n})}$.
-
-$\alpha_{1},\dots,\alpha_{n} \in R$ form an integral basis if $\mathrm{disc(\alpha_{1},\dots,\alpha_{n})}$ is square free.
-```
+> [!note]
+> If $\alpha_{1},\dots\alpha_{n} \in R$, then they form an integral basis iff $\mathrm{disc}(R) = \mathrm{disc(\alpha_{1},\dots,\alpha_{n})}$.
+> 
+> $\alpha_{1},\dots,\alpha_{n} \in R$ form an integral basis if $\mathrm{disc(\alpha_{1},\dots,\alpha_{n})}$ is square free.
 ###### Proof:
 Both parts follow from Problem 3 in related problems below.
 

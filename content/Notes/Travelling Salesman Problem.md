@@ -11,10 +11,8 @@ Tags : [[Advanced Algorithms]]
 **Given:** $n$ cities $a_1,\dots,a_n$, pairwise, symmetric distances $(a_{i},a_{j})\ge 0\ \forall i,j$
 **Goal:** Find a tour that visits all cities and incurs minimum cost (all cities visited exactly once).
 
-```ad-info
-title: No approximation for the general case
-Take $G$, an instance of $HAM-CYCLE$ problem and get $G'$, by setting the weights of edges of $G$ as $0$, and weights of non edges as $1$. So if there is an $\alpha-$approximation algorithm for TSP on $G'$, then it will output a tour of weight $0$ iff there is a Hamiltonian cycle in $G$.
-```
+> [!info] No approximation for the general case
+> Take $G$, an instance of $HAM-CYCLE$ problem and get $G'$, by setting the weights of edges of $G$ as $0$, and weights of non edges as $1$. So if there is an $\alpha-$approximation algorithm for TSP on $G'$, then it will output a tour of weight $0$ iff there is a Hamiltonian cycle in $G$.
 
 Thus, assume metric property.
 

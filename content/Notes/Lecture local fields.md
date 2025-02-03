@@ -14,16 +14,14 @@
 	1. Corollary: If $\mathrm{char} K \neq 0$ then $K$ has only non archimedean abs values.
 
 ### Proposition:
-```ad-note
-title:
-Let $\mid \cdot\mid$ be a non trivial non archimedean absolute value, and let $v(x) = -\log|x|$ (base $e > 1$). Then $v : K^{\times} \to \mathbb{R}$ satisfies:
-
-(a) $v(xy) =v(x) + v(y)$
-
-(b) $v(x+y) \ge \min(v(x),v(y))$
-
-If $v(K^{\times})$ is discrete in $\mathbb{R}$, then $v$ is a multiple of a discrete valuation $\mathrm{ord}$ on $K^{\times} \twoheadrightarrow \mathbb{Z}$.
-```
+> [!note]
+> Let $\mid \cdot\mid$ be a non trivial non archimedean absolute value, and let $v(x) = -\log|x|$ (base $e > 1$). Then $v : K^{\times} \to \mathbb{R}$ satisfies:
+> 
+> (a) $v(xy) =v(x) + v(y)$
+> 
+> (b) $v(x+y) \ge \min(v(x),v(y))$
+> 
+> If $v(K^{\times})$ is discrete in $\mathbb{R}$, then $v$ is a multiple of a discrete valuation $\mathrm{ord}$ on $K^{\times} \twoheadrightarrow \mathbb{Z}$.
 
 ##### Proof:
 Note that $v(K^{\times})$ is a subgroup of $\mathbb{R}$ under addition, and is discrete and hence is a lattice and so, $v(K^{\times}) = c \cdot \mathbb{Z}$ for some $c$. Now $\mathrm{ord} := c^{-1} \cdot v$ is an additive discrete valuation on $K^{\times} \twoheadrightarrow \mathbb{Z}$.
@@ -59,22 +57,18 @@ Easy to see that $\mathfrak{m}$ is the unique maximal ideal.
 |b-a| = |b-x+x-a| = |x-a|
 $$
 14. Ostrowski's theorem
-```ad-note
-title:
-Let $\mid\cdot\mid$ be a non trivial absolute value on $\mathbb{Q}$.
-(a) If $\mid\cdot\mid$ is archimedean, then $\mid\cdot\mid$ is equivalent to $\mid\cdot\mid_{\infty}$
-(b) Otherwise, it is equivalent to $\mid\cdot\mid_{p}$ for some prime $p$.
-```
+> [!note]
+> Let $\mid\cdot\mid$ be a non trivial absolute value on $\mathbb{Q}$.
+> (a) If $\mid\cdot\mid$ is archimedean, then $\mid\cdot\mid$ is equivalent to $\mid\cdot\mid_{\infty}$
+> (b) Otherwise, it is equivalent to $\mid\cdot\mid_{p}$ for some prime $p$.
 15. Lemma 7.18
-```ad-note
-title:
-If $\mid\cdot\mid_{1}, \mid\cdot\mid_{2},\dots,\mid\cdot\mid_{n}$ are non trivial inequivalent absolute values of $K$, then there is an element $a \in K$ such that $$
-\begin{cases}
-\mid a\mid_{1}\ >1   \\
-\mid a\mid_{i}\ < 1, \ i \neq 1 
-\end{cases}
-$$
-```
+> [!note]
+> If $\mid\cdot\mid_{1}, \mid\cdot\mid_{2},\dots,\mid\cdot\mid_{n}$ are non trivial inequivalent absolute values of $K$, then there is an element $a \in K$ such that $
+> \begin{cases}
+> \mid a\mid_{1}\ >1   \\
+> \mid a\mid_{i}\ < 1, \ i \neq 1 
+> \end{cases}
+> $
 
 16. Lemma 7.19
 17. Theorem 7.20

@@ -6,11 +6,9 @@ Tags : [[Topology]]
 ---
 # Subspace Topology
 ### Definition 
-```ad-note
-title:
-Let $X$ be a topo space, and $Y \subset X$, $\tau_Y = \{U \cap Y: U \in \tau_X\}.$
-This topology is said to be _inherited_ from $X$ and is called the **subspace topology**.
-```
+> [!note]
+> Let $X$ be a topo space, and $Y \subset X$, $\tau_Y = \{U \cap Y: U \in \tau_X\}.$
+> This topology is said to be _inherited_ from $X$ and is called the **subspace topology**.
 We can check that this is indeed a topology.
 
 #### Lemma:

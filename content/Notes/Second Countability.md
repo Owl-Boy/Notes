@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # Second Countability
-```ad-note
-title:
-A topo space $X$ is called second countable if $\exists$ a ctble basis $\mathcal{B}$ on X that generates $\tau_X$.
-```
+> [!note]
+> A topo space $X$ is called second countable if $\exists$ a ctble basis $\mathcal{B}$ on X that generates $\tau_X$.
 ---
 # Related Results
 1) Regular + 2nd Countable $\implies$ Normal

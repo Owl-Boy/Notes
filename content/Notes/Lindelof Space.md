@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # Lindelof Space
-```ad-note
-title:
-$X$ is said to be _lindelof_ if every open cover of $X$ has a finite subcover.
-```
+> [!note]
+> $X$ is said to be _lindelof_ if every open cover of $X$ has a finite subcover.
 
 ---
 # Examples

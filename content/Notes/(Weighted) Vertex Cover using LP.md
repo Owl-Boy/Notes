@@ -37,10 +37,8 @@ We then use [[(Weighted) Vertex Cover using LP#Rounding|rounding]] techniques to
 Graph $G$, each vertex $v_i \in V$ has a weight $w_i \geq 0$.
 Find a vertex cover of minimum weight.
 
-```ad-todo
-title: Check
-The approx algo based on matchings will not give a 2-approx.
-```
+> [!todo] Check
+> The approx algo based on matchings will not give a 2-approx.
 
 Minimise $\sum_{i=1}^n w_ix_i$ (weight of the vertex cover) wrt:
 - $x_i + x_j \geq 1 \quad\forall (v_i, v_j) \in E$
@@ -59,10 +57,8 @@ otherwise set $x'_i = 0$.
 
 Rounded integral solution $x' = {x'_i}$.
 
-```ad-info
-title:
-**Claim:** $x'$ is a valid vertex cover.
-```
+> [!info]
+> **Claim:** $x'$ is a valid vertex cover.
 
 For each $i$, $x'_i \leq 2x_i^*$.
 $\sum_{i=1}^n w_i x'_i \leq 2\sum_{i=1}^n w_i x_i^* = 2.OPT(LP).$

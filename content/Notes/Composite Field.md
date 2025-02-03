@@ -6,10 +6,8 @@ Tags : [[Algebra]]
 ---
 # Composite Field
 
-```ad-note
-title: Composite Fields
-If $K_1$ and $K_2$ are subfields of $K$, then the [[Composite Field| composite field]] of $K_1$ and $K_2$ denoted by $K_1K_2$, is the smallest subfield of $K$ which contains both $K_1$ and $K_2$. Similarly, the composite field of any collection of subfields of $K$ is the smallest subfield of $K$ which contains all the other ones.
-```
+> [!note] Composite Fields
+> If $K_1$ and $K_2$ are subfields of $K$, then the [[Composite Field| composite field]] of $K_1$ and $K_2$ denoted by $K_1K_2$, is the smallest subfield of $K$ which contains both $K_1$ and $K_2$. Similarly, the composite field of any collection of subfields of $K$ is the smallest subfield of $K$ which contains all the other ones.
 
 If $K_1$ and $K_2$ are finite extensions of a field $F$, let $\alpha_1,\alpha_2\dots\alpha_n$ are and $F$-basis for $K_1$, let $\beta_1,\beta_2\dots\beta_m$ are and $F$-basis for $K_2$. The the composite field $K_1K_2$ over $F$ is:
 $$

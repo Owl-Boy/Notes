@@ -5,22 +5,16 @@ Tags : [[Topology]]
 
 ---
 # Path Connectedness
-```ad-note
-title: 
-Given points $x,y \in X$ we say a _path_ in $X$ is a continuous map $f : [a,b] \to X$ with $f(a) = x, f(b) = y$.
-```
+> [!note]
+> Given points $x,y \in X$ we say a _path_ in $X$ is a continuous map $f : [a,b] \to X$ with $f(a) = x, f(b) = y$.
 
-```ad-note
-title:
-$X$ is _path connected_ if between any 2 points $x,y \in X$ there exists a path in $X$ from $x$ to $y$.
-```
+> [!note]
+> $X$ is _path connected_ if between any 2 points $x,y \in X$ there exists a path in $X$ from $x$ to $y$.
 
 --- 
 
-```ad-note
-title: Theorem
-If $X$ is path connected then $X$ is connected but the converse is not true.
-```
+> [!note] Theorem
+> If $X$ is path connected then $X$ is connected but the converse is not true.
 
 #### Proof:
 If X were disconnected, then let $X = A \sqcup B$, let $a \in A, b \in B$, then there is a path $f : [0,1] \to X$ from a to b. Then $f([0,1]) = (A \cap f([0,1])) \cup (B \cap f([0,1]))$ which means $f([0,1])$ is disconnected, which is a contradiction.
@@ -34,10 +28,8 @@ Then the sequence $\{t_n\}_{n\in \mathbb{N}}$ s.t. $f(t_n) = \left(\dfrac{1}{2n\
 
 ---
 
-```ad-note
-title: Theorem
-If $A \subseteq \mathbb{R}^n$ is open then $A$ connected $\iff A$ path connected.
-```
+> [!note] Theorem
+> If $A \subseteq \mathbb{R}^n$ is open then $A$ connected $\iff A$ path connected.
 
 #### Proof:
 **Claim**: If $A \subset \mathbb{R}^n$ is open, then the _path components_ (equivalence classes under the relation $x\sim y \iff$ there is a path from x to y) of $A$ are also open.

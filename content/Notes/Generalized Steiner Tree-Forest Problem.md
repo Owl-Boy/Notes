@@ -30,25 +30,23 @@ Maximise $\sum\limits_{S}y_{S}$ s.t.
 - $\sum\limits_{S|e\in\delta(S)}y_{S}\le c_e$ $\forall e\in E$
 - $y_{S}\ge 0$ $\forall S$
 
-```ad-warning
-title: An algo that doesn't work
-1. $F= \phi$
-Only maintain non zero valued dual variables.
-2. Set $y_S=0$ $\forall S$, $x_{e}=0$ $\forall e \in E$.
-3. Increase $y_S$ for some $S$. Let $e$ be the edge for which the dual constraint goes tight.
-$F=F\cup\{e\}$.
-4. Continue until all $s_{i}-t_{i}$ get connected.
-
-$$
-\begin{align*}
-\text{cost}(F)&=\sum\limits_{e\in F}c_{e}\\
-&= \sum\limits_{e\in F}\sum\limits_{S|e\in\delta(S)}y_{S}\\
-&= \sum\limits_{S}|F\cap\delta(S)|y_{S}
-\end{align*}
-$$
-
-$|F\cap\delta(S)|$ can be as large as $k$ or even $\frac{n}{2}$ so we can't bound it.
-```
+> [!warning] An algo that doesn't work
+> 1. $F= \phi$
+> Only maintain non zero valued dual variables.
+> 2. Set $y_S=0$ $\forall S$, $x_{e}=0$ $\forall e \in E$.
+> 3. Increase $y_S$ for some $S$. Let $e$ be the edge for which the dual constraint goes tight.
+> $F=F\cup\{e\}$.
+> 4. Continue until all $s_{i}-t_{i}$ get connected.
+> 
+> $
+> \begin{align*}
+> \text{cost}(F)&=\sum\limits_{e\in F}c_{e}\\
+> &= \sum\limits_{e\in F}\sum\limits_{S|e\in\delta(S)}y_{S}\\
+> &= \sum\limits_{S}|F\cap\delta(S)|y_{S}
+> \end{align*}
+> $
+> 
+> $|F\cap\delta(S)|$ can be as large as $k$ or even $\frac{n}{2}$ so we can't bound it.
 
 
 ### New algorithm:
@@ -61,24 +59,20 @@ connected components. $F$ is a forest.
 
 **Reverse deletion step:** Examine edges in the reverse order of their inclusion in $F$. If their removal keeps each $s_{i}-t_{i}$ connected, remove them. Get $F'$.
 
-```ad-abstract
-title: Lemma
-For any $C$ in any iteration, $\sum\limits_{S\in C}|\delta(S)\cap F'| \le 2|C|$.
-```
+> [!abstract] Lemma
+> For any $C$ in any iteration, $\sum\limits_{S\in C}|\delta(S)\cap F'| \le 2|C|$.
 
-```ad-abstract
-title: Theorem
-$F'$ is a $2-$approximation i.e. $\sum\limits_{S}|F'\cap\delta(S)|y_{S} \le 2\sum\limits_{S}y_{S} \le 2.\text{primal OPT}$
-**Proof** by induction on the number of iterations
-$$
-\begin{align*}
-\text{Increase in LHS at an iteration} &=\epsilon\sum\limits_{S\in C}|F'\cap\delta(S)|\\
-&\le 2\epsilon|C|\\
-&=2\epsilon.\text{ no of dual vars increased in this iteration}\\
-&=\text{increase in }RHS\\
-\end{align*}
-$$
-```
+> [!abstract] Theorem
+> $F'$ is a $2-$approximation i.e. $\sum\limits_{S}|F'\cap\delta(S)|y_{S} \le 2\sum\limits_{S}y_{S} \le 2.\text{primal OPT}$
+> **Proof** by induction on the number of iterations
+> $
+> \begin{align*}
+> \text{Increase in LHS at an iteration} &=\epsilon\sum\limits_{S\in C}|F'\cap\delta(S)|\\
+> &\le 2\epsilon|C|\\
+> &=2\epsilon.\text{ no of dual vars increased in this iteration}\\
+> &=\text{increase in }RHS\\
+> \end{align*}
+> $
 
 
 ---

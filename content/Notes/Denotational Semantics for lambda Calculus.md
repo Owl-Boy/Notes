@@ -9,10 +9,8 @@ Tags : [[Lambda Calculus]]
 ---
 # Denotational Semantics for Lambda Calculus
 
-```ad-note
-title:Denotational Semantics
-*Denotational Semantics* is an approach for formalizing syntactic expressions by constructing mathematical objects that describe the meaning of an expression.
-```
+> [!note] Denotational Semantics
+> *Denotational Semantics* is an approach for formalizing syntactic expressions by constructing mathematical objects that describe the meaning of an expression.
 
 The purpose is to assign a _value_ to every _expression_ in the language.
 Here
@@ -21,9 +19,8 @@ Here
 
 We define  the function $\mathbf{Eval}$ that takes *expressions* to *values*.
 
-```ad-seealso
-Here we use a variant to lambda calculus that contains some built in functions and constants.
-```
+> [!seealso]
+> Here we use a variant to lambda calculus that contains some built in functions and constants.
 ---
 ## The $\textbf{Eval}$ function
 We define $\mathbf{Eval}$ in the following way.

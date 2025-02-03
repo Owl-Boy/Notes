@@ -5,16 +5,12 @@ Tags : [[Topology]]
 
 ---
 # Countably Compact
-```ad-note
-title:
-A space $X$ is called _countably compact_ if every open cover of $X$ has a finite subcover.
-```
+> [!note]
+> A space $X$ is called _countably compact_ if every open cover of $X$ has a finite subcover.
 
 ### Proposition
-```ad-note
-title:
-A first countable space is countably compact iff it is sequentially compact.
-```
+> [!note]
+> A first countable space is countably compact iff it is sequentially compact.
 ###### Proof:
 If it is sequentially compact, then take a minimal countable cover, take points $x_{1},x_{2},\dots$ such that each $x_{i}$ is in exactly one of the open sets of the cover, then there is a point $x$ such that the element of the cover containing it has infinitely many of these $x_{i}$'s. Contradiction.
 

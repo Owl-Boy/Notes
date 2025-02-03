@@ -5,16 +5,12 @@ Tags : [[Algebra]]
 
 ---
 # Perfect Fields
-```ad-note:
-title:
-A field $F$ is **perfect** if it has characteristic zero or it has characteristic $p$ and every element of $F$ is a $p$th power.
-```
+> [!note]
+> A field $F$ is **perfect** if it has characteristic zero or it has characteristic $p$ and every element of $F$ is a $p$th power.
 
 ### Theorem:
-```ad-note
-title:
-A field F is perfect iff every irreducible polynomial in $F[X]$ is separable.
-```
+> [!note]
+> A field F is perfect iff every irreducible polynomial in $F[X]$ is separable.
 ###### Proof:
 Perfect $\implies$ irreducible is separable.
 If $char(F) = 0$, then done.

@@ -5,19 +5,15 @@ Tags : [[Topology]]
 
 ---
 # Normal Spaces
-```ad-note
-title:
-A topological space $X$ is _normal_ if 
-1) Every singleton is closed in $X$.
-2) for each pair of disjoint closed subsets $A,B \subseteq X$, there is a pair of disjoint open subsets $U,V$ of $X$ such that $A \subset U$ and $B \subseteq V$.
-We then say that $U,V$ separate $A$ and $B$.
-```
+> [!note]
+> A topological space $X$ is _normal_ if 
+> 1) Every singleton is closed in $X$.
+> 2) for each pair of disjoint closed subsets $A,B \subseteq X$, there is a pair of disjoint open subsets $U,V$ of $X$ such that $A \subset U$ and $B \subseteq V$.
+> We then say that $U,V$ separate $A$ and $B$.
 
 ### Lemma:
-```ad-note
-title:
-Let $X$ be $T_{1}$, then $X$ is normal iff for every closed subset $A$ of $X$ and every open subset $U$ containing $A$, there is a open set $V$ containing $A$ and contained in $U$ such that $Cl(V) \subseteq U$. 
-```
+> [!note]
+> Let $X$ be $T_{1}$, then $X$ is normal iff for every closed subset $A$ of $X$ and every open subset $U$ containing $A$, there is a open set $V$ containing $A$ and contained in $U$ such that $Cl(V) \subseteq U$. 
 ##### Proof:
 Suppose $X$ is normal, then for any $A$ and every open nbhd $U$ of $A$, take $U^{c}$ to be the closed set $B$, then there is a separation of $A$, $U^{c}$ $\implies \exists V,W$ s.t. $A \subseteq V, U^{c} \subseteq W$, this gives $V \subset Cl(V) \subset W^{c} \subset U$. We are done.
 
@@ -26,25 +22,19 @@ Conversely, given $A, B$ disjoint and closed, take $U = B^{c}$ and find $V \subs
 #### NOTE: Subspace and product of normal spaces may not be normal.
 
 ### Lemma:
-```ad-note
-title:
-Closed subspace of a normal space is normal.
-```
+> [!note]
+> Closed subspace of a normal space is normal.
 
 ### Lemma:
-```ad-note
-title:
-Let $Y$ be a topo space that is not normal. Then there is a topo space $X$ containing $Y$ as a subspace such that $X$ satisfies the second condition in the definition of a normal space.
-```
+> [!note]
+> Let $Y$ be a topo space that is not normal. Then there is a topo space $X$ containing $Y$ as a subspace such that $X$ satisfies the second condition in the definition of a normal space.
 
 ##### Proof:
 Take $X = Y \cup \{\infty\}$, $\tau_{X} = \tau_{Y} \cup \{ X \}$. This is normal since any non empty closed subset of $X$ contains $\infty$, hence they are not disjoint, hence it vacuously satisfies the 2nd condition for a normal space.
 
 ### Lemma:
-```ad-note
-title:
-Every regular 2nd countable space is normal.
-```
+> [!note]
+> Every regular 2nd countable space is normal.
 
 Suppose $X$ is the space with $\mathcal{B}$ as the countable basis. Let $C,D$ be the closed disjoint subsets we wish to separate.
 

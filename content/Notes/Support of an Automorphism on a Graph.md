@@ -5,10 +5,8 @@ Tags : [[Algebraic Graph Theory]]
 
 ---
 # Support of an Automorphism on a Graph
-```ad-note
-title:definition
-The *Support* of an automorphism is the set of objects that are not fixed by the automorphism.
-```
+> [!note] definition
+> The *Support* of an automorphism is the set of objects that are not fixed by the automorphism.
 
 ### Lemma
 Let $m$ be an even number and $|A|=m$ and $A\subset [n]$.

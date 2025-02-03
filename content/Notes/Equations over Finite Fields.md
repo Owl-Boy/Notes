@@ -43,16 +43,14 @@ If $r$ is even, then $J(\chi,\chi\dots,\chi) = -\chi(-1)J(\chi, \dots ,\chi)$ wh
 This equals $-\chi(-1)p ^{(r-2)/2}\chi(-1)^{(r-2)/2} = -\chi(-1)^{r/2}p ^{r/2-1}$
 
 ### Proposition:
-```ad-note
-title:
-If $r$ is odd, then 
-$$
-N(x_{1}^{2}+x_{2}^{2}+\dots+x_{r}^{2} = 1) = p ^{r-1} + p ^{(r-1)/2}(-1)^{((r-1)/2)((p-1)/2)}
-$$
-If $r$ is even, then $$
-N(x_{1}^{2}+x_{2}^{2}+\dots+x_{r}^{2} = 1) = p ^{r-1} - p ^{r/2-1}(-1)^{(r/2)((p-1)/2)}
-$$
-```
+> [!note]
+> If $r$ is odd, then 
+> $
+> N(x_{1}^{2}+x_{2}^{2}+\dots+x_{r}^{2} = 1) = p ^{r-1} + p ^{(r-1)/2}(-1)^{((r-1)/2)((p-1)/2)}
+> $
+> If $r$ is even, then $
+> N(x_{1}^{2}+x_{2}^{2}+\dots+x_{r}^{2} = 1) = p ^{r-1} - p ^{r/2-1}(-1)^{(r/2)((p-1)/2)}
+> $
 
 ---
 # $a_{1}x_{1}^{l_{1}} + \dots + a_{r}x_{r}^{l_{r}} = b$ over $\mathbb{F}_{p}$
@@ -87,19 +85,17 @@ If some but not all $\chi_{i}$'s are trivial, the value becomes 0.
 In the first case, the value is zero unless $\chi_{1}\dots \chi_{r} = \varepsilon$.
 
 ### Proposition:
-```ad-note
-title:
-If $b=0$ then $$N = p ^{r-1} + \sum \chi_{1}(a_{1}^{-1})\dots \chi_{r}(a_{r}^{-1})J_{0}(\chi_{1},\dots \chi_{r})$$
-
-here the sum is over all r-tuples of characters such that $\chi_{i}^{l_{i}}=\varepsilon$, $\chi_{i} \neq \varepsilon$ for $i = 1,2,\dots r$ and $\chi_{1}\dots \chi _r=\varepsilon$.
-
-
-If $b \neq 0$, then $$N = p ^{r-1} + \sum\chi_{1}\chi_{2}\dots \chi_{r}(b)\chi_{1}^{-1}(a_{1})\dots \chi_{r}^{-1}(a_{r})J(\chi_{1},\dots,\chi_{r})$$
-
-here the sum is over all r-tuples of characters such that $\chi_{i}^{l_{i}}=\varepsilon$, $\chi_{i} \neq \varepsilon$ for $i = 1,2,\dots r$.
-If $M_{0}$ is the number of such $r$-tuples with $\chi_{1}\dots \chi_{r} = \varepsilon$, and $M_{1}$ the number of tuples with $\chi_{1}\dots \chi_{r}\neq\varepsilon$, then 
-$$|N-p ^{r-1} | \le M_{0}p ^{(r/2)-1} + M_{1}p ^{(r-1)/2}$$
-```
+> [!note]
+> If $b=0$ then $N = p ^{r-1} + \sum \chi_{1}(a_{1}^{-1})\dots \chi_{r}(a_{r}^{-1})J_{0}(\chi_{1},\dots \chi_{r})$
+> 
+> here the sum is over all r-tuples of characters such that $\chi_{i}^{l_{i}}=\varepsilon$, $\chi_{i} \neq \varepsilon$ for $i = 1,2,\dots r$ and $\chi_{1}\dots \chi _r=\varepsilon$.
+> 
+> 
+> If $b \neq 0$, then $N = p ^{r-1} + \sum\chi_{1}\chi_{2}\dots \chi_{r}(b)\chi_{1}^{-1}(a_{1})\dots \chi_{r}^{-1}(a_{r})J(\chi_{1},\dots,\chi_{r})$
+> 
+> here the sum is over all r-tuples of characters such that $\chi_{i}^{l_{i}}=\varepsilon$, $\chi_{i} \neq \varepsilon$ for $i = 1,2,\dots r$.
+> If $M_{0}$ is the number of such $r$-tuples with $\chi_{1}\dots \chi_{r} = \varepsilon$, and $M_{1}$ the number of tuples with $\chi_{1}\dots \chi_{r}\neq\varepsilon$, then 
+> $|N-p ^{r-1} | \le M_{0}p ^{(r/2)-1} + M_{1}p ^{(r-1)/2}$
 
 ---
 # References

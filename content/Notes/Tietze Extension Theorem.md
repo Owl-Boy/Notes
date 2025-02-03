@@ -5,16 +5,12 @@ Tags : [[Topology]]
 
 ---
 # Tietze Extension Theorem
-```ad-note
-title:
-Let $X$ be a normal space, let $A \subseteq X$ be a closed subspace, and let $f:A \to [a,b]$ be a cts function for some $[a,b] \subseteq \mathbb{R}$. There exists a cts function $\bar{f}:X \to [a,b]$ such that $\bar{f}|_{A} = f$.
-```
+> [!note]
+> Let $X$ be a normal space, let $A \subseteq X$ be a closed subspace, and let $f:A \to [a,b]$ be a cts function for some $[a,b] \subseteq \mathbb{R}$. There exists a cts function $\bar{f}:X \to [a,b]$ such that $\bar{f}|_{A} = f$.
 
 ### Lemma:
-```ad-note
-title:
-Let $X$ be a normal space, $A \subseteq X$ be a closed subspace, and let $f : A \to \mathbb{R}$ be a cts function such that for some $C > 0$ we have $|f(x)| \le C$ for all $x \in A$. There exists a cts function $g : X \to \mathbb{R}$ such that $|g(x)| \le \frac{1}{3}C$ for all $x \in X$ and $|f(x) - g(x)| \le \frac{2}{3}C$ for all $x \in A$.
-```
+> [!note]
+> Let $X$ be a normal space, $A \subseteq X$ be a closed subspace, and let $f : A \to \mathbb{R}$ be a cts function such that for some $C > 0$ we have $|f(x)| \le C$ for all $x \in A$. There exists a cts function $g : X \to \mathbb{R}$ such that $|g(x)| \le \frac{1}{3}C$ for all $x \in X$ and $|f(x) - g(x)| \le \frac{2}{3}C$ for all $x \in A$.
 
 ##### Proof:
 Take $Y = f ^{-1}\left( \left[ -C,-\frac{C}{3} \right] \right), Z = f ^{-1}\left( \left[ \frac{C}{3}, C \right] \right)$. Since $f : A \to \mathbb{R}$ is a cts function, these are closed subsets of $A$ and hence of $X$. So by Urysohn's Lemma,  there is a function $h : X \to \mathbb{R}$ such that $h(Y) \subset \{ 0 \}, h(Z) \subset \{ 1 \}$.
@@ -33,10 +29,8 @@ Then take $\bar{f} := \sum \limits_{ i=1}^{ \infty }g_{i}(x)$. This is uniformly
 
 ---
 ### Another formulation of Tietze's Theorem
-```ad-note
-title:
-Let $X$ be a normal space, let $A \subset X$ be a closed subset, and let $f : A \to \mathbb{R}$ be a cts function. There exists a cts function $\bar{f} : X \to \mathbb{R}$ such that $\bar{f}|_{A} = f$.
-```
+> [!note]
+> Let $X$ be a normal space, let $A \subset X$ be a closed subset, and let $f : A \to \mathbb{R}$ be a cts function. There exists a cts function $\bar{f} : X \to \mathbb{R}$ such that $\bar{f}|_{A} = f$.
 ##### Proof:
 It is enough to show that for any cts function $f : A \to (-1,1)$, there is a cts function $\bar{f} : X \to (-1,1)$ since $(-1,1)$ is homeomorphic to $\mathbb{R}$.
 

@@ -6,11 +6,9 @@ Tags : [[Differential Equations]]
 ---
 # Linear systems with constant coefficients
 
-```ad-note
-title:
-This is just a linear system $$\dot{x}(t) = A(t)x(t)$$
-But where $A(t)$ is a constant matrix valued function.
-```
+> [!note]
+> This is just a linear system $\dot{x}(t) = A(t)x(t)$
+> But where $A(t)$ is a constant matrix valued function.
 
 ### For n=1:
 $\dot{x} = kx \to x(t) = x(0)e^{kt}$
@@ -59,11 +57,9 @@ $$
 ### For the general case: 
 The answer is exponential of the matrix A.
 
-```ad-note
-title: Theorem
-Given $A \in M_n(\mathbb{R})$; $\dot{x} = Ax$ and $x(0) = x_0$ has the unique solution, $\varphi(t) = e^{At}x_0$.
-
-```
+> [!note] Theorem
+> Given $A \in M_n(\mathbb{R})$; $\dot{x} = Ax$ and $x(0) = x_0$ has the unique solution, $\varphi(t) = e^{At}x_0$.
+> 
 ##### Proof:
 Let $\varphi(t) = e^{At}x_{0}$.
 Then $$

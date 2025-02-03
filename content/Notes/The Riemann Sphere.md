@@ -15,14 +15,13 @@ $$
 \end{aligned}
 $$
 The inverse map is given by $\sigma: \mathbb C \to S$ and is called the sterographic projection
-```ad-note
-$$
-\begin{aligned}
-|z|={1+x_3\over 1-x_3}&\implies x_3={|z|^2-1\over|z|^2+1}\\
-x_1={z+\overline z\over 1+|z|^2}&,x_2={z-\overline z\over 1+|z|^2}&
-\end{aligned}
-$$
-```
+> [!note]
+> $
+> \begin{aligned}
+> |z|={1+x_3\over 1-x_3}&\implies x_3={|z|^2-1\over|z|^2+1}\\
+> x_1={z+\overline z\over 1+|z|^2}&,x_2={z-\overline z\over 1+|z|^2}&
+> \end{aligned}
+> $
 Thus $\sigma:\mathbb C\longrightarrow S\setminus (0,0,1)$ is a diffeomorphism, infact it is a one point compaction.
 ### Alternative View Point
 Let $X=\mathbb C, Y=\mathbb C$

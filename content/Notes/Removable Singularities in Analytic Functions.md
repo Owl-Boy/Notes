@@ -6,11 +6,9 @@ Tags : [[Complex Analysis]]
 ---
 # Removable Singularities in Analytic Functions
 Let $\Omega'$ be a region obtained by removing a point from the region $\Omega$, and $f$ is analytic on $\Omega'$, then
-```ad-note
-title: Theorem
-$\exists!$ a function that agrees with $f$ on $\Omega'$ and is analytic on 
-$Omega\iff\lim\limits_{z\to{a}}(z-a)f(z)=0$.
-```
+> [!note] Theorem
+> $\exists!$ a function that agrees with $f$ on $\Omega'$ and is analytic on 
+> $Omega\iff\lim\limits_{z\to{a}}(z-a)f(z)=0$.
 
 **Proof:** 
 $\Longrightarrow$  Forward direction is trivial as the function in continuous at $a$

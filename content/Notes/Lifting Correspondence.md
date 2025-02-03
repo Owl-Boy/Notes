@@ -6,10 +6,8 @@ Tags : [[Topology]]
 ---
 # Lifting Correspondence
 ### Theorem:
-```ad-note
-title:
-Let $p: E\to B$ a covering map. $f : [0,1]\to B$ be a path with $f(0)=b$. Let $e \in p ^{-1}(b)$, then there exists a unique lift $\widetilde{f}:[0,1]\to E$ of the path $f$ such that $\widetilde{f}(0)=e$.
-```
+> [!note]
+> Let $p: E\to B$ a covering map. $f : [0,1]\to B$ be a path with $f(0)=b$. Let $e \in p ^{-1}(b)$, then there exists a unique lift $\widetilde{f}:[0,1]\to E$ of the path $f$ such that $\widetilde{f}(0)=e$.
 ##### Proof:
 $\exists$ an open covering $\{ U_{\alpha} \}_{\alpha \in J}$ of $B$ such that each $U_{\alpha}$ is evenly covered by $p$.
 Preimages $\{ f ^{-1}(U_{\alpha}) \}_{\alpha \in J}$ yield an open covering of $[0,1] \implies$ Lebesgue Number lemma $\implies \ \delta>0$ s.t. for all $x$, we have $(x,x+\delta) \subset f ^{-1}(U_{\alpha}) \implies$ We can find a finite subdivision $0 = \delta_{0} <  \delta_{1} < \dots < \delta_{n} = 1$ such that each $f([s_{i},s_{i+1}])$ lies in one of the $U_{\alpha}$. 
@@ -22,12 +20,10 @@ $\implies$ repeated finitely many times $\widetilde{f}:[0,1]\to E$
 $\implies$ Uniqueness follows.
 
 ### Theorem:
-```ad-note
-title:
-Let $p: E\to B$ a covering map. $F : [0,1] \times [0,1]\to B$ be a cts map with $F((0,0))=b$. Let $e \in p ^{-1}(b)$, then there exists a unique lift $\widetilde{F}:[0,1]\times [0,1]\to E$ such that $\widetilde{F}((0,0))=e$.
-
-If $F$ is a path homotopy, then $\widetilde{F}$ is a path homotopy.
-```
+> [!note]
+> Let $p: E\to B$ a covering map. $F : [0,1] \times [0,1]\to B$ be a cts map with $F((0,0))=b$. Let $e \in p ^{-1}(b)$, then there exists a unique lift $\widetilde{F}:[0,1]\times [0,1]\to E$ such that $\widetilde{F}((0,0))=e$.
+> 
+> If $F$ is a path homotopy, then $\widetilde{F}$ is a path homotopy.
 ##### Proof:
 Similar idea as before for the first part.
 Second part, if $F$ is a path homotopy, then it carries $\{ 0 \}\times [0,1]$ into a single point $b_{0} \in B$.
@@ -48,10 +44,8 @@ $$
 \varphi ([f]) = \widetilde{f}(1), \ \widetilde{f}(0) = e_{0}
 $$
 ### Theorem:
-```ad-note
-title:
-If $E$ is path connected, $\varphi$ is surjective. If $E$ is simply connected, then it is bijective.
-```
+> [!note]
+> If $E$ is path connected, $\varphi$ is surjective. If $E$ is simply connected, then it is bijective.
 ##### Proof:
 If $E$ is path connected, for any $e_{1} \in p ^{-1}(b_{0})$, $\exists$ a path $g$ from $e_{0}$ to $e_{1}$. Then $f := p \circ g$ is a loop in $B$ based at $e_{0}$, and $\varphi([f])=e_{1}$ by definition.
 
@@ -61,10 +55,8 @@ $\widetilde{f},\widetilde{g}$ unique liftings beginning at $e_{0}$. Then $\widet
 Since simply connected are path connected by definition, $\varphi$ is surjective.
 
 ### Theorem:
-```ad-note
-title:
-$\Pi_{1}(S ^{1}) = \mathbb{Z}$ as a group.
-```
+> [!note]
+> $\Pi_{1}(S ^{1}) = \mathbb{Z}$ as a group.
 ##### Proof:
 Need to show $\varphi([f]*[g]) = \varphi([f])*\varphi([g])$
 $\widetilde{f}(1) = n, \widetilde{g}(1)=m$

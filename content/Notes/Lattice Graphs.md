@@ -12,9 +12,8 @@ then the **Lattice Graph** $V=M\times M$ with $(i, j)\sim (i',j')$ if
 
 _Intuitively_ it is a square grid of vertices where nodes that are along the same vertical or horizontal are adjacent.
 
-```ad-todo
-Draw Diagram
-```
+> [!todo]
+> Draw Diagram
 
 The Lattice Graph is [[Strongly Regular Graphs|strongly regular]] with
 $$

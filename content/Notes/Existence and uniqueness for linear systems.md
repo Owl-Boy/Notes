@@ -5,32 +5,28 @@ Tags : [[Differential Equations]]
 
 ---
 # Linear Systems
-```ad-note
-title:
-ODEs where dependence on phase is linear. 
-For example,
-$$ \dot{x} = kx \leftrightarrow x(t) = x(0)e^{kt}$$
-$$
-\dot{x} = p(t)x(t) + q(t)
-$$
-```
+> [!note]
+> ODEs where dependence on phase is linear. 
+> For example,
+> $ \dot{x} = kx \leftrightarrow x(t) = x(0)e^{kt}$
+> $
+> \dot{x} = p(t)x(t) + q(t)
+> $
 
 ## Existence and uniqueness for 1st order Linear systems
-```ad-note
-title:
-Let $I \subseteq \mathbb{R}$, be an interval and 
-$$
-\mathcal{A} : I \to M_{n}(\mathbb{R})
-$$
-$$
-\mathcal{b} : I \to \mathbb{R}^{n}
-$$
-be continuous on $I$.
-Let $(t_{0},x_{0}) \in I \times \mathbb{R}^{n}$. Then the IVP 
-$$\dot{\bar{x}}(t) = \mathcal{A}(t) + \mathcal{ b}(t); \ \bar{x}(t_{0}) = x_{0} 
-$$
-has a unique solution on $I$.
-```
+> [!note]
+> Let $I \subseteq \mathbb{R}$, be an interval and 
+> $
+> \mathcal{A} : I \to M_{n}(\mathbb{R})
+> $
+> $
+> \mathcal{b} : I \to \mathbb{R}^{n}
+> $
+> be continuous on $I$.
+> Let $(t_{0},x_{0}) \in I \times \mathbb{R}^{n}$. Then the IVP 
+> $\dot{\bar{x}}(t) = \mathcal{A}(t) + \mathcal{ b}(t); \ \bar{x}(t_{0}) = x_{0} 
+> $
+> has a unique solution on $I$.
 ##### Proof:
 1. WLOG assume that $I$ is compact. Since if not, then we can take a sequence $I_{n}$ of compact subsets of $I$, which converge to $I$, such that on each of the $I_{n}$'s the solution is unique, and then the solution on $I$ is given by patching together the solutions on these $I_{n}$'s.
 2. Take $I = [\alpha,\beta]$. Define 

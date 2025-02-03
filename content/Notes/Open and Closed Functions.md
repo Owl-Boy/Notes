@@ -6,14 +6,10 @@ Tags : [[Topology]]
 ---
 # Open and Closed Functions
 
-```ad-note
-title:
-A function $f$ is called open when $U\in\mathcal T_{X}\implies f(U)\in\mathcal T_{Y}$
-```
-```ad-note
-title:
-A function $f$ is called closed when $U$ is closed $\implies f(U)$ is closed.
-```
+> [!note]
+> A function $f$ is called open when $U\in\mathcal T_{X}\implies f(U)\in\mathcal T_{Y}$
+> [!note]
+> A function $f$ is called closed when $U$ is closed $\implies f(U)$ is closed.
 These functions are often confused with continuous function by those who are new to the fied.
 
 A function is **Open** when it maps _open_ sets to _open_ sets and a function is **Continuous** when inverse images of _open_ sets are _open_

@@ -5,10 +5,8 @@ Tags :[[Topology]]
 
 ---
 # Brouwer's Fixed Point Theorem
-```ad-note
-title:
-If $f : B ^{2} \to B ^{2}$ is continuous where $B ^{2} = \{ (x,y) \in \mathbb{R}^{2} : x ^{2} + y ^{2} \le 1 \}$, then $\exists \ x \in B ^{2}$ s.t. $f(x) = x$.
-```
+> [!note]
+> If $f : B ^{2} \to B ^{2}$ is continuous where $B ^{2} = \{ (x,y) \in \mathbb{R}^{2} : x ^{2} + y ^{2} \le 1 \}$, then $\exists \ x \in B ^{2}$ s.t. $f(x) = x$.
 ##### Proof 1:
 There is no retraction from $B ^{2} \to S ^{1}$ (Retraction: $A \subseteq X$, $r : X \to A$ cts. s.t. $r |_{A} = id_{A}$)
 Assume that for some $f : B^{2} \to B^{2}$, $f(x) \neq x$ for all $x \in B^{2}$. Then we can define a retraction $h : B^{2} \to S ^{1}$ as follows:
@@ -25,32 +23,26 @@ This is a retraction from $B^{2}$ to $S ^{1}$, contrary to the fact that there i
 
 ##### Proof 2:
 ###### Lemma:
-```ad-note
-title:
-Let $h : S ^{1} \to X$ cts. Then the following are equivalent.
-
-(1) $h$ is null homotopic.
-
-(2) $h$ extends to a cts map $k: B ^{2} \to X$
-
-(3) $h_{*} : \Pi_{1}(S ^{1}) \to \Pi_{1}(X)$ is the trivial homomorphism.
-```
+> [!note]
+> Let $h : S ^{1} \to X$ cts. Then the following are equivalent.
+> 
+> (1) $h$ is null homotopic.
+> 
+> (2) $h$ extends to a cts map $k: B ^{2} \to X$
+> 
+> (3) $h_{*} : \Pi_{1}(S ^{1}) \to \Pi_{1}(X)$ is the trivial homomorphism.
 ##### Proof:
 Refer to [[S^1]].
 
 ### Corollary 
-```ad-note
-title:
-$f: S ^{1} \to \mathbb{R}^{2}\setminus \{ (0,0) \}$ is not null homotopic.
-```
+> [!note]
+> $f: S ^{1} \to \mathbb{R}^{2}\setminus \{ (0,0) \}$ is not null homotopic.
 ##### Proof:
 Refer to [[S^1]].
 
 ### Corollary
-```ad-note
-title:
-$id: S ^{1} \to S ^{1}$ is not null homotopic
-```
+> [!note]
+> $id: S ^{1} \to S ^{1}$ is not null homotopic
 ##### Proof:
 Refer to [[S^1]].
 

@@ -1,0 +1,30 @@
+# Linear Programming and Primal Dual
+- [x] n variables : $x_{1} \dots x_{n}$
+- [x] $m$ linear constraints
+	- [x] each linear constraint is a half-space, cut by a plane
+	- [x] constants can be any real or can be non-negative
+	- [x] Goal is to minimize a linear function
+		- [x] Since this is a linear function, it is a hyper plane but its location is not fixed as it dpes not have an rhs, so finding the optimal solution is the same as moving the plane in the optimal location
+- [x] The constraints can be written as 1 vector equation
+- [x]  Feasible region is called polyhedron
+- [x] bounded polyhedron is a polytope
+- [x] intersection of $n$ hyperplanes  is a vertex (linearly independent)
+- [x] intersection of $k$ hyperplanes is a $k-1$ dimensional face
+- [x] Duality of Qusai (where Qusai is a linear program, and duality is dual) is Romit
+	- [x] We want to find the lower bound for an objective function
+	- [x] So we look at all possible linear combinations of constraints and we try to maximize that, this gives a lower bound for the equation
+- [x] weak duality, dual value <= primal value
+- [x] strong duality, opt dual = opt primal
+- [x] Complementary slackness
+	- [x] $\sum c_{i}x_{i} \geq \sum y^tA^{(i)}x_{i} = \sum y_{j} A_{j}x \geq \sum y_{j} b_{j}$
+	- [x] If $x$ is optimal for primal and $y$ is optimal for dual
+	- [x] Then we get equality
+- [ ] Linear programming for mst
+	- [ ] For each edge there is $x_{e}$ which is 1 if it is selected
+	- [ ] Our objective function is $\sum w_{i} x_{i}$ should be minimized
+	- [ ] We have the constraint that across each cut there is an edge
+- [ ] Dual of the above
+	- [ ] Have a variable for each partition
+- [ ] Solution
+	- [ ] All zero for every value, and for primal start with an empty spanning tree
+	- [ ] Then we increase the value of the paritition with most amound of vertices and then we increase the value of that.

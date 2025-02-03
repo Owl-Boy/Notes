@@ -18,15 +18,13 @@ Tags : [[Advanced Algorithms]]
 Variables: $x_{uv}, (u,v) \in E$
 Minimise $\sum\limits_{(u,v)\in E}x_{uv}w_{uv}$ s.t.:
 
-```ad-warning
-title: One thing that doesn't work
-- $\sum\limits_{v|(s,v)\in E}x_{sv}=1$
-- $\sum\limits_{v|(v,t)\in E}x_{vt}=1$
-- $\sum\limits_{v|(u,v)\in E}x_{uv} - \sum\limits_{w|(w,u)\in E}x_{wu} = 0$ $\forall u \in V\setminus\{s,t\}$
-- $x_{uv}\geq 0$ $\forall (u,v)\in E$
-
-Because for this LP, two disjoint cycles, one with $s$ and the other with $t$ is a valid solution.
-```
+> [!warning] One thing that doesn't work
+> - $\sum\limits_{v|(s,v)\in E}x_{sv}=1$
+> - $\sum\limits_{v|(v,t)\in E}x_{vt}=1$
+> - $\sum\limits_{v|(u,v)\in E}x_{uv} - \sum\limits_{w|(w,u)\in E}x_{wu} = 0$ $\forall u \in V\setminus\{s,t\}$
+> - $x_{uv}\geq 0$ $\forall (u,v)\in E$
+> 
+> Because for this LP, two disjoint cycles, one with $s$ and the other with $t$ is a valid solution.
 
 $$\sum\limits_{v|(u,v)\in E}x_{uv} - \sum\limits_{w|(w,u)\in E}x_{wu} =
 \begin{cases}
@@ -52,15 +50,11 @@ Do until $t$ is included in $G'$:
 - **Primal solution:** $x_{uv}=1$ iff $(u,v) \in$ primal solution
 - **Pruning:** In $G'$, keep one $s-t$ path $P$ and discard the remaining edges.
 
-```ad-note
-title: Observe
-The primal dual algorithm is actually Dijkstra's algorithm.
-```
+> [!note] Observe
+> The primal dual algorithm is actually Dijkstra's algorithm.
 
-```ad-info
-title: Combinatorial interpretation of the dual
-**Marble and string analogy-** How far apart can $s$ and $t$ be placed on a number line s.t. $\text{dist}(u,v) \leq w_{uv}$?
-```
+> [!info] Combinatorial interpretation of the dual
+> **Marble and string analogy-** How far apart can $s$ and $t$ be placed on a number line s.t. $\text{dist}(u,v) \leq w_{uv}$?
 
 ## Optimality
 ---

@@ -10,11 +10,9 @@ Tags : [[Algorithmic Coding Theory]]
 ---
 # Group Testing problem
 
-```ad-tip
-title: Problem
-There are $N$ people, $n$ have some disease, say CoViD. We want to test the people for the disease, and the tests are costly. $n\ll N$. The naive way would be to draw a sample from each of them, and test each sample separately, which is costly.
-So another way to approach this is *'pooled testing'*, i.e. you pool samples together, and test them in groups.
-```
+> [!tip] Problem
+> There are $N$ people, $n$ have some disease, say CoViD. We want to test the people for the disease, and the tests are costly. $n\ll N$. The naive way would be to draw a sample from each of them, and test each sample separately, which is costly.
+> So another way to approach this is *'pooled testing'*, i.e. you pool samples together, and test them in groups.
 
 **Input:** # individuals $N$, $x_{1},x_{2},\dots,x_{N}$
 upper bound on the number of infected individuals $d$
@@ -58,10 +56,8 @@ $(d+1)-$separable $\implies\ d-$disjunct $\implies\ d-$separable
 
 So the following algorithm works!
 
-```ad-success
-title: Naive decoding algorithm
-
-```python
+> [!success] Naive decoding algorithm
+> python
 for j = 1 to N
 	if item j belongs to at least one negative test, then mark j as a negative item.
 	end if

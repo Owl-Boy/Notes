@@ -5,11 +5,9 @@ Tags : [[Topology]]
 
 ---
 # Lebesgue Number Lemma
-```ad-note
-title: 
-Let $\mathcal{C}$ be an open cover of a compact metric space $(X,d)$. There exists a $\delta>0$ such that for each subset $B \subset X$ of diameter $< \delta$, there exists an element $U \in \mathcal{C}$ with $B \subset U$.
-The number $\delta$ is called a Lebesgue number of $\mathcal{C}$.
-```
+> [!note]
+> Let $\mathcal{C}$ be an open cover of a compact metric space $(X,d)$. There exists a $\delta>0$ such that for each subset $B \subset X$ of diameter $< \delta$, there exists an element $U \in \mathcal{C}$ with $B \subset U$.
+> The number $\delta$ is called a Lebesgue number of $\mathcal{C}$.
 ##### Proof:
 If $X \in \mathcal{C}$ then we are done.
 Otherwise, since $X$ is compact, there is a finite subcover $U_{1},\dots,U_{n}$ of $X$. Now let $C_{i} := U_{i}^{c}$. 

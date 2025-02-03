@@ -36,10 +36,8 @@ So $f(g(x_{1})+0)\leq h(x_{1})\cup p(f(x_{1})+ b.x_{2})$ is uninterpreted while 
 
 **Ground formulas:** formulas that don't use variables
 
-```ad-success
-title: Goal
-Given a CNF formula $\varphi$, we would like to come up with a Ground formula $\varphi^{*}$ s.t. $\varphi^{*}$ is satisfiable iff $\varphi$ is satisfiable.
-```
+> [!success] Goal
+> Given a CNF formula $\varphi$, we would like to come up with a Ground formula $\varphi^{*}$ s.t. $\varphi^{*}$ is satisfiable iff $\varphi$ is satisfiable.
 
 ### Notation
 

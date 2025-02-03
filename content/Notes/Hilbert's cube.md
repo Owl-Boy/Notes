@@ -5,11 +5,9 @@ Tags : [[Topology]]
 
 ---
 # Hilbert's cube
-```ad-note
-title:
-The hilbert cube is defined as the product $$ H := \prod \limits_{ n=1}^{ \infty }\left[ 0,\frac{1}{n} \right] $$
-with the product topology.
-```
+> [!note]
+> The hilbert cube is defined as the product $ H := \prod \limits_{ n=1}^{ \infty }\left[ 0,\frac{1}{n} \right] $
+> with the product topology.
 
 We consider two metrics on $H$, one is the uniform metric $\rho$:
 $$
@@ -19,10 +17,8 @@ Another is the $\ell^{2}$ metric $d_{2}$ given by: $$
 d_{2}(x,y) = \left( \sum\limits_{ n=1}^{ \infty } (x_{n}-y_{n})^{2} \right) ^{1/2}
 $$
 ### Proposition:
-```ad-note
-title:
-The uniform metric and the $\ell^{2}$ metric induce the same topology on $H$ as the product topology. In other words, $H$ is metrizable.
-```
+> [!note]
+> The uniform metric and the $\ell^{2}$ metric induce the same topology on $H$ as the product topology. In other words, $H$ is metrizable.
 ##### Proof:
 Denote by $\tau_{H}$ the product topology on $H$, $\tau_{d_{2}}$ be the metric topology induced by $d_{2}$, and $\tau_{\rho}$ be the metric topology induced by $\rho.$
 We will show that $\tau_{H} \subset \tau_{\rho} \subset \tau_{d_{2}} \subset \tau_{H}$.
@@ -34,11 +30,9 @@ Now take a ball $B_{\rho}(x,r)$. See that $B_{d_{2}}(x,r) \subset B_{\rho}(x,r)$
 Let $B_{d_{2}}(x,r)$ be a ball in $d_{2}$ metric, then $B_{d_{2}}(x,r) = \prod\limits_{ n=1}^{ \infty }B_{n}$ where only finitely many $B_{n}$'s are not the whole space. Then we know that the remaining $B_{n}$'s are open in $\left[ 0, \frac{1}{n} \right]$. And so, $B_{d_{2}}(x,r)$ is open in $\tau_{H}$.
 
 ### Proposition:
-```ad-note
-title:
-The space $$\prod\limits_{ n=1}^{ \infty } [0,1] = [0,1]^{\omega}$$
-is metrizable.
-```
+> [!note]
+> The space $\prod\limits_{ n=1}^{ \infty } [0,1] = [0,1]^{\omega}$
+> is metrizable.
 ##### Proof:
 Note that $[0,1]^{\omega}$ is homeomorphic to $H$. Since $[0,1]$ is homeomorphic to $\left[ 0, \frac{1}{n} \right]$.
 

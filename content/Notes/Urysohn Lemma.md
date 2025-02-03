@@ -5,14 +5,11 @@ Tags : [[Topology]]
 
 ---
 # Urysohn Lemma
-```ad-info
-This lemma roughly states that given two disjoint closed subsets of a normal space, we can separate them by real valued functions.
-```
+> [!info]
+> This lemma roughly states that given two disjoint closed subsets of a normal space, we can separate them by real valued functions.
 
-```ad-note
-title: Statement of the lemma
-Let $A,B$ be disjoint closed subsets of a normal space $X$. Then there exists a continuous map $f: X \to [0,1]$ such that $f(x) = 0$ for all $x \in A$ and $f(x) = 1$ for all $x \in B$.
-```
+> [!note] Statement of the lemma
+> Let $A,B$ be disjoint closed subsets of a normal space $X$. Then there exists a continuous map $f: X \to [0,1]$ such that $f(x) = 0$ for all $x \in A$ and $f(x) = 1$ for all $x \in B$.
 ##### Proof:
 A dyadic number is a rational number of the form $\dfrac{a}{2^{n}}$, where $a,n$ are integers with $n \ge 0$. Then it is easy to check that these numbers are dense in $\mathbb{R}$.
 

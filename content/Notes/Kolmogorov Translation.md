@@ -17,11 +17,9 @@ $K(\varphi)=\lnot\lnot\varphi^*$
 $\alpha^*=\alpha$
 $(\varphi\to\psi)^{*}=(\lnot\lnot\varphi^*\to\lnot\lnot\psi^*)$
 
-```ad-note
-title:Theorem
-1. $\vdash \varphi\to K(\varphi)$ and $\vdash K(\varphi)\to\varphi$ in $\text{CPC}(\rightarrow,\perp)$
-2. $\vdash_{\text{CPC}}\varphi\iff \vdash_{\text{IPC}}K(\varphi)$
-```
+> [!note] Theorem
+> 1. $\vdash \varphi\to K(\varphi)$ and $\vdash K(\varphi)\to\varphi$ in $\text{CPC}(\rightarrow,\perp)$
+> 2. $\vdash_{\text{CPC}}\varphi\iff \vdash_{\text{IPC}}K(\varphi)$
 
 [[Continuation Passing Translations]]
 

@@ -7,10 +7,8 @@ Tags : [[Algebraic Graph Theory]]
 # Johnson Graphs
 **Johnson Graphs** are an important set of graphs that translate many combinatorial problems about sets into graph theory.
 
-```ad-note
-title: definition
-Let $v,k,i$ be fixed positive integers with $v\ge k\ge i$. Let $\Omega$ be a fixed set of size $v$. Then the vertices of the graph $J(v, k ,i)$ are the subsets of $\Omega$ of size $k$, where two subsets are adjacent if their intersection has size $i$
-```
+> [!note] definition
+> Let $v,k,i$ be fixed positive integers with $v\ge k\ge i$. Let $\Omega$ be a fixed set of size $v$. Then the vertices of the graph $J(v, k ,i)$ are the subsets of $\Omega$ of size $k$, where two subsets are adjacent if their intersection has size $i$
 
 The function that maps each set to its compliment gives the following theorem
 $$

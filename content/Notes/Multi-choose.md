@@ -11,12 +11,10 @@ $$
 $$
 Which denotes the number of $k$ order multi-subsets of a set of order $n$. Or the number of was of choose $k$, not necessarily distinct objects from a set of $n$ elements.
 
-```ad-note
-title: Proposition
-$$
-\left(\!\!{n\choose k}\!\!\right)={n+k-1\choose k}
-$$
-```
+> [!note] Proposition
+> $
+> \left(\!\!{n\choose k}\!\!\right)={n+k-1\choose k}
+> $
 One combinatorial proof with its explanation is the following.
 **Proof:**
 We create a set $Y = \{y_{1}, y_{2},\dots\}$ which represents the multiset $M$ and let the underlying set $S=\{x_{1},x_{2},\dots,x_{n}\}$.

@@ -5,10 +5,8 @@ Tags : [[Differential Equations]]
 
 ---
 # ODE
-```ad-note
-title: Ordinary Differential Equation
-An _ordinary differential equation_ is a relation containing one independent variable $x\in\mathbb R$ and one dependent variable $y$, and some of its derivative $y',y'',\dots, y^{(n)}$
-```
+> [!note] Ordinary Differential Equation
+> An _ordinary differential equation_ is a relation containing one independent variable $x\in\mathbb R$ and one dependent variable $y$, and some of its derivative $y',y'',\dots, y^{(n)}$
 
 __Example__: $x^2y'' -3xy' + 3y = 0$ 
 

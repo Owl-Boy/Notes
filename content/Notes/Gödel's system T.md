@@ -7,10 +7,8 @@ Tags : [[Type Theory]]
 # Gödel's system T
 The extremely rudimentary type system we have studied has very little expressive power. We can represent integers and booleans, but not sufficiently many functions. So systems such as that of Gödel appear.
 
-```ad-info
-title:
-Systems like **T** area step backwards from the logical viewpoint: the new schemes do not correspond to proofs in an extended logical system. In particular, that makes it difficult to stidy them.
-```
+> [!info]
+> Systems like **T** area step backwards from the logical viewpoint: the new schemes do not correspond to proofs in an extended logical system. In particular, that makes it difficult to stidy them.
 [[Gödel's system F]] resolves the problems in satisfying manner.
 
 ### The Calculus

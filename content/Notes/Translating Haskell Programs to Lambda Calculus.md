@@ -107,10 +107,9 @@ $$
 $$
 
 
-```ad-todo
-- Defining Types
-- Type Checking
-```
+> [!todo]
+> - Defining Types
+> - Type Checking
 
 ---
 # References

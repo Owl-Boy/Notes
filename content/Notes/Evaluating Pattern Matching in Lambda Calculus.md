@@ -9,9 +9,8 @@ Tags : [[Programming Languages]]
 ---
 # Evaluating Pattern Matching in Lambda Calculus
 
-```ad-note
-This note is motivation for the solution: [[Match Function for Enriched Lambda Calculus]].
-```
+> [!note]
+> This note is motivation for the solution: [[Match Function for Enriched Lambda Calculus]].
 
 ## Intuitive Approach
 Consider the following example

@@ -7,10 +7,8 @@ Tags : [[Complexity Theory]]
 # P Complexity Class
 
 ###  P
-```ad-note
-title:
-Class of decision problems that can be decided by a [[Turing Machines|determinisitic turing machine]] in polynomial time.
-```
+> [!note]
+> Class of decision problems that can be decided by a [[Turing Machines|determinisitic turing machine]] in polynomial time.
 
 ### Examples
 _Primality_- The language of all Natural numbers which are prime.

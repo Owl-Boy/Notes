@@ -10,10 +10,8 @@ Tags : [[Algorithmic Coding Theory]]
 ---
 # Lifted Reed Solomon Codes
 
-```ad-hint
-title: Motivation
-Using RM codes we can have constant distance and $n^{\beta}$ query complexity codes, but the rate has to be less than $1/2$, once $m>1$. We would like to achieve higher rates because that would mean less redundancy. Hence, lifted RS codes.
-```
+> [!hint] Motivation
+> Using RM codes we can have constant distance and $n^{\beta}$ query complexity codes, but the rate has to be less than $1/2$, once $m>1$. We would like to achieve higher rates because that would mean less redundancy. Hence, lifted RS codes.
 
 $\{f:\mathbb{F}_{q}^{n}\to \mathbb{F}_{q}\ |\ \text{For every line }L=\{ \vec{a}+\vec{b}t \}, f|_{L}\text{ agrees with a poly of degree at most }d\}$
 

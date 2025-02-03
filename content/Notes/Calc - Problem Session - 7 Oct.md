@@ -75,16 +75,15 @@ Therefore the span of $\Lambda^2(V) = \frac{n(n-2)}2$
 # TODO
 #### 5
 By similar construction as part 3, we get that $\dim S^2(V) =\frac{n(n+1)}2$
-```ad-note
-$$
-\begin{aligned}
-\dim S^2(V) + \dim \Lambda^2(V)&= dim \mathcal T^2{V} \\
-S^2(V) \cap \Lambda^2(V) &= \emptyset\\
-\implies S^2(V) \oplus \Lambda^2(V) &= \mathcal T^2(V)
-\end{aligned}$$
-This does not work for $k \ge 3$
-$$\Lambda^k(V) \oplus S^k(V) \ne \mathcal T^k(V)\text( for )k\ge 3$$
-```
+> [!note]
+> $
+> \begin{aligned}
+> \dim S^2(V) + \dim \Lambda^2(V)&= dim \mathcal T^2{V} \\
+> S^2(V) \cap \Lambda^2(V) &= \emptyset\\
+> \implies S^2(V) \oplus \Lambda^2(V) &= \mathcal T^2(V)
+> \end{aligned}$
+> This does not work for $k \ge 3$
+> $\Lambda^k(V) \oplus S^k(V) \ne \mathcal T^k(V)\text( for )k\ge 3$
 
 
 

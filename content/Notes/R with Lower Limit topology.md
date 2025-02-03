@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # $\mathbb{R}$ with Lower Limit topology
-```ad-note
-title:
-The basic open sets in this topology are the sets of the form $[a,b); a,b \in \mathbb{R}$. 
-```
+> [!note]
+> The basic open sets in this topology are the sets of the form $[a,b); a,b \in \mathbb{R}$. 
 
 
 ---

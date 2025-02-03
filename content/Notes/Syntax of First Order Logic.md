@@ -38,9 +38,8 @@ Given the above set of atomic formulas, we can define the complete set of formul
 - If $\varphi\in\Phi_{L}$ and $x\in Vars$, then $\exists x\ \varphi\in\Phi_{L}$ 
 And we use parentheses to disambiguate the formula.
 
-```ad-info
-The *Terms* and things related to it all, live inside the universe, Hence symbols from $F$ are only used in terms. The *Formulas* are to be interpreted as true of false statements. 
-```
+> [!info]
+> The *Terms* and things related to it all, live inside the universe, Hence symbols from $F$ are only used in terms. The *Formulas* are to be interpreted as true of false statements. 
 
 ---
 # References

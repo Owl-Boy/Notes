@@ -5,19 +5,15 @@ Tags : [[Differential Equations]] [[Algebra]]
 
 ---
 # Exponential of a Matrix
-```ad-note
-title:
-Given $A \in M_n(\mathbb{R})$; we would like to define
-$$e^A := \sum\limits_{n=0}^\infty \dfrac{A^k}{k!}$$
-```
+> [!note]
+> Given $A \in M_n(\mathbb{R})$; we would like to define
+> $e^A := \sum\limits_{n=0}^\infty \dfrac{A^k}{k!}$
 To make sure that the definition makes sense, we need to ensure that the series always converges.
 
 We put a metric on $M_{n}(\mathbb{R})$ induced by the norm $\|A\| = \sup\limits_{\|x\| = 1} |Ax|$.
 ## Theorem
-```ad-note
-title:
-$M_n(\mathbb{R})$ is complete under the metric induced by $\| \cdot \|$.
-```
+> [!note]
+> $M_n(\mathbb{R})$ is complete under the metric induced by $\| \cdot \|$.
 ##### Proof:
 Let $\{ T_{k} \}_{k \in \mathbb{N}}$ be a cauchy sequence in $M_{n}(\mathbb{R})$ i.e.,
 $\forall \ \epsilon>0, \exists N_{0}$ s.t. $\forall \ k,n > N_{0}, \ \|T_{k}-T_{n}\| < \epsilon$.
@@ -32,19 +28,15 @@ Define $\mathcal{M} : \mathbb{R}^{n} \to \mathbb{R}^{n}$ by $\mathcal{M}(x) = y_
 Then verify that $T_{j} \to \mathcal{M}$ as $j\to \infty$. $\square$
 
 ## Theorem
-```ad-note
-title:
-Given $B \in M_{n}(\mathbb{R})$; the series $$e^B := \sum\limits_{k=0}^{\infty} \frac{1}{k!}B^{k}$$
-converges in $M_{n}(\mathbb{R})$.
-```
+> [!note]
+> Given $B \in M_{n}(\mathbb{R})$; the series $e^B := \sum\limits_{k=0}^{\infty} \frac{1}{k!}B^{k}$
+> converges in $M_{n}(\mathbb{R})$.
 ##### Proof:
 Show that this sequence of partial sums is cauchy.
 
 ## Theorem
-```ad-note
-title:
-Let $T_{1},T_{2} \in M_{n}(\mathbb{R})$ s.t. $T_{1}T_{2} = T_{2}T_{1}$, then $e^{T_{1}+T_{2}} = e^{T_{1}}e^{T_{2}}$
-```
+> [!note]
+> Let $T_{1},T_{2} \in M_{n}(\mathbb{R})$ s.t. $T_{1}T_{2} = T_{2}T_{1}$, then $e^{T_{1}+T_{2}} = e^{T_{1}}e^{T_{2}}$
 ##### Proof:
 $$
 \begin{align}

@@ -5,19 +5,15 @@ Tags :[[Number Theory]]
 
 ---
 # Number Field
-```ad-note
-title:
-A number field is a finite extension of $\mathbb{Q}$.
-```
+> [!note]
+> A number field is a finite extension of $\mathbb{Q}$.
 - A number field is an algebraic extension of $\mathbb{Q}$.
 - Every such field has the form $\mathbb{Q}[\alpha]$ for some algebraic number $\alpha \in \mathbb{C}$ ([[Primitive Element Theorem]])
 - Examples are [[Cyclotomic Fields]].
 
 ### Proposition 1:
-```ad-note
-title:
-Let $K$ be a degree $n$ extension of $L$. Then there are exactly $n$ extensions to $K$ of any embedding of $L$ in $\mathbb{C}$.
-```
+> [!note]
+> Let $K$ be a degree $n$ extension of $L$. Then there are exactly $n$ extensions to $K$ of any embedding of $L$ in $\mathbb{C}$.
 ###### Proof:
 Consider $\sigma : L \to \mathbb{C}$ an embedding, and let $K = L(\alpha_{1},\alpha_{2},\dots,\alpha_{n})$.
 Let $f_{1}$ be the minimal poly of $\alpha_{1}$ over $L$. Now $f_{1}(\alpha_{1}) = 0 \implies (\sigma f_{1})(\sigma\alpha_{1}) = 0 \implies$ $\alpha_{1}$ is sent to a root of $\sigma f_{1}$.
@@ -27,10 +23,8 @@ Putting $L(\alpha_{1},\alpha_{2})$ and $L(\alpha_{1})$ inplace of $L(\alpha_{1})
 Thus, by induction, there are $[K:L]$ extensions of $\sigma$ to $K$.
 
 ### Corollary:
-```ad-note
-title:
-There are exactly $n$ embeddings of $K$ in $\mathbb{C}$, given that $[K:\mathbb{Q}] = n$.
-```
+> [!note]
+> There are exactly $n$ embeddings of $K$ in $\mathbb{C}$, given that $[K:\mathbb{Q}] = n$.
 
 ### Proposition 2:
 

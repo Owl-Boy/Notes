@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # Metrizable Spaces
-```ad-note
-title:
-A topo space that can be endowed with a metric inducing the same topology is called _metrizable_.
-```
+> [!note]
+> A topo space that can be endowed with a metric inducing the same topology is called _metrizable_.
 
 ---
 # Related Results

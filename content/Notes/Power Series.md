@@ -5,22 +5,18 @@ Tags : [[Complex Analysis]]
 
 ---
 # Power Series
-```ad-note
-title:
-A **Power Series** with center $z_{0\in}\mathbb C$ is a series of functions of the from
-$$
-\sum\limits_{n\ge0}a_{n}(z-z_0)^{n}
-$$
-```
+> [!note]
+> A **Power Series** with center $z_{0\in}\mathbb C$ is a series of functions of the from
+> $
+> \sum\limits_{n\ge0}a_{n}(z-z_0)^{n}
+> $
 [[Fourier Series]] is an example of power series in case of real functions
 **Example:** Geometric Series
 $$f(z)=\sum\limits_{n\ge0}z^n$$
 We know that for all $z$ such that $|z|<1, f(z)$ [[Complex Convergence Results|converges]]
 
-```ad-hint
-title: Convention
-The center of convergence is assumed to be $0$
-```
+> [!hint] Convention
+> The center of convergence is assumed to be $0$
 
 
 **Theorem:** For every power series there is a radius of convergence, $R>0, R\in\mathbb R$ such that

@@ -5,10 +5,8 @@ Tags : [[Topology]]
 
 ---
 # Homotopy Equivalence
-```ad-note
-title:
-Let $f : X \to Y$ and $g : Y \to X$ be cts maps. If $g \circ f : X \to X$ is homotopic to $id_{X}$ and $f \circ g : Y \to Y$ is homotopic to $id_{Y}$, then we say that $f,g$ are **homotopy equivalences**. $X$ and $Y$ have the same **homotopy type**.
-```
+> [!note]
+> Let $f : X \to Y$ and $g : Y \to X$ be cts maps. If $g \circ f : X \to X$ is homotopic to $id_{X}$ and $f \circ g : Y \to Y$ is homotopic to $id_{Y}$, then we say that $f,g$ are **homotopy equivalences**. $X$ and $Y$ have the same **homotopy type**.
 #### Examples:
 1. If $r : X \to A$ deformation retract, $f = r$, $g = i : A \hookrightarrow X$
 2. $A =$ figure eight space, $X = \mathbb{R}^{2} \setminus \{ 2 \ points \}$, $(i,r)$ maps
@@ -20,10 +18,8 @@ This is homotopic to $A \xrightarrow{i} X \xrightarrow{r}A$ because $r' \circ i'
 So, $A,A'$ are homotopy equivalent with $f = r' \circ i$ and $g = r \circ i'$.
 
 ### Proposition:
-```ad-note
-title:
-If $f:X \to Y$ and $g:Y \to Z$ are homotopy equivalences then $g \circ f:X\to Z$ is a homotopy equivalence.
-```
+> [!note]
+> If $f:X \to Y$ and $g:Y \to Z$ are homotopy equivalences then $g \circ f:X\to Z$ is a homotopy equivalence.
 ##### Proof:
 Take 
 $$
@@ -32,17 +28,13 @@ $$
 This is homotopic to $id_{X}$. So $X$ and $Z$ are homotopy equivalent with $g \circ f$ and $f' \circ g'$ as the homotopy equivalence maps.
 
 ### Definition:
-```ad-note
-title:
-$X$ is contractible if $id_X$ is homotopic to a constant map $X \to \{p\}$, $p\in X$.
-```
+> [!note]
+> $X$ is contractible if $id_X$ is homotopic to a constant map $X \to \{p\}$, $p\in X$.
 This gives that $\{ p \}\to X$ is a homotopy equivalence.
 
 ### Theorem:
-```ad-note
-title:
-Let $f : (X,x_0)\to (Y,y_0)$ be a cts map. If $f$ is a homotopy equivalence, then $f_*$ is an isomorphism.
-```
+> [!note]
+> Let $f : (X,x_0)\to (Y,y_0)$ be a cts map. If $f$ is a homotopy equivalence, then $f_*$ is an isomorphism.
 ##### Proof:
 Recall Lemma 2 from [[Deformation Retracts]].
 Let $g : Y \to X$ be the homotopy inverse to $f$. Let $g(y_{0}) = x_{1}$ and let $f(x_{1}) = y_{1}$.

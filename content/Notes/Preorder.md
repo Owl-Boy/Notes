@@ -12,12 +12,10 @@ Tags :[[Order Theory]]
 
 ---
 # Preorder
-```ad-note
-title:
-A **Preorder** relation on a set $X$ is a binary relation on $X$ denoted with $\le$ such that
-- (A) $x\le x$
-- (B) if $x\le y$ and $y\le z$ then $x\le z$
-```
+> [!note]
+> A **Preorder** relation on a set $X$ is a binary relation on $X$ denoted with $\le$ such that
+> - (A) $x\le x$
+> - (B) if $x\le y$ and $y\le z$ then $x\le z$
 
 **Example:**
 - Discrete Preorder $(X, =)$: $\forall x\in X, x \le x$ and if $y\ne x$ neither $x\le y$ nor $y\le x$ holds, essentially no points are comparable

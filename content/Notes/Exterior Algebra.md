@@ -40,9 +40,8 @@ $$
 A&\in \Lambda^lV &\times B&\in\Lambda^mV &\times A\wedge B&\in\Lambda^{l+m}
 \end{aligned}
 $$
-```ad-todo
-Finish the diagram for types in multiplication in Exterior Algebra
-```
+> [!todo]
+> Finish the diagram for types in multiplication in Exterior Algebra
 
 We can use [[Alt]]: $\mathcal T^k(V) \to \Gamma^k(V)$ to get a multilinear map from $\Gamma^K(V)$ 
 
@@ -59,10 +58,8 @@ A\wedge B = (-1)^{lm}B\wedge A
 $$
 
 
-```ad-info
-title: Reason to study Exterior Algebra
-[[Determinants]] of matrices form an Exterior Algebra which is a large part of why people study Exterior Algebra
-```
+> [!info] Reason to study Exterior Algebra
+> [[Determinants]] of matrices form an Exterior Algebra which is a large part of why people study Exterior Algebra
 
 
 ---

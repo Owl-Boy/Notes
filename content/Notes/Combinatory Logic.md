@@ -9,12 +9,10 @@ Tags : [[Logic]], [[Lambda Calculus]]
 ---
 # Combinatory Logic
 
-```ad-cite
-title:History
-This section ties more stuff in *Logic* and *Lambda Calculus*
-Namely representing [[Hilbert Style Proofs]] with **Combinators**.
-And the emulation of *Lambda Calculus* with **Combinators** directly translates to Deduction Theorem for *Hilbert's Proof System*
-```
+> [!cite] History
+> This section ties more stuff in *Logic* and *Lambda Calculus*
+> Namely representing [[Hilbert Style Proofs]] with **Combinators**.
+> And the emulation of *Lambda Calculus* with **Combinators** directly translates to Deduction Theorem for *Hilbert's Proof System*
 
 ## Syntax
 The **Context Free Grammar** for _Combinatory Logic_

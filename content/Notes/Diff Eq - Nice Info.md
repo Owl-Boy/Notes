@@ -6,10 +6,8 @@ Tags : [[Differential Equations]]
 ---
 # Diff Eq - Nice Info
 
-```ad-info
-title: People that contributed
-Euler, (Jacob and Daniel) Bernoulli, Lagrange, Laplace, Fourier, Cauchy, Maxwell, Poincare$\dots$
-```
+> [!info] People that contributed
+> Euler, (Jacob and Daniel) Bernoulli, Lagrange, Laplace, Fourier, Cauchy, Maxwell, Poincare$\dots$
 
 **Differential Equations** greatly contributes to the predictive powers of maths.
 Connected Fields

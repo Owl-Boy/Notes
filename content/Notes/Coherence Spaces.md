@@ -5,12 +5,11 @@ Tags : [[Type Theory]], [[Category Theory]]
 
 ---
 # Coherence Spaces
-```ad-info
-A **Coherence Space** is a set (of sets) $\mathcal A$ which satisfies:
-- _Down Closure_: If $a\in\mathcal A$ and $a'\subset a$ then $a'\in\mathcal A$
-- _Binary Completeness_: If $M\subset \mathcal A$ and $\forall a_{1},a_{2}\in M$ we have $a_{1}\cup a_{2}\in\mathcal A$, then $\bigcup M\in\mathcal A$
-- $\emptyset\in\mathcal A$
-```
+> [!info]
+> A **Coherence Space** is a set (of sets) $\mathcal A$ which satisfies:
+> - _Down Closure_: If $a\in\mathcal A$ and $a'\subset a$ then $a'\in\mathcal A$
+> - _Binary Completeness_: If $M\subset \mathcal A$ and $\forall a_{1},a_{2}\in M$ we have $a_{1}\cup a_{2}\in\mathcal A$, then $\bigcup M\in\mathcal A$
+> - $\emptyset\in\mathcal A$
 
 for example
 ![[Pasted image 20230728172540.png]]

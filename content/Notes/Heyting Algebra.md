@@ -5,11 +5,9 @@ Tags : [[Logic]]
 
 ---
 # Heyting Algebra
-```ad-note
-title:definition
-
-A distributive [[Lattice|lattice]] with $0$ and $1$ such that for all $a, b\in H$ we have $a\implies b\in H$
-```
+> [!note] definition
+> 
+> A distributive [[Lattice|lattice]] with $0$ and $1$ such that for all $a, b\in H$ we have $a\implies b\in H$
 
 ^definition
 

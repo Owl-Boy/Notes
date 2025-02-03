@@ -5,12 +5,10 @@ Tags : [[Differential Equations]]
 
 ---
 # Homogenous Linear Systems
-```ad-note
-title:
-A homogenous Linear system is of the form 
-$$\dot{\bar{x}}(t) = A(t)x(t)$$
-Where $A : I \to M_n(\mathbb{R})$
-```
+> [!note]
+> A homogenous Linear system is of the form 
+> $\dot{\bar{x}}(t) = A(t)x(t)$
+> Where $A : I \to M_n(\mathbb{R})$
 ## How do we find its solutions?
 Assume henceforth that $A(t)$ is continuous.
 

@@ -12,10 +12,8 @@ Nice Properties of incidence matrices.
 $MM^{t}=\text{diag}(d_{1}, \dots,d_{n})+L(G)$
 $M^{t}M=2I+G$
 
-```ad-note
-title:
-Peterson Graph is a line graph.
-```
+> [!note]
+> Peterson Graph is a line graph.
 ---
 # References
 [[Line Graph]]

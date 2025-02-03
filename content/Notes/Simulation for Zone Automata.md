@@ -10,12 +10,11 @@ Tags : [[Timed Automata]]
 # Simulation for Zone Automata
 ---
 
-```ad-tldr
-In this approach we give a preorder between _symbolic states_ and we modify $\text{Trans}$ rule to not add an elment $q$ if we have aleady reached an element $p$ such that $p\succeq q$.
-
-We the prove that this operation is finite, i.e, for all sequences $(q,Z_{1}), (q,Z_{2})\dots$, we have $(q,Z_{j})\preceq(q,Z_{i})$ if $i\le j$.
-If the preorder is finite, then the forward analysis always terminates.
-```
+> [!tldr]
+> In this approach we give a preorder between _symbolic states_ and we modify $\text{Trans}$ rule to not add an elment $q$ if we have aleady reached an element $p$ such that $p\succeq q$.
+> 
+> We the prove that this operation is finite, i.e, for all sequences $(q,Z_{1}), (q,Z_{2})\dots$, we have $(q,Z_{j})\preceq(q,Z_{i})$ if $i\le j$.
+> If the preorder is finite, then the forward analysis always terminates.
 
 A *Simulations* between two _Symbolic States_ of the transition system $\mathcal S$ is a relation $(q, v)\preceq(q',v')$ if
 - $q=q'$
@@ -43,14 +42,12 @@ The proofs for *Completeness* and *Soundness* are almost identical to the one in
 ## Finite Simulation
 
 Currently we use subset relation as the simulation which does not terminate. We need to find a *Finite Simlution*
-```ad-note
-title: Finite Simulation
-A _Simulation Relation_ is called *Finite* if there exists a number $K\in\mathbb N$ such that in every run of length more than $K$ that is 
-$$
-s_{0}\rightarrow s_{1}\rightarrow\dots\rightarrow s_{k}
-$$
- there will be $i < j\le K$ such that $s_{j}\le s_{i}$
-```
+> [!note] Finite Simulation
+> A _Simulation Relation_ is called *Finite* if there exists a number $K\in\mathbb N$ such that in every run of length more than $K$ that is 
+> $
+> s_{0}\rightarrow s_{1}\rightarrow\dots\rightarrow s_{k}
+> $
+>  there will be $i < j\le K$ such that $s_{j}\le s_{i}$
 If we do this, then we guarantee that the program terminates!
 
 ## Simulation from region equivalence

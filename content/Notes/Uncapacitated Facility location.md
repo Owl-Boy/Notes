@@ -23,10 +23,9 @@ Minimise $\sum\limits_{i} f_{i}x_{i} + \sum\limits_{i,j} c_{ij}y_{ij}$ s.t.:
 - $x_i \geq y_{ij}$ $\forall i,j$
 - $x_i, y_{ij} \in [0,1]$ $\forall i,j$.
 
-```ad-info
-There is a simple reduction from set cover to facility location. So this problem has no constant factor approximation either.
-So we'll assume metric property: $c_{i',j'} \leq c_{ij'} +c_{i'j} +c_{ij}$. (since no triangles)
-```
+> [!info]
+> There is a simple reduction from set cover to facility location. So this problem has no constant factor approximation either.
+> So we'll assume metric property: $c_{i',j'} \leq c_{ij'} +c_{i'j} +c_{ij}$. (since no triangles)
 
 Solve LP. Let LP OPT be $x^*, y^*$.
 
@@ -53,19 +52,17 @@ So we scale all of them to make the sum equal to $1$.
 $y'_{ij} = \dfrac{y^*_{ij}}{\sum_{i \in S_j} y^*_{ij}}$  $\forall i \in S_j$.
 
 
-```ad-info
-title:**Lemma 1:** $\sum\limits_{i \in S_j} y^*_{ij} \geq 1/2.$
- ($\implies y'_{ij} \leq 2y^*_{ij}$.)
- *Proof:*
-$$\begin{align*}
-c_j^* &= \sum_i c_{ij} y^*_{ij}\\
-&\geq \sum_{i \notin S_j} c_{ij} y^*_{ij}\\
-&> \sum_{i \notin S_j} 2c^*_j y^*_{ij}\\
-c^*_j &> 2c^*_j \sum_{i \notin S_j} y^*_{ij}\\
-\sum_{i \notin S_j} y^*_{ij} &< \frac{1}{2}.\\
-\end{align*}
-$$
-```
+> [!info] **Lemma 1:** $\sum\limits_{i \in S_j} y^*_{ij} \geq 1/2.$
+>  ($\implies y'_{ij} \leq 2y^*_{ij}$.)
+>  *Proof:*
+> $\begin{align*}
+> c_j^* &= \sum_i c_{ij} y^*_{ij}\\
+> &\geq \sum_{i \notin S_j} c_{ij} y^*_{ij}\\
+> &> \sum_{i \notin S_j} 2c^*_j y^*_{ij}\\
+> c^*_j &> 2c^*_j \sum_{i \notin S_j} y^*_{ij}\\
+> \sum_{i \notin S_j} y^*_{ij} &< \frac{1}{2}.\\
+> \end{align*}
+> $
 
 $y'_{ij} \geq y^*_{ij}$ $\forall i \in S_j$
 $x'_i \geq y'_{ij}$
@@ -87,12 +84,10 @@ Let $L$ be the set of facilities opened
 Let $C_f(L) =$ opening cost of $L$
 	$C_r(L) =$ connection cost of $L$.
 
-```ad-info
-title:Lemma 2:
-1. $C_f(L) \leq 2\sum_i f_i x^*_i$
-2. $C_r(L) \leq 6 \sum_{ij} c_{ij}y^*_{ij}$
-$\implies$ cost$(L) \leq 6 LP.OPT$.
-```
+> [!info] Lemma 2:
+> 1. $C_f(L) \leq 2\sum_i f_i x^*_i$
+> 2. $C_r(L) \leq 6 \sum_{ij} c_{ij}y^*_{ij}$
+> $\implies$ cost$(L) \leq 6 LP.OPT$.
 
 *Observe:* If $j_1$ and $j_2$ are picked in Step 1 of the algorithm then $S_{j_1} \cap S_{j_2} = \phi$.
 

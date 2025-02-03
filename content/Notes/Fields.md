@@ -5,10 +5,8 @@ Tags : [[Algebra]]
 
 ---
 # Fields
-```ad-info
-title: Field
-A Field is a commutative ring in which every element has its inverse. Equivalently, the set $F^\times = F \setminus \{0\}$ of non zero elements is an abelian group under multiplication.
-```
+> [!info] Field
+> A Field is a commutative ring in which every element has its inverse. Equivalently, the set $F^\times = F \setminus \{0\}$ of non zero elements is an abelian group under multiplication.
 
 The [[Characterisic of a field]] $F$, denoted $\text{ch}(F)$ is the smallest positive integer $p$ such that $p\cdot1_F=0$ if such $p$ exists, otherwise it is defined to be $0$.
 

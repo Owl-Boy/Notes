@@ -12,9 +12,8 @@ It's famous use cases are **Logic Programming** and in making type systems for p
 
 This algorithm gives the most general type for a give lambda expression
 
-```ad-warning
-This is not the usual [[Unificate Algorithm For Type Inference|Unification Algorithm]]. I have figured it out based on my partial memory from whatever prof did in class.
-```
+> [!warning]
+> This is not the usual [[Unificate Algorithm For Type Inference|Unification Algorithm]]. I have figured it out based on my partial memory from whatever prof did in class.
 
 The procedure involves assigning types, then finding constraints and solving them. 
 

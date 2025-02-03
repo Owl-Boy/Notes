@@ -22,13 +22,11 @@ $$
 FIRST:= TRUE,\;\;\; SECOND:=FALSE
 $$
 
-```ad-info
-title: infix notation
-we can write $PAIR(a,b)$ as $(a, b)$
-and we can write the first and second function in following way 
-$(a,b).1 = a$
-$(a,b).2 = b$
-```
+> [!info] infix notation
+> we can write $PAIR(a,b)$ as $(a, b)$
+> and we can write the first and second function in following way 
+> $(a,b).1 = a$
+> $(a,b).2 = b$
 
 
 ---

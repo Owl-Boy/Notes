@@ -5,18 +5,14 @@ Tags : [[Topology]]
 
 ---
 # Lifts
-```ad-note
-title:
-Given $p : E \to B$ a cts map, a _lifting_ of a cts map $f : X \to B$ is a map $\widetilde{f}:X \to E$ such that $p \circ \widetilde{f} = f$.
-```
+> [!note]
+> Given $p : E \to B$ a cts map, a _lifting_ of a cts map $f : X \to B$ is a map $\widetilde{f}:X \to E$ such that $p \circ \widetilde{f} = f$.
 
 We can always _locally_ lift $f$, that means we can restrict $f$ to a subspace of $Y$ of$X$ so that $f(Y) \subset U \subset X$ where $U$ is evenly covered by $p$, then we can lift $f$ to one of the slices in $E$ above $U$.
 
 ### Theorem (Lifting of paths):
-```ad-note:
-title:
-Let $p: E \to B$ be a covering map. Let $f : [0,1] \to B$ be a path with $f(0) = b$. Let $e \in p ^{-1}(b)$, then there is a unique lift $\widetilde{f}:[0,1] \to E$ of the path $f$ such that $\widetilde{f}(0)=e$.
-```
+> [!note]
+> Let $p: E \to B$ be a covering map. Let $f : [0,1] \to B$ be a path with $f(0) = b$. Let $e \in p ^{-1}(b)$, then there is a unique lift $\widetilde{f}:[0,1] \to E$ of the path $f$ such that $\widetilde{f}(0)=e$.
 
 ##### Proof:
 $\exists$ an open covering $\{ U_{\alpha} \}_{\alpha \in J}$ of $B$ such that each $U_{\alpha}$ is evenly covered by $p$.
@@ -30,12 +26,10 @@ $\implies$ repeated finitely many times $\widetilde{f}:[0,1]\to E$
 $\implies$ Uniqueness follows since in each step, we only had a unique choice for the extension.
 
 ### Theorem(Lifting of homotopies):
-```ad-note
-title:
-Let $p: E\to B$ a covering map. $F : [0,1] \times [0,1]\to B$ be a cts map with $F((0,0))=b$. Let $e \in p ^{-1}(b)$, then there exists a unique lift $\widetilde{F}:[0,1]\times [0,1]\to E$ such that $\widetilde{F}((0,0))=e$.
-
-If $F$ is a path homotopy, then $\widetilde{F}$ is a path homotopy.
-```
+> [!note]
+> Let $p: E\to B$ a covering map. $F : [0,1] \times [0,1]\to B$ be a cts map with $F((0,0))=b$. Let $e \in p ^{-1}(b)$, then there exists a unique lift $\widetilde{F}:[0,1]\times [0,1]\to E$ such that $\widetilde{F}((0,0))=e$.
+> 
+> If $F$ is a path homotopy, then $\widetilde{F}$ is a path homotopy.
 ##### Proof:
 Similar idea as before for the first part. (Partition $I \times I$ into squares)
 
@@ -47,29 +41,25 @@ Since $\{ 0 \}\times[0,1]$ is connected, $\widetilde{F}(\{ 0 \}\times [0,1])$ is
 #### NOTE: Loops don't always lift to loops (See example 1)
 
 ### Definition:
-```ad-note
-title:
-Given a covering map $p : E \to B$ and $b_0 \in B$. Let $e_0 \in p^{-1}(b_0)$.
-Given a starting point $e_{0}$, there is a uniquely determined endpoint of any lift.
-
-$$
-\varphi : \Pi_{1}(B,b_{0}) \to p ^{-1}(b_{0})
-$$
-
-$$
-\varphi ([f]) = \widetilde{f}(1), \ \widetilde{f}(0) = e_{0}
-$$
-```
+> [!note]
+> Given a covering map $p : E \to B$ and $b_0 \in B$. Let $e_0 \in p^{-1}(b_0)$.
+> Given a starting point $e_{0}$, there is a uniquely determined endpoint of any lift.
+> 
+> $
+> \varphi : \Pi_{1}(B,b_{0}) \to p ^{-1}(b_{0})
+> $
+> 
+> $
+> \varphi ([f]) = \widetilde{f}(1), \ \widetilde{f}(0) = e_{0}
+> $
 This function is well defined because if $f \simeq_{p} g$ as loops in $(B,b_{0})$ then the homotopy $F$ between them lifts to a homotopy $\widetilde{F}$ between $\widetilde{f}, \widetilde{g}$, and thus, $\widetilde{f}(1) = \widetilde{g}(1)$.
 
 This function $\varphi$ is called the **lifting correspondence** derived from the covering map $p$ (this depends on the choice of $e_{0}$).
 
 
 ### Theorem:
-```ad-note
-title:
-If $E$ is path connected, $\varphi$ is surjective. If $E$ is simply connected, then it is bijective.
-```
+> [!note]
+> If $E$ is path connected, $\varphi$ is surjective. If $E$ is simply connected, then it is bijective.
 ##### Proof:
 If $E$ is path connected, for any $e_{1} \in p ^{-1}(b_{0})$, $\exists$ a path $g$ from $e_{0}$ to $e_{1}$. Then $f := p \circ g$ is a loop in $B$ based at $e_{0}$, and $\varphi([f])=e_{1}$ by definition.
 
@@ -77,10 +67,8 @@ If $E$ is simply connected, take $[f]$ ; $[g]$ s.t. $\varphi([f]) = \varphi([g])
 $\widetilde{f},\widetilde{g}$ unique liftings beginning at $e_{0}$. Then $\widetilde{f}(1) = \widetilde{g}(1) \implies \widetilde{f}, \widetilde{g}$ are path homotopic with homotopy $\widetilde{F}(s,t)$. Then $F(s,t) = p \circ \widetilde{F}(s,t)$ is a path homotopy between $f,g$. Hence $\varphi$ is injective as well as surjective (simply connected is path connected by definition).
 
 ### Theorem (Lifting of any cts function):
-```ad-note
-title:
-Given a connected space $Y$ and a map $f : Y \to X$, let $p : E \to X$ be a covering map. Then if for two lifts $\widetilde{f_{1}}$ and $\widetilde{f_{2}}$ of $f$, $\widetilde{f_{1}}(y_{0}) = \widetilde{f_{2}}(y_{0})$ for some $y_{0} \in Y$, then $\widetilde{f_{1}} = \widetilde{f_{2}}$. (Path and Homotopy lifting is a special case of this.)
-```
+> [!note]
+> Given a connected space $Y$ and a map $f : Y \to X$, let $p : E \to X$ be a covering map. Then if for two lifts $\widetilde{f_{1}}$ and $\widetilde{f_{2}}$ of $f$, $\widetilde{f_{1}}(y_{0}) = \widetilde{f_{2}}(y_{0})$ for some $y_{0} \in Y$, then $\widetilde{f_{1}} = \widetilde{f_{2}}$. (Path and Homotopy lifting is a special case of this.)
 
 ##### Proof:
 Consider the diagram:

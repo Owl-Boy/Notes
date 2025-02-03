@@ -6,10 +6,8 @@ Tags : [[Algorithmic Coding Theory]]
 ---
 # Algorithmic Coding Theory Lec 1
 
-```ad-info
-title: Redundancies
-We want to either transmit a message through a noisy channel or read some stored data which might have been corrupted due to hardware issues . So we add redundancies
-```
+> [!info] Redundancies
+> We want to either transmit a message through a noisy channel or read some stored data which might have been corrupted due to hardware issues . So we add redundancies
 
 $\Sigma$ is a finite alphabet. **Code** of blocks of length $n\in\Sigma^{n}$
 $|\Sigma|=q$ and it might grow with $n$ 

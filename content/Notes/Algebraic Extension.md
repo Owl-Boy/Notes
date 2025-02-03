@@ -8,9 +8,8 @@ Tags : [[Algebra]]
 
 $\alpha \in K$ is said to be _algebraic_ over $F$ if it is the root of some non-zero polynomial $f(x)\in F[x]$. If not, $\alpha$ is called _Transcendental_ over $F$. If $\forall\alpha\in K$ is algebraic over $F$, $K$ is called an [[Algebraic Extension]] of $F$. 
 
-```ad-note
-If $\alpha$ is algebraic over some field $F$ then it is algebraic over all field extensions $L$ of $F$.
-```
+> [!note]
+> If $\alpha$ is algebraic over some field $F$ then it is algebraic over all field extensions $L$ of $F$.
 
 _Proposition:_ Let $\alpha$ be algebraic over $F$, then there exists a unique irreducible monic polynomial $m_{\alpha, F}(x)\in F(x)$ which has $\alpha$ as its root. Any $f(x)$ has $\alpha$ as a root iff $m_{\alpha, F}(x) \nmid f(x)$   
 _Proof:_ Let $g(x)$ be the polynomial of least degree with $\alpha$ as its root. $g(x)$ cannot be written as $a(x)\cdot b(x)$ where $a(x)$ and $b(x)$ are polynomials of smaller degrees, becuase that would imply $\alpha$ is a root of either $a(x)$ or $b(x)$, which contradicts the minimality of $g(x)$. Suppose there exits another monic polynomial $f(x)$ which is irreducible and $\alpha$ is its root. Then using the euclidian algorithm, we can find 

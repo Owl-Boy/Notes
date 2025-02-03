@@ -5,70 +5,58 @@ Tags : [[Algebra]]
 
 ---
 # Galois Correspondence
-```ad-info
-title: Idea
-Given a field extension $L /K$, a $K-$automorphism of $L$ is an automorphism of $L$ which fixes $K$. The set of all such $K-$automorphisms forms a group denoted $\mathrm{Aut}(L/K)$.
-
-From each intermediate field $K \subset F \subset L$, we get a subgroup $\mathrm{Aut}(L/F) := \{\sigma \in \mathrm{Aut}(L/K) | \sigma(a) = a \ \forall \ a \in F\}$ of $\mathrm{Aut}(L/K)$.
-And, given any subgroup $H \le \mathrm{Aut}(L/K)$, we get a corresponding intermediate field $K \subset L^H \subset L$, where $L^H := \{\alpha \in L : \sigma(\alpha) = \alpha \ \forall \ \sigma \in H\}$, this is called the fixed field of $H$.
-
-It is straightforward to check that $F \subset L^{\mathrm{Aut}(L/F)}$ and $H \subset \mathrm{Aut}(L/L^H)$.
-The galois correspondence gives descriptions of those extensions $L/K$ where the above two inclusions become equalities.
-
-This will give us, at a minimum, $K = L^{\mathrm{Aut}(L/K)}$.
-This is not true for general extensions. Consider $L = \mathbb{Q}(\sqrt[3]{2})$ and $K = \mathbb{Q}$ this has no intermediate fields and its automorphism group is trivial. Which gives the fixed field of $\mathrm{Aut}(L/K) = L$ which is not desirable in context to the above discussion.
-
-This problem arose because some roots of the min poly of $\sqrt[3]{2}$ were missing from the extension, so there was only one option of sending $\sqrt[3]{2}$ under an automorphism, to itself.
-
-Another type of problem we encounter is the following:
-Let $p$ be a prime and $F = \mathbb{F}_p$ then $X^p - u$ has only one root in the splitting field over $F(u)$ (the polynomial in consideration is inseparable). Hence $\mathrm{Aut}(\mathbb{F}_p(u^{1/p})/\mathbb{F}_p(u))$ is trivial, while the degree of the extension is $p$. 
-
-This problem arose because the extension in question was not separable, hence didn't have enough roots for the $\mathrm{Aut}$ group to be non trivial. 
-```
+> [!info] Idea
+> Given a field extension $L /K$, a $K-$automorphism of $L$ is an automorphism of $L$ which fixes $K$. The set of all such $K-$automorphisms forms a group denoted $\mathrm{Aut}(L/K)$.
+> 
+> From each intermediate field $K \subset F \subset L$, we get a subgroup $\mathrm{Aut}(L/F) := \{\sigma \in \mathrm{Aut}(L/K) | \sigma(a) = a \ \forall \ a \in F\}$ of $\mathrm{Aut}(L/K)$.
+> And, given any subgroup $H \le \mathrm{Aut}(L/K)$, we get a corresponding intermediate field $K \subset L^H \subset L$, where $L^H := \{\alpha \in L : \sigma(\alpha) = \alpha \ \forall \ \sigma \in H\}$, this is called the fixed field of $H$.
+> 
+> It is straightforward to check that $F \subset L^{\mathrm{Aut}(L/F)}$ and $H \subset \mathrm{Aut}(L/L^H)$.
+> The galois correspondence gives descriptions of those extensions $L/K$ where the above two inclusions become equalities.
+> 
+> This will give us, at a minimum, $K = L^{\mathrm{Aut}(L/K)}$.
+> This is not true for general extensions. Consider $L = \mathbb{Q}(\sqrt[3]{2})$ and $K = \mathbb{Q}$ this has no intermediate fields and its automorphism group is trivial. Which gives the fixed field of $\mathrm{Aut}(L/K) = L$ which is not desirable in context to the above discussion.
+> 
+> This problem arose because some roots of the min poly of $\sqrt[3]{2}$ were missing from the extension, so there was only one option of sending $\sqrt[3]{2}$ under an automorphism, to itself.
+> 
+> Another type of problem we encounter is the following:
+> Let $p$ be a prime and $F = \mathbb{F}_p$ then $X^p - u$ has only one root in the splitting field over $F(u)$ (the polynomial in consideration is inseparable). Hence $\mathrm{Aut}(\mathbb{F}_p(u^{1/p})/\mathbb{F}_p(u))$ is trivial, while the degree of the extension is $p$. 
+> 
+> This problem arose because the extension in question was not separable, hence didn't have enough roots for the $\mathrm{Aut}$ group to be non trivial. 
 
 ### Lemma 1:
-```ad-note
-title:
-If $\sigma \in \mathrm{Aut}(L/K)$ and $f(X) \in K[X]$ then $\sigma(f(\alpha)) = f(\sigma(\alpha))$ for all $\alpha \in L$. In particular, a $K-$ automorphism permutes the root of any polynomial over $K$.
-```
+> [!note]
+> If $\sigma \in \mathrm{Aut}(L/K)$ and $f(X) \in K[X]$ then $\sigma(f(\alpha)) = f(\sigma(\alpha))$ for all $\alpha \in L$. In particular, a $K-$ automorphism permutes the root of any polynomial over $K$.
 
 ### Theorem 1:
-```ad-note
-title:
-For every finite extension $L /K$, the group $\mathrm{Aut}(L /K)$ is finite.
-```
+> [!note]
+> For every finite extension $L /K$, the group $\mathrm{Aut}(L /K)$ is finite.
 ##### Proof:
 Write $L = K(\alpha_{1},\alpha_{2},\dots,\alpha_{n})$, and each $\sigma \in \mathrm{Aut}(L/K)$ is determined by the image of all $\alpha_{i}$'s. 
 Each $\alpha_{i}$ has only finitely many possible images, its conjugates. Hence the number of $\sigma$'s is finite.
 
 ### Theorem 2:
-```ad-note
-title:
-If $L$ is a splitting field over $K$ of a polynomial in $K[X]$, then $|\mathrm{Aut}(L/K)| \le [L:K]$.
-```
+> [!note]
+> If $L$ is a splitting field over $K$ of a polynomial in $K[X]$, then $|\mathrm{Aut}(L/K)| \le [L:K]$.
 ##### Proof:
 Apply Theorem 1 of [[Splitting Fields]] to $L_{1} = L_{2} = L$, we get from part (c) that the number of isomorphisms which extend $id_{K}: K \to K$ is at most $[L : K]$, which was desired.
 
 ### Theorem 3:
-```ad-note
-title:
-If $L$ is a splitting field over $K$ of a **separable** polynomial in $K[X]$, then $|\mathrm{Aut}(L/K)| = [L:K]$.
-```
+> [!note]
+> If $L$ is a splitting field over $K$ of a **separable** polynomial in $K[X]$, then $|\mathrm{Aut}(L/K)| = [L:K]$.
 ##### Proof:
 Apply theorem 3 of [[Splitting Fields]] to $L_{1} = L_{2} = L$ and $K_{1} =K_{2} = K$.
 
 #### We want to look at those field extensions where $|\mathrm{Aut}(L /K)| = [L : K]$. Previous theorem has a converse.
 
 ### Theorem 4:
-```ad-note
-title:
-If $L /K$ is a finite extension and $|\mathrm{Aut}(L /K)| = [L  :K]$ then
-1) $L ^{\mathrm{Aut}(L /K)} = K$
-2) $L /K$ is separable.
-3) For $\alpha \in L$, its $K-$conjugates are $\sigma(\alpha)$ as $\sigma$ runs over $\mathrm{Aut}(L)$.
-4) $L/K$ is normal.
-5) $L$ is the splitting field over $K$ of a separable polynomial.
-```
+> [!note]
+> If $L /K$ is a finite extension and $|\mathrm{Aut}(L /K)| = [L  :K]$ then
+> 1) $L ^{\mathrm{Aut}(L /K)} = K$
+> 2) $L /K$ is separable.
+> 3) For $\alpha \in L$, its $K-$conjugates are $\sigma(\alpha)$ as $\sigma$ runs over $\mathrm{Aut}(L)$.
+> 4) $L/K$ is normal.
+> 5) $L$ is the splitting field over $K$ of a separable polynomial.
 ##### Proof:
 First we show that (2) and (4) imply (5).
 Since $L /K$ is separable, using primitive element theorem, we get $L =K(\gamma)$. Let $f$ be the min poly of $\gamma$ over $K$. Then since $L /K$ is normal, $f$ splits completely in $L$, thus $L$ is the splitting field of $f$ over $K$.

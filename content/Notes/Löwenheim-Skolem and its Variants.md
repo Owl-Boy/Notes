@@ -15,11 +15,9 @@ Tags : [[Logic]]
 
 2. Suppose $X$ is a set of formulas over $L$ that is satisfiable, and $L$ is not countable. Then $X$ is satisfiable in a model which is *at least uncountable*.
 
-```ad-info
-title:
-As a result of above, we can't define the set of real numbers in FOL using countably many constants.
-
-```
+> [!info]
+> As a result of above, we can't define the set of real numbers in FOL using countably many constants.
+> 
 
 ## Variants of LS theorem
 ---

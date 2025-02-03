@@ -5,10 +5,8 @@ Tags : [[Differential Equations]]
 
 ---
 # What are Differential equations
-```ad-info
-title:
-In this course we will be dealing with ordinary differential equations.
-```
+> [!info]
+> In this course we will be dealing with ordinary differential equations.
 
 An **ODE** is a functions of the form 
 $$

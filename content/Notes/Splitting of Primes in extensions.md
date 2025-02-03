@@ -5,32 +5,28 @@ Tags : [[Number Theory]] [[Algebra]]
 
 ---
 # Splitting of Primes in extensions
-```ad-info
-title: Discussion
-We know of primes in $\mathbb{Z}$ which are not irreducible in latger extensions, for example $5 = (2+i)(2-i)$ in $\mathbb{Z}[i]$ and although 2,3 are primes in $\mathbb{Z}$, the ideals $(2)$ and $(3)$ split in $\mathbb{Z}[\sqrt[]{ -5 }]$.
-$$
-\begin{align}
-(2) &= (2,1+\sqrt[]{ -5 })^{2} \\
-(3) &= (3,1+\sqrt[]{ -5 })(3,1-\sqrt[]{ -5 })
-\end{align}
-$$
-This phenomenon is called __splitting__. When we say that 3 splits as a product of two primes in $\mathbb{Z}[\sqrt[]{ -5 }]$, we really mean the prime ideal $(3)$ splits in $\mathbb{Z}[\sqrt[]{ -5 }]$.
-We now consider the general problem of a given prime splitting in a given number ring.
-```
+> [!info] Discussion
+> We know of primes in $\mathbb{Z}$ which are not irreducible in latger extensions, for example $5 = (2+i)(2-i)$ in $\mathbb{Z}[i]$ and although 2,3 are primes in $\mathbb{Z}$, the ideals $(2)$ and $(3)$ split in $\mathbb{Z}[\sqrt[]{ -5 }]$.
+> $
+> \begin{align}
+> (2) &= (2,1+\sqrt[]{ -5 })^{2} \\
+> (3) &= (3,1+\sqrt[]{ -5 })(3,1-\sqrt[]{ -5 })
+> \end{align}
+> $
+> This phenomenon is called __splitting__. When we say that 3 splits as a product of two primes in $\mathbb{Z}[\sqrt[]{ -5 }]$, we really mean the prime ideal $(3)$ splits in $\mathbb{Z}[\sqrt[]{ -5 }]$.
+> We now consider the general problem of a given prime splitting in a given number ring.
 
 From now on, let $K$ and $L$ be number fields with $K \subset L$, and $R = \overline{\mathbb{Z}} \cap K$ and $S = \overline{\mathbb{Z}} \cap L$.
 
 ### Theorem 1:
-```ad-note
-title:
-Let $P$ be a prime ideal of $R$, and $Q$ a prime ideal of $S$. Then the following are equivalent:
-1. $Q \mid PS$
-2. $Q \supset PS$
-3. $Q \supset P$
-4. $Q \cap R = P$
-5. $Q \cap K = P$
-If any of the above conditions hold, $Q$ is said to __lie over__ $P$ or $P$ is said to __lie under__ $Q$.
-```
+> [!note]
+> Let $P$ be a prime ideal of $R$, and $Q$ a prime ideal of $S$. Then the following are equivalent:
+> 1. $Q \mid PS$
+> 2. $Q \supset PS$
+> 3. $Q \supset P$
+> 4. $Q \cap R = P$
+> 5. $Q \cap K = P$
+> If any of the above conditions hold, $Q$ is said to __lie over__ $P$ or $P$ is said to __lie under__ $Q$.
 ###### Proof:
 $(1) \implies (2) \implies (3)$ is easy.
 $(3) \implies (4)$ We know that $Q \cap R \supset P$, and that $Q \cap R$ is a proper ideal of $R$ (otherwise $1 \in Q \cap R \subset Q \implies Q = S$), hence $P$ being a maximal ideal is equal to $Q \cap R$. 
@@ -38,10 +34,8 @@ $(4) \implies (5)$ $Q \cap K = Q \cap \overline{\mathbb{Z}} \cap K = Q \cap R = 
 $(5) \implies (1)$, since $(5) \implies (4) \implies (3) \implies(2) \implies (1)$ (easy to check).
 
 ### Theorem 2:
-```ad-note
-title:
-Every prime $Q$ of $S$ lies over a unique prime $P$ of $R$; every prime $P$ of $R$ lies under at least one prime $Q$ of $S$.
-```
+> [!note]
+> Every prime $Q$ of $S$ lies over a unique prime $P$ of $R$; every prime $P$ of $R$ lies under at least one prime $Q$ of $S$.
 ###### Proof:
 Let $P = Q \cap R$, note that $P$ is a prime ideal of $R$, hence $Q$ lies over a prime ideal of $R$.
 We just need to show that $Q \cap R \neq 0$, for this we take any element $\alpha \in Q$, take its norm $N ^{L}(\alpha) \in \mathbb{Z} \subset R$, we also know that $N ^{L}(\alpha) \in Q$, since the product of the conjugates of $\alpha$ other than $\alpha$ are contained in $S$.
@@ -91,25 +85,21 @@ f(U|P) &= f(U|Q)f(Q|P)
 $$
 We prove two theorems together, 
 ### Theorem 3:
-```ad-note
-title:
-Let $n$ be the degree of $L$ over $K$, ($L,K,R,S$ as before) and let $Q_{1},\dots Q_r$ be the primes of $S$ lying over a prime $P$ of $R$. Let $e_{1},\dots e_{r}$ be the corresponding ramification indices. Let $f_{1},\dots ,f_{r}$ be the corresponding inertial degrees. Then $\sum_{i}e_{i}f_{i} = n$.
-```
+> [!note]
+> Let $n$ be the degree of $L$ over $K$, ($L,K,R,S$ as before) and let $Q_{1},\dots Q_r$ be the primes of $S$ lying over a prime $P$ of $R$. Let $e_{1},\dots e_{r}$ be the corresponding ramification indices. Let $f_{1},\dots ,f_{r}$ be the corresponding inertial degrees. Then $\sum_{i}e_{i}f_{i} = n$.
 
 ### Theorem 4:
-```ad-note
-title:
-Let $R,S,K,L$ as before, and $n = [L:K]$. Let $\|I\|$ denote $|R/I|$ for an ideal $I$ of $R$.
-1. For ideals $I,J \subset R$, $$
-\|I\|\|J\| = \|IJ\|
-$$
-2. For an ideal $I \subset R$ and the ideal $IS \subset S$, $$
-\|IS\| = \|I\| ^{n}
-$$
-1. Let $\alpha \in R \setminus \{ 0 \}$, for the principal ideal $(\alpha)$,$$
-\|(\alpha)\| = |N ^{K}_{\mathbb{Q}}(\alpha) |
-$$
-```
+> [!note]
+> Let $R,S,K,L$ as before, and $n = [L:K]$. Let $\|I\|$ denote $|R/I|$ for an ideal $I$ of $R$.
+> 1. For ideals $I,J \subset R$, $
+> \|I\|\|J\| = \|IJ\|
+> $
+> 2. For an ideal $I \subset R$ and the ideal $IS \subset S$, $
+> \|IS\| = \|I\| ^{n}
+> $
+> 1. Let $\alpha \in R \setminus \{ 0 \}$, for the principal ideal $(\alpha)$,$
+> \|(\alpha)\| = |N ^{K}_{\mathbb{Q}}(\alpha) |
+> $
 ###### Proof of 4.1:
 We first prove this for coprime $I,J$ and then for prime powers, and the general result will follow.
 If $I,J$ are coprime, then $I \cap J = IJ$ (in a number ring), and so by chinese remainder theorem, $$
@@ -215,10 +205,8 @@ $$
 
 ---
 ### Theorem 5:
-```ad-note
-title:
-If $L$ is a normal extension of $K$ and $P$ is a prime in $R$, the galois group $\mathrm{Gal}(L /K)$ permutes the primes lying over $P$ and it does so transitively.
-```
+> [!note]
+> If $L$ is a normal extension of $K$ and $P$ is a prime in $R$, the galois group $\mathrm{Gal}(L /K)$ permutes the primes lying over $P$ and it does so transitively.
 ###### Proof:
 Fix a prime $Q$ lying over $P$, and $\sigma \in \mathrm{Gal}(L /K)$, then $\sigma(Q)$ is another prime ideal over $P$, since $\sigma(Q) \cap K = Q \cap K = P$.
 Now let $Q'$ be a prime over $P$ such that $\sigma(Q) \neq Q'$ for all $\sigma \in G$.
@@ -235,10 +223,8 @@ We have $x \notin \sigma(Q) \implies \sigma^{-1}(x) \notin Q$ for all $\sigma \i
 But this means $N ^{L}_{K}(x) = \prod_{\sigma} \sigma^{-1}(x) \notin Q$, this is a contradiction since $N_{K}^{L}(x) \in P \subset Q$.
 
 ### Corollary:
-```ad-note
-title:
-If $L$ is normal over $K$ and $Q$ and $Q'$ are two primes above $P$, then $e(Q|P) = e(Q'|P)$ and $f(Q|P) = f(Q'|P)$.
-```
+> [!note]
+> If $L$ is normal over $K$ and $Q$ and $Q'$ are two primes above $P$, then $e(Q|P) = e(Q'|P)$ and $f(Q|P) = f(Q'|P)$.
 ###### Proof:
 $e(Q|P) = e(Q'|P)$ follows from unique factorisation.
 For the second part, note the chain of isomorphisms:$$
@@ -246,16 +232,12 @@ S /Q \to \sigma S /\sigma Q \to S /\sigma Q
 $$
 ---
 ### Definition:
-```ad-note
-title:
-A prime $P$ of $R$ is __ramified__ in $S$ (or in $L$) if $e(Q|P) >1$ for some prime $Q$ of $S$ lying over $P$.
-```
+> [!note]
+> A prime $P$ of $R$ is __ramified__ in $S$ (or in $L$) if $e(Q|P) >1$ for some prime $Q$ of $S$ lying over $P$.
 
 ### Theorem 6:
-```ad-note
-title:
-Let $p$ be a prime in $\mathbb{Z}$, and suppose $p$ is ramified in a number ring $R$. Then $p \mid \mathrm{disc}(R)$.
-```
+> [!note]
+> Let $p$ be a prime in $\mathbb{Z}$, and suppose $p$ is ramified in a number ring $R$. Then $p \mid \mathrm{disc}(R)$.
 ###### Proof:
 Let $P$ be a prime in $R$ lying over $p$, such that $e(P|p) > 1$.
 Let $pR = PI$, with $I$ divisible by all primes of $R$ lying over $p$.
@@ -274,27 +256,21 @@ This means $\sigma_{i}(\alpha) \in Q$ for all $i = 1,2,\dots n$ implying $\mathr
 Thus we are done.
 
 ### Corollary 1:
-```ad-note
-title:
-Let $\alpha \in R$, $K = \mathbb{Q}[\alpha]$ and let $f$ be any monic poly over $\mathbb{Z}$ s.t. $f(\alpha) = 0$. If $p$ is a prime such that $p \nmid N ^{K}(f'(\alpha))$, then $p$ is unramified in $K$.
-```
+> [!note]
+> Let $\alpha \in R$, $K = \mathbb{Q}[\alpha]$ and let $f$ be any monic poly over $\mathbb{Z}$ s.t. $f(\alpha) = 0$. If $p$ is a prime such that $p \nmid N ^{K}(f'(\alpha))$, then $p$ is unramified in $K$.
 ###### Proof:
 Note that $m_{\alpha}'(\alpha) \mid f'(\alpha)$ where $m_{\alpha}(x)$ is the monic minimal poly of $\alpha$ over $\mathbb{Q}$. Thus, $N ^{K}(m_{\alpha}'(\alpha)) \mid N ^{K}(f'(\alpha)) \implies \mathrm{disc}(\alpha) \mid N ^{K}(f'(\alpha))$.
 So if $p \nmid N ^{K}(f'(\alpha))$, then $p \nmid \mathrm{disc}(\alpha)$ hence $p$ is unramified.
 
 ### Corollary 2:
-```ad-note
-title:
-Only finitely many primes of $\mathbb{Z}$ are ramified in a number ring $R$.
-```
+> [!note]
+> Only finitely many primes of $\mathbb{Z}$ are ramified in a number ring $R$.
 ###### Proof:
 Since there are only finitely many prime divisors of $\mathrm{disc}(R)$.
 
 ### Corollary 3:
-```ad-note
-title:
-Let $R$ and $S$ be number rings, $R \subset S$, then only finitely many primes of $R$ are ramified in $S$.
-```
+> [!note]
+> Let $R$ and $S$ be number rings, $R \subset S$, then only finitely many primes of $R$ are ramified in $S$.
 ###### Proof:
 If $P$ is a prime ramified in $S$, then $P \cap \mathbb{Z} = p\mathbb{Z}$ is ramified in $S$. But there are only finitely many such $p's$, and any such $p$ has only finitely many primes lying over it in $R$, hence only finitely many primes of $R$ ramify in $S$.
 
@@ -306,10 +282,8 @@ $$
 where $Q_{i}'s$ are distinct primes in $\mathbb{Z}[\omega]$ with same inertial degrees and we have $ref = \phi(m)$.
 
 ### Theorem 7:
-```ad-note
-title:
-Write $m = p ^{k}n$ with $p \nmid n$. Then we have $e = \phi(p ^{k})$ and $f =$ the multiplicative order of $p$ mod $n$. 
-```
+> [!note]
+> Write $m = p ^{k}n$ with $p \nmid n$. Then we have $e = \phi(p ^{k})$ and $f =$ the multiplicative order of $p$ mod $n$. 
 ###### Proof:
 Let $\alpha = \omega^{p ^{k}}$ and $\beta = \omega^{n}$.
 Then $\alpha$ is an $n ^{th}$ root of unity and $\beta$ is a $(p ^{k})^{th}$ root of unity.
@@ -326,10 +300,8 @@ $$
 where $P_{i}'s$ are distinct primes each with the same inertial degree $f$, and $rf = \phi(n)$.
 
 #### Claim:
-```ad-note
-title:
-$f$ is the order of $p$ mod $n$.
-```
+> [!note]
+> $f$ is the order of $p$ mod $n$.
 ###### Proof:
 Note that the galois group of $\mathbb{Q}(\alpha)$ over $\mathbb{Q}$ is the multiplicative group $\mathbb{Z}_{n}^{*}$. Take the automorphism $\sigma \in \mathrm{Gal}(\mathbb{Q}(\alpha)/\mathbb{Q})$ corresponding to $\bar{p} \in \mathbb{Z}_{n}^{*}$. The order of $\sigma$ in $\mathrm{Gal}(\mathbb{Q}(\alpha)  / \mathbb{Q})$ is the same as the order of $p$ mod $n$.
 Now fix a $P_{i} = P$, then $\mathbb{Z}[\alpha] /P$ has degree $f$ over $\mathbb{Z}_{p}$ and hence the galois group $\mathrm{Gal}((\mathbb{Z}[\alpha] /P) / \mathbb{Z}_{p})$ is a cyclic group (since finite fields) of order $f$. Let $\tau$ be the generator of this group ($\tau$ is the map that takes an element to its $p ^{th}$ power).
@@ -363,33 +335,29 @@ Thus, $\sum_{i}e(Q_{i}|p)f(Q_{i}|p) \ge r\phi(p ^{k})f = \phi(p ^{k}) \phi(n) = 
 Thus, $e(Q_{i}|p) = \phi(p ^{k})$ and $f(Q_{i}|p) = f$ and the $Q_{i}'s$ are the only primes of $\mathbb{Z}[\omega]$ lying over $p$.
 
 ### Corollary:
-```ad-note
-title:
-If $p \nmid m$, then $p$ splits into $\phi(m) /f$ distinct prime ideals in $\mathbb{Z}[\omega]$, where $f$ is the order of the prime $p$ mod $n$.
-```
+> [!note]
+> If $p \nmid m$, then $p$ splits into $\phi(m) /f$ distinct prime ideals in $\mathbb{Z}[\omega]$, where $f$ is the order of the prime $p$ mod $n$.
 
 ---
 # Method to factorise a prime ideal in an extension
 ### Theorem 8:
-```ad-note
-title:
-Let $R,S,L,K$ as before, and let $n = [L:K]$. Fix an element $\alpha \in S$ of degree $n$ over $K$, so that $L = K[\alpha]$ ([[Primitive Element Theorem]]).
-In general, $R[\alpha]$ is a subgroup of $S$, and the factor group $S /R[\alpha]$ is finite (Problem 3 of related problems, [[Discriminant of an n-tuple]], and the fact that both are free abelian groups of rank $mn$).
-Fix a prime $P$ of $R$.
-Now let $g$ be the monic irreducible poly for $\alpha$ over $K$ (this has coefficients in $R$).
-Now consider $\overline{g} \in (R /P)[x]$, it factors uniquely in $(R /P)[x]$ 
-$$
-g = \overline{g_{1}}^{e_{1}}\dots \overline{g_{r}}^{e_{r}}
-$$
-where the $g_{i}$ are monic irreducible polynomials over $R$ such that $\overline{g_{i}}$ are all distinct. 
-
-Now assume that $p \nmid |S /R[\alpha]|$, where $p$ is a prime of $\mathbb{Z}$ lying under $P$. Then the prime decomposition of $PS$ is given by 
-$$
-Q_{1}^{e_{1}}\dots Q_{r}^{e_{r}}
-$$
-where $Q_{i} = (P,g_{i}(\alpha)) = PS + (g_{i}(\alpha))$.
-Also, $f(Q_{i}|P) = \mathrm{deg}(g_{i})$.
-```
+> [!note]
+> Let $R,S,L,K$ as before, and let $n = [L:K]$. Fix an element $\alpha \in S$ of degree $n$ over $K$, so that $L = K[\alpha]$ ([[Primitive Element Theorem]]).
+> In general, $R[\alpha]$ is a subgroup of $S$, and the factor group $S /R[\alpha]$ is finite (Problem 3 of related problems, [[Discriminant of an n-tuple]], and the fact that both are free abelian groups of rank $mn$).
+> Fix a prime $P$ of $R$.
+> Now let $g$ be the monic irreducible poly for $\alpha$ over $K$ (this has coefficients in $R$).
+> Now consider $\overline{g} \in (R /P)[x]$, it factors uniquely in $(R /P)[x]$ 
+> $
+> g = \overline{g_{1}}^{e_{1}}\dots \overline{g_{r}}^{e_{r}}
+> $
+> where the $g_{i}$ are monic irreducible polynomials over $R$ such that $\overline{g_{i}}$ are all distinct. 
+> 
+> Now assume that $p \nmid |S /R[\alpha]|$, where $p$ is a prime of $\mathbb{Z}$ lying under $P$. Then the prime decomposition of $PS$ is given by 
+> $
+> Q_{1}^{e_{1}}\dots Q_{r}^{e_{r}}
+> $
+> where $Q_{i} = (P,g_{i}(\alpha)) = PS + (g_{i}(\alpha))$.
+> Also, $f(Q_{i}|P) = \mathrm{deg}(g_{i})$.
 ###### Proof:
 Let $f_{i} := deg(g_{i})$.
 We need to show that: 
@@ -440,29 +408,27 @@ P_{1}P_{2}, & f(P_{1}|p) = f(P_{2}|p) = 1
 \end{cases}
 $$
 ### Theorem 9:
-```ad-note
-title:
-With notation as above, we have:
-if $p \mid m$, then 
-$$
-pR = (p,\sqrt[]{ m })^{2}
-$$
-If $m$ is odd, then 
-$$
-2R = \begin{cases}
-(2,1 + \sqrt[]{ m })^{2} & \text{if } m \equiv 3 \ (\mathrm{mo d}\ 4) \\
-\left( 2, \frac{1 + \sqrt[]{ m }}{2} \right) \left( 2, \frac{1-\sqrt[]{ m }}{2} \right)  & \text{if } m \equiv 1 \ (\mathrm{mo d}\ 8) \\
-\mathrm{prime} & \text{if } m \equiv 5 \ (\mathrm{mo d}\ 8)
-\end{cases}
-$$
-If $p$ is odd, $p \nmid m$ then 
-$$
-pR = \begin{cases}
-(p,n + \sqrt[]{ m })(p,n-\sqrt[]{ m }) & \text{if } m\equiv n^{2} \ (\mathrm{mo d}\ p) \\
-\mathrm{prime} & \text{if $m$ is not a square mod $p$}
-\end{cases}
-$$
-```
+> [!note]
+> With notation as above, we have:
+> if $p \mid m$, then 
+> $
+> pR = (p,\sqrt[]{ m })^{2}
+> $
+> If $m$ is odd, then 
+> $
+> 2R = \begin{cases}
+> (2,1 + \sqrt[]{ m })^{2} & \text{if } m \equiv 3 \ (\mathrm{mo d}\ 4) \\
+> \left( 2, \frac{1 + \sqrt[]{ m }}{2} \right) \left( 2, \frac{1-\sqrt[]{ m }}{2} \right)  & \text{if } m \equiv 1 \ (\mathrm{mo d}\ 8) \\
+> \mathrm{prime} & \text{if } m \equiv 5 \ (\mathrm{mo d}\ 8)
+> \end{cases}
+> $
+> If $p$ is odd, $p \nmid m$ then 
+> $
+> pR = \begin{cases}
+> (p,n + \sqrt[]{ m })(p,n-\sqrt[]{ m }) & \text{if } m\equiv n^{2} \ (\mathrm{mo d}\ p) \\
+> \mathrm{prime} & \text{if $m$ is not a square mod $p$}
+> \end{cases}
+> $
 ###### Proof:
 Use theorem 8.
 Let $\alpha = \sqrt[]{ m }$.

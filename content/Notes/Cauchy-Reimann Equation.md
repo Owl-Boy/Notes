@@ -32,10 +32,8 @@ $$
 
 ### Cauchy riemann + real differentiablity implies complex differentiability
 
-```ad-note
-title: Theorem
-Given a function $f : \mathbb{R}^2 \to \mathbb{R}^2$, $f = (u,v)$ where $u,v : \mathbb{R} \to \mathbb{R}$ which is differentiable as a real function at the point $p$, such that $\dfrac{\partial u}{\partial x} = \dfrac{\partial v}{\partial y}$ and $\dfrac{\partial v}{\partial x} = -\dfrac{\partial u}{\partial y}$, then $f$ is differentiable at $p$ when thought of as a complex function.
-```
+> [!note] Theorem
+> Given a function $f : \mathbb{R}^2 \to \mathbb{R}^2$, $f = (u,v)$ where $u,v : \mathbb{R} \to \mathbb{R}$ which is differentiable as a real function at the point $p$, such that $\dfrac{\partial u}{\partial x} = \dfrac{\partial v}{\partial y}$ and $\dfrac{\partial v}{\partial x} = -\dfrac{\partial u}{\partial y}$, then $f$ is differentiable at $p$ when thought of as a complex function.
 
 #### Proof:
 By real differentiability we get $$\lim\limits_{h \to 0} \dfrac{\|f(p+h)-f(p) - Ah\|}{\|h\|} = 0$$

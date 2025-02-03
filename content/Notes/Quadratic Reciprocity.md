@@ -5,12 +5,10 @@ Tags : [[Number Theory]]
 
 ---
 # Quadratic Reciprocity
-```ad-note
-title:
-Given two odd primes $p,q$, $$
-\left(\frac{q}{p}\right)\left(\frac{p}{q}\right) = (-1)^{((p-1)/2)((q-1)/2)}
-$$
-```
+> [!note]
+> Given two odd primes $p,q$, $
+> \left(\frac{q}{p}\right)\left(\frac{p}{q}\right) = (-1)^{((p-1)/2)((q-1)/2)}
+> $
 
 ### Proof 1:
 Let $\chi$ be a character of order $2$ on $\mathbb{F}_{p}$.
