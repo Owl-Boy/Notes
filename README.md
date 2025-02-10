@@ -1,18 +1,28 @@
-# Quartz v4
+# No Place Like ~
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+>[!Quote] Michel F Atiyah
+>The aim of theory really is, to a great extent, that of systematically organizing past experience in such a way that the next generation, our students and their students and so on, will be able to absorb the essential aspects in as painless a way as possible, and this is the only way in which you can go on cumulatively building up any kind of scientific activity without eventually coming to a dead end.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+Well, Hello! 
+These are my notes for Maths and CS and whatever I think is related to this side of the Academia I am interested in. 
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+For the full collection of maps look at [[0-Atlas]]. The section below gives a quick access to things that would be useful to me, and potentially to other people that have requested me for some of my notes.
 
-## Sponsors
+Some stuff is in the main [Index.md](https://owl-boy.github.io/Notes) page which might to useful.
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+---
+## Important Stuff
+1. The `MOC` folder would be something you might be interested in, it contains a bunch of notes that will let you find other notes that you would probably be looking for. So if you have the note you want to read in mind, might be faster to find it by going to the topic it falls under in the `MOC` folder.
+2. Almost all notes, are in the `Notes` folder
+3. Not all of them are complete, those notes would be marked by an `incomplete` tag unless they are really old
+4. I have notes that I take from presentations in a separate folder called `Talks`, I am not sure why I don't have them together with the other notes.
+5. All of the presentations that I give will be in the `Presentations` folder.
+6. If there is a note with a rendering issue or has incorrect content on the website that you want me to fix, please let me know.
+
+---
+
+There notes have been made in [Obsidian.md](https://obsidian.md/) which is a zettlekasten note taking app. Super cool, strongly recommended, but any zettlekasten app will be pretty good.
+
+There are converted to web pages using [Quartz](https://quartz.jzhao.xyz/) and are hosten on [Github Pages](https://pages.github.com/)
+
