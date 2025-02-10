@@ -23,6 +23,10 @@ sticker: lucide//map-pin
 - [[Transpose of a Weighted Automata]]
 - [[Minimizing a Weighted Automata]]
 - [[Equality in Tropical Weighted Automata]]
+- [[L* Learning Algorithm]]
+	- [[L* example]]s
+- [[Closure Properties of Rational functions]]
+- [[Weighted Automata as Formal Power Series]]
 
 --- 
 ## MOCs

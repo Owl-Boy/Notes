@@ -27,12 +27,14 @@ This is the number of $m$ tuples, that have $a$ in the $i^\text{th}$ index and a
 >\text{deg\_set}(\mathfrak A) = \{ \text{degree}_{R, i}^\mathfrak A(a)\ |\ a\in A, R\in \sigma, i\leq \text{arity}(R)\}
 >$$
 
-Using the above 2 definitions, one can define a collection of structures where the degree of the graph is restricted.
+It is the set of degrees that are realized in $\frak A$
 
 >[!definition] Bounded Degree Structures
 >$$
 >\text{STRUCT}_{l}[\sigma] = \{ \mathfrak A \in \text{STRUCT}[\sigma]\ |\ \text{deg\_set}(\mathfrak A)\in \{ 1 \dots l \} \}
 >$$
+
+These are structures whose maximum degree is $l$.
 
 We shall also be applying $\text{deg\_set}$ output of queries $\text{deg\_set}(Q(\mathfrak A))$ for any $m$-ary query $Q$, is the set of all degrees realized in the structure whose only $m$-ary relation is $Q$. 
 
