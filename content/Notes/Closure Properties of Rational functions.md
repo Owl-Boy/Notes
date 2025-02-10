@@ -76,21 +76,25 @@ The construction is a simple product construction where each automata is run par
 
 ---
 >[!theorem] Kleene Star
->Given a rational function $f$, the function $f^*$ which is defined as $id + f + f^2 + \dots$ is rational iff $1+f(\epsilon)+f^2(\epsilon)\dots$ is defined
+>Given a rational function $f$, the function $f^*$ which is defined as $id + f + f^2 + \dots$ is rational iff $1+f(\epsilon)+f^2(\epsilon)\dots$ is defined, where $f^n$ is defined as $f \otimes f \otimes f \dots f$, $n$ times.
 
-We can think of starting by reading arbitrarily many $\epsilon$ in a run, and then replacing reading each letter with reading the letter, then arbitrarily many more $\epsilon$.
+We start by assuming that $1+f(\epsilon)+f^2(\epsilon)\dots$ is defined, we simply call it, $f^*(\epsilon)$. If it is not defined, then clearly $f^*$ cannot be defined.
 
-Reading an $\epsilon$ gives the following value $I_{f} \cdot F_{f}=f(\epsilon)$, hence $f^*(\epsilon)=1+f(\epsilon)+f^2(\epsilon)\dots$, which we assume is defined and we simply call it $f^*(\epsilon)$.
+Given that this is defined, we can think of $f^*$ applied on a word as follows: Each time we want to read a letter, we decide if we want to continue reading the letter in the same instance of $f$ or start over in a new one, after reading arbitrary many $\epsilon$ before reading the letter. We end by reading an arbitrary amount of $\epsilon$ in different instances of $f$.
 
-After reading a letter, one can either read another letter before jumping to the next instance of the automata, or they can stop reading and read an arbitrary number of $\epsilon$ in different instances of automata before getting to the next one.
+All of this book keeping will let us start the automata easily. 
+- $I_{f^*}=I_{f}$
 
-After all of this book keeping we at least get $F_{f}=F_{f^*}$.
-We also get $I_{f^*}=\frac{1}{1-f(\epsilon)} \cdot I_{f}$, this corresponds to starting to read, then reading arbitrarily many $\epsilon$ in different instances of $f$.
+We are now forced to have our final vector also capture the information that we have read infinitely many $\epsilon$ before ending.
+- $F_{f^*} = F_{f} + F_{f}\cdot f(\epsilon)+\dots = F_{f}\cdot f^*(\epsilon)$
 
-From a state, after reading an $a$, one can either stay in the instance, so to take an edge from $\alpha \xrightarrow{a} \beta$, we have $\mu_{a}(\alpha, \beta)$, here:
-- We can choose to continue on the same instance so the weight of that transition would be $\mu_{a}(\alpha, \beta)$
-- We can stop the run here for this instance, read arbitrarily many $\epsilon$ and then start the next instance, so we get $F(\alpha)f^0(\epsilon)I(\beta) + F(\alpha)f^1(\epsilon)I(\beta)+\dots = F(\alpha)f^*(\epsilon) I(\beta)=F_{f^*}(\alpha) \cdot I_{f^*}(\beta)$
-- Hence the entire transition matrix would look like $\mu_{a}(\alpha, \beta) + F_{f^*}\cdot I_{f^*}$
+Reading a letter now becomes a little difficult, saw we are in state $\alpha$ and we want to read $a$ to go to state $\beta$:
+- We either directly go to the step have the run will have weight $\mu_{f,a}(\alpha, \beta)$
+- We move to the next instance of $f$ and then start in a new instance at state $\beta$, so we have 
+	- $F_{f}(\alpha) \cdot I_{f}(\beta)+F_{f}(\alpha)\cdot f(\epsilon) \cdot I_{f}(\beta)+\dots=F_{f^*}(\alpha)\cdot I_{f^*}(\beta)$
+- Together this can be very nicely captured by $\mu_{f^*,a}=\mu_{f, a}+F_{f^*}\cdot I_{f^*}$.
+
+This shows that if $f^*(\epsilon)$ exists, then we can make an automata for $f^*$.
 
 ---
 # References
