@@ -28,7 +28,7 @@ We define $\vec{c^ \mathfrak A}=c^{ \mathfrak A}_{1}\dots c^ \mathfrak A_{k}$ an
 
 With that machinery, we say that the *spoiler* failed to show that the two structures if $((\vec{a}, \vec{c^ \mathfrak A}), (\vec{b},\vec{c^\mathfrak B}))$ is a [[Partial Isomorphism]].
 
-And we say $ \mathfrak A \equiv_n \mathfrak B$ if *duplicator* has a winning strategy in an $n$ round game.
+And we say $\mathfrak A \equiv_n \mathfrak B$ if *duplicator* has a winning strategy in an $n$ round game.
 
 ---
 The Application of *Ehrenfeucht-Fraïssé Games* is given by the [[Ehrenfeucht-Fraïssé Theorem]] which links it to first order logic
@@ -36,5 +36,5 @@ The Application of *Ehrenfeucht-Fraïssé Games* is given by the [[Ehrenfeucht-F
 ---
 # References
 - [[Even is not FO-definable for Linear Orders]]
-- [[Quantifier rank]]
+- [[Notes/Quantifier rank]]
 - [[Ehrenfeucht-Fraïssé Theorem]]

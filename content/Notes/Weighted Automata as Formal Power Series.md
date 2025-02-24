@@ -16,7 +16,7 @@ $$
 f \langle\!\langle S \rangle\!\rangle = f(\epsilon)\epsilon + f(a)a + f(b)b + f(aa)aa+f(ab)ab \dots
 $$
 
-Now all of the functions discussed in [[Closure Properties of Rational functions]] can be interpreted as operations on the the set of power series. Like Addition and multiplication. 
+Now all of the functions discussed in [[Closure Properties of Recognizable functions]] can be interpreted as operations on the the set of power series. Like Addition and multiplication. 
 
 ---
 # References

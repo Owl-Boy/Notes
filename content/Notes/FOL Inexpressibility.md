@@ -53,7 +53,7 @@ smth
 
 ---
 For a bigger graph our nesting is deeper. Is it required intrinsically by the graph itself? If so, can we use the *depth* or *complexity* of the nesting to say something like "If you can only go this deep then you can't distinguish between graphs of *complexity* more than that".
-This is what we'll call the [[Complexity of an FO formula|quantifier rank]] of the FO formula.
+This is what we'll call the [[Notes/Quantifier Rank|quantifier rank]] of the FO formula.
 
 ---
 # References

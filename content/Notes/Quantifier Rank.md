@@ -7,8 +7,8 @@ tags:
 
 Tags : [[Logic]]
 
+# Quantifier Rank
 ---
-# Complexity of an FO formula
 We will call this the *Quantifier rank* of the FO formula.
 
 $qr(\varphi)$

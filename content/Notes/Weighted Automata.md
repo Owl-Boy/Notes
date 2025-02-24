@@ -5,7 +5,7 @@ tags:
 ---
 202501092301
 
-Tags : [[Automata Theory]]
+Tags : [[Automata Theory]], [[Weighted Automata and Transducers]]
 # Weighted Automata
 ---
 A *weighted automata* is a generalization of the [[Multiplicity Automata]] that allows one to replace parallel weights with edge weights. The intuition is direct, 2 parallel edges will be replaced with an edge of weight $2$. 

@@ -25,7 +25,7 @@ It is used to create a syntax that is used to describe mathematical statements a
 	- [[Isomorphism Between First Order Interpretations]]
 - [[Ehrenfeucht-Fraïssé Game]]
 	- [[Ehrenfeucht-Fraïssé Theorem]]
-	- [[Rank-k Types]]
+	- [[Rank-k Types (FO)]]
 	- [[Partial Isomorphism]]
 	- [[Even is not FO-definable for Linear Orders]]
 - [[Quanitifier Elimination for Natural Numbers With Successor]]

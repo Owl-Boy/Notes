@@ -6,10 +6,10 @@ tags:
 202502101802
 
 Tags : [[Weighted Automata and Transducers]]
-# Closure Properties of Rational functions
+# Closure Properties of Recognizable functions
 ---
 >[!theorem] Addition
->Given 2 rational functions $f$ and $g$. The function $f+g$ is rational.
+>Given 2 recognizable functions $f$ and $g$. The function $f+g$ is recognizable.
 
 ^95683c
 
@@ -34,11 +34,11 @@ Given the automata $\hat{f}=\langle I_{f}, \mu_{a, f}\dots, F_{f} \rangle$ and $
 ---
 
 >[!theorem] Cauchy Product
->Given 2 rational functions $f, g$ the function $f \cdot g$ which is defined as
+>Given 2 recognizable functions $f, g$ the function $f \cdot g$ which is defined as
 >$$
 >(f \cdot g)(w) = \sum_{ u, v ;\;uv = w} f(u) \cdot g(v)
 >$$
->is rational.
+>is recognizable.
 
 >[!tip] Intuition
 >The operation here corresponds to taking the concatenation of $2$ NFA by connecting the final states of the first one to the start states of the second one.
@@ -66,7 +66,7 @@ The idea is to read the first part of the word in the first automata and the sec
 
 ---
 >[!theorem] Hadamard Product
->Given 2 rational functions, $f, g$. Their *Hadamard product* $f \otimes g$ which is defined as 
+>Given 2 recognizable functions, $f, g$. Their *Hadamard product* $f \otimes g$ which is defined as 
 >$$
 >(f \otimes  g) (w) = f(w) \cdot g(w)
 >$$
@@ -76,7 +76,7 @@ The construction is a simple product construction where each automata is run par
 
 ---
 >[!theorem] Kleene Star
->Given a rational function $f$, the function $f^*$ which is defined as $id + f + f^2 + \dots$ is rational iff $1+f(\epsilon)+f^2(\epsilon)\dots$ is defined, where $f^n$ is defined as $f \otimes f \otimes f \dots f$, $n$ times.
+>Given a recognizable function $f$, the function $f^*$ which is defined as $id + f + f^2 + \dots$ is recognizable iff $1+f(\epsilon)+f^2(\epsilon)\dots$ is defined, where $f^n$ is defined as $f \otimes f \otimes f \dots f$, $n$ times.
 
 We start by assuming that $1+f(\epsilon)+f^2(\epsilon)\dots$ is defined, we simply call it, $f^*(\epsilon)$. If it is not defined, then clearly $f^*$ cannot be defined.
 
@@ -95,6 +95,9 @@ Reading a letter now becomes a little difficult, saw we are in state $\alpha$ an
 - Together this can be very nicely captured by $\mu_{f^*,a}=\mu_{f, a}+F_{f^*}\cdot I_{f^*}$.
 
 This shows that if $f^*(\epsilon)$ exists, then we can make an automata for $f^*$.
+
+>[!idea]
+>Do some plug prefinal states back into initila states aregument while handeling the final state
 
 ---
 # References

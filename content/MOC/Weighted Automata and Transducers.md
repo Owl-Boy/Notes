@@ -14,6 +14,7 @@ sticker: lucide//map-pin
 	- [[Polynomial and matrices over semi rings form semi rings]]
 - [[Multiplicity Automata]]
 - [[Weighted Automata]]
+	- [[Weighted Automata on Series]]
 - [[Algorithm for Finding the Weight of a Word]]
 - [[Threshold Languages]]
 - [[Reachable Vectors]]
@@ -25,8 +26,22 @@ sticker: lucide//map-pin
 - [[Equality in Tropical Weighted Automata]]
 - [[L* Learning Algorithm]]
 	- [[L* example]]s
-- [[Closure Properties of Rational functions]]
+- [[Closure Properties of Recognizable functions]]
 - [[Weighted Automata as Formal Power Series]]
+- [[Monomials, Polynomials and Series]]
+	- [[Locally Finite and Summable Series]]
+- [[Rational Series]]
+	- [[Weighted Automata on Series]]
+	- [[Arden's Lemma]]
+		- [[Choumsky Normal Form to Greibach Normal Form using Arden's Lemma]]
+- [[Kleene Shutzenberger Theorem]]
+- [[Modules]]
+	- [[Semi-Modules]]
+	- [[Types of Modules]]
+	- [[Stable Subsemodule of Series]]
+- [[Algebraic Classification of Recognizable functions]]\
+- [[Probabilistic Automata]]
+	- [[Stochastic Languages]]
 
 --- 
 ## MOCs

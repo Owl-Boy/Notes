@@ -1,0 +1,4 @@
+- Goal : Find a feasible point
+- feasibility = optimality (binary serach on possible optimal values)
+- Assume integral coefficients
+- optimal solution  is always at a vertex

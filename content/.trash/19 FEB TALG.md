@@ -1,0 +1,4 @@
+- Tree Packing BS
+	- Karger (2000) $O(m \log^3n)$ randomized algo for min cut using tree packing
+	- why are we doing all of this again!!!! T-T I want to be done with tree-packing aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	- 

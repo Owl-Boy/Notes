@@ -19,4 +19,4 @@ We use the notion $\text{FO[k]}$ to denote the set of first order formulas of ra
 ---
 # References
 - [[Ehrenfeucht-Fraïssé Game]]
-- [[Rank-k Types]]
+- [[Rank-k Types (FO)]]

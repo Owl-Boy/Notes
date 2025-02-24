@@ -33,4 +33,13 @@ Proof is easy. But the following theorem defines what is called a **Martingale T
 >$\{ M_{k} \}$ is said to be a sub-martingale if the $=$ is replaced by $\geq$ and it is called a super-martringale if it is replaced by $\leq$ in (2.)
 
 ---
+>[!definition] Equivalent Definition
+>A sequence of random variables $\{ M_{n} \}$ is called a *martingale* if 
+>- $M_{n}$ is measurable wrt $\mathcal F_{n}$ for some filteration $\mathcal F$.
+>- $E(M_{n})<\infty$
+>- $E(M_{n+1}\; |\; \mathcal F_{n} )=M_{n}$
+>
+>Sub-martingales and Super-martingales are defined similarly.
+
+---
 # References

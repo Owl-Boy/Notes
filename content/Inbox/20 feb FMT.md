@@ -1,0 +1,21 @@
+- 6.6 and 6.7 will be done later alongside MSO
+
+# SO logic
+- quantify over realtions
+- for each arity assume an unbonuded supply of variables
+- Example
+	- Domain is graph, state graph is hamiltonian
+		- Take a subset of edges such that each vertexs has 1 in-edge 1 out edge, this forces the graph to be a bunch of cycles
+		- Then state that any partition of vertices will have an edge between them so the graph is connected, forcing the graph to be a cycle
+	- You can state transitive closure of a binary relation $E$
+		- Quantify over a relation that contains $E$
+		- State that it is closed under transition
+		- State that it is the smallest such relation
+- MSOL
+	- Can always be written in some normal form
+- Even is expessible in SO, ~~MSO~~, ~~EMSO~~
+- How many distinct formulas are there upto quantifier depth $k$
+	- Finite.
+- EF games for MSO
+	- duplicator has a winning strategy if they agree on all k quantifier thingy
+	- 

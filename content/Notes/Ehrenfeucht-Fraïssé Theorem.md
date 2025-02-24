@@ -49,5 +49,5 @@ This $\mathfrak A$ and  $\mathfrak B$ agree on all formulas of rank $k+1$.
 ---
 # References
 [[Ehrenfeucht-Fraïssé Game]]
-[[Quantifier rank]]
-[[Rank-k Types]]
+[[Notes/Quantifier rank]]
+[[Rank-k Types (FO)]]

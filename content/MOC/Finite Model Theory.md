@@ -14,14 +14,18 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 
 --- 
 ## Notes
+
+#### EF Games
 - [[Connectivity is not FO Definable]]
 - [[Connectivity is not FO definable for Finite Graphs]]
 - [[Ehrenfeucht-Fraïssé Game]]
 	- [[Partial Isomorphism]]
-	- [[Rank-k Types]]
+	- [[Rank-k Types (FO)]]
 	- [[Ehrenfeucht-Fraïssé Theorem]]
 	- [[Ehrenfeucht-Fraïssé Games Proof]]
 - [[Even is not FO-definable for Linear Orders]]
+
+#### Locality Theorems
 - [[Locality (Finite Model Theory)|Locality]]
 	- [[Gaifman Graph]]
 	- [[Neighborhood (Finite Model Theory)|Neighborhood]]
@@ -47,9 +51,34 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Even Atoms in Boolean Algebras]]
 		- [[Definablity of Even Atoms]]
 
+#### Descriptive Complexity
+- [[Encoding Finite Model]]
+- [[Complexity of First Order Logic]]
+	- [[Data Complexity of a Logic]]
+	- [[Expression Complexity of a Logic]]
+	- [[Combined Complexity of a Logic]]
+- [[Boolean Circuits]]
+	- [[Nonuniform AC0]]
+	- [[FO(All)]]
+	- [[FO(All) is in AC0]]
+- [[FO(+, *)]]
+	- [[BIT is expressible in FO(+, *)]]
+- [[Complexity of FO]]
+
+#### Second Order Logic
+- [[Second Order Logic]]
+- [[Fragments of Second Order Logic]]
+	- [[Monadic Second Order Logic]]
+- [[Ehrenfeucht-Fraïssé Game for MSO]]
+	- [[Rank-k m,l Types MSO]]
+	- [[Even is not MSO-expressible]]
+	- [[Even is (MSO + <)-expressible]]
+- [[Connectivity is not EMSO definable but is AMSO]]
+
 --- 
 ## MOCs
 - [[Logic]]
+- [[Complexity Theory]]
 
 ---
 ## Practical Information
