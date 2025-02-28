@@ -72,6 +72,8 @@ The idea is to read the first part of the word in the first automata and the sec
 >$$
 >Is defined if the semi-ring is commutative.
 
+^e285cd
+
 The construction is a simple product construction where each automata is run parallel-y and the product $f(r) \cdot g(r)$ for a run $r$ is computed as $f(a_{1}) \cdot g(a_{1}) \cdot f(a_{2})\dots g(a_{n})$ where $r=a_{1} a_{2} \dots a_{n}$. This is why commutativity is required.
 
 ---

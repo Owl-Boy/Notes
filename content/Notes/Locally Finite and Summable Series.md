@@ -25,7 +25,7 @@ If a sequence of functions is locally finite then the sum is trivially defined, 
 
 ---
 >[!lemma]
->All proper series are locally finite, and hence also summable
+>Kleene Start of all proper series are locally finite, and hence also summable
 
 A proper series is defined as followed:
 Consider a function $f$ such that $f(\epsilon)=0$.

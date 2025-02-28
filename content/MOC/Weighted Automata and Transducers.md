@@ -39,10 +39,14 @@ sticker: lucide//map-pin
 	- [[Semi-Modules]]
 	- [[Types of Modules]]
 	- [[Stable Subsemodule of Series]]
-- [[Algebraic Classification of Recognizable functions]]\
+- [[Algebraic Classification of Recognizable functions]]
 - [[Probabilistic Automata]]
 	- [[Stochastic Languages]]
-
+	- [[Stochastic Languages are Regular if Threshold Point is Isolated]]
+	- [[Stochastic Languages are Undecidable in General]]
+	- [[Showing a Point is Isolated is Undecidable]]
+		- [[Post Correspondence Problem]]
+		- [[PCP']]
 --- 
 ## MOCs
 - [[Algebraic Automata Theory]]
