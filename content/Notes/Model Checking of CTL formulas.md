@@ -22,7 +22,7 @@ $$
 Notably, this fragment just gets rid of the universal path quantifier and propositional conjunction, both of which can be easily emulated form the given fragment, hence a model checking algorithm for this fragment gives a model checking algorithm for *CTL*
 
 ## Model Checking Algorithm 
-The model checking algorithm is a [[P Complexity Class|Polytime Algorithm]] that checks if every state in the kripke structure $\kappa$ satisfies $\psi$. 
+The model checking algorithm is a [[P (Complexity Class)|Polytime Algorithm]] that checks if every state in the kripke structure $\kappa$ satisfies $\psi$. 
 
 This is like a dynamic programming algorithm where we start verifying from the atomic formulas in $\psi$ and the combining that to build more and more complicated subformulas until we get to $\psi$ itself, this will be done by having a representing set of each subformula of $\psi$ that will be used to build one for $\psi$ given by the following rules.
 

@@ -47,4 +47,4 @@ Now that we have a way to define the "structure" of a tree, we can construct a t
 
 ---
 # References
-[[Tree Automata]]
+[[Ranked Tree Automata]]

@@ -7,7 +7,7 @@ tags:
 Tags : [[Logic]]
 # Strings in Logic
 ---
-For a finite string $\Sigma$, *strings* on $\Sigma$ will be structures for a vocabulary $\tau_\Sigma$ for Higher Order Logics like [[First Order Logic]] or [[Monadic Second Order Logic]]. 
+For a finite alphabet $\Sigma$, *strings* on $\Sigma$ will be structures for a vocabulary $\tau_\Sigma$ for Higher Order Logics like [[First Order Logic]] or [[Monadic Second Order Logic]]. 
 
 The vocabulary $\tau_\Sigma$ consists of the following : 
 - The $\le$ relation

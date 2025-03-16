@@ -73,7 +73,7 @@ sticker: lucide//map-pin
 		- [[Semantics for CTL]]
 		- [[LTL vs CTL]]
 		- [[Model Checking of CTL formulas]]
-	- [[Tree Automata]]
+	- [[Ranked Tree Automata]]
 		- [[Trees (Automata Theory)]]
 
 --- 

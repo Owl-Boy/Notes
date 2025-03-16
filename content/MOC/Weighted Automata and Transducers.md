@@ -10,8 +10,12 @@ sticker: lucide//map-pin
 
 --- 
 ## Notes
+
+#### Math
 - [[Semi Ring]]
 	- [[Polynomial and matrices over semi rings form semi rings]]
+
+#### Weighted Automata
 - [[Multiplicity Automata]]
 - [[Weighted Automata]]
 	- [[Weighted Automata on Series]]
@@ -27,6 +31,7 @@ sticker: lucide//map-pin
 - [[L* Learning Algorithm]]
 	- [[L* example]]s
 - [[Closure Properties of Recognizable functions]]
+#### Algebraic Characterization of Rational Functions
 - [[Weighted Automata as Formal Power Series]]
 - [[Monomials, Polynomials and Series]]
 	- [[Locally Finite and Summable Series]]
@@ -40,6 +45,8 @@ sticker: lucide//map-pin
 	- [[Types of Modules]]
 	- [[Stable Subsemodule of Series]]
 - [[Algebraic Classification of Recognizable functions]]
+
+#### Probabilistic Automata
 - [[Probabilistic Automata]]
 	- [[Stochastic Languages]]
 	- [[Stochastic Languages are Regular if Threshold Point is Isolated]]
@@ -47,6 +54,14 @@ sticker: lucide//map-pin
 	- [[Showing a Point is Isolated is Undecidable]]
 		- [[Post Correspondence Problem]]
 		- [[PCP']]
+
+#### Transducers
+- [[Pure Sequential Tranducers]]
+- [[Sequential Tranducers]]
+- [[Image of a Regular Language under a Sequential Transducer is Regular]]
+- [[Pre-Image of a Regular Language under a Sequential Transducer is Regular]]
+- [[A Language if Regular iff its Characteristic Function is regular]]
+- [[Composition of Sequential Transducers]]
 --- 
 ## MOCs
 - [[Algebraic Automata Theory]]

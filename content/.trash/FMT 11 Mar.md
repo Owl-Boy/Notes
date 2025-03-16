@@ -1,0 +1,34 @@
+# Complexity of MSO
+- Data Complexity: For every level of the PH, there is A complete problem whihc can be expressed as an MSO
+	- We solve QBF for $\Sigma_{k}$
+		- Given a formula, we convert it to a structure such that there is one formula that is satisfied by the model iff the OG formula was satsified.
+		- Strucutre:
+			- Domain -> Variables of $\phi$
+			- unary preedicates : $E_{1}, A_{2}, E_{3}\dots E_{k}$
+			- $R_{0}, R_{1}, R_{2}, R_{3}$: ternary predicates
+				- $R_{0}$ is when all 3 terms in the formula are negated
+				- $R_{1}$ is when first vraibles is 1 non-negated term in the thing
+				- $R_{2}$ is when first 2 are not negated in the term
+				- $R_{3}$ is when all of variables are non negated
+		- Formula:
+			- $\exists Y_{1} \subseteq E_{1}, \forall Y_{2}\subseteq A_{2}\dots \exists Y_{k} \subseteq E_{k}$
+				- $\forall x, y, z (R_{0}(x, y, z) \to x \not\in Y \land y \not\in Y \land Z \not\in T$ and so on
+- Combined Complexity: PSPACE-Complete
+- Param Plexi: (Bogus PSPACE) 
+	- Over bounded degree graph, FO is FPT
+		- Threshold equivalence
+		- Idea is to find equivalence classes for degree $m,l$ and then just find graphs
+- Graph Minors:
+	- Delete vertices or contract edges
+	- If you can get from $G$ to $G'$ using the above to then $G'$ is a minor of $G$
+- Graphs under Minor ordering form a WQO
+- MSO over ORdered Binary Trees
+	- $\varphi \to A_\varphi$
+- ordered unranked trees:
+	- trees with arbitrary many children
+	- Edge relation of tree
+	- parent relation
+	- next sibling (siblings are ordered)
+	- a unary relation for each letter
+	- every such tree can be represented as a binary tree so one can work with just binary trees
+- The automata model for the three thigny is that if all siblings for a word from a regular language then the parent can be labelled based on that

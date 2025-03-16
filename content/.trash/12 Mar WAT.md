@@ -1,0 +1,4 @@
+- If $L$ is a regular language and $f$ is a sequential function, $f(L)$ is regular and a product construction gives the automata
+- $f^{-1}(L) \subseteq A^*$ is regular if $L \subseteq B^*$ is regular
+- characteristic function of a language if regular iff the language is regular
+- We define composition, it has a fancy name called the cascade product

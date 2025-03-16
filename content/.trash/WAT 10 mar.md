@@ -1,0 +1,11 @@
+- Pure Sequential transducers was what we had done, the functions they represent are pure sequential functions
+- prefix code
+	- encode letters into strings
+    - no  encoding is a prefix of another encoding
+	- prefix codes can be decoded by pure sequential transducers
+- sequential transucers
+	- definition has extra $m_{0}$ and $\rho$
+	- $m_{0}$ is an initial string and $\rho$ is a partial map $Q \to B*$ which is like final transition
+- We did an example $f(u)=u(ab)^{-1}$ twas ez.
+	- bounded delay codes are representable too
+	- multiplication by 3 

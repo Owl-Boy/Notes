@@ -57,7 +57,7 @@ Now we consider the part of the sub-game that is the complement of $\text{Attr}_
 
 >[!note] Complexity
 >The problem is in [[NP (Complexity Class)|NP]] $\cap$ [[Co-NP (Complexity Class)|Co-NP]].
->This means that its highly unlikely that the problem is [[NP Complete]], but there is no known algorithm in [[P Complexity Class|P]] for the problem.
+>This means that its highly unlikely that the problem is [[NP Complete]], but there is no known algorithm in [[P (Complexity Class)|P]] for the problem.
 
 ### NP Algorithm
 >[!idea]

@@ -7,7 +7,7 @@ Tags : [[Complexity Theory]]
 # Complexity Classes
 The goal of complexity theory is to classify problems by their difficulty, we can classify problems into multiple complexity classes.
 
-![[P Complexity Class#P]]
+![[P (Complexity Class)#P]]
 
 ---
 ![[NP (Complexity Class)#NP]]

@@ -53,6 +53,7 @@ Along with their applications which would involve discussions on techniques like
 		- Urgh really don't wanna write LP for spanning Tree and Arborescence, if someone seeing this wants to write, it will be great help!
 		- [[Tree Packing]]
 			- [[Fractional Tree Packing]]
+- [[Multi-way Cuts]]
 
 --- 
 ## MOCs

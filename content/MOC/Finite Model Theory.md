@@ -51,9 +51,9 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Even Atoms in Boolean Algebras]]
 		- [[Definablity of Even Atoms]]
 
-#### Descriptive Complexity
+#### Descriptive Complexity of FO
 - [[Encoding Finite Model]]
-- [[Complexity of First Order Logic]]
+- [[Complexity of FO]]
 	- [[Data Complexity of a Logic]]
 	- [[Expression Complexity of a Logic]]
 	- [[Combined Complexity of a Logic]]
@@ -63,7 +63,6 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[FO(All) is in AC0]]
 - [[FO(+, *)]]
 	- [[BIT is expressible in FO(+, *)]]
-- [[Complexity of FO]]
 
 #### Second Order Logic
 - [[Second Order Logic]]
@@ -74,11 +73,29 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Even is not MSO-expressible]]
 	- [[Even is (MSO + <)-expressible]]
 - [[Connectivity is not EMSO definable but is AMSO]]
+- [[Strings in Logic]]
+	- [[Büchi Automata for Monadic Second Order Logic|MSO formulas on Infinite Words accept Omega Regular Languages]] 
+	- [[MSO on Finite Words accept Regular Languages]]
+	- [[FO on Finite Words accepts Star Free Languages]]
+
+#### Tree Automata
+- [[Ranked Trees in Logic]]
+	- [[Ranked Tree Automata]]
+- [[Unranked Trees in Logic]]
+	- [[Unraked Tree Automata]]
+- [[Trees (Automata Theory)]]
+- [[Regular Tree Languages]]
+
+#### Descriptive Complexity of MSO
+- [[Encoding Finite Model]] (Same as FO)
+- [[MSO has Problems in each PH level]]
+- [[Complexity of MSO]]
 
 --- 
 ## MOCs
 - [[Logic]]
 - [[Complexity Theory]]
+- [[Logic, Automata and Games]]
 
 ---
 ## Practical Information
