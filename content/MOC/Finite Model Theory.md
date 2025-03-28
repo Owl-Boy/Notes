@@ -63,6 +63,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[FO(All) is in AC0]]
 - [[FO(+, *)]]
 	- [[BIT is expressible in FO(+, *)]]
+	- [[+ is epxressible in FO(BIT, <)]]
 
 #### Second Order Logic
 - [[Second Order Logic]]
@@ -72,6 +73,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Rank-k m,l Types MSO]]
 	- [[Even is not MSO-expressible]]
 	- [[Even is (MSO + <)-expressible]]
+- [[l,k Ajtai-Fagin Game for EMSO]]
 - [[Connectivity is not EMSO definable but is AMSO]]
 - [[Strings in Logic]]
 	- [[Büchi Automata for Monadic Second Order Logic|MSO formulas on Infinite Words accept Omega Regular Languages]] 

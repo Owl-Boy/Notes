@@ -56,12 +56,17 @@ sticker: lucide//map-pin
 		- [[PCP']]
 
 #### Transducers
-- [[Pure Sequential Tranducers]]
-- [[Sequential Tranducers]]
+- [[Pure Sequential Transducers]]
+	- [[Prefix Preserving]]
+	- [[Mealy Machines and Moore Machines]]
+- [[Sequential Transducers]]
 - [[Image of a Regular Language under a Sequential Transducer is Regular]]
 - [[Pre-Image of a Regular Language under a Sequential Transducer is Regular]]
 - [[A Language if Regular iff its Characteristic Function is regular]]
 - [[Composition of Sequential Transducers]]
+- [[Normalizing a Transducer]]
+	- [[Computing m_q]]
+- [[Residuals using Longest Common Prefixes]]
 --- 
 ## MOCs
 - [[Algebraic Automata Theory]]

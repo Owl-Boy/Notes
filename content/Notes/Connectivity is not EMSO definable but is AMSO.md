@@ -12,33 +12,49 @@ Tags : [[Finite Model Theory]]
 Showing that it is definable in $\forall \text{MSO}$ is easy, one can just define $\text{path}$ as a relation which would be the transitive closure of the edge relation, and state that all vertices are connected.
 
 ## Connectivity is not $\exists \text{MSO}$ definable
-For the sake of contradiction, assume that there is an $\exists \text{MSO}$ formula and is of the form:
-$$
-\exists X_{1} \exists X_{2}\dots \exists X_{n} \varphi
-$$
-Where $\varphi$ is a [[First Order Logic|FO]] formula with $X_{1}\dots X_{n}$ extra relations in its vocabulary along with the edge relation.
+This argument uses [[l,k Ajtai-Fagin Game for EMSO|Ajtai-Fagin games]] and it goes as follows:
+
+We show that for every $l$ and $k$, the **Duplicator** has a winning strategy on a game that will be used to describe graph connectivity.
 
 >[!tip] Intuition
 >The idea is that after quantifying all the relation, the formula is a first order formula with extra relation, so for any set of $k$ unary relations, we use locality to state that if the model is big enough then there will be neighbourhoods that are isomorphic and disjoint, and if we make the following edit in the model, the formula will not be able to catch that.
 >>[!todo] TODO : Draw the Diagram
 
-Here we will be using [[Hanf-Locality]] with $d= \text{hlr}(\varphi)$.
+### Step 1
+The **Duplicator** must pick a graph that is big enough such one can find points that are far enough with isomorphic neighbourhoods such that after picking the new model the locality theorem will be able to help.
 
-Since there are $n$ relation, there are $2^n$ possible configurations for each node. and for the [[Local Equivalence]], you can only pick 2 nodes that have the same configurations of relation.
+$k$ will be the quantifier depth, so we would want a local equivalence of depth $d=2^k$. So that would be the radius of the neighbourhoods that we will be looking at.
 
-We now pick a $d$ sized neighborhood of a point, which will be of size $2d+1$ so there are a total of $(2^n)^{2d+1}$ possible neighbourhoods.
+$l$ sets will be picked, so there are $2^l$ possible colours for a point, so for each point there are $m=(2^l)^{2d+1}$.
 
-We now want out model to be big enough such that we can find disjoint neighbourhoods. we want our model to be of size at least $4d+4$. If we now make sure that the size of the cycle is at least $(4d+4)2^{n(2d+1)}$ Then we will definitely find 2 neighbourhoods which are disjoint which are isomorphic and of size $2d+1$.
+We now want out model to be big enough such that there will be points that are far enough that have the same neighbourhoods, we want 2 points to have a distance of $2d+2$. So if we pick the distance of the model to be $(4d+4)\cdot m$, then we will have $4d+4$ points with the same colour for some colour. If we label the points in order then the points $1$ and $2d+3$ are at a distance of at least $2d+2$ and have the same neighbourhoods.
 
-We now construct the new model by taking 2 such neighbourhoods and their centers $a$ and $b$ and doing the following operations:
+>[!note]
+>So the **Duplicator** Picks a cycle of size $(4d+4) \cdot m$.
+>This is 
+>$$
+>\left( 2^{k+2} +4 \right) \cdot 2^{l \cdot (2^{k+1}+1)} 
+>$$
+
+### Step 2
+This is the simple step, since our graph is big enough, we let the **Spoiler** pick anything he wants.
+
+### Step 3
+For this step we need to construct the second mode, for this the **Duplicator** copies the first model, with the selection of $l$ sets that the **Spoiler** chose.
+
+There will be 2 points $a, b$ such that they have the same $d-$neighbourhoods and are at least $2d+2$ distance apart, we then do the following operation:
 - Say the neighborhood of these looks as follows:
 	- $a_{1} \dots a_{d} a a_{d+2}\dots a_{2d+1}$
 	- $b_{1} \dots b_{d} b b_{d+2}\dots b_{2d+1}$
-- And now we do the following rewiring 
+- After the edit they will look like the following. 
 	- $a_{1} \dots a_{d} a b_{d+2}\dots b_{2d+1}$
 	- $b_{1} \dots b_{d} b a_{d+2}\dots a_{2d+1}$
 
-This gives a new model which is a disconnected graph but is accepted by the formula. This is a contradiction.
+### Winning the EF Game
+
+Now we get 2 cycles, which is a disconnected graph, but these have local equivalence of depth $d$ and hence the **Duplicator** will win a $k$ round [[Ehrenfeucht-Fraïssé Game|EF game]] on this.
+
+Since for no $k, l$ we can make an Ajtai Fajin game where the **Spoiler** has a winning strategy, there is no $\exists \text{MSO}$ formula that can express connectivity.
 
 ---
 # References

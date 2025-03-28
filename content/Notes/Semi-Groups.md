@@ -17,6 +17,8 @@ A *Semi Group* is a set equipped with a binary operator, it is like a [[Groups]]
 >$$
 >where $\cdot$ is an associative binary operator on $S$.
 
+The type theoretic description of monoids is given in [[Semi Groups in Types Theory]].
+
 ---
 # References
 [[Monoids]]

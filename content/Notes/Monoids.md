@@ -20,6 +20,7 @@ A *Monoid* is a set equipped with a binary operator and a unit element, it is li
 >[!note] Category Theoretic Representation
 >A monoid can be represented as a 1-object category.
 
+
 ---
 # References
 [[Monoid Homomorphisms]]

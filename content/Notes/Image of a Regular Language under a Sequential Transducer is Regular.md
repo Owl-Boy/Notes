@@ -8,7 +8,7 @@ Tags : [[Weighted Automata and Transducers]]
 # Image of a Regular Language under a Sequential Transducer is Regular
 ---
 >[!theorem]
->Consider a regular language $L \subseteq A^*$ and a [[Sequential Tranducers]] $f : A^* \to B^*$, then the language which is the image $L' = f(L) \subseteq B^*$.
+>Consider a regular language $L \subseteq A^*$ and a [[Sequential Transducers]] $f : A^* \to B^*$, then the language which is the image $L' = f(L) \subseteq B^*$.
 
 Let $L$ be a regular language and $\mathcal{A}=(Q_{\mathcal{A}}, q_{0}, F_{\mathcal{A}}, \delta_{\mathcal{A}})$ be a deterministic automaton for this and let $f=(Q_{f}, A, B, q_{0}, m_{0}, \phi, \delta_{f},\rho)$ be a sequential transducer. We now construct an automata for $f(L)$ in the following way:
 - $Q = Q_{\mathcal{A}} \times Q_{f} \sqcup \{ q_{\text{start}}, q_{\text{fin}} \}$

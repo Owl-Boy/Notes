@@ -13,6 +13,20 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 
 --- 
 ## Notes
+- [[Type Theory vs Set Theory]]
+	- [[Correspondence between Types and Sets and Homotopies]]
+- [[Specifying a Type]]
+- [[Function Type]]
+- [[Universes]]
+- [[Dependent Function Type]]
+- [[Product Type(HoTT)|Product Type]]
+- [[Dependent Pair Types]]
+	- [[Semi Groups in Types Theory]]
+- [[Sum Types]]
+- [[Type Theoretic Axiom of Choice]]
+- [[Boolean Type]]
+- [[Natural Numbers in Type Theory|Natural Numbers]]
+	- [[Addition is Associative (Type Theory)|Addition is Associative]]
 
 --- 
 ## MOCs

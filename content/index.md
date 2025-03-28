@@ -27,6 +27,7 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
 	- [[Weighted Automata and Transducers]]
 	- [[Intro to Martingales]]
 	- [[Topics in Algorithms]]
+	- [[Homotopy Type Theory]]
 - 🤓 Requested Notes
 	- [[Logic]]
 	- [[Logic, Automata and Games]]

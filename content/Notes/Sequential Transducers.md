@@ -6,7 +6,7 @@ tags:
 202503101303
 
 Tags : [[Weighted Automata and Transducers]]
-# Sequential Tranducers
+# Sequential Transducers
 ---
 >[!definition]
 >A **Sequential Transducer** can be described by the following tuple
@@ -23,7 +23,7 @@ Tags : [[Weighted Automata and Transducers]]
 >- $\phi : Q \times A \to B^*$ is output given on each transition (partial function)
 >- $\rho : Q \to B^*$ gives a string that will be appended based on the state. (partial function)
 
-These are strictly more powerful than [[Pure Sequential Tranducers]]. A function that can be described using a sequential transducer is called a *Regular Function*
+These are strictly more powerful than [[Pure Sequential Transducers]]. A function that can be described using a sequential transducer is called a *Regular Function*
 
 >[!todo] TODO :  Examples 
 >- $f(u)=u (ab)^{-1}$
@@ -31,4 +31,4 @@ These are strictly more powerful than [[Pure Sequential Tranducers]]. A function
 
 ---
 # References
-[[Pure Sequential Tranducers]]
+[[Pure Sequential Transducers]]

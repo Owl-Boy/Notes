@@ -13,7 +13,7 @@ Tags : [[Finite Model Theory]]
 
 The smallest $d$ for which the above condition holds is called the *Hanf-locality* rank of $Q$ and is denoted by $\text{hlr}(Q)$.
 
->[!tip] ---
+>[!tip] Intuition
 >The intuitive idea behind this seems to be that, the $\leftrightarrows_{d}$ shows that up to some distance $d$, the neighbourhoods of $\vec{a}$ along with any other element is identical to $\vec{b}$ and another element. Hence making the graphs locally similar. So the query respecting that local equivalence would be special and we would like to talk about it.
 
 *Hanf-locality* is most commonly used for Boolean queries; then the definition says that for some $d\geq 0$ for every $\mathfrak {A, B} \in \text{STRUCT}[\sigma]$, the condition $\mathfrak A \leftrightarrows_{d} \mathfrak B$ implies that $\mathfrak A$ and $\mathfrak B$ agree on $Q$.
