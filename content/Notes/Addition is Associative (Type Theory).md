@@ -21,7 +21,9 @@ $$
 $$
 and 
 $$
-\text{assoc}_{s}:\prod_{i:\mathbb{N}}\left( \prod_{j, k:\mathbb{N}}(i+j)+k = i+(j+k) \right)\to \left( \prod_{j, k:\mathbb{N}}(\text{succ}(i)+j)+k = \text{succ}(i)+(j+k) \right)
+\begin{align}
+\text{assoc}_{s}:\prod_{i:\mathbb{N}}&\left( \prod_{j, k:\mathbb{N}}(i+j)+k = i+(j+k) \right) \to \\&\left( \prod_{j, k:\mathbb{N}}(\text{succ}(i)+j)+k = \text{succ}(i)+(j+k) \right)
+\end{align}
 $$
 
 To prove $\text{assoc}_{0}$ remember that by definition of $+$ we get $0+n \equiv n$ so we have 
