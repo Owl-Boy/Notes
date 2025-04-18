@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases:
+  - MSO
 ---
 202402120102
 

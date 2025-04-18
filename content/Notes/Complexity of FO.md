@@ -29,6 +29,8 @@ This reduced any QBF problem to a model checking problem with a $\text{P-TIME}$ 
 >[!lemma] Corollary
 >[[Data Complexity of a Logic|Data Complexity]] of $\text{FO}$ is [[P (Complexity Class)|PTIME]]. As if we use the above algorithm for membership in $\text{P-SPACE}$ for combined complexity. If $p$ is the size of the formula, then for each vertex in the AST of the formula, we have to do checks of size at most $\|A\|^p$, which will be at a $p$-depth quantifier chain. As checking atomic formula is polytime. So the time it takes is $O(\|\Phi\|\cdot\|\mathfrak A\|^{\|\Phi\|})$.
 
+^586f2c
+
 
 
 ---

@@ -9,7 +9,7 @@ Tags : [[Finite Model Theory]], [[Logic]]
 # Fragments of Second Order Logic
 ---
 There are some restrictions to second order logic that are of interest, some of them are the following:
-- **Existential Second Order Logic**:
+- **Existential Second Order Logic**: ^f4d73e
 	- All formulas are of the form:
 	  $$\exists R_{1} \dots \exists R_{n}. \varphi$$
 	  Where $\varphi$ does not have any second order quantification.

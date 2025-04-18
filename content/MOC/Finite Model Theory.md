@@ -92,6 +92,36 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 - [[Encoding Finite Model]] (Same as FO)
 - [[MSO has Problems in each PH level]]
 - [[Complexity of MSO]]
+- [[Complexity of MSO over Bounded Tree-Width Structures]]
+	- [[Tree Decomposition]]
+		- [[Tree Decomposition Lemma 1]]
+		- [[Tree Decomposition of k-connected Graphs]]
+	- [[Tree Width]]
+	- [[Small Tree Decomposition]]
+		- [[Small Tree Decompositions are Small]]
+		- [[Tree Decomposition and Size of the Tree]]
+
+#### Turing Machine Encodings
+- [[Finitely Satisfiable and Valid Sentences]]
+- [[Trakhtenbrot's Theorem]]
+	- [[Trakhtenbrot's Encoding of Turing Machine]]
+	- [[Decidability of Finitely Satisfiability and Validity]]
+- [[Fagin's Theorem]]
+	- [[Logic L capturing the complexity class K]]
+
+#### Fixed Point Logics
+- [[Fixed Point Logics]]
+	- [[Monotone, Inflationary and Inductive Functions]]
+	- [[Fixed Points]]
+	- [[Expressing Transitive Closure with Fixed Points]]
+	- [[Monotonicity is Undecidable]]
+	- [[Positive Formulas]]
+	- Examples
+		- [[Acyclicity of Graphs is Definable in LFP|Acyclicity of Graphs]]
+		- [[Arithmetic Operators are Definable in LFP|Arithmetic Operators]]
+		- [[Games of Graphs with Fixed Points]]
+- [[Simultaneous Fixed Points]]
+- [[Immerman–Vardi's Theorem]]
 
 --- 
 ## MOCs

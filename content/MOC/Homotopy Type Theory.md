@@ -27,6 +27,9 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 - [[Boolean Type]]
 - [[Natural Numbers in Type Theory|Natural Numbers]]
 	- [[Addition is Associative (Type Theory)|Addition is Associative]]
+- [[Identity Type]]
+	- [[Path Induction]]
+	- [[Based Path Induction]]
 
 --- 
 ## MOCs
