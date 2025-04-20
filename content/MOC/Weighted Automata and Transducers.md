@@ -11,11 +11,11 @@ sticker: lucide//map-pin
 --- 
 ## Notes
 
-#### Math
+### Math
 - [[Semi Ring]]
 	- [[Polynomial and matrices over semi rings form semi rings]]
 
-#### Weighted Automata
+### Weighted Automata
 - [[Multiplicity Automata]]
 - [[Weighted Automata]]
 	- [[Weighted Automata on Series]]
@@ -29,9 +29,9 @@ sticker: lucide//map-pin
 - [[Minimizing a Weighted Automata]]
 - [[Equality in Tropical Weighted Automata]]
 - [[L* Learning Algorithm]]
-	- [[L* example]]s
+	- [[L* example]]
 - [[Closure Properties of Recognizable functions]]
-#### Algebraic Characterization of Rational Functions
+### Algebraic Characterization of Rational Functions
 - [[Weighted Automata as Formal Power Series]]
 - [[Monomials, Polynomials and Series]]
 	- [[Locally Finite and Summable Series]]
@@ -46,7 +46,7 @@ sticker: lucide//map-pin
 	- [[Stable Subsemodule of Series]]
 - [[Algebraic Classification of Recognizable functions]]
 
-#### Probabilistic Automata
+### Probabilistic Automata
 - [[Probabilistic Automata]]
 	- [[Stochastic Languages]]
 	- [[Stochastic Languages are Regular if Threshold Point is Isolated]]
@@ -55,7 +55,7 @@ sticker: lucide//map-pin
 		- [[Post Correspondence Problem]]
 		- [[PCP']]
 
-#### Transducers
+### Transducers
 - [[Pure Sequential Transducers]]
 	- [[Prefix Preserving]]
 	- [[Mealy Machines and Moore Machines]]
@@ -67,6 +67,16 @@ sticker: lucide//map-pin
 - [[Normalizing a Transducer]]
 	- [[Computing m_q]]
 - [[Residuals using Longest Common Prefixes]]
+
+### Relations on Words
+- [[Rational, Automatic and Recognizable relations]]
+- [[Closure Properties of Rational Relations]]
+- [[Equivalence of Rational Relations is Undecidable]]
+- [[Rational Relations as Weighted Automata]]
+- [[Checking if a word is related to Sigma*]]
+- [[Nivat's Theorem]]
+- [[Rational Functions (Weighted Automata)|Rational Functions]]
+
 --- 
 ## MOCs
 - [[Algebraic Automata Theory]]

@@ -80,5 +80,10 @@ Since $X$ is an integrable random variable, with integral 1, it induces a probab
 
 But we have that $\bigcup\mathcal F_{n}$ is closed under finite intersections and complements, hence is a [[Field (Measure Theory)|Field]] such that $\sigma(\{ B_{n}: n \geq 1 \}) = \sigma\left( \bigcup \mathcal F_{n} \right)=\mathcal F$, so by Caratheodory extensions theorem, we have $Q' =Q$
 
+
+>[!attention] prepare
+>prepare the equivalence of 2 definitions of uniform continuitiy
+>And show that if 2 a sequence of functions is l1 convergent, it is also l1 convergent on each set in the sigma field.
+
 ---
 # References

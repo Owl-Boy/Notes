@@ -121,6 +121,10 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 		- [[Arithmetic Operators are Definable in LFP|Arithmetic Operators]]
 		- [[Games of Graphs with Fixed Points]]
 - [[Simultaneous Fixed Points]]
+	- [[LFPsimult = LFP]]
+- [[Stages(Finite Model Theory)|Stages]]
+	- [[Stage Comparisons]]
+- [[Gurevich-Shelah's Theorem]]
 - [[Immerman–Vardi's Theorem]]
 
 --- 

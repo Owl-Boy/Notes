@@ -53,6 +53,10 @@ A logic that accommodates for such an operator is $\text{LFP}^\text{simult}$.
 >Thus $[\text{lfp}_{S,\Phi}](x, y)$ expresses the query.
 
 
+$\text{LFP}^\text{simult}$ makes it significantly more easy to describe constructions of complicated sets that require looking at multiple constructions. This begs the question:
+- How much more powerful is $\text{LFP}^\text{simult}$ than $\text{LFP}$.
+
+[[LFPsimult = LFP]]
 
 ---
 # References
