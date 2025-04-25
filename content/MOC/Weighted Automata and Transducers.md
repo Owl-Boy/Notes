@@ -75,7 +75,11 @@ sticker: lucide//map-pin
 - [[Rational Relations as Weighted Automata]]
 - [[Checking if a word is related to Sigma*]]
 - [[Nivat's Theorem]]
+
+### Machines realising Rational Functions
 - [[Rational Functions (Weighted Automata)|Rational Functions]]
+- [[Machines Realising Rational Functions]]
+- [[Equivalence between Machines]]
 
 --- 
 ## MOCs
