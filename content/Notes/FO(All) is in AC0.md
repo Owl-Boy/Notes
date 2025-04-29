@@ -25,7 +25,7 @@ This construction adds a depth of at most $3$ for each connective used and of at
 If the quantifier depth is $k$ then the size of the circuit is $O(n^k)$. So it is polynomial.
 
 >[!theorem] Corollary
->The [[Data Complexity of a Logic|Data Complexity]] of $\text{FO(All)}$ is in [[Nonuniform AC0|Nonuniform]] $\text{AC}^0$.
+>The [[Data Complexity of a Logic|Data Complexity]] of $\text{FO(All)}$ is in [[AC0|Nonuniform]] $\text{AC}^0$.
 
 ---
 # References

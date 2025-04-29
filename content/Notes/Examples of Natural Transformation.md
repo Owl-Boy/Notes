@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202412042312
 
@@ -13,6 +12,7 @@ Tags : [[Category Theory]]
 - There is a natural transformation $\eta:1_{\text{set}} \Rightarrow P$ whose components are the functions that take $x \mapsto \{ x \}$.
 - The open and closed set functors $\cal C, O$ on $\text{Top}^\text{op} \rightrightarrows \text{Set}$. The natural isomorphism is taking the complement. The naturality here indicates that complementation and taking pre-image are commutative.
 - The Riesz Representation Theorem can be expressed as a natural isomorphism of functors from the category $\text{cHaus}$ of Compact Hausdorff spaces and continuous maps to the category $\text{Ban}$ of Banach Spaces with continuous linear maps.
+- Given the category of Groups, consider the functor $(-)^\text{op}$, which is a covariant endofunctor that on any group $G$ takes $a \mapsto a^-1$ for all $a\in G$. This is naturally isomorphic to the identity functor.
 
 ---
 # References

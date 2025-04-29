@@ -15,7 +15,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 --- 
 ## Notes
 
-#### EF Games
+### EF Games
 - [[Connectivity is not FO Definable]]
 - [[Connectivity is not FO definable for Finite Graphs]]
 - [[Ehrenfeucht-Fraïssé Game]]
@@ -25,7 +25,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Ehrenfeucht-Fraïssé Games Proof]]
 - [[Even is not FO-definable for Linear Orders]]
 
-#### Locality Theorems
+### Locality Theorems
 - [[Locality (Finite Model Theory)|Locality]]
 	- [[Gaifman Graph]]
 	- [[Neighborhood (Finite Model Theory)|Neighborhood]]
@@ -51,21 +51,21 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Even Atoms in Boolean Algebras]]
 		- [[Definablity of Even Atoms]]
 
-#### Descriptive Complexity of FO
+### Descriptive Complexity of FO
 - [[Encoding Finite Model]]
 - [[Complexity of FO]]
 	- [[Data Complexity of a Logic]]
 	- [[Expression Complexity of a Logic]]
 	- [[Combined Complexity of a Logic]]
 - [[Boolean Circuits]]
-	- [[Nonuniform AC0]]
+	- [[AC0]]
 	- [[FO(All)]]
 	- [[FO(All) is in AC0]]
 - [[FO(+, *)]]
 	- [[BIT is expressible in FO(+, *)]]
 	- [[+ is epxressible in FO(BIT, <)]]
 
-#### Second Order Logic
+### Second Order Logic
 - [[Second Order Logic]]
 - [[Fragments of Second Order Logic]]
 	- [[Monadic Second Order Logic]]
@@ -80,7 +80,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[MSO on Finite Words accept Regular Languages]]
 	- [[FO on Finite Words accepts Star Free Languages]]
 
-#### Tree Automata
+### Tree Automata
 - [[Ranked Trees in Logic]]
 	- [[Ranked Tree Automata]]
 - [[Unranked Trees in Logic]]
@@ -88,7 +88,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 - [[Trees (Automata Theory)]]
 - [[Regular Tree Languages]]
 
-#### Descriptive Complexity of MSO
+### Descriptive Complexity of MSO
 - [[Encoding Finite Model]] (Same as FO)
 - [[MSO has Problems in each PH level]]
 - [[Complexity of MSO]]
@@ -101,7 +101,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 		- [[Small Tree Decompositions are Small]]
 		- [[Tree Decomposition and Size of the Tree]]
 
-#### Turing Machine Encodings
+### Turing Machine Encodings
 - [[Finitely Satisfiable and Valid Sentences]]
 - [[Trakhtenbrot's Theorem]]
 	- [[Trakhtenbrot's Encoding of Turing Machine]]
@@ -109,7 +109,7 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 - [[Fagin's Theorem]]
 	- [[Logic L capturing the complexity class K]]
 
-#### Fixed Point Logics
+### Fixed Point Logics
 - [[Fixed Point Logics]]
 	- [[Monotone, Inflationary and Inductive Functions]]
 	- [[Fixed Points]]
@@ -126,6 +126,22 @@ A lot of tools (like compactness) have an inherent "infiniteness" about them whi
 	- [[Stage Comparisons]]
 - [[Gurevich-Shelah's Theorem]]
 - [[Immerman–Vardi's Theorem]]
+
+### Counting Logics
+- [[FO(Cnt)|FO with Counting]]
+	- [[Examples of FO(Cnt)]]
+- [[FO with Infinitary Connectives]]
+- [[L_infty,omega star]] : $\cal L_{\infty \omega}^*$
+- [[Game for Counting Logic]]
+- [[Counting and Locality]]
+- [[Complexity of FO(Cnt)All]]
+- [[Order Invariant FO(Cnt) is not Gaifman Local]]
+
+### Finite Variable Logics
+- [[Paths on Graphs and Finite Variable Logics]]
+- [[Finite Variable Logics]]
+- [[Fixed Point Logics are subsumed by Finite Variable Logics]]
+- [[Pebble Games]]
 
 --- 
 ## MOCs

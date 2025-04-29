@@ -59,10 +59,7 @@ We define these with formula that are of the form, $\psi_{i}(\prec,\preceq,\tria
 		- We can make the second claim by stating $|y| \leq |x| + 1$
 			- $\varphi\Big((-\preceq \vec{x}), \; \vec{y}\Big)$
 	$$\begin{align}
-      \psi_{3} \equiv\; &\varphi\big((-\prec \vec{x}),\; \vec{x}\big) \land\lnot \varphi\big(\lnot(-\not\prec\vec{x}),\;\vec{y}\big) \\
-      &\land \Big[\Big( \forall \vec{z}, \lnot \varphi\big(\lnot(- \not\preceq \vec{x}), \; \vec{z}\big) \lor \vec{z}\preceq \vec{x}\Big) \lor \varphi\Big((-\preceq \vec{x}), \; \vec{y}\Big)\Big]
-    \end{align}
-	$$
+      \psi_{3} \equiv\; &\varphi\big((-\prec \vec{x}),\; \vec{x}\big) \land\lnot \varphi\big(\lnot(-\not\prec\vec{x}),\;\vec{y}\big) \\ &\land \Big[\Big( \forall \vec{z}, \lnot \varphi\big(\lnot(- \not\preceq \vec{x}), \; \vec{z}\big) \lor \vec{z}\preceq \vec{x}\Big) \lor \varphi\Big((-\preceq \vec{x}), \; \vec{y}\Big)\Big]\end{align}$$
 
 - For $\not\prec$, we say $x\not\prec y$ by
 	- $|y|=|z|+1$ where $|z| < |x|$, or

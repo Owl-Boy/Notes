@@ -21,7 +21,7 @@ Specifically each logic prescribes a set of queries that can be stated in them, 
 	- [[Expression Complexity of a Logic]]
 	- [[Combined Complexity of a Logic]]
 - [[Boolean Circuits]]
-	- [[Nonuniform AC0]]
+	- [[AC0]]
 	- [[FO(All)]]
 	- [[FO(All) is in AC0]]
 - [[FO(+, *)]]
