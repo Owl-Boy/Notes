@@ -81,16 +81,11 @@ All together they are defined as:
 >[!definition]
 >$$
 >\begin{align}
->\psi_{1} &\equiv \exists \vec{z}(\vec{x}\preceq \vec{z} \land \vec{z} \triangleleft \vec{y} ) \\
- >\\
->\psi_{2} &\equiv \varphi\Big((-\prec \vec{y}) ,\; \vec{x}\Big) \\
- >\\  
-      >\psi_{3} &\equiv\; \varphi\big((-\prec \vec{x}),\; \vec{x}\big) \land\lnot \varphi\big(\lnot(-\not\prec\vec{x}),\;\vec{y}\big) \\
-      >&\quad\;\ \land \Big[\Big( \forall \vec{z}, \lnot \varphi\big(\lnot(- \not\preceq \vec{x}), \; \vec{z}\big) \lor \vec{z}\preceq \vec{x}\Big) \lor \varphi\Big((-\preceq \vec{x}), \; \vec{y}\Big)\Big]
- >\\ \\
->
->\psi_{4} &\equiv \exists \vec{z},[\vec{x} \not\preceq \vec{z} \land \vec{z} \triangleleft\vec{y}] \lor \varphi(\emptyset, \vec{y})\lor \forall \vec{z}, \lnot \varphi(\emptyset, \vec{z}) \\
- >\\
+>\psi_{1} &\equiv \exists \vec{z}(\vec{x}\preceq \vec{z} \land \vec{z} \triangleleft \vec{y} ) \\ \\
+>\psi_{2} &\equiv \varphi\Big((-\prec \vec{y}) ,\; \vec{x}\Big) \\ \\  
+>\psi_{3} &\equiv\; \varphi\big((-\prec \vec{x}),\; \vec{x}\big) \land\lnot \varphi\big(\lnot(-\not\prec\vec{x}),\;\vec{y}\big) \\
+>&\quad\;\ \land \Big[\Big( \forall \vec{z}, \lnot \varphi\big(\lnot(- \not\preceq \vec{x}), \; \vec{z}\big) \lor \vec{z}\preceq \vec{x}\Big) \lor \varphi\Big((-\preceq \vec{x}), \; \vec{y}\Big)\Big]\\ \\
+>\psi_{4} &\equiv \exists \vec{z},[\vec{x} \not\preceq \vec{z} \land \vec{z} \triangleleft\vec{y}] \lor \varphi(\emptyset, \vec{y})\lor \forall \vec{z}, \lnot \varphi(\emptyset, \vec{z}) \\ \\
 >\psi_{5} &\equiv \lnot \varphi\Big(\lnot(-\not\prec y),\;\vec{x}\Big)
 >\end{align}
 >$$
