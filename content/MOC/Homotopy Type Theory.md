@@ -13,6 +13,8 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 
 --- 
 ## Notes
+
+### Martin Löf's Type Theory
 - [[Type Theory vs Set Theory]]
 	- [[Correspondence between Types and Sets and Homotopies]]
 - [[Specifying a Type]]
@@ -30,6 +32,17 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 - [[Identity Type]]
 	- [[Path Induction]]
 	- [[Based Path Induction]]
+
+### Homotopy Type Theory
+- [[Identity is an Equivalence]]
+	- [[Types are Higher Groupoids]]
+- [[Loop Space]]
+	- [[Pointed Type]]
+	- [[Eckmann-Hilton]]
+- [[Functions as Functors]]
+	- [[Transport]]
+- [[Homotopy(HoTT)|Homotopy]]
+- [[Functions as Equivalences]]
 
 --- 
 ## MOCs

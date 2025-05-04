@@ -23,6 +23,14 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Natural Transformation]]
 	- [[Dual Vector Space Example]]
 	- [[Examples of Natural Transformation]]
+- [[Equivalence of Categories]]
+- [[Categorization of Equivalent Categories]]
+	- [[Examples of Equivalence of Categories]]
+- [[Initial and Terminal Objects]]
+- [[Concrete Categories]]
+- [[Commuting of Rectangles and Squares]]
+- [[Vertical and Horizontal Composition of Natural Transformations]]
+- [[2-Categories]]
 
 --- 
 ## MOCs

@@ -21,6 +21,8 @@ Before we get to the **Induction Principle** Lets look at the recursion principl
 >f(x, x, \text{refl}_{x}) :\equiv \text{id}_{C(x)}
 >$$
 
+^4e1620
+
 Indiscernibility of Identicals states that if there are 2 equal elements $x, y:A$ then any family from $A \to \cal U$ must have equal elements going to "equivalent types" as witnessed by the function. This is one of the ways equality if respected 
 
 The notion of equivalent types will be discussed later.
