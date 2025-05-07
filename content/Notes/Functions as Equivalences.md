@@ -14,6 +14,8 @@ Tags : [[Homotopy Type Theory]]
 >\text{qinv}(f) :\equiv\sum_{g:B\to A} \big((f \circ g \sim \text{id}_{B}) \times (g \circ f \sim \text{id}_{A})\big)
 >$$
 
+^9c1bf0
+
 might seem odd to call this as the definition of quasi-inverse, even though it very cleanly captures what we want, we want the existence of a function $g$, the composition of these functions is homotopic to identity. But this type is not well behaved, it may have multiple unequal elements in it.
 
 >[!Definition] 

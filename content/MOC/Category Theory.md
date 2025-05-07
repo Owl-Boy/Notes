@@ -31,6 +31,11 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Commuting of Rectangles and Squares]]
 - [[Vertical and Horizontal Composition of Natural Transformations]]
 - [[2-Categories]]
+- [[Representable Functors]]
+	- [[Examples of Representable Functors]]
+- [[Examples of Natural Transformation with Representable Functor as Domain]]
+- [[Yoneda Lemma]]
+	- [[Yoneda Embedding]]
 
 --- 
 ## MOCs

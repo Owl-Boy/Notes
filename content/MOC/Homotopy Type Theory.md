@@ -44,6 +44,18 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 - [[Homotopy(HoTT)|Homotopy]]
 - [[Functions as Equivalences]]
 
+#### Higher Groupoid Structure of Type Formers
+- [[Higher Groupoid Structure of Cartesian Product]]
+- [[Higher Groupoid Structure of Sigma Type]]
+- [[Higher Groupoid Structure of Unit Type]]
+- [[Higher Groupoid Structure of Pi Type]]
+- [[Univalence]]
+- [[Higher Groupoid Structure of Identity Types]]
+	- [[Transports in a Family of Paths]]
+- [[Higher Groupoids Structure of Coproducts]]
+- [[Higher Groupoid Structure of Natural Numbers]]
+
+
 --- 
 ## MOCs
 
