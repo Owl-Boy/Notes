@@ -24,13 +24,13 @@ The 2 peano axioms that are left out can be proven as theorem from what we prove
 - There is no natural number which is a successor of $0$
   Here we have $\prod_{m:\mathbb{N}}\text{encode}(\text{succ}(m),0) \to \mathbf{0}$.
 - To show that the successor function is injective we have
-  $$
-\begin{align}
-(\text{succ}(m)= \text{succ}(n)) \xrightarrow{\text{encode}}\ &\text{code}(\text{succ}(m), \text{succ}(n)) \\
-\equiv\ &\text{code}(m, n) \\
-{}\xrightarrow{\text{decode}}\ &(m=n) 
-\end{align}
-  $$
+	$$
+	\begin{align}
+	(\text{succ}(m)= \text{succ}(n)) \xrightarrow{\text{encode}}\ &\text{code}(\text{succ}(m), \text{succ}(n)) \\
+	\equiv\ &\text{code}(m, n) \\
+	{}\xrightarrow{\text{decode}}\ &(m=n) 
+	\end{align}
+	$$
 
 ---
 # References
