@@ -46,7 +46,11 @@ $$
 $$
 We do this by a double induction on $m$ and $n$, when both are $0$ we need a function $\mathbf{1} \to (0=0)$, which sets $\star \to \text{refl}_{0}$. When one of them is a successor, and the other one is $0$ we can have co-domain to be $\mathbf{0}$ too. When both of them are successors we can define it as:
 $$
-\text{code}(\text{succ}(m), \text{succ}(n))\equiv \text{code}(m, n) \xrightarrow{\text{decode}(m, n)}(m=n) \xrightarrow{\text{ap}_{\text{succ}}}(\text{succ}(m)=\text{succ}(n))
+\begin{align}
+\text{code}(\text{succ}(m), \text{succ}(n))\equiv\ &\text{code}(m, n)  \\
+{}\xrightarrow{\text{decode}(m, n)}&(m=n) \\
+{}\xrightarrow{\text{ap}_{\text{succ}}}&(\text{succ}(m)=\text{succ}(n))
+\end{align}
 $$
 
 We now need  to show that these are quasi inverses. First by induction on $\text{p}$ we get for each $n$ we need to show.
@@ -60,7 +64,7 @@ For the other direction we start by doing double induction on $m$ and $n$. If bo
 In the final case we have 
 $$
 \begin{align}
-\text{encode}(\text{succ}(m), \text{succ}(n), &\text{decode}(\text{succ}(m), \text{succ}(n), c)) \\
+\text{encode}&(\text{succ}(m), \text{succ}(n), \text{decode}(\text{succ}(m), \text{succ}(n), c)) \\
 &=\text{encode}(\text{succ}(m), \text{succ}(n),\text{ap}_{\text{succ}}(\text{decode}(m,n,c))) \\
 &= \text{transport}^{\text{code}(\text{succ}(m),-)}(\text{ap}_{\text{succ}}(\text{decode}(m,n,c)), r(\text{succ(m)})) \\
 &= \text{transport}^{\text{code}(\text{succ}(m),\text{succ}(-))}(\text{decode}(m,n,c)), r(\text{succ(m)})  \\
