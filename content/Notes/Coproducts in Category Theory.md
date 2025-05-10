@@ -6,7 +6,7 @@ Tags : [[Category Theory]]
 ---
 # Coproducts in Category Theory
 
-The [[Universal Property]] for Products in Category Theory  is 
+The [[Universal Property (Mac Lane)]] for Products in Category Theory  is 
 
 Let $X$ and $Y$ be sets, then for any set $A$ and functions $f:X\to A$ and $g:Y\to A$, there exists a unique function $h:X\sqcup Y\to A$ such that the following diagram commutes.
 ```tikz

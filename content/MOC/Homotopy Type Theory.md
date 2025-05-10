@@ -3,6 +3,8 @@ sticker: lucide//map-pin
 tags:
   - MOC/Topic
   - MOC/Course
+  - Note
+  - Incomplete
 ---
 
 # Homotopy Type Theory
@@ -55,6 +57,8 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 	- [[Transports in a Family of Paths]]
 - [[Higher Groupoids Structure of Coproducts]]
 - [[Higher Groupoid Structure of Natural Numbers]]
+- [[Equivalence of more complicated structures - Semi-groups]]
+- 
 
 
 --- 

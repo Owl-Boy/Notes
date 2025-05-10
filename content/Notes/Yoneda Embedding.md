@@ -27,7 +27,7 @@ $$
 
 But it is easy to see that different morphisms would give different natural transformations.
 
-By Yoneda's lemma we have that all morphisms are defined like this
+By Yoneda's lemma we have that the natural transform $\alpha: C(d,-) \Rightarrow C(c,-)$ corresponds to an element in $C(c, d)$ . 
 
 ---
 # References

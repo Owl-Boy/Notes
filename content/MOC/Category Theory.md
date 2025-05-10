@@ -36,6 +36,11 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Examples of Natural Transformation with Representable Functor as Domain]]
 - [[Yoneda Lemma]]
 	- [[Yoneda Embedding]]
+	- [[Representable Functors Define Representing Objects]]
+- [[Universal Property (Mac Lane)]]
+- [[Universal Property (Riehl)]]
+	- [[Tensor Products as Universal Properties]]
+- [[Equivalence of Definitions of Universal Property]]
 
 --- 
 ## MOCs

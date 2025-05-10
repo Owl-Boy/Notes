@@ -5,7 +5,7 @@ Tags : [[Category Theory]]
 
 ---
 # Product in Category Theory
-The [[Universal Property]] for Products in Category Theory  is 
+The [[Universal Property (Mac Lane)]] for Products in Category Theory  is 
 
 Let $X$ and $Y$ be sets, then for any set $A$ and functions $f:A\to X$ and $g:A\to Y$, there exists a unique function $A\to X\times Y$ such that the following diagram commutes.
 ```tikz

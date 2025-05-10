@@ -16,9 +16,14 @@ A mathematical structure is a collection of objects along with some operations a
 Since One can write logical formulas which can describe properties of an object as types, one can create a type of **Semi-group** such that it consists of both the collection and the operator, but also the properties as a part of the object, and is described as follows:
 
 >[!tip] Semi-Groups
->The following describes the type of all monoids:
+>Stating that a particular type has a semi-group structure is as follows:
 >$$
->\text{Semi\_Group} :\equiv \sum_{(A:\cal U)} \sum_{(*:A\to A \to A)} \prod_{(x,y,z:A)} (x*y)*z = x*(y*z)
+>\text{Semi\_Group\_Str} :\equiv \sum_{(*:A\to A \to A)} \prod_{(x,y,z:A)} (x*y)*z = x*(y*z)
+>$$
+>
+>The following describes the type of all semi-groups:
+>$$
+>\text{Semi\_Group} :\equiv \sum_{(A:\cal U)} \text{Semi\_Group\_Str}(A)
 >$$
 
 This reads as:
