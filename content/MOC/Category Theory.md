@@ -10,6 +10,7 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 
 --- 
 ## Notes
+### Categories
 - [[Small Categories]]
 - [[Category]]
 	- [[Examples of Categories]]
@@ -31,6 +32,8 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Commuting of Rectangles and Squares]]
 - [[Vertical and Horizontal Composition of Natural Transformations]]
 - [[2-Categories]]
+
+### Universal Properties
 - [[Representable Functors]]
 	- [[Examples of Representable Functors]]
 - [[Examples of Natural Transformation with Representable Functor as Domain]]
@@ -41,9 +44,28 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Universal Property (Riehl)]]
 	- [[Tensor Products as Universal Properties]]
 - [[Equivalence of Definitions of Universal Property]]
+- [[Element Category]] 
+	- [[Examples of Element Categories]]
+	- [[Element Category is Isomorphic to Comma Category]]
+	- [[Universal Elements are Universal Elements]]
+### Limits and Colimits
+- [[Diagram]]
+- [[Cones and Cocones]]
+- [[Limits and Colimits]]
+	- [[Products and Coporducts]]
+		- [[Products in Topology from Products in Category Theory]]
+		- [[Universal Property of Products and Coproducts]]
+	- [[Equalizers and Coequalizers]]
+		- [[Examples of Equalizers]]
+		- [[Examples of Coequalizers]]
+	- [[Pullbacks and Pushouts]]
+		- [[Examples of Pullbacks]]
+		- [[Examples of Pushouts]]
+	- [[Inverse Limits and Direct Limts]]
 
 --- 
 ## MOCs
+- [[Homotopy Type Theory]]
 
 ---
 # References

@@ -1,7 +1,7 @@
 202210120910
 
 Type : #Note
-Tags : [[Algebra]]
+Tags : [[Algebra]], [[Ring Theory]]
 
 ---
 # Fields
@@ -24,9 +24,6 @@ $$
 $\alpha \in K$ is said to be _algebraic_ over $F$ if it is the root of some non-zero polynomial $f(x)\in F[x]$. If not, $\alpha$ is called _Transcendental_ over $F$. If $\forall\alpha\in K$ is algebraic over $F$, $K$ is called an [[Algebraic Extension]] of $F$. 
 
 If $K_1$ and $K_2$ are subfields of $K$, then the [[Composite Field| composite field]] of $K_1$ and $K_2$ denoted by $K_1K_2$, is the smallest subfield of $K$ which contains both $K_1$ and $K_2$. Similarly, the composite field of any collection of subfields of $K$ is the smallest subfield of $K$ which contains all the other ones.
-
----
-# Related Problems
 
 ---
 # References

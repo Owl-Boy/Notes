@@ -11,7 +11,7 @@ Tags : [[Set Theory]]
 	- $\forall z (z\in x \leftrightarrow z \in y) \to x = y$
 - *Foundation* ^df7c78
 	- $\exists y(y \in x) \to \exists y(y \in x \land \lnot \exists z (z \in x \land z \in y))$
-- *Comprehension Scheme* : For each formula $\phi$ which does not have $y$ as free
+- *Comprehension Scheme* : For each formula $\phi$ which does not have $y$ as free ^799ea9
 	- $\exists y \forall x (x \in y \leftrightarrow x \in v \land \phi(x))$
 - *Pairing*
 	- $\exists z(x \in z \land y \in z)$

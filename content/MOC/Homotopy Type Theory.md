@@ -3,8 +3,6 @@ sticker: lucide//map-pin
 tags:
   - MOC/Topic
   - MOC/Course
-  - Note
-  - Incomplete
 ---
 
 # Homotopy Type Theory
@@ -26,8 +24,8 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 - [[Product Type(HoTT)|Product Type]]
 - [[Dependent Pair Types]]
 	- [[Semi Groups in Types Theory]]
+	- [[Type Theoretic Axiom of Choice]]
 - [[Sum Types]]
-- [[Type Theoretic Axiom of Choice]]
 - [[Boolean Type]]
 - [[Natural Numbers in Type Theory|Natural Numbers]]
 	- [[Addition is Associative (Type Theory)|Addition is Associative]]
@@ -58,9 +56,19 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 - [[Higher Groupoids Structure of Coproducts]]
 - [[Higher Groupoid Structure of Natural Numbers]]
 - [[Equivalence of more complicated structures - Semi-groups]]
-- 
-
-
+	- [[Equality of Semigroups]]
+- [[Products respect Universal Properties]]
+- [[Sigma Types respect Universal Properties]]
+#### Sets and Propositions
+- [[Sets in Type Theory]]
+- [[Double Negation Does Not Cancel]]
+- [[Mere Propositions]]
+	- [[Mere Propositions are Sets]]
+	- [[Decidability (HoTT)|Law of Excluded Middle]]
+- [[Sub-Types]]
+- [[Propositional Resizing]]
+- [[Type Formers and Mere Propositions]]
+- [[A better Axiom of Choice for Type Theory]]
 --- 
 ## MOCs
 

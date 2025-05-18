@@ -42,6 +42,9 @@ Given a type $X$ and $x:X$ and families $A,B: X \to \cal U$, $p:x_{1} =_{X} x_{2
 $$
 \text{transport}^{A \to B}(p, f) = x \mapsto \text{transport}^B(p, f(\text{transport}^A(p^{-1}, x)))
 $$
+
+^7ee656
+
 To justify this, see that we are given a function $f:A(x_{1})\to B(x_{1})$, so we want a function $p_{*}(f): A(x_{2}) \to B(x_{2})$, for that assume we are given an $x : A(x_{2})$, We then transport to get an element of $A(x_{1})$, then we apply $f$ to get an element of $B(x_{1})$, then we transport it again to get an element of $B(x_{2})$.
 Also here the the type family $A\to B$ is $x\mapsto A(x) \to B(x)$.
 
