@@ -1,7 +1,8 @@
 ---
 tags:
   - Note
-  - Incomplete
+aliases:
+  - Law of Excluded Middle
 ---
 202505172105
 
@@ -32,3 +33,5 @@ $$
 
 ---
 # References
+- [[Mere Propositions]]
+- [[Double Negation Does Not Cancel]]

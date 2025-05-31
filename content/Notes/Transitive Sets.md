@@ -18,7 +18,7 @@ Tags : [[Set Theory]]
 ---
 
 >[!theorem] 
->Assuming [[ZFC and family#^df7c78|Axiom of Foundation]], every non empty transitive set contains the empty set and every non-empty, non-singleton transitive set contains $\{ \emptyset \}$.
+>Assuming [[Axioms of ZFC#^df7c78|Axiom of Foundation]], every non empty transitive set contains the empty set and every non-empty, non-singleton transitive set contains $\{ \emptyset \}$.
 
 Given a non-empty transitive set $z$, by the axiom of foundation, there exists an element $x \in z$ such that $x \cap z = \emptyset$. But since $x \subseteq z$, $x = \emptyset$.
 

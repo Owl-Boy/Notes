@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202503310203
 
@@ -56,3 +55,4 @@ $$
 
 ---
 # References
+- [[Identity Type]]

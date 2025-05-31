@@ -36,3 +36,6 @@ This reads as:
 
 ---
 # References
+- [[Dependent Pair Types]]
+- [[ Dependent Function Type]]
+- [[Semi-Groups]]

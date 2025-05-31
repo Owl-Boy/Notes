@@ -65,8 +65,7 @@ There are no ways to construct elements of the empty type.
 >\text{ind}_{\mathbf{0}} : \prod_{C:\mathbf{0}\to\cal U}\prod_{z:\mathbf{0}}C(z)
 >$$
 
-
-
-
 ---
 # References
+[[Coproducts in Category Theory]]
+[[Dependent Pair Types]]

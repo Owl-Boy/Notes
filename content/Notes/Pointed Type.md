@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505030105
 
@@ -19,3 +18,4 @@ for the type of pointed types in the universe $\cal U$.
 
 ---
 # References
+[[Dependent Pair Types|Sum Type]]

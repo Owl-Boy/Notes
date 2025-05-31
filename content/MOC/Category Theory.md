@@ -62,10 +62,24 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 		- [[Examples of Pullbacks]]
 		- [[Examples of Pushouts]]
 	- [[Inverse Limits and Direct Limts]]
+- [[Complete and Cocomplete Categories]]
+- [[Set is Complete]]
+	- [[Limits in the Category of Sets]]
+- [[Small Limits in Set are Equalizers]]
+- [[Preservation, Reflection and Creation of Limits]]
+	- [[Fully Faithful Functors Reflect Limits and Colimits]]
+	- [[Equivalences Reflect, Preserve and Create Colimits]]
+- [[Strictly Creating Limits]]
+- [[Slice Category Strictly Creates Limits]]
+- [[Functor Categories inherit Limits and Colimits object-wise]]
 
 --- 
 ## MOCs
 - [[Homotopy Type Theory]]
+- [[Set Theory]]
+- [[Topology]]
+- [[Ring Theory]]
+- [[Logic]]
 
 ---
 # References

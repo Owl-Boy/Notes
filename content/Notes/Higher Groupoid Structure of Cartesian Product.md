@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505051005
 
@@ -56,3 +55,4 @@ By induction, we assume $x=(a,b)$ and $y=(a',b')$ and now we will induct on $p$ 
 
 ---
 # References
+- [[Product Type]]

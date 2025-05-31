@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505031505
 
@@ -34,3 +33,6 @@ And we can now finally define the dependent version of [[Functions as Functors]]
 
 ---
 # References
+- [[Functions as Functors]]
+- [[Path Induction]]
+- [[Identity Type]]

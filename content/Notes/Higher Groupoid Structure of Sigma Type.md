@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505051205
 
@@ -56,3 +55,6 @@ Proof is immediate by path induction.
 
 ---
 # References
+[[Dependent Pair Types|Sum Type]]
+[[Path Induction]]
+[[Uniqueness Principle for Sigma Types]]

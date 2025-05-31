@@ -40,3 +40,4 @@ Say the inputs are $p$ and $q$, we first do path induction on $p$, that would tu
 
 ---
 # References
+- [[Identity Type]]

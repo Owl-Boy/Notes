@@ -7,7 +7,7 @@ tags:
 Tags : [[Set Theory]]
 # Uncountable Cardinalities
 ---
-If we add the [[ZFC and family#^44e52f|Power Set Axiom]] to analyse [[Cardinals]], then we are able to construct *Uncountable Cardinals*.
+If we add the [[Axioms of ZFC#^44e52f|Power Set Axiom]] to analyse [[Cardinals]], then we are able to construct *Uncountable Cardinals*.
 
 If we assume Axiom of Choice, then every set can be well ordered and $|\mathcal P(\omega)|$ is an uncountable ordinal, but we can prove the existence of uncountable ordinals without it.
 
@@ -19,7 +19,7 @@ If we assume Axiom of Choice, then every set can be well ordered and $|\mathcal 
 ^5df0be
 
 ***Proof:***
-Let $W$ be the set of pairs $\langle X, R\rangle\in \mathcal P(A) \times \mathcal P(A \times A)$ such that $R$ **well-orders** $X$. So $W$ is the set of all well orderings of all subsets of $A$. $\alpha \le A \iff \alpha = \text{type}(X; R)$ for some $X$ and $R$. So we apply [[ZFC and family#^c2b9a6|Replacement Axiom]] on $W$ and let $\kappa = \text{sup} \{ \text{type}(X; R)+1 : \langle X, R \rangle \in W\}$. Now, forall $\alpha \le A$, we get $\kappa > \alpha$, so $\kappa \not\preceq A$.
+Let $W$ be the set of pairs $\langle X, R\rangle\in \mathcal P(A) \times \mathcal P(A \times A)$ such that $R$ **well-orders** $X$. So $W$ is the set of all well orderings of all subsets of $A$. $\alpha \le A \iff \alpha = \text{type}(X; R)$ for some $X$ and $R$. So we apply [[Axioms of ZFC#^c2b9a6|Replacement Axiom]] on $W$ and let $\kappa = \text{sup} \{ \text{type}(X; R)+1 : \langle X, R \rangle \in W\}$. Now, forall $\alpha \le A$, we get $\kappa > \alpha$, so $\kappa \not\preceq A$.
 
 >[!definition] Infinite Cardinalities
 >By recursion on $\xi$ we define:

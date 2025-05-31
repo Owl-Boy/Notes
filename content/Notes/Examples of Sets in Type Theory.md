@@ -1,7 +1,6 @@
 ---
 tags:
-  - Note
-  - Incomplete
+  - Example
 ---
 202505141905
 
@@ -30,9 +29,6 @@ Tags : [[Homotopy Type Theory]]
 >And for any $x$ we have $f(x)=g(x)$ by $\text{happly}(p,x)$ and $\text{happly}(q, x)$, hence by $\text{ap}_{\text{funext}}$ we have $p=q$.
 
 
-
-$$
->$$
-
 ---
 # References
+[[Sets in Type Theory]]

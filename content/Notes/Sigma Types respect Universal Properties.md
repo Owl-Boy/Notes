@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505131705
 
@@ -24,9 +23,7 @@ As before we define the quasi-inverse to send $(g, h)$ to $\lambda x.(g(x), h(x)
 $$
 \lambda x.(\text{pr}_{1}(f(x)), \text{pr}_{2}(f(x)))\
 $$
->[!todo] TODO:  Add corollary 2.7.5 in the notes.
-
-By that, we have, for any $x$ 
+By [[Uniqueness Principle for Sigma Types]] we have, for any $x$ 
 $$
 \big(\text{pr}_{1}(f(x)), \text{pr}_{2}(f(x))\big) = f(x)
 $$
@@ -36,3 +33,8 @@ This result is interesting because these functions in the "types as propositions
 
 ---
 # References
+- [[Dependent Pair Types]]
+- [[Uniqueness Principle for Sigma Types]]
+- [[Type Theoretic Axiom of Choice]]
+- [[Product Type]]
+- [[Functions as Equivalences]]

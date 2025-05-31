@@ -46,6 +46,8 @@ We can define multi-variable function by allowing $C$ to be a function and and d
 >\end{align}
 >$$
 
+^5e069a
+
 We can package the previous in the following recursor:
 $$
 \text{rec}_{\mathbb{N}} : \prod_{C:\cal U}\mathbb{N} \to (\mathbb{N} \to C \to C) \to (\mathbb{N} \to C)
@@ -83,3 +85,5 @@ The proof is discussed in [[Addition is Associative (Type Theory)|Addition is As
 
 ---
 # References
+[[Addition is Associative (Type Theory)]]
+[[Peano Axioms and Type Theory]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505172105
 
@@ -10,7 +9,7 @@ Tags : [[Homotopy Type Theory]]
 ---
 Type families like $P:A \to\cal U$ can be regarded as *predicate* on the elements of $A$. For any $a:A$  we get that $P(a)$ is a type, and we can say that $a$ satisfies the predicate $P$ if $P(a)$ is inhabited. 
 
-In set theory, one can use the [[ZFC and family#^799ea9|comprehension]] to construct subsets. The obvious analogue is $\sum_{a:A}P(a)$, that contains elements of the form $(a,p:P(a))$, where the first components would exactly make up the subset.
+In set theory, one can use the [[Axioms of ZFC#^799ea9|comprehension]] to construct subsets. The obvious analogue is $\sum_{a:A}P(a)$, that contains elements of the form $(a,p:P(a))$, where the first components would exactly make up the subset.
 
 The slight issue with that is that given an $a$, there can be multiple elements in the type $P(a)$. To avoid that from happening, we simply put the restriction that $P$ is a [[Mere Propositions]].
 
@@ -31,3 +30,6 @@ We may also say that $a\in \{ x:A \mid P(x) \}$ to refer to the mere proposition
 
 ---
 # References
+- [[Axioms of ZFC]]
+- [[Mere Propositions]]
+- [[Sets in Type Theory]]

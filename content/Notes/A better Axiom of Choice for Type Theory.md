@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505182305
 
@@ -50,3 +49,8 @@ Also note that since both sides of $\to$ are mere propositions, and the right im
 
 ---
 # References
+- [[Mere Propositions]]
+- [[Axiom of Choice and its Variants]]
+- [[Type Theoretic Axiom of Choice]]
+- [[Dependent Function Type]]
+- [[Dependent Pair Types]]

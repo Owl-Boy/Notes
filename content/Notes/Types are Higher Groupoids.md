@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505022305
 
@@ -34,3 +33,5 @@ After we have shown [[Identity is an Equivalence]], we now need to show that thi
 
 ---
 # References
+- [[Identity Type]]
+- [[Groupoids]]

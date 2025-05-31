@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202503220503
 
@@ -17,7 +16,7 @@ Set theory is 2 layered:
 - Inside First Order Logic, there are the Set theory axioms and everything that can be derived using those
 So Set theory is not just the theory of sets, but also about the other primitive: propositions, and how they are used to work with sets.
 
-Type Theory is its own deductive system and does not require an ambient logic to work in. It has 1 basic notion: type. Propositions are identified with types, this is shown [[Correspondence between Types and Sets and Homotopies]], the activity of finding a proof becomes equivalent to constructing an element of the set.
+Type Theory is its own deductive system and does not require an ambient logic to work in. It has 1 basic notion: type. Propositions are identified with types, this is shown [[Type Theoretic Rosetta Stone]], the activity of finding a proof becomes equivalent to constructing an element of the set.
 
 ### Types give structure to elements
 
@@ -32,3 +31,5 @@ There is also a need for judgmental equality, or definitional equality and is wr
 
 ---
 # References
+[[Set Theory]]
+[[Identity Type]]

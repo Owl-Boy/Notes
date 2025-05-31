@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505041305
 
@@ -55,3 +54,5 @@ It is also clearly an equivalence relation.
 
 ---
 # References
+- [[Homotopy(HoTT)]]
+- [[Isomorphisms (Category Theory)]]

@@ -7,7 +7,7 @@ tags:
 
 tags : [[Homotopy Type Theory]]
 
-#  Correspondence between Types and Sets and Homotopies
+# Type Theoretic Rosetta Stone
 ---
 $$
 \begin{matrix}

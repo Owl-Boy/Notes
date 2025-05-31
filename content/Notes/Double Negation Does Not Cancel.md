@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505171605
 
@@ -73,3 +72,8 @@ $$
 
 ---
 # References
+- [[Boolean Type]]
+- [[Transport]]
+- [[Higher Groupoid Structure of Pi Type]]
+- [[Univalence]]
+- [[Higher Groupoids Structure of Coproducts]]

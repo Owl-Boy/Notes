@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505172205
 
@@ -41,3 +40,7 @@ $$
 
 ---
 # References
+- [[Sub-Types]]
+- [[Mere Propositions]]
+- [[Universes]]
+- [[Sets in Type Theory]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505051305
 
@@ -15,7 +14,8 @@ The function $f:x=y \to \mathbb 1$ is easy to define. Also to define a function 
 
 We now need to show that these are inverses. First consider an element $u:\mathbb 1$, assume $u=\star$. $f(g(u))=u$
 
-For the reverse, given $p:x=y$, we assume by path induction that $p \equiv\text{refl}_{x}$, hence the composition takes $p$ to $p$
+For the reverse, given $p:x=y$, we assume by [[Path Induction]] that $p \equiv\text{refl}_{x}$, hence the composition takes $p$ to $p$
 
 ---
 # References
+- [[Path Induction]]

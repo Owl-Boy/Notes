@@ -13,7 +13,7 @@ Tags : [[Set Theory]]
 ---
 ## Properties
 
-- Assuming [[ZFC and family#^df7c78|Axiom of Foundation]], $z$ is a Von Neumann Ordinal iff $z$ is transitive and $\in$ total-orders $z$.
+- Assuming [[Axioms of ZFC#^df7c78|Axiom of Foundation]], $z$ is a Von Neumann Ordinal iff $z$ is transitive and $\in$ total-orders $z$.
 - If $x$ is an ordinal, then $x \not\in x$ as it breaks irreflexivity of $\in$.
 - If $x$ is an ordinal, so is $S(x)$.
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505182105
 
@@ -54,3 +53,4 @@ $$
 
 ---
 # References
+- [[Mere Propositions]]

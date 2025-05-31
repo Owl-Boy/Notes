@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505062205
 
@@ -41,3 +40,4 @@ Proof is by path induction on $p$.
 
 ---
 # References
+- [[Transport]]

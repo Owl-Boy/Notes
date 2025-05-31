@@ -27,3 +27,6 @@ This is how Bertrand Russel originally defined type theory, as a set theory that
 
 ---
 # References
+[[Dependent Types]]
+[[Dependent Pair Types]]
+[[Dependent Function Type]]

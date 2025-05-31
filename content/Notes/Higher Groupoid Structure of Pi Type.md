@@ -1,7 +1,8 @@
 ---
 tags:
   - Note
-  - Incomplete
+aliases:
+  - Function Extensionality
 ---
 202505061405
 
@@ -56,3 +57,6 @@ with the definitions
 
 ---
 # References
+[[Dependent Function Type]]
+[[Transport]]
+[[Functions as Equivalences]]

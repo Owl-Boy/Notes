@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505072305
 
@@ -77,3 +76,5 @@ $$
 
 ---
 # References
+- [[Higher Groupoids Structure of Coproducts]]
+- [[Transport]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505171805
 
@@ -27,3 +26,6 @@ Consider $f, g: \text{is-Set}(A)$, which says, forall $x, y:A$ and $p,q:x=y$ we 
 
 ---
 # References
+- [[Mere Propositions]]
+- [[Sets in Type Theory]]
+- [[Identity Type]]

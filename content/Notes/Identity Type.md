@@ -40,3 +40,5 @@ The Recursion and Induction Principle need more attention and are discussed in [
 
 ---
 # References
+- [[Path Induction]]
+- [[Based Path Induction]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505080005
 
@@ -34,3 +33,5 @@ The 2 peano axioms that are left out can be proven as theorem from what we prove
 
 ---
 # References
+- [[Higher Groupoid Structure of Natural Numbers]]
+- [[Natural Numbers in Type Theory]]

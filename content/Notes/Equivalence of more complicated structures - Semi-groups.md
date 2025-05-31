@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505091805
 
@@ -33,7 +32,7 @@ $$
 $$
 where $\text{Assoc}(A, *)$ is the type $\prod_{(x,y,z:A)} (x * y)*z = x*(y*z)$. and by function extensionality we only need to check what happens when an arbitrary $m'$ is applied on $b,b'$.  Any by applying 
 
->[!todo] TODO : Lemma 2.9.4 frum de buk
+[[Transport over a function between families]]
 
 we have that $m'(b,b')$ is
 $$
@@ -63,7 +62,9 @@ m'(m'(b_{1},b_{2}),b_{3}) &= e(m(e^{-1}(m'(b_{1}, b_{2})), e^{-1}(b_{3}))) \\
 $$
 Given that this is an algebraic structure, the proof for associativity seems weird, but the homotopy consider the types as general homotopy spaces, so we don't have a guarantee that it resprencs the semi-group structure.
 
-
-
 ---
 # References
+- [[Semi-Groups]]
+- [[Semi Groups in Types Theory]]
+- [[Transport]]
+- [[Transport over a function between families]]

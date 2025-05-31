@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505141805
 
@@ -25,10 +24,12 @@ We define sets with no non-trivial "higher homotopy" information. Luckily, every
 >[!lemma]
 >If $A$ is a set, then any identity type over $A$ is also a set
 
-This is precisely what we refereed to when we used the word "lucky".
+This is precisely what we refered to when we used the word "lucky".
 Say $f: \text{is-Set}(A)$, that it takes 2 elements of $A$, 2 paths between them, and states they are equal, that is: $f(x,y,p,q):p=q.$ 
 
 We now fix $x,y,p$ and define $g(q):\prod_{q:x=y}p=q$ by $g(q) = f(x,y,p,q)$, then for any $r:q=q'$ we have $\text{apd}_{g}(r):r_{*}(g(q))=g(q')$ but that just becomes $g(q) \cdot r=g(q')$, hence for any $r,s: p=q$ we have $g(q)\cdot r = g(q') = g(q)\cdot s$, so we get $r=s$.
 
 ---
 # References
+- [[Set Theory]]
+- [[Identity Type]]

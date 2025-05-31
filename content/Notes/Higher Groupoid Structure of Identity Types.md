@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505062105
 
@@ -57,3 +56,6 @@ For depended function types we have
 
 ---
 # References
+- [[Types are Higher Groupoids]]
+- [[Higher Groupoid Structure of Pi Type|Function Extensionality]]
+- [[Functions as Functors]]

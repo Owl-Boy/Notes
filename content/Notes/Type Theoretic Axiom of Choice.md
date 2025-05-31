@@ -28,3 +28,5 @@ This looks very similar to the statement of axiom of choice and is hence called 
 
 ---
 # Related
+[[Axiom of Choice and its Variants]]
+[[A better Axiom of Choice for Type Theory]]

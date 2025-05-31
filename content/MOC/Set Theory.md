@@ -13,7 +13,7 @@ sticker: lucide//map-pin
 
 --- 
 ## Notes
-- [[ZFC and family]]
+- [[Axioms of ZFC]]
 - [[Von Neumann Ordinals]]
 	- [[Transitive Sets]]
 - [[Type of a Set and a Relation]]
@@ -53,6 +53,7 @@ sticker: lucide//map-pin
 ## MOCs
 - [[Logic]]
 - [[Independence of CH - Dana Scott]]
+- [[Homotopy Type Theory]]
 
 ---
 # References

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505131605
 
@@ -32,3 +31,6 @@ is an Equivalence. The proof is the same.
 
 ---
 # References
+[[Products and Coporducts]]
+[[Universal Property (Riehl)]]
+[[Higher Groupoid Structure of Cartesian Product]]

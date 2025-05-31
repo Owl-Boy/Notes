@@ -9,6 +9,15 @@ tags : [[Homotopy Type Theory]]
 
 #  Addition is Associative
 ---
+We define addition for natural numbers as:
+$$
+\begin{align}
+0 + n &\equiv n \\
+\text{succ}\ m + n &\equiv \text{succ}\ (m + n)
+\end{align}
+$$
+as defined in [[Natural Numbers in Type Theory#^5e069a]]
+
 We shall prove the following theorem
 >[!theorem] Theorem: Associativity
 >$$
@@ -61,3 +70,4 @@ And we are done.
 
 ---
 # Related
+[[Natural Numbers in Type Theory]]

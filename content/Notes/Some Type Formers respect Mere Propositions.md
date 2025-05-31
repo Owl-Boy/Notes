@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505172305
 
@@ -26,4 +25,7 @@ The same issue arises with $\Sigma$ types.
 
 ---
 # References
-[[Propositional Truncation]]
+- [[Mere Propositions]]
+- [[Propositional Truncation]]
+- [[Product Type]]
+- [[Dependent Function Type]]

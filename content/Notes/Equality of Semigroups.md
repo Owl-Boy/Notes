@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505131505
 
@@ -32,3 +31,7 @@ The conclusion is that semi-groups are equal, precisely when they are isomorphic
 
 ---
 # References
+- [[Semi-Groups]]
+- [[Higher Groupoid Structure of Sigma Type]]
+- [[Equivalence of more complicated structures - Semi-groups]]
+- [[Transport]]

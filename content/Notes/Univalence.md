@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505061605
 
@@ -15,7 +14,7 @@ $$
 To construct this, given an input $p:A=\cal_{U} B$ we need to construct an element of $A\simeq B$, we induct on $p$, and get $B\equiv A$, hence we can simply output $\text{id}_{\cal U}$, or we can treat $\text{idtoeqv}$ as the transport of the function $\text{id}_{\cal U}$ 
 
 The other direction cannot be proven using typical type theory, and Voevodsky introduced his **Univalence Axiom** 
->[!Theorem] Axiom: Univalence
+>[!Axiom] Univalence
 >Given types $A, B:\cal U$ we have
 >$$
 >(A=_{\cal U} B) \simeq (A \simeq B)
@@ -45,3 +44,6 @@ And we have the following useful lemma
 
 ---
 # References
+[[Higher Groupoid Structure of Pi Type|Function Extensionality]]
+[[Transport]]
+[[Functions as Equivalences]]

@@ -26,6 +26,9 @@ Tags : [[Set Theory]]
 - *Choice*
 	- $\emptyset \not\in F \land \forall x \in F \forall y \in F (x \neq y \to x \cap y = \emptyset) \to \exists C \forall x \in F(\text{Sing}(C \cap x))$
 
+---
+## Some Set theories that can be made using these.
+
 1. *ZFC* = all 9 axioms
 2. *ZF* = first 8 axioms
 3. *ZC* and *Z* are *ZFC* and *ZF* with replacement scheme deleted

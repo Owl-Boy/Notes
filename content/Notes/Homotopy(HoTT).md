@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505041105
 
@@ -39,3 +38,4 @@ For the proof, induct of $p$, we get $H(x) \cdot \text{refl}_{g(x)} = \text{refl
 
 ---
 # References
+[[Homotopy Equivalence]]

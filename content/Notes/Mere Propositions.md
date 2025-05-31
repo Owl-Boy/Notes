@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505171805
 
@@ -27,3 +26,5 @@ We have some simple lemmas for them:
 
 ---
 # References
+- [[Type Theoretic Axiom of Choice]]
+- [[Double Negation Does Not Cancel]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505031405
 
@@ -31,3 +30,6 @@ And we now prove that $\text{ap}_{f}$ behaves like a functor.
 
 ---
 # References
+- [[Functors]]
+- [[Identity Type]]
+- [[Transport]]

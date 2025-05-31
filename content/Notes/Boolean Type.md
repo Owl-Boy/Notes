@@ -55,3 +55,4 @@ The **Boolean Type** is meant to contain 2 elements, called $0_{\mathbf{2}},1_{\
 
 ---
 # References
+[[Sum Types]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505071605
 
@@ -82,3 +81,6 @@ where the type family $A+B$ is defined from type families $A,B:X \to \cal U$ as 
 
 ---
 # References
+- [[Sum Types]]
+- [[Transport]]
+- [[Functions as Equivalences]]
