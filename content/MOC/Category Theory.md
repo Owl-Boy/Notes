@@ -7,7 +7,6 @@ sticker: lucide//map-pin
 ---
 Micheal F Atiyah has described mathematics as the "Science of Analogy". In this view, ***Category Theory*** is *mathematical analogy*, it provides a cross disciplinary language for mathematics designed to delineate general phenomena, which enable the transfer of ideas from one theory to another.
 
-
 --- 
 ## Notes
 ### Categories
@@ -72,6 +71,10 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Strictly Creating Limits]]
 - [[Slice Category Strictly Creates Limits]]
 - [[Functor Categories inherit Limits and Colimits object-wise]]
+- [[Representable Universal Property of Limits]]
+	- [[Representation of Limits and Colimits as Limits in category of sets]]
+- [[Representable Universal Property of Colimits]]
+	- [[Examples of Representable Universal Property of Colimits]]
 
 --- 
 ## MOCs
