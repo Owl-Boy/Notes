@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505101205
 
@@ -26,3 +25,10 @@ Thus there must be one element $x\in Fc$ such that the isomorphism given by the 
 
 ---
 # References
+- [[Representable Functors]]
+- [[Natural Transformation]]
+- [[Yoneda Lemma]]
+- [[Universal Property (Mac Lane)]]
+- [[Equivalence of Definitions of Universal Property]]
+- [[Limits and Colimits]]
+- [[Element Category]]

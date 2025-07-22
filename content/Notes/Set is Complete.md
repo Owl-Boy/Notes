@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505221205
 
@@ -55,3 +54,7 @@ Hence the cone factorizes through $\lambda$.
 
 ---
 # References
+- [[Complete and Cocomplete Categories]]
+- [[Limits and Colimits]]
+- [[Limits in the Category of Sets]]
+- [[Small Limits in Set are Equalizers]]

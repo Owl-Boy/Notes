@@ -1,7 +1,6 @@
 ---
 tags:
-  - Note
-  - Incomplete
+  - Example
 ---
 202505051905
 
@@ -20,7 +19,7 @@ Tags : [[Category Theory]]
 >[!example] Contravariant Functors
 >- The powerset functor $\text{Set}^\text{op} \to \text{Set}$ is represented by $\{ \top,\bot \}$. Where the natural isomorphism is defined by preimage of $\top$.
 >- The functor $\mathcal O:\text{Top}^\text{op}\to \text{Set}$ which sends a topolotical space to its set of open sets is represented by the sierpinsky space. A 2-point space with one singleton set being open and the other being close.
->- 
 
 ---
 # References
+- [[Representable Functors]]

@@ -1,7 +1,6 @@
 ---
 tags:
-  - Note
-  - Incomplete
+  - Example
 ---
 202505052205
 
@@ -26,3 +25,5 @@ Tags : [[Category Theory]]
 
 ---
 # References
+- [[Representable Functors]]
+- [[Natural Transformation]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505161505
 
@@ -33,3 +32,6 @@ $$
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Examples of Equalizers]]
+- [[Examples of Coequalizers]]

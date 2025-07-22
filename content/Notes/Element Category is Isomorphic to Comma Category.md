@@ -24,3 +24,6 @@ In the covariant case we get the following diagram
 
 ---
 # References
+- [[Comma Category]]
+- [[Yoneda Embedding]]
+- [[Element Category]]

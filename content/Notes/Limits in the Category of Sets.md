@@ -1,7 +1,6 @@
 ---
 tags:
-  - Note
-  - Incomplete
+  - Example
 ---
 202505221405
 
@@ -16,6 +15,8 @@ Tags : [[Category Theory]]
 >$$
 >\{ x:X \mid f(x)=g(x) \}
 >$$
+
+^6d3859
 
 >[!Example]
 >Given a diagram of shape $\omega^\text{op}\to \text{Set}$ the cones are a sequence of elements $(x_{n}\in F_{n})$ which makes each triangle commute.:
@@ -33,6 +34,8 @@ Tags : [[Category Theory]]
 >B \times_{A} C = \{ (b, c) \in B \times C \mid f(b) = g(c) \}
 >$$
 
+^d39f53
+
 >[!example]
 >Given a left G-set $X: \text{B}G \to\text{Set}$ is the set of cones with summit $\mathbf{1}$. A map $x:\mathbf{1} \to X$ defines a cone over $X$ iff the following diagram commutes:
 >![[Pasted image 20250522223001.png|200]]
@@ -41,3 +44,4 @@ Tags : [[Category Theory]]
 
 ---
 # References
+- [[Set is Complete]]

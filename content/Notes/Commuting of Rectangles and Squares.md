@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505042205
 
@@ -25,3 +24,4 @@ The statements are duals, so to prove the first one, we have $m \cdot h \cdot f 
 
 ---
 # References
+- [[Category]]

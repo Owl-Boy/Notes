@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505102305
 
@@ -25,3 +24,5 @@ And so Riehl gives the definition of a **Universal Property** as the tuple $(A, 
 
 ---
 # References
+- [[Universal Property (Riehl)]]
+- [[Universal Property (Mac Lane)]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202410070210
 
@@ -26,3 +25,4 @@ This data is subject to the following axioms:
 ---
 # References 
 [[Examples of Categories]]
+[[Small Categories]]

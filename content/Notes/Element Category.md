@@ -29,3 +29,7 @@ There is an evident forgetful functor $\prod$ for the element category.
 
 ---
 # References
+- [[Examples of Element Categories]]
+- [[Element Category is Isomorphic to Comma Category]]
+- [[Universal Elements are Universal Elements]]
+- [[Universal Property (Riehl)]]

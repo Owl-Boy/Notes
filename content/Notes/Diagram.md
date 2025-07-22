@@ -14,3 +14,4 @@ A diagram is typically depicted as the drawing of the objects and the morphisms 
 
 ---
 # References
+- [[Functors]]

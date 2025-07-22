@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202502191402
 
@@ -22,5 +21,14 @@ A **Module** is a generalization of a Vector space, where the set of scalars are
 >
 >A **Right Module** is defined by the the operator $\cdot : M \times R \to M$.
 
+A **Module** can also be defined as an action of a [[Ring]] on an [[Abelian Groups]], that is a [[Ring Homomorphisms|Ring Homomorphism]] form a ring $R$ to an the endomorphism ring of an abelian group $M$, written as:
+$$
+\sigma: R \to \text{End}_{\text{Ab}}(M)
+$$
 ---
 # References
+- [[Ring]]
+- [[Abelian Groups]]
+- [[Ring Homomorphisms]]
+- [[Examples of Modules]]
+- [[Category of Modules]]

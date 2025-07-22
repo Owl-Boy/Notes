@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505111305
 
@@ -21,3 +20,7 @@ Since $(c, e)$ is initial, for any $e'\in  Fd$ there is a unique morphism $(c,e)
 
 ---
 # References
+- [[Representable Functors]]
+- [[Universal Property (Riehl)]]
+- [[Element Category]]
+- [[Yoneda Lemma]]

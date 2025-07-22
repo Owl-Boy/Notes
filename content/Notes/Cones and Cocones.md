@@ -27,3 +27,5 @@ Another terminology for these are *cones over a diagram* for cones and *cones un
 
 ---
 # References
+- [[Diagram]]
+- [[Limits and Colimits]]

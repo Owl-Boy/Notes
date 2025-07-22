@@ -19,7 +19,5 @@ Hence we have a special adjective for categories whose set of objects and morphi
 >A Category is called *small* if it only has a sets worth of arrows.
 >A Category is called *locally small* if between any pair of objects, there is only a sets worth of arrows.
 
-
-
 ---
 # Related

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505151405
 
@@ -39,3 +38,11 @@ One can also define limits and colimits as the terminal and initial object in th
 
 ---
 # References
+- [[Diagram]]
+- [[Cones and Cocones]]
+- [[Initial, Terminal and Zero Objects]]
+- [[Products and Coporducts]]
+- [[Equalizers and Coequalizers]]
+- [[Pullbacks and Pushouts]]
+- [[Inverse Limits and Direct Limts]]
+- [[Kernels and Cokernels]]

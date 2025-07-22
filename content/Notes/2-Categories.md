@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505042305
 
@@ -22,3 +21,7 @@ Tags : [[Category Theory]]
 
 ---
 # References
+- [[Category]]
+- [[Functors]]
+- [[Natural Transformation]]
+- [[Vertical and Horizontal Composition of Natural Transformations]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202506020206
 
@@ -22,7 +21,7 @@ thus we have $\text{lim}_{J}C(F-, X)$ thus we have the theorem
 >$$
 
 
-
-
 ---
 # References
+- [[Representable Universal Property of Limits]]
+- [[Examples of Representable Universal Property of Colimits]]

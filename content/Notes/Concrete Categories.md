@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505042205
 
@@ -17,3 +16,4 @@ These are used in the situation when it is easier to show that a diagram commute
 
 ---
 # References
+- [[Examples of Categories]]

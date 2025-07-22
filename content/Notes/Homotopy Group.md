@@ -21,4 +21,4 @@ The first Homotopy group is also called the [[Fundamental Group]]
 ---
 # References
 [[Fundamental Group]]
-[[Homology Group]]
+[[Homology]]

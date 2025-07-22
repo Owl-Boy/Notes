@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505161505
 
@@ -28,10 +27,13 @@ When $f:\mathbf{1} \to A$, then the pullback is called the **Fiber** of the map 
 [[Examples of Pullbacks|Here are some examples]].
 
 >[!definition]
->A **Pushout** is the colimit of a diagram of shape $\bullet \rightarrow \bullet \leftarrow \bullet$.
+>A **Pushout** is the colimit of a diagram of shape $\bullet \leftarrow \bullet \rightarrow \bullet$.
 
 The diagram of a cone looks as follows
 ![[Pasted image 20250518174712.png|200]]
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Examples of Pullbacks]]
+- [[Examples of Pushouts]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505222205
 
@@ -29,3 +28,4 @@ So, we do precisely that, we use $c$ to send the element $\lambda_{j}$ to $\lamb
 
 ---
 # References
+- [[Set is Complete]]

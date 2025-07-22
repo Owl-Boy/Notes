@@ -1,7 +1,6 @@
 ---
 tags:
-  - Note
-  - Incomplete
+  - Example
 ---
 202505111205
 
@@ -20,3 +19,4 @@ Tags : [[Category Theory]]
 
 ---
 # References
+- [[Element Category]]

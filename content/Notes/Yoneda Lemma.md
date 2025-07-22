@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505052305
 
@@ -57,3 +56,7 @@ There are 2 naturality assertions
 
 ---
 # References
+- [[Representable Functors]]
+- [[Yoneda Embedding]]
+- [[Representable Functors Define Representing Objects]]
+- [[Universal Property (Riehl)]]

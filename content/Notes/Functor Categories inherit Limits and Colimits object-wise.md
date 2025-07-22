@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505301405
 
@@ -17,3 +16,5 @@ To show that $C^A\to C^{\text{ob }A}$ strictly creates all limits and colimits, 
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Functors]]

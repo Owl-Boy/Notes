@@ -31,3 +31,5 @@ The proof is again the commutative square:
 
 ---
 # References
+- [[Natural Transformation]]
+- [[2-Categories]]

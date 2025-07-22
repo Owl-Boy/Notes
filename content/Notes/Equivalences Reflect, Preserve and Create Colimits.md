@@ -22,3 +22,7 @@ Now consider a limit $\mu: d \Rightarrow FK$, since $F$ is essentially surjectiv
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Preservation, Reflection and Creation of Limits]]
+- [[Equivalence of Categories]]
+- [[Fully Faithful Functors Reflect Limits and Colimits]]

@@ -9,14 +9,14 @@ Natural Deductions (denoted by $\text{NJ}(\to,\land,\lor,\perp)$) is a simpler s
 
 > [!info] Judgements
 > Judgements are statements of the form
-> $
+> $$
 > \Gamma\vdash\phi
-> $
+> $$
 > Where $Gamma$ is a set of assumptions, $phi$ is the statement we need to prove.
 > The above statement can be read as 
-> $
+> $$
 > \text{$\Gamma$ proves $\phi$}
-> $
+> $$
 
 Natural deductions has the following rules
 It has mainly two types of rules

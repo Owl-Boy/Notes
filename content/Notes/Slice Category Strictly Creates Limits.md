@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505301205
 
@@ -29,3 +28,7 @@ Now given any co-cone in $c / C$, the underlying cone uniquely factors through $
 
 ---
 # References
+- [[Strictly Creating Limits]]
+- [[Preservation, Reflection and Creation of Limits]]
+- [[Limits and Colimits]]
+- [[Slice Category]]

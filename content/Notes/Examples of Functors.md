@@ -1,7 +1,6 @@
 ---
 tags:
-  - Note
-  - Incomplete
+  - Example
 ---
 202411121911
 
@@ -23,3 +22,4 @@ A Functor consists of a mapping of objects and a mapping of morphisms that prese
 
 ---
 # References
+- [[Functors]]

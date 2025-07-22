@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505091405
 
@@ -27,3 +26,6 @@ There is a dual notion for this concept which is the **Universal Morphisms** fro
 ---
 # References
 [[Universal Property (Riehl)]]
+[[Limits and Colimits]]
+[[Tensor Products as Universal Properties]]
+[[Equivalence of Definitions of Universal Property]]

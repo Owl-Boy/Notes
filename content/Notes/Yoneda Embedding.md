@@ -31,3 +31,7 @@ By Yoneda's lemma we have that the natural transform $\alpha: C(d,-) \Rightarrow
 
 ---
 # References
+- [[Yoneda Lemma]]
+- [[Natural Transformation]]
+- [[Functors]]
+- [[Equivalence of Categories]]

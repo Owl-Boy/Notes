@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505241605
 
@@ -20,3 +19,7 @@ Colimits are also reflected by duality.
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Preservation, Reflection and Creation of Limits]]
+- [[Equivalence of Categories]]
+- [[Equivalences Reflect, Preserve and Create Colimits]]

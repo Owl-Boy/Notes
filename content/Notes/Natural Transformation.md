@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202412042212
 
@@ -28,3 +27,6 @@ Fc' \arrow[r, "\alpha_{c'}"] & Gc'
 
 ---
 # References
+- [[Category]]
+- [[Functors]]
+- [[Examples of Natural Transformation]]

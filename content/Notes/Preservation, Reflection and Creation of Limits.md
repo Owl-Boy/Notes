@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505241505
 
@@ -23,3 +22,5 @@ To show that $F$ preserves limits, consider a cone $\lambda:c \Rightarrow K$. Bu
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Natural Transformation]]

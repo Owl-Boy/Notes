@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202410070410
 
@@ -23,3 +22,7 @@ Tags : [[Category Theory]]
 
 ---
 # References
+- [[Category]]
+- [[Isomorphisms (Category Theory)]]
+- [[Types are Higher Groupoids]]
+- [[Fundamental Groupoid]]

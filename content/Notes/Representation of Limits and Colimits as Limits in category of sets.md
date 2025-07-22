@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202506011706
 
@@ -39,3 +38,8 @@ By Duality, we also get the following
 
 ---
 # References
+- [[Representable Universal Property of Limits]]
+- [[Fully Faithful Functors Reflect Limits and Colimits]]
+- [[Limits and Colimits]]
+- [[Set is Complete]]
+- [[Yoneda Embedding]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505051605
 
@@ -17,3 +16,6 @@ These functors can be used to express properties about objects on a category in 
 
 ---
 # References
+- [[Functors]]
+- [[Initial, Terminal and Zero Objects]]
+- [[Examples of Representable Functors]]

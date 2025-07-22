@@ -20,7 +20,7 @@ An element of a $\Pi$-type is a function whose co-domain can be dependent on the
 ## Polymorphic Functions
 A polymorphic function is one which takes a type as one of its arguments and then acts on elements of the type (or other types constructed from it).
 
-An example of a polymorphic function is $\text{Id}: \prod_{A:\mathcal U}A\to A$ which can be defined by $\text{Id} :\equiv \lambda(A:\mathcal U).\lambda(x:A).x$
+An example of a polymorphic function is $\text{id}: \prod_{A:\mathcal U}A\to A$ which can be defined by $\text{id} :\equiv \lambda(A:\mathcal U).\lambda(x:A).x$
 
 Again, our notation is loose enough that we sometimes omit things that can be inferred, example $\text{Id}(a)$ for some element $a:A$ lets us infer that the first argument was the type $A:\mathcal U$.
 

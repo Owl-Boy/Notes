@@ -18,7 +18,7 @@ Since One can write logical formulas which can describe properties of an object 
 >[!tip] Semi-Groups
 >Stating that a particular type has a semi-group structure is as follows:
 >$$
->\text{Semi-Group-Str} :\equiv \sum_{(*:A\to A \to A)} \prod_{(x,y,z:A)} (x*y)*z = x*(y*z)
+>\text{Semi-Group-Str}(A) :\equiv \sum_{(*:A\to A \to A)} \prod_{(x,y,z:A)} (x*y)*z = x*(y*z)
 >$$
 >
 >The following describes the type of all semi-groups:

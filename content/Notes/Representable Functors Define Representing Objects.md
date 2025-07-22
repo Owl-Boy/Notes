@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505091505
 
@@ -23,8 +22,8 @@ This by [[Yoneda Embedding]] we get $x \simeq y$. If the functors were contravar
 
 this also shows that a [[Representable Functors]], defines its representing object object.
 
-
-
 ---
 # References
-
+- [[Yoneda Lemma]]
+- [[Yoneda Embedding]]
+- [[Representable Functors]]

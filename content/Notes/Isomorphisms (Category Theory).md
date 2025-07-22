@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202410070310
 
@@ -18,3 +17,4 @@ When constructing a category, Isomorphisms, Automorphisms and Groupoidsthe choic
 ---
 # References
 [[Groupoids]]
+[[Category]]

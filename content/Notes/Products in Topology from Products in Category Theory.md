@@ -1,6 +1,7 @@
 ---
 tags:
   - Note
+  - Example
 ---
 202505151505
 
@@ -26,3 +27,6 @@ Similarly for product of arbitrary spaces, the product topology is again defined
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Universal Property of Products and Coproducts]]
+- [[Product topology]]

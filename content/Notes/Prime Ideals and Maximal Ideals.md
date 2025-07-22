@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505211605
 
@@ -25,3 +24,6 @@ By [[Finite Integral Domains are Fields]], we get the following.
 
 ---
 # References
+- [[Integral Domain]]
+- [[Fields]]
+- [[Finite Integral Domains are Fields]]

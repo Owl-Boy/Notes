@@ -26,8 +26,11 @@ This is isomorphism in natural in $X$, and since the limit of $F$ is defined as 
 >C(X, \text{lim}_{J}F) \cong \text{lim}_{J}C(X, F)
 >$$ 
 
-A Corollary for this is : [[Covariant Representable Functors from a locally small category to Set preserve all limits]]
-
 
 ---
 # References
+- [[Set is Complete]]
+- [[Small Limits in Set are Equalizers]]
+- [[Representation of Limits and Colimits as Limits in category of sets]]
+- [[Representable Universal Property of Colimits]]
+- [[Limits and Colimits]]

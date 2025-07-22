@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505221205
 
@@ -13,3 +12,5 @@ Tags : [[Category Theory]]
 
 ---
 # References
+- [[Category]]
+- [[Limits and Colimits]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505181805
 
@@ -36,3 +35,4 @@ combining them, one can define a map from a co-product to a product by define a 
 
 ---
 # References
+- [[Products and Coporducts]]

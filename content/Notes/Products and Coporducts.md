@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505151505
 
@@ -29,3 +28,6 @@ $$
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[Universal Property of Products and Coproducts]]
+- [[Products in Topology from Products in Category Theory]]

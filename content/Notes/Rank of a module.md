@@ -22,5 +22,5 @@ Tags : [[Algebra]]
 
 ---
 # References
-[[Module]]
-[[Free Module]]
+[[Modules]]
+[[If R is a PID then submodules of free module over R are free]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202505161605
 
@@ -38,3 +37,5 @@ is frequently denoted as $\underset{\longrightarrow}\lim F_{n}$, defines a diagr
 
 ---
 # References
+- [[Limits and Colimits]]
+- [[P-adic Solenoid]]
