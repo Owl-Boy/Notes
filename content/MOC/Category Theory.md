@@ -155,6 +155,14 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[locally presentable categories]]
 - [[Adjoint Functor Theorem for locally presentable categories]]
 - [[Constructing the Left Adjoint of Inclusion Functor from Ring to Rng]]
+
+### Monads and their Algebras
+#### Monads from Adjunctions
+- [[Monads and Comonads]]
+	- [[Maybe Monad]]
+- [[Monads from Adjunctions]]
+	- [[Examples of Monads from Adjunctions]]
+	- [[Examples of Monads]]
 ### Outside stuff, sort later
 - [[Closed Category]]
 - [[Monoidal Category]]

@@ -52,6 +52,7 @@ The *Church-Turing thesis* (all that is computable is computable by a Turing Mac
 
 ---
 ## MOCs
+[[Parameterized Algorithms]]
 
 ---
 # References

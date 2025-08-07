@@ -38,6 +38,9 @@ The equality of **P** and **NP** and the equality of **P** and **BPP**, are two 
 ![[PSPACE#^92ad13]]
 
 ---
+![[Slice Wise Polynomial Time#Slice Wise Polynomial Time (XP)]]
+
+---
 # Related Problems
 
 ---

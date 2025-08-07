@@ -23,7 +23,7 @@ Tags : [[Homotopy Type Theory]]
 >[!note] Induction Principle
 >The induction principle states that given $P:\mathbb S^1\to\cal U$ with
 >- $a:P(\text{base})$
->- a path $p:a=_{\text{loop}}^{x\mapsto P(\text{base})}$ such that 
+>- a path $p:a=_{\text{loop}}^{P}a$ such that 
 >Then there is a function $f:\prod_{(x:\mathbb S)}x\to P(x)$ that sends $x$ to $a$ and $\text{loop}$ to $p$
 
 ---

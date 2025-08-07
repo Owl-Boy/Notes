@@ -36,3 +36,4 @@ proof again is path induction.
 ---
 # References
 - [[2-Categories]]
+- [[Functions as Functors]]

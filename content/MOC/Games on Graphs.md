@@ -5,6 +5,10 @@ sticker: lucide//map-pin
 ---
 # Games on Graphs
 ---
+Alonzo Church posted the *Synthesis* problem in 1957. The problem statement was as follows:
+>[!question]
+>The model used for this problem is a device ([[Büchi Automata]]) that accepts an input stream of bits and each time it receives a bit, it returns a bit. Given a specification for requires output based on the input. The problem asks if its possible to build such a device that satisfies the specification by construction.
+
 Games are a very elegant way of modelling systems where there are components not under our control. We will discuss games that are played on graphs by 2 players. One of the players will model well behaved parts of the system that are under out control (Elster) and the other player models the environment (Adler).
 
 >[!definition] Game

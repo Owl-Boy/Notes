@@ -37,3 +37,4 @@ The diagram of a cone looks as follows
 - [[Limits and Colimits]]
 - [[Examples of Pullbacks]]
 - [[Examples of Pushouts]]
+- [[Pushouts (HoTT)]]
