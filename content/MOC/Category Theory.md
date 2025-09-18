@@ -147,8 +147,6 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Separating and Coseparating sets]]
 - [[Subobjects]]
 - [[A locally small, complete category with a small coseparator and intersections of all collections of subobjects has an initial object]]
-- [[Special Adjunct Functor Theorem]]
-	- [[Stone Cech Compactification from Special Adjunct Functor Theorem]]
 	- [[Locally Small and Complete Categories with a small coseparating set where all collections of subobjects of a fixed object have an intersection then it is cocomplete]]
 	- [[Locally Small, Complete category with a small coseparator where all collections of subobjects of an object have an intersection has all continuous functors form it be representable]]
 - [[Freyd's Representability Theorem]]
@@ -163,6 +161,34 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Monads from Adjunctions]]
 	- [[Examples of Monads from Adjunctions]]
 	- [[Examples of Monads]]
+
+#### Adjunctions from Monads
+- [[Affine Spaces as Monads]]
+- [[Eilenberg Moore Category]]
+	- [[Examples of Eilenberg Moore Categories]]
+	- [[Eilenberg Moore Catergory induces an Adjunction]]
+- [[Kleisli Category]]
+	- [[Examples of Kliesli Category]]
+	- [[Kleisli Category induces an Adjunction]]
+- [[Category of Adjunctions]]
+- [[Kleisli Category and Eilenberg Moore Category in the Category of Adjunctions]]
+- [[Kleisli Category is the Category of Free Algebras]]
+- [[Free T-Algebra]]
+#### Monadic Functors
+- [[Monadic Functors]]
+	- [[Examples of Monadic Functors]]
+#### Canonical Presentations using free Algebras
+- [[Canonical Presentations using Free Algebras]]
+- [[Split Coequalizer]]
+	- [[U-split Coequalizer]]
+	- [[Monadic forgetful functors strictly create coequalizers of Usplit pairs]]
+	- [[Left Adjoint in a monadic adjunction create coequalizers]]
+#### Recognizing categories of Algebras
+- [[Monadicity Theorem]]
+	- [[Some Monadic functors]]
+	- [[Finitary Functors]]
+	- [[Category of Models for an Algebraic Theory]]
+
 ### Outside stuff, sort later
 - [[Closed Category]]
 - [[Monoidal Category]]

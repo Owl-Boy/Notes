@@ -11,10 +11,11 @@ Tags : [[Ring Theory]]
 >A **Ring** $(R, +, \cdot)$ is an [[Abelian Groups|Abelian Group]] $(R,+)$ endowed with a second binary operation $\cdot$, such that $(R, \cdot)$ is a [[Monoids|Monoid]], with the additional axoim:
 >- $\forall r,s,t:R, \quad(r+s)\cdot t = r\cdot t + s \cdot t$ and $t \cdot(r + s) = t \cdot r + t \cdot s$.
 >
->The standard notation for the additive identity is $0$ and the multiplicative identity is $0$.
+>The standard notation for the additive identity is $0$ and the multiplicative identity is $1$.
 
 ---
 # References
-
+- [[Abelian Groups]]
+- [[Monoids]]
 
 

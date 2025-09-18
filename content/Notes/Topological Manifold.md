@@ -29,6 +29,13 @@ A **manifold** is a topological space that locally resembles a Euclidean Space n
 
 The [[Unit Circle is a Manifold]]
 
+>[!definition]
+>A **topological manifold** is called **smooth** iff for any 2 charts in the atlas. The transition function:
+>$$
+>\phi_{ij}:f_{j}(U_{i} \cap U_{j}) \xrightarrow \sim f_{i}(U_{i}\cap U_{j})
+>$$
+>is a [[Smooth Function]].
+
 ---
 # References
 - [[Topological Spaces]]

@@ -24,7 +24,7 @@ Tags : [[Automata Theory]]
 - **Rabin Automata** 
 	- There is a sequence(typically finite) of pairs of set of good and bad states $\langle G_i, B_i\rangle$
 	- A word is accepted if there is a run on the automata such that for some $i$ for which $G_i$ is visited infinitely many times and $B_i$ is visited only finitely many times.
-- **Muller Automata** 
+- **Muller Automata**  ^eda855
 	- There is a family of subset of the states.
 	- A word is accepted if there is a run such that the set of states visited in the run infinitely many times is exactly one of the members of the family.
 - **Streett Automata**

@@ -2,7 +2,7 @@
 cssclasses:
   - dashboard
 sticker: lucide//home
-banner_y: 0.576
+banner_y: 0.544
 banner: "![[topog.png]]"
 ---
 
@@ -20,15 +20,10 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
 ## College Work
 - 📚 Things I am working on beside Course Work!
 	- [[Category Theory]]
-	- [[Topology via Logic]]
-	- [[Teaching Logic Thing?]]
-
+	- [[Homotopy(HoTT)]]
 - 📓 Course Work
-	- [[Finite Model Theory]]
-	- [[Weighted Automata and Transducers]]
-	- [[Intro to Martingales]]
-	- [[Topics in Algorithms]]
-	- [[Homotopy Type Theory]]
+	- [[Parameterized Algorithms]]
+	- [[Logic, Automata and Games]]
 - 🤓 Requested Notes
 	- [[Logic]]
 	- [[Logic, Automata and Games]]

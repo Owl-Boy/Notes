@@ -11,7 +11,7 @@ Tags : [[Ring Theory]]
 >[!lemma]
 >Let $I$ be an ideal of a ring $R$, and let $J$ be an ideal of $R$ containing $I$, then $J/I$ is an ideal of $R /I$ and
 >$$
-\frac{R /I}{J /I} \cong \frac{R}{J}
+>\frac{R /I}{J /I} \cong \frac{R}{J}
 >$$
 
 Since $I \subseteq J =\text{ker}(R \to R /J)$ we have an induced ring homomorphism 

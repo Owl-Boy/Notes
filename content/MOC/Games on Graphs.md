@@ -5,10 +5,6 @@ sticker: lucide//map-pin
 ---
 # Games on Graphs
 ---
-Alonzo Church posted the *Synthesis* problem in 1957. The problem statement was as follows:
->[!question]
->The model used for this problem is a device ([[Büchi Automata]]) that accepts an input stream of bits and each time it receives a bit, it returns a bit. Given a specification for requires output based on the input. The problem asks if its possible to build such a device that satisfies the specification by construction.
-
 Games are a very elegant way of modelling systems where there are components not under our control. We will discuss games that are played on graphs by 2 players. One of the players will model well behaved parts of the system that are under out control (Elster) and the other player models the environment (Adler).
 
 >[!definition] Game
@@ -27,7 +23,7 @@ The [[Gameplay for Games on Graphs]] is defined here.
 
 --- 
 ## Notes
-- Basics
+- Basics ^68e6da
 	- [[Arenas for Games on Graphs]]
 	- [[Winning Condition for Games on Graphs]]
 	- [[Gameplay for Games on Graphs]]
@@ -45,6 +41,19 @@ The [[Gameplay for Games on Graphs]] is defined here.
 - [[Banach-Mazur Games]]
 	- [[Winning Strategy for Player 1 in Banach-Mazur games]]
 	- [[Winning Strategy for Player 2 in Banach-Mazur games]]
+
+### GOG Course Stuff
+- [[Church Synthesis Problem]]
+- [[Büchi-McNaughton Theorem]]
+	- [[Muller Automata to Games]]
+- Look at [[Games on Graphs#^68e6da|Basics]] and [[Strategy for Games on Graphs]].
+- [[Winning Arena for Reachability Games]]
+- [[Winning Arena for Büchi Games]]
+- [[Letter Number Game]]
+	- [[Last Appearance Record]]
+- [[Muller Games to Parity Games]]
+- [[Progress Measures (Intuition)]]
+- [[Small  Progress Measures]]
 
 --- 
 ## MOCs

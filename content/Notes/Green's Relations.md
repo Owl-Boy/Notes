@@ -27,7 +27,7 @@ Tags : [[Algebraic Automata Theory]]
 >s \mathcal {L} t &\triangleq s \leq_{L} t \text{ and } t \leq _{L} s\\
 >s \mathcal {R} t &\triangleq s \leq_{R} t \text{ and } t \leq _{R} s\\
 >s \mathcal {J} t &\triangleq s \leq_{J} t \text{ and } t \leq _{J} s\\
->s \mathcal {H} t &\triangleq s \leq_{H} t \text{ and } t \leq _{H} s\\
+>s \mathcal {H} t &\triangleq s\;\; \mathcal L\;\; t \text{ and } t \;\; \mathcal R\;\; s\\
 >\end{align}
 >$$
 
