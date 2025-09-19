@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 ---
 202509180209
 
@@ -17,7 +16,13 @@ Given a parity progress measure and a cycle in the graph, If the maximum degree 
 
 Now we show that if all cycles of a graph are even then there exists a small parity progress measure.
 
-Now consider a game where all cycles are even, we need to construct a parity progress measure.
+Now consider a game where all cycles are even, The idea is an induction on the maximum degree. If the maximum degree is even, we delete all such vertices, and we find parity progress measure for the leftover graph, we can also assume them to be sink states with measure 0.
+
+If the maximum degree is odd, the these vertices divide the graph into components such that we can treat the entire graph as a DAG, where the vertices are these maximum odd degree vertices and the edges correspond to the connected components. We can then perform a toposort and use the values to define the maximum entry in the measure. For all of the components, we define the measure to be the maximum from all incoming max degree vertices, the rest is similar to the previous case.
+
+
 
 ---
 # References
+[[Parity Progress Measures on Graphs]]
+[[Progress Measures (Intuition)]]

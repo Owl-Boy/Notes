@@ -23,6 +23,8 @@ Tags : [[Games on Graphs]]
 
 Parity progress measure happen to be a good way to capture the existence of paths with max degree odd because of the following lemma: [[A graph admits a small parity progress measure iff all cycles in the graph are even]].
 
+Small progress measure are therefore witness of graphs with even cycles, this can be generalised to graphs with odd cycles by extending to have the progress measure to have an extra 'fail' element. And changing the codomain to $\xi:V\to \mathbb{N}^{\lceil d/2 \rceil}+\{ \top \}$ such that for all vertices where $\xi(v) \neq \top$, the condition given above. 
+
 ---
 # References
 - [[Progress Measures (Intuition)]]

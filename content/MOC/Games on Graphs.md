@@ -53,7 +53,12 @@ The [[Gameplay for Games on Graphs]] is defined here.
 	- [[Last Appearance Record]]
 - [[Muller Games to Parity Games]]
 - [[Progress Measures (Intuition)]]
-- [[Small  Progress Measures]]
+- [[Parity Progress Measures on Graphs]]
+	- [[A graph admits a small parity progress measure iff all cycles in the graph are even]]
+- [[Parity Progress Measures on Games]]
+	- [[Least Progress Measure]]
+	- [[Computing the Least Progress Measure]]
+- [[Zeilonka's Algorithm for finding Parity Game Strategy]]
 
 --- 
 ## MOCs
