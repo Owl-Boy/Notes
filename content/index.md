@@ -20,10 +20,10 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
 ## College Work
 - 📚 Things I am working on beside Course Work!
 	- [[Category Theory]]
-	- [[Homotopy(HoTT)]]
+	- [[Homotopy Type Theory]]
 - 📓 Course Work
 	- [[Parameterized Algorithms]]
-	- [[Logic, Automata and Games]]
+	- [[Games on Graphs]]
 - 🤓 Requested Notes
 	- [[Logic]]
 	- [[Logic, Automata and Games]]

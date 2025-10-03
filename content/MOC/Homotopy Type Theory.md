@@ -174,6 +174,18 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 	- [[Universal Property of Truncations]]
 	- [[Truncations as a Reflective subcategory]]
 	- [[Truncations Preserve Products]]
+	- [[Sum of n-types is an n-type]]
+	- [[n truncations of path space is path space of n+1 truncation]]
+	- [[Truncations are Cumulative]]
+- [[Pushouts of n-types]]
+	- [[Maps between Cocones]]
+	- [[n-truncation of a pushout is a pushout in n-types]]
+- [[n-connected types]]
+	- [[if f an n connected, then g is n connected iff g(f) is n connected]]
+	- [[Characterizing n connectedness using n-types]]
+	- [[A function between n types is an equivalence iff its an isomorphism]]
+	- [[A type is n-connected iff any basepoint is n-1 connected]]
+	- [[n-connected functions induce equivalence of n-types]]
 --- 
 ## MOCs
 - [[Category Theory]]

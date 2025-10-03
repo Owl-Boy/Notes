@@ -59,6 +59,7 @@ The [[Gameplay for Games on Graphs]] is defined here.
 	- [[Least Progress Measure]]
 	- [[Computing the Least Progress Measure]]
 - [[Zeilonka's Algorithm for finding Parity Game Strategy]]
+- [[Parity Games are solvable in Qusaipolynomial time - introduction]]
 
 --- 
 ## MOCs

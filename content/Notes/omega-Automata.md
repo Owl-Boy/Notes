@@ -34,6 +34,9 @@ Tags : [[Automata Theory]]
 - **Parity Automata**
 	- Here all the states are labelled a unique number from $0\dots n-1$
 	- A word is accepted if there is a run where the smallest state which is visited infinitely often is even.
+- **Reachability Automata**
+	- The syntax of this automata is very similar to an [[Non-Deterministic Finite State Automata]], where a set of accepted states are given.
+	- A word is accepted if there is a run which visits an accepted state.
 
 ---
 # References
