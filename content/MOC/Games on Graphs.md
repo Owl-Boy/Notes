@@ -60,6 +60,16 @@ The [[Gameplay for Games on Graphs]] is defined here.
 	- [[Computing the Least Progress Measure]]
 - [[Zeilonka's Algorithm for finding Parity Game Strategy]]
 - [[Parity Games are solvable in Qusaipolynomial time - introduction]]
+- [[Mean Payoff Games]]
+	- [[Example of Mean Payoff Games]]
+	- [[Positional Strategy for Mean Payoff Games]]
+	- [[First Cycle Mean Payoff Games]]
+- [[Perspective Games]]
+	- [[Deterministic Perspective Games]]
+	- [[Probabilistic Perspective Games]]
+	- [[Perspective-ATL*]]
+		- [[Alternating-time Temporal Logic|ATL]]
+		- [[Semantics of ATL*]]
 
 --- 
 ## MOCs

@@ -25,3 +25,4 @@ where the equivalence relation is trivial except for the two zeroes.
 # References
 - [[Set Quotient]]
 - [[Natural Numbers in Type Theory]]
+- [[Elimination Principles of Integers]]

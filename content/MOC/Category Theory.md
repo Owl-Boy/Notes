@@ -185,9 +185,21 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 	- [[Left Adjoint in a monadic adjunction create coequalizers]]
 #### Recognizing categories of Algebras
 - [[Monadicity Theorem]]
-	- [[Some Monadic functors]]
+	- [[Some Monadic Adjunctions]]
 	- [[Finitary Functors]]
 	- [[Category of Models for an Algebraic Theory]]
+- [[Free-Forgetful Adjunction from Compact Hausdorff Spaces is Monadic]]
+- [[Reflexive Tripleability Theorem]]
+- [[Contravariant Powerset Functor is Monadic]]
+	- [[Lemma for Monadicity of Contravariant Powerset Functor]]
+
+#### Limits and Colimits in the Categories of Algebras
+- [[Monadic Functors are Conservative]]
+- [[Monadic Functors Create all limits and some colimits]]
+	- [[Consequences of Monadic Functors Creating Limits]]
+- [[The category Group is cocomplete]]
+- [[A Monadic Category is cocomplete iff it has Coequalizers]]
+- [[A Monadic Category over a Cocomplete Category is Cocomplete]]
 
 ### Outside stuff, sort later
 - [[Closed Category]]

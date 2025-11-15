@@ -186,6 +186,28 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 	- [[A function between n types is an equivalence iff its an isomorphism]]
 	- [[A type is n-connected iff any basepoint is n-1 connected]]
 	- [[n-connected functions induce equivalence of n-types]]
+- Orthogonal Factorization
+	- [[n-truncated functions]]
+	- [[n-image]]
+	- [[Every function factors through its n-image]]
+	- [[A function factorizes uniquely into an n-connected and an n-truncated function]]
+		- [[Lemma for unique factorization of functions]]
+	- [[Images are stable under pullbacks]]
+		- [[Lemma for fibers of maps of pullbacks]]
+- Modalities
+	- [[Reflective Subuniverses]]
+		- [[Reflexive Subuniverse are closed under infinite products]]
+		- [[Induction Principle for Reflective Subuniverses]]
+	- [[Modality]]
+		- [[Universal Property of Modality]]
+### Homotopy Theory
+- [[Homotopy Group(HoTT)|Homotopy Group]]
+	- [[Fundamental Group of a Circle]]
+### Set Theory
+- [[Category of Sets (HoTT)|Category of Sets]]
+	- [[Limits and Colimits in the category of sets (HoTT)|limits and colimits]]
+	- 
+
 --- 
 ## MOCs
 - [[Category Theory]]

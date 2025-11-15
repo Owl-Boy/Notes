@@ -31,8 +31,8 @@ $$
 \begin{matrix}
 \text{if }p(v_{i}) =1 \text{ then } & \xi_{1}(v_{i})>\xi_{1}(v_{i+1})  & \xi_{3}(v_{i}) \geq \xi_{3}(v_{{i+1}}) \\
 \text{if }p(v_{i}) =2 \text{ then } & \text{no restriction of }\xi_{1} & \xi_{3}(v_{i}) \geq \xi_{3}(v_{{i+1}}) \\
-\text{if }p(v_{i}) =2 \text{ then } & \text{no restriction of }\xi_{1} & \xi_{3}(v_{i}) > \xi_{3}(v_{{i+1}}) \\
-\text{if }p(v_{i}) =2 \text{ then } & \text{no restriction of }\xi_{1} \text{ or }\xi_{3}& \\
+\text{if }p(v_{i}) =3 \text{ then } & \text{no restriction of }\xi_{1} & \xi_{3}(v_{i}) > \xi_{3}(v_{{i+1}}) \\
+\text{if }p(v_{i}) =4 \text{ then } & \text{no restriction of }\xi_{1} \text{ or }\xi_{3}& \\
 \end{matrix}
 $$
 
