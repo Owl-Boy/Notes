@@ -64,12 +64,15 @@ The [[Gameplay for Games on Graphs]] is defined here.
 	- [[Example of Mean Payoff Games]]
 	- [[Positional Strategy for Mean Payoff Games]]
 	- [[First Cycle Mean Payoff Games]]
+### GOG Presentation
 - [[Perspective Games]]
 	- [[Deterministic Perspective Games]]
 	- [[Probabilistic Perspective Games]]
-	- [[Perspective-ATL*]]
-		- [[Alternating-time Temporal Logic|ATL]]
-		- [[Semantics of ATL*]]
+- [[Perspective-ATL*]]
+	- [[Alternating-time Temporal Logic|ATL]]
+	- [[Semantics of ATL*]]
+- [[Alternating Tree Automata]]
+	- [[Definition of a Tree as a language over words]]
 
 --- 
 ## MOCs
