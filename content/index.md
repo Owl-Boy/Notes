@@ -1,9 +1,12 @@
 ---
+id: index
+aliases: []
+tags: []
+banner: "![[topog.png]]"
+banner_y: 0.544
 cssclasses:
   - dashboard
 sticker: lucide//home
-banner_y: 0.544
-banner: "![[topog.png]]"
 ---
 
 # No Place Like ~
@@ -36,3 +39,4 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
 4. I have notes that I take from presentations in a separate folder called `Talks`, I am not sure why I don't have them together with the other notes.
 5. All of the presentations that I give will be in the `Presentations` folder.
 6. If there is a note with a rendering issue or has incorrect content on the website that you want me to fix, please let me know.
+7. This is a test edit.
