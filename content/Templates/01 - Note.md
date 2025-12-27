@@ -3,7 +3,7 @@ tags:
   - Note
   - Incomplete
 ---
-{{date:YYYYMMDD}}{{time:HHMM}}
+{{date}}{{time}}
 
 Tags :
 # {{title}}

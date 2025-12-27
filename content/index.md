@@ -24,6 +24,7 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
 - 📚 Things I am working on beside Course Work!
 	- [[Category Theory]]
 	- [[Homotopy Type Theory]]
+    - [[Discrete Homotopy Theory]]
 - 📓 Course Work
 	- [[Parameterized Algorithms]]
 	- [[Games on Graphs]]

@@ -3,7 +3,7 @@ tags:
   - Example
 ---
 
-{{date:YYYYMMDD}}{{time:HHmm}}
+{{date}}{{time}}
 
 tags : 
 
