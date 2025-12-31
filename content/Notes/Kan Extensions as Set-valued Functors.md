@@ -4,7 +4,6 @@ aliases:
   - Kan Extensions as Set-valued Functors
 tags:
   - Note
-  - Incomplete
 ---
 202512291345
 
@@ -30,7 +29,7 @@ is a natural isomorphism. That is $\text{Lan}_K F$ represents this functor.
 
 This reasoning leads to the following [[Adjunctions]] on fixing a $K$.
 
-![Kan_extension_adjunction.png](Attachments/Kan_extension_adjunction.png)
+![[Kan_extension_adjunction.png]]
 
 ---
 # References

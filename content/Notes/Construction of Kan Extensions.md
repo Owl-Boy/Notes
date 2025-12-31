@@ -4,7 +4,6 @@ aliases:
   - Construction of Kan Extensions
 tags:
   - Note
-  - Incomplete
 ---
 202512301636
 

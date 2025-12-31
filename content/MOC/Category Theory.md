@@ -210,6 +210,8 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Construction of Kan Extensions]]
   - [[Examples of Kan Extensions]]
 - [[Category of Cone Diagrams]]
+- [[Kan Extension preserving Functors]]
+- [[Pointwise Kan Extensions]]
 
 ### Outside stuff, sort later
 - [[Closed Category]]

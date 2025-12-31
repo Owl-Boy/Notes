@@ -4,7 +4,6 @@ aliases:
   - Category of Cone Diagrams
 tags:
   - Note
-  - Incomplete
 ---
 202512301735
 
@@ -13,7 +12,7 @@ Tags : [[Category Theory]]
 ---
 Consider a small category $J$, we can create a category $J^\triangleright$ by adding an element to $J$ which serves as the nadir over the entire category. This can be constructed as the following pushout.
 
-![Cocone category pushout.png](Attachments/Cocone category pushout.png)
+![[Cocone category pushout.png]]
 
 This should be the "closest" extension of the diagram to a cone under it, and this is formalizes as follows:
 

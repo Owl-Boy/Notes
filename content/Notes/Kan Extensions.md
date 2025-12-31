@@ -19,12 +19,12 @@ In simpler words, given the categories $C, D, E$ and functors $F:C\to E$ and $K:
 
 If we consider the natural transformation $(K;G)\Rightarrow F$, then the terminal object of that category is the right kan-extension.
 
-![Left_kan_extension.png](Attachments/Left_kan_extension.png)
+![[Left_kan_extension.png]]
 
 ---
 # References
 
 - [[Examples of Kan Extensions]]
 - [[Functors]]
-- [[Natural Transformation|natural Transformation]]\
+- [[Natural Transformation|natural Transformation]]
 
