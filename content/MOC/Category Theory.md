@@ -1,4 +1,6 @@
 ---
+id: Category Theory
+aliases: []
 tags:
   - MOC/Topic
 sticker: lucide//map-pin
@@ -200,6 +202,14 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[The category Group is cocomplete]]
 - [[A Monadic Category is cocomplete iff it has Coequalizers]]
 - [[A Monadic Category over a Cocomplete Category is Cocomplete]]
+
+### All Concepts are Kan Extensions
+#### Kan Extensions 
+- [[Kan Extensions]]
+- [[Kan Extensions as Set-valued Functors]] 
+- [[Construction of Kan Extensions]]
+  - [[Examples of Kan Extensions]]
+- [[Category of Cone Diagrams]]
 
 ### Outside stuff, sort later
 - [[Closed Category]]

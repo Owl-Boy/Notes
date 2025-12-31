@@ -53,6 +53,13 @@
     --callout-icon: var(--callout-icon-thm);
   }
 
+  &[data-callout='lem'] {
+    --color: #ea76cb;
+    --border: #ea76cb44;
+    --bg: #ea76cb10;
+    --callout-icon: var(--callout-icon-thm);
+  }
+
   &[data-callout='theorem'] {
     --color: #ea76cb;
     --border: #ea76cb44;
@@ -60,7 +67,21 @@
     --callout-icon: var(--callout-icon-thm);
   }
 
+  &[data-callout='thm'] {
+    --color: #ea76cb;
+    --border: #ea76cb44;
+    --bg: #ea76cb10;
+    --callout-icon: var(--callout-icon-thm);
+  }
+
   &[data-callout='definition'] {
+    --color: #40a02b;
+    --border: #40a02b44;
+    --bg: #40a02b10;
+    --callout-icon: var(--callout-icon-def);
+  }
+
+  &[data-callout='def'] {
     --color: #40a02b;
     --border: #40a02b44;
     --bg: #40a02b10;
