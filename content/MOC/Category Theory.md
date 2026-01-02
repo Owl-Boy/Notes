@@ -213,6 +213,11 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Kan Extension preserving Functors]]
 - [[Pointwise Kan Extensions]]
 
+#### All Concepts
+- [[Limits and Colimits as Kan Extensions]]
+- [[Adjunctions as Kan extensions]]
+- [[Yoneda Lemma as Kan extensions]]
+
 ### Outside stuff, sort later
 - [[Closed Category]]
 - [[Monoidal Category]]
