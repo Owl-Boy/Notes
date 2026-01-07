@@ -26,8 +26,7 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
 	- [[Homotopy Type Theory]]
     - [[Discrete Homotopy Theory]]
 - 📓 Course Work
-	- [[Parameterized Algorithms]]
-	- [[Games on Graphs]]
+    - [[Model Theory]]
 - 🤓 Requested Notes
 	- [[Logic]]
 	- [[Logic, Automata and Games]]
