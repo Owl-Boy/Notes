@@ -27,6 +27,7 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
     - [[Discrete Homotopy Theory]]
 - 📓 Course Work
     - [[Model Theory]]
+    - [[Concurrency Theory]]
 - 🤓 Requested Notes
 	- [[Logic]]
 	- [[Logic, Automata and Games]]

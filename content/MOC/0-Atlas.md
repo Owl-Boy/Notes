@@ -1,3 +1,9 @@
+---
+id: 0-Atlas
+aliases: []
+tags: []
+---
+
 # Atlas
 ---
 
@@ -9,25 +15,26 @@
 ---
 ## Courses
 #### Current
-- [[Weighted Automata and Transducers]]
-- [[Finite Model Theory]]
-- [[Topics in Algorithms]]
-- [[Intro to Martingales]]
+- [[Model Theory]]
 - [[Homotopy Type Theory]]
 
 #### All
 - [[Algebraic Automata Theory]]
 - [[Complexity Theory]]
 - [[Concurrent Programming]]
+- [[Finite Model Theory]]
 - [[Games on Graphs]]
 - [[IFPL Note Order|Implementation of Functional Programming Languages]]
 - [[Infinite State Verification]]
-- [[Logic]]
+- [[Intro to Martingales]]
 - [[Logic, Automata and Games]]
+- [[Logic]]
 - [[Measure Theoretic Probability]]
 - [[Set Theory]]
 - [[Software Verification and Analysis]]
+- [[Topics in Algorithms]]
 - [[Undecidability in Algebra and Topology]]
+- [[Weighted Automata and Transducers]]
 
 ---
 ## Study Topics

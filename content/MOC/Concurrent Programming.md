@@ -1,4 +1,6 @@
 ---
+id: Concurrent Programming
+aliases: []
 tags:
   - MOC/Course
 sticker: lucide//map-pin
@@ -57,6 +59,7 @@ This section discusses how to safely write concurrent programs.
 
 --- 
 ## MOCs
+- [[Concurrency Theory]]
 
 ---
 # References
