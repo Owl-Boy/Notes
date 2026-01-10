@@ -15,11 +15,11 @@ Concurrency involves multiple processes running, either parallel-y or concurrent
 An execution of such an event synchronizes the processes that recognize the event, which is used to coordinate processes together in order to solve the problem.
 
 This study of this system starts with the following concepts:
-- [[Distributed Alphabet and Automata]], for describing systems involving multiple processes, and 
+- [[Distributed Alphabet]], for describing systems involving multiple processes, and 
 - [[Traces (Concurrency)|Traces]] which capture an equivalence between different runs of the system that differ at parts that don't interact with each other.
 
 ---
 # References
-- [[Distributed Alphabet and Automata]]
+- [[Distributed Alphabet]]
 - [[Traces (Concurrency)]]
 

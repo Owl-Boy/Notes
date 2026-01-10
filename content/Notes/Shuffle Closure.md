@@ -16,8 +16,9 @@ $$
 $$
 
 > [!NOTE]
-> For a language to be accepted by a [[Distributed Alphabet and Automata|distributed automata]], it needs to be a fixed point of the shuffle closure.
+> For a language to be accepted by a [[Distributed Alphabet|distributed automata]], it needs to be a fixed point of the shuffle closure.
 
 ---
 # References
-- [[Distributed Alphabet and Automata]]
+- [[Distributed Alphabet]]
+- [[Trace Closure is not the same as Shuffle Closure]]

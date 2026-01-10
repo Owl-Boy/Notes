@@ -1,18 +1,26 @@
 ---
-id: Direct Product Construction
+id: Distributed Alphabet
 aliases:
-  - Direct Product Construction
+  - Direct Product Automata
 tags:
   - Note
 ---
 202601081326
 
 Tags : [[Concurrency Theory]]
-# Direct Product Construction
+# Direct Product Automata
 ---
-Let $\mathbb P$ be a set of process and let $\Sigma_{\mathbb P}$ be a distributed language over $\Sigma$. Let $A_\mathbb P$ be a distributed automata over $\Sigma_\mathbb P$.
+An **direct product automata** is a collection of finite state automata, one for each process that together run on words of the alphabet $\Sigma$. 
 
-The direct product construction, takes the distributed automata $A_\mathbb P$ and converts it to a finite state automata $|A_\mathbb P|$ in an attempt to capture its language (Also denoted as $\langle A_1 \| A_2 \| \dots \|A_k\rangle$ if $|\mathbb P|=k$).
+
+> [!def] Definition
+> Direct Product Automata are defined by a tuple containing the following components:
+> - $\Sigma_{\mathbb P}$,  A distributed language 
+> - An automata $A_p$ for each $p\in \mathbb P$ that runs over words of the alphabet $\Sigma_p$.
+
+The semantics of this model are given by taking making a finite state automata, whose states represent the global configuration of the direct product automata. This can be constructed by the following construction.
+
+The **direct product construction**, takes the distributed automata $A_\mathbb P$ and converts it to a finite state automata $|A_\mathbb P|$ in an attempt to capture its language (Also denoted as $\langle A_1 \| A_2 \| \dots \|A_k\rangle$ if $|\mathbb P|=k$).
 
 The rough idea is to look at the configuration of the system in the run of a word. When a letter is read, all processes that recognize the letter take a step, while all other process don't move. Thus we break down our construction into the following step:
 - To each automata $A_i$ on each state, add self loops for letters in $\Sigma \setminus \Sigma_i$.
@@ -31,5 +39,5 @@ Note that only the languages that are fixed points of [[Shuffle Closure]] are ac
 
 ---
 # References
-- [[Distributed Alphabet and Automata]]
+- [[Distributed Alphabet]]
 - [[Shuffle Closure]]

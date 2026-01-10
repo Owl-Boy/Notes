@@ -1,7 +1,7 @@
 ---
-id: Distributed Alphabet and Automata
+id: Distributed Automata
 aliases:
-  - Distributed Alphabet and Automata
+  - Distributed Alphabet
 tags:
   - Note
   - Incomplete
@@ -9,7 +9,7 @@ tags:
 202601081303
 
 Tags : [[Concurrency Theory]]
-# Distributed Alphabet and Automata
+# Distributed Alphabet
 ---
 Consider the following example of a run of a concurrent system:
 
@@ -26,15 +26,11 @@ Let $\Sigma$ be the set of all letters used in the system.
 > - Distributed Language:
 >   - The set $\Sigma_{\mathbb P}=\{ \Sigma_p \mid p\in \mathbb P \}$
 
-An *distributed automata* is a collection of finite state automata, one for each process that together run on words of the alphabet $\Sigma$. 
+There is also projection function $\pi_p:\Sigma^* \to \Sigma_p^*$ defined for each $p\in\mathbb P$ that drops the characters of the words not in $\Sigma_p$. 
 
-> [!def] Definition
-> Distributed Automata are defined by a tuple containing the following components:
-> - $\Sigma_{\mathbb P}$,  A distributed language 
-> - An automata $A_p$ for each $p\in \mathbb P$ that runs over words of the alphabet $\Sigma_p$.
-
-There is also projection function $\pi_p:\Sigma^* \to \Sigma_p^*$ defined for each $p\in\mathbb P$ that drops the characters of the words not in $\Sigma_p$
+Along with that, there is a function $\text{loc}:\Sigma\to 2^{\mathbb P}$ that takes a letter and gives the set of processes (locations) that recognize the letter.
 
 ---
 # References
 - [[Concurrency via Sharing Events]]
+- [[Direct Product Automata]]

@@ -1,5 +1,5 @@
 ---
-id: Concurrency Theory
+id: Synchronous Automata
 aliases:
   - Concurrency Theory
 tags:
@@ -14,11 +14,16 @@ sticker: lucide//map-pin
 ## Notes
 - [[Motivation for Concurrency Theory]] (from concurrent prog course)
 - [[Concurrency via Sharing Events]]
-- [[Distributed Alphabet and Automata]]
-  - [[Direct Product Construction]]
+- [[Distributed Alphabet]]
+  - [[Direct Product Automata]]
   - [[Shuffle Closure]]
-- [[Traces (Concurrency)|Tarce]] 
+  - [[Direct Product Automata are not closed under boolean operations]]
+- [[Traces (Concurrency)|Trace]] 
   - [[Trace Closure is not the same as Shuffle Closure]]  
+- [[Concurrency Theory]] 
+  - [[Synchronous Languages are finite union of direct product languages]]
+- [[Asynchronous Automata]]
+  - [[Not all regular trace languages are synchornous]] 
 
 --- 
 ## MOCs

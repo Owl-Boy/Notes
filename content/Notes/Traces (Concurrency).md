@@ -12,7 +12,7 @@ Tags : [[Concurrency Theory]]
 ---
 An execution of the concurrent system can be through of by a sequence of events ordered by time. These are represented by words, which represent the events in a linear order, decided by when the events were executed. A single execution, always guarantees the acceptance of all words that are created by swapping any adjacent letters which are independent (not shared by any process). Thus suggests that linear orders are too strict to model runs of a concurrent systems. By removing the ordering between independent events, we get a *Trace*, which is a partial order, such that any linearization of the trace should be accepted by the concurrent system.
 
-Unlike [[Distributed Alphabet and Automata|distributed alphabets]], traces are not dependent on the precise set of process, but only on the dependence relation on different events
+Unlike [[Distributed Alphabet|distributed alphabets]], traces are not dependent on the precise set of process, but only on the dependence relation on different events
 
 This dependence relation is reflexive and symmetric, making the independence relation irreflexive and symmetric.
 
@@ -48,5 +48,5 @@ A language that is closed under the above relation is called *trace closed*, and
 
 ---
 # References
-- [[Distributed Alphabet and Automata]]
+- [[Distributed Alphabet]]
 - [[Trace Closure is not the same as Shuffle Closure]]
