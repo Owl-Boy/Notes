@@ -1,5 +1,5 @@
 ---
-id: Concurrency Theory
+id: Synchronous Automata
 aliases:
   - Synchronized Automata
 tags:

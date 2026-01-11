@@ -20,7 +20,7 @@ sticker: lucide//map-pin
   - [[Direct Product Automata are not closed under boolean operations]]
 - [[Traces (Concurrency)|Trace]] 
   - [[Trace Closure is not the same as Shuffle Closure]]  
-- [[Concurrency Theory]] 
+- [[Synchronous Automata]] 
   - [[Synchronous Languages are finite union of direct product languages]]
 - [[Asynchronous Automata]]
   - [[Not all regular trace languages are synchornous]] 
