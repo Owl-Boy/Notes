@@ -17,6 +17,7 @@ sticker: lucide//map-pin
   - [[Semantics of First Order Logic]]
 - [[Theories]]
 - [[Examples of Complete and Incomplete Theories]]
+  - [[Example of Atomless Boolean Algebra]] 
 
 --- 
 ## MOCs
