@@ -18,6 +18,8 @@ In a direct product automata, we have a set of accept states. That set of accept
 
 We allow any arbitrary collection of states of the product automata to be the set of final states.
 
+Informally, we can consider a set of automata, one for each process, just like in [[Direct Product Automata]], but instead of having final states in each automata, we pick an arbitrary set of global states as our final states. The semantics are defined as follows:
+
 > [!DEF] Definition
 > A synchronized automata is defined using the following:
 > - A distributed alphabet $\Sigma_\mathbb P$
