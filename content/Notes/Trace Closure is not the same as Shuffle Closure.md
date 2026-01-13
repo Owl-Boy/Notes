@@ -16,7 +16,7 @@ While trace closure and shuffles closures are both operations that are meant to 
 
 Every shuffle closed language is trace-closed, but not every trace closed language is shuffle closed.
 
-As a counter example, consider the alphabet $\Sigma = \{a, b\}$. We give the independence relation $\mathcal I = \{(a, b)\}$ and the distributed alphabet over 2 process $\Sigma_1 = {a}$ and \Sigma_2 = {b}$. Note that in both cases the letters $a$ and $b$ are independent. Now consider the language $L = \{a, b\} but we have:
+As a counter example, consider the alphabet $\Sigma = \{a, b\}$. We give the independence relation $\mathcal I = \{(a, b)\}$ and the distributed alphabet over 2 process $\Sigma_1 = {a}$ and $\Sigma_2 = {b}$. Note that in both cases the letters $a$ and $b$ are independent. Now consider the language $L = \{a, b\} but we have:
 - $\text{shuffle}(L) = \{a,b,ab,ba\}$ but 
 - $\text{trace}(L) = \{a, b\}$
 
