@@ -1,4 +1,6 @@
 ---
+id: Kripke Models are Equivalent to Heyting Algebra
+aliases: []
 tags:
   - Example
 ---
@@ -10,7 +12,7 @@ tags : [[Logic]]
 # Kripke Models are Equivalent to Heyting Algebra
 ---
 
-Let $C$ be the set of all [[Filters in Heyting Algebras|prime filters]]  in $\mathcal H$, where $0\ne 1$. And let inclusion be the partial order. We define $F\Vdash p$ iff $\nu(p)\in F$ and we want to show that 
+Let $C$ be the set of all [[Filters|prime filters]]  in $\mathcal H$, where $0\ne 1$. And let inclusion be the partial order. We define $F\Vdash p$ iff $\nu(p)\in F$ and we want to show that 
 $$
 F\Vdash\varphi
 \iff 

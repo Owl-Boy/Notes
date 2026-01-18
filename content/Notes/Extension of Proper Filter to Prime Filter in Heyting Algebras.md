@@ -1,4 +1,6 @@
 ---
+id: Extension of Proper Filter to Prime Filter in Heyting Algebras
+aliases: []
 tags:
   - Example
 ---
@@ -10,7 +12,7 @@ Tags : [[Logic]]
 # Extension of Proper Filter to Prime Filter in Heyting Algebras
 
 **Lemma:**
-Let $F$ be a [[Filters in Heyting Algebras|proper filter]] in $\mathcal H$ and let $a\notin F$. Then there exists a prime filter $G$ such that $F\subseteq G$ and $a\notin G$.
+Let $F$ be a [[Filters|proper filter]] in $\mathcal H$ and let $a\notin F$. Then there exists a prime filter $G$ such that $F\subseteq G$ and $a\notin G$.
 
 **Proof:**
 Consider $\mathcal F$ to be the set of filters that do not contain $a$ but contain $F$ with inclusion as the partial order.

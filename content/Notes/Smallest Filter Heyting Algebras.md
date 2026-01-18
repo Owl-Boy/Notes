@@ -1,4 +1,6 @@
 ---
+id: Smallest Filter Heyting Algebras
+aliases: []
 tags:
   - Example
 ---
@@ -10,7 +12,7 @@ tags : [[Logic]]
 #  Smallest Filter Heyting Algebras
 ---
 
-**Lemma:** Let $A$ be the subset of a [[Heyting Algebra]] $H$. Then the smallest [[Filters in Heyting Algebras|filter]] which contains $A$ is 
+**Lemma:** Let $A$ be the subset of a [[Heyting Algebra]] $H$. Then the smallest [[Filters]] which contains $A$ is 
 $$
 F=\{ a\in H\ :\ a\ge a_{1}\sqcap a_{2}\dots a_{k}\text{ where } a_{1},a_{2}\dots a_{k}\in A\}
 $$

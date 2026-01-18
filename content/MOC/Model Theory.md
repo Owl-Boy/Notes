@@ -18,10 +18,18 @@ sticker: lucide//map-pin
 - [[Theories]]
 - [[Examples of Complete and Incomplete Theories]]
   - [[Example of Atomless Boolean Algebra]] 
+- [[Homomorphism of Models]]
+- [[Product of Models]]
+- [[Filters]]
+- [[Reduced Product]]
+- [[Łoś's Theorem]]
+- [[Compactness Theorem]]
+  - [[Upward Löwenheim–Skolem Theorem]] 
 
 --- 
 ## MOCs
 - [[Logic]]
+- [[Category Theory]]
 
 ---
 ## Practicle Information

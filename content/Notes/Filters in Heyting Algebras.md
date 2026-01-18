@@ -1,4 +1,6 @@
 ---
+id: Filters in Heyting Algebras
+aliases: []
 tags:
   - Note
 ---
@@ -11,10 +13,12 @@ Tags : [[Logic]]
 A *Filter* in a *Heyting Algebra* $\mathcal H = \langle H,\sqcup,\sqcap,\Rightarrow,1,0\rangle$ is a non empty subset $F$ of $H$ such that 
 - $a, b\in F$ implies $a\sqcap b\in F$
 - $a\in F$ and $a\le b$ implies $b\in F$
+
 $F$ is *Proper* iff $F\subsetneq H$.
 
 $F$ is called a *prime filter* if $a\sqcup b\in F$ implies $a\in F$ or $b\in F$
 
 ---
 # References
-[[Filters]]
+- [[Filters]]
+- [[Extension of Proper Filter to Prime Filter in Heyting Algebras]]
