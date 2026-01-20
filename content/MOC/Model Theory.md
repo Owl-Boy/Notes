@@ -20,20 +20,25 @@ sticker: lucide//map-pin
   - [[Example of Atomless Boolean Algebra]] 
 - [[Homomorphism of Models]]
 - [[Product of Models]]
-- [[Filters]]
 - [[Reduced Product]]
+  - [[Filters]]
 - [[Łoś's Theorem]]
-- [[Compactness Theorem]]
+- [[Finiteness Theorem]]
   - [[Upward Löwenheim–Skolem Theorem]] 
+  - [[Class of Periodic Groups is not Axiomatizable]]
+  - [[Class of Division Rings with Finite Order is not Axiomatizable]]
+  - [[Stone's Representation Theorem]]
+  - [[Compactness Theorem]]
 
 --- 
 ## MOCs
 - [[Logic]]
 - [[Category Theory]]
+- [[Topology]]
 
 ---
 ## Practicle Information
-Profs : Suresh & Kumini
+Profs : Suresh & Kummini
 Timings : Monday and Wednesday 10:30-11:45
 Loc : LH 3
 

@@ -21,7 +21,7 @@ $$
 \Sigma_C = \Sigma \cup \{c \ne c' : c,c'\in C \text{ and }c\ne c'\}
 $$
 
-Since $\Sigma$ has arbitrarily large finite models or an infinite model, we have a model for all finitely subsets of $\Sigma_C$. Thus we have a model for $\Sigma_C$ by [[Compactness Theorem]].
+Since $\Sigma$ has arbitrarily large finite models or an infinite model, we have a model for all finitely subsets of $\Sigma_C$. Thus we have a model for $\Sigma_C$ by [[Finiteness Theorem]].
 
 
 ---

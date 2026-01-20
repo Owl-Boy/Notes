@@ -26,4 +26,4 @@ Consider formulas $\varphi,\varphi_1,\varphi_2$ and $\theta$, then:
 # References
 - [[Reduced Product]]
 - [[Filters]]
-- [[Compactness Theorem]]
+- [[Finiteness Theorem]]
