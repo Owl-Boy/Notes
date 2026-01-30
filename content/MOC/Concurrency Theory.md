@@ -24,6 +24,10 @@ sticker: lucide//map-pin
   - [[Synchronous Languages are finite union of direct product languages]]
 - [[Asynchronous Automata]]
   - [[Not all regular trace languages are synchornous]] 
+- [[Gossip Automata]]
+  - [[Gossip Problem]]
+  - [[Gossip Automata can be implemented as Asynchronous Automata]]
+  - [[The maximal elements of view of 2 processes is in the primary of both processes]]
 
 --- 
 ## MOCs
