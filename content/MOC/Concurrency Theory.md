@@ -1,5 +1,5 @@
 ---
-id: Synchronous Automata
+id: Concurrency Theory
 aliases:
   - Concurrency Theory
 tags:
@@ -28,10 +28,13 @@ sticker: lucide//map-pin
   - [[Gossip Problem]]
   - [[Gossip Automata can be implemented as Asynchronous Automata]]
   - [[The maximal elements of view of 2 processes is in the primary of both processes]]
+- [[Trace Independence is a Syntactic Congruence of Trace Languages]] 
+- [[Zielonka's Theorem]]
 
 --- 
 ## MOCs
 - [[Concurrent Programming]]
+- [[Algebraic Automata Theory]]
 
 ---
 ## Practical Information
