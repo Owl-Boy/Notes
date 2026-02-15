@@ -49,6 +49,7 @@ tags: []
 ## Presentations
 - [[Independence of CH - Dana Scott]]
 - [[Revisiting Complexity of First-Order and Monadic-Second-Order Logic]]
+- [[Yoneda Lemma (presentation)]]
 
 
 ---

@@ -25,16 +25,28 @@ sticker: lucide//map-pin
 - [[Łoś's Theorem]]
 - [[Finiteness Theorem]]
   - [[Upward Löwenheim–Skolem Theorem]] 
+    - [[Downward Löwenheim–Skolem Theorem]]
   - [[Class of Periodic Groups is not Axiomatizable]]
   - [[Class of Division Rings with Finite Order is not Axiomatizable]]
   - [[Stone's Representation Theorem]]
   - [[Compactness Theorem]]
+- [[Tarski-Vaught test]]
+- [[Elementary Equivalence of Models]]
+- [[Theory of torsion-free divisible Abelian Groups is kappa categorical for uncountable kappa]]
+- [[ACFp is kappa categorical for uncountable kappa]]
+- [[Vaught Test]]
+- [[Atomic Diagram of a structure]]
+- [[A Theory is universally axiomatiazble iff its closed under substructure]]
+- [[There is a unique countable dense linear order upto isomorphism.Model Theory]]
+- [[Marczewski-Szpilrajn Theorem (WO)]]
+- [[Marczewski-Szpilrajn Theorem (Compactness)]]
 
 --- 
 ## MOCs
 - [[Logic]]
 - [[Category Theory]]
 - [[Topology]]
+- [[Finite Model Theory]]
 
 ---
 ## Practicle Information
