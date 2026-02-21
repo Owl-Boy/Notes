@@ -11,13 +11,14 @@ sticker: lucide//map-pin
 # Yoneda Lemma (presentation)
 ---
 ## Presentation
-
+- [[YL presentation plan]]
 
 --- 
 ## Notes
 - [[Yoneda Lemma]]
 - [[Yoneda Embedding]]
 - [[Yoneda Lemma as Kan extensions]]
+- [[Applications of Yoneda Lemma]]
 
 --- 
 ## MOCs

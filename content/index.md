@@ -22,15 +22,15 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
 
 ## College Work
 - 📚 Things I am working on beside Course Work!
-	- [[Category Theory]]
-	- [[Homotopy Type Theory]]
+    - [[Category Theory]]
+    - [[Homotopy Type Theory]]
     - [[Discrete Homotopy Theory]]
 - 📓 Course Work
     - [[Model Theory]]
     - [[Concurrency Theory]]
 - 🤓 Requested Notes
-	- [[Logic]]
-	- [[Logic, Automata and Games]]
+    - [[Logic]]
+    - [[Logic, Automata and Games]]
 
 ---
 ## Important Stuff

@@ -1,4 +1,6 @@
 ---
+id: Yoneda Lemma
+aliases: []
 tags:
   - Note
 ---
@@ -60,3 +62,4 @@ There are 2 naturality assertions
 - [[Yoneda Embedding]]
 - [[Representable Functors Define Representing Objects]]
 - [[Universal Property (Riehl)]]
+- [[Applications of Yoneda Lemma]]
