@@ -40,6 +40,10 @@ sticker: lucide//map-pin
 - [[There is a unique countable dense linear order upto isomorphism.Model Theory]]
 - [[Marczewski-Szpilrajn Theorem (WO)]]
 - [[Marczewski-Szpilrajn Theorem (Compactness)]]
+- [[Prime Models]]
+  - [[Existence of Algebraically Prime Models]]
+  - [[Theories that admit Algebraically Prime Models]]
+- [[Simply Closed sub-models]]
 
 --- 
 ## MOCs
