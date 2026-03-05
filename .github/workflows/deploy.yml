@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - typst
-      - v4
 
 permissions:
   contents: read

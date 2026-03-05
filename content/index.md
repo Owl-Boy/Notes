@@ -32,6 +32,8 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
     - [[Logic]]
     - [[Logic, Automata and Games]]
 
+This is Typst testing $5/3$
+
 ---
 ## Important Stuff
 1. The `MOC` folder would be something you might be interested in, it contains a bunch of notes that will let you find other notes that you would probably be looking for. So if you have the note you want to read in mind, might be faster to find it by going to the topic it falls under in the `MOC` folder.
