@@ -30,6 +30,7 @@ sticker: lucide//map-pin
   - [[The maximal elements of view of 2 processes is in the primary of both processes]]
 - [[Trace Independence is a Syntactic Congruence of Trace Languages]] 
 - [[Zielonka's Theorem]]
+- [[Loc Past PDL]]
 
 --- 
 ## MOCs
