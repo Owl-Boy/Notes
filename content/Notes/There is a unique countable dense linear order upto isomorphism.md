@@ -1,14 +1,14 @@
 ---
-id: There is a unique countable dense linear order upto isomorphism.Model Theory
+id: There is a unique countable dense linear order upto isomorphism
 aliases:
-  - There is a unique countable dense linear order upto isomorphism.Model Theory
+  - There is a unique countable dense linear order upto isomorphism
 tags:
   - Note
 ---
 202602151632
 
 Tags : [[Model Theory]] [[Order Theory]]
-# There is a unique countable dense linear order upto isomorphism.Model Theory
+# There is a unique countable dense linear order upto isomorphism
 ---
 > [!THM]
 > The Theory DLO is $\aleph_0$-categorical and complete.
