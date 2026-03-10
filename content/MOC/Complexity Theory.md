@@ -1,4 +1,6 @@
 ---
+id: Complexity Theory
+aliases: []
 tags:
   - MOC/Course
 sticker: lucide//map-pin
@@ -29,9 +31,9 @@ The *Church-Turing thesis* (all that is computable is computable by a Turing Mac
 ## Notes
 
 - [[Complexity Theory]]
-- [[Cook-Levin Theorem]] ($SAT$ is $NP-$complete.)
+- [[Cook-Levin Theorem]] ($"SAT"$ is $"NP"-$complete.)
 - [[Web of Reductions]] (Some standard reductions)
-- [[Co-NP (Complexity Class)]] (and $NP\cap Co-NP$)
+- [[Co-NP (Complexity Class)]] (and $"NP"\cap "Co-NP"$)
 - [[Search vs Decision for NP complete problems]]
 - [[EXP (Complexity Class)]]
 - [[Ladner's Theorem]]

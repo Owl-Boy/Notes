@@ -12,6 +12,9 @@ sticker: lucide//map-pin
 
 --- 
 ## Notes
+
+### Basics
+
 - [[First Order Logic]]
   - [[Syntax of First Order Logic]]
   - [[Semantics of First Order Logic]]
@@ -22,6 +25,9 @@ sticker: lucide//map-pin
 - [[Product of Models]]
 - [[Reduced Product]]
   - [[Filters]]
+
+### Compactness
+
 - [[Łoś's Theorem]]
 - [[Finiteness Theorem]]
   - [[Upward Löwenheim–Skolem Theorem]] 
@@ -37,13 +43,17 @@ sticker: lucide//map-pin
 - [[Vaught Test]]
 - [[Atomic Diagram of a structure]]
 - [[A Theory is universally axiomatiazble iff its closed under substructure]]
-- [[There is a unique countable dense linear order upto isomorphism.Model Theory]]
 - [[Marczewski-Szpilrajn Theorem (WO)]]
 - [[Marczewski-Szpilrajn Theorem (Compactness)]]
+
+### Quantifier Elimintation
+
+- [[There is a unique countable dense linear order upto isomorphism]]
 - [[Prime Models]]
   - [[Existence of Algebraically Prime Models]]
   - [[Theories that admit Algebraically Prime Models]]
 - [[Simply Closed sub-models]]
+- [[A Theory T admits QE for phi if any 2 models of T agree on phi on intersection]]
 
 --- 
 ## MOCs
