@@ -12,6 +12,8 @@ sticker: lucide//map-pin
 
 --- 
 ## Notes
+
+### Foundations
 - [[Motivation for Concurrency Theory]] (from concurrent prog course)
 - [[Concurrency via Sharing Events]]
 - [[Distributed Alphabet]]
@@ -24,6 +26,8 @@ sticker: lucide//map-pin
   - [[Synchronous Languages are finite union of direct product languages]]
 - [[Asynchronous Automata]]
   - [[Not all regular trace languages are synchornous]] 
+
+### Zielonka's Theorem
 - [[Gossip Automata]]
   - [[Gossip Problem]]
   - [[Gossip Automata can be implemented as Asynchronous Automata]]
@@ -31,6 +35,8 @@ sticker: lucide//map-pin
 - [[Trace Independence is a Syntactic Congruence of Trace Languages]] 
 - [[Zielonka's Theorem]]
 - [[Loc Past PDL]]
+
+### Games
 
 --- 
 ## MOCs
