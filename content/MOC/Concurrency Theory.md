@@ -37,7 +37,7 @@ sticker: lucide//map-pin
 - [[Loc Past PDL]]
 
 ### Games
-- [[Flip Flop.]]
+- [[Flip Flop]]
 
 
 --- 

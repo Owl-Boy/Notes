@@ -57,6 +57,8 @@ Thus, this circuit toggles its output every time the environment gives an input 
 
 This is one of the ways in which a 1-bit register is implemented using circuits.
 
+Here one can also imagine one writing the state of a wire onto the wire itself, thus can visualize the evolution of system on the diagram itself.
+
 ---
 
 # References
