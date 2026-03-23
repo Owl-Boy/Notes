@@ -38,6 +38,7 @@ sticker: lucide//map-pin
 
 ### Games
 - [[Flip Flop]]
+- [[Synchronous Distributed Games.md]]
 
 
 --- 
