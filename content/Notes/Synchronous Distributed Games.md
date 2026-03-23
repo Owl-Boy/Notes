@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 aliases: []
 id: Synchronous Distributed Games
 ---
@@ -98,6 +97,8 @@ More formally, if a run is given by $rho = s_1, s_2 ,\dots$, then for each natur
 $$
 \sigma_o\Big(\pi_{r(o)}(s_1), \pi_{r(o)}(s_2), \dots \pi_{r(o)}(s_n)\Big) = \pi_{w(o)}(s_{n+1})
 $$
+
+A strategy is *finite-memory*, if each local strategy can be given using a finite-state transducer.
 
 ## Winning Condition
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - Note
-  - Incomplete
 aliases: []
 id: Flip Flop
 ---
@@ -13,11 +12,14 @@ Tags : [[Concurrency Theory]]
 
 ---
 
+> [!note]
+> I am too lazy to figure out put SVGs in the correct colour, so view this in light mode. (dw the light mode colours are also pretty.)
+
 If one permits circuit diagram to have a non-directed-acyclic structure, then it is possible to construct circuits with self sustaining stable-configurations.
 
-A trivial example of this is the following: 
+A trivial example of this is the following:
 
-![[circuit.svg]]
+![[and-gate.svg]]
 
 This is an 'AND' gate, with one of the inputs directly coming from the outputs. This circuit is dead, one of the inputs is false, as that is the initial configuration of the system, hence the output will remain false, hence of the inputs will be false, thus fixing the configuration of the system.
 

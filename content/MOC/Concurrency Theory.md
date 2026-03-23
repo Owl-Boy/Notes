@@ -36,10 +36,12 @@ sticker: lucide//map-pin
 - [[Zielonka's Theorem]]
 - [[Loc Past PDL]]
 
-### Games
+### Synchronous Distributed Games
 - [[Flip Flop]]
-- [[Synchronous Distributed Games.md]]
-
+- [[Synchronous Distributed Games]]
+- [[Information Pre-Order]]
+  - [[Information Chains]]
+- [[Solving Synchronous Distributed Games]]
 
 --- 
 ## MOCs
