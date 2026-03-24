@@ -36,3 +36,23 @@ document.addEventListener("nav", () => {
   colorSchemeMediaQuery.addEventListener("change", themeChange)
   window.addCleanup(() => colorSchemeMediaQuery.removeEventListener("change", themeChange))
 })
+
+// https://francoisbest.com/posts/2020/dark-mode-for-excalidraw
+function applyDarkModeFilter(): void {
+  const savedTheme = document.documentElement.getAttribute("saved-theme");
+  const images: HTMLCollectionOf<HTMLImageElement> = document.getElementsByTagName('img');
+
+  for (let i = 0; i < images.length; i++) {
+    const image = images[i];
+
+    if (image.src && image.src.endsWith('svg')) {
+      // It consider image as light by default
+      if (savedTheme === "dark")
+        image.classList.add('image-dark');
+      else
+        image.classList.remove('image-dark');
+    }
+  }
+}
+document.addEventListener('DOMContentLoaded', applyDarkModeFilter);
+document.addEventListener('themechange', applyDarkModeFilter);
