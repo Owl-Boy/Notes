@@ -46,6 +46,10 @@
   }
 }
 
+.darkmode & img {
+  filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
+}
+
 // .image-dark {
 //   filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
 // }
