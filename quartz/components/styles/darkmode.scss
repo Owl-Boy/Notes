@@ -46,5 +46,5 @@
 }
 
 .image-dark {
-  color: var(--light);
+  filter: invert(93%) sepia(6%) saturate(1393%) hue-rotate(197deg) brightness(96%) contrast(100%);
 }
