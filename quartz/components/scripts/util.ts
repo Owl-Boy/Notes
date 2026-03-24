@@ -25,35 +25,27 @@ export function removeAllChildren(node: HTMLElement) {
   }
 }
 
-export function renderExcalidrawLinks(theme: "dark" | "light") {
-  let currentTheme = theme == "dark" ? "light" : "dark"
-  Object.values(document.getElementsByTagName("img")).forEach(img => {
-    if (img.src.endsWith(`.excalidraw.${currentTheme}.svg`)) {
-      let srcParts = img.src.split(".")
-      srcParts.splice(-2, 1, theme)
-      img.src = srcParts.join(".")
-    }
-  })
-}
+// https://francoisbest.com/posts/2020/dark-mode-for-excalidraw
+export function applyDarkModeFilter(): void {
+  const savedTheme = document.documentElement.getAttribute("saved-theme");
+  const images: HTMLCollectionOf<HTMLImageElement> = document.getElementsByTagName('img');
 
-export function getUserPreferredColorScheme() {
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
-}
+  for (let i = 0; i < images.length; i++) {
+    const image = images[i];
 
-// Have SVG images in the article adhere to the correct color scheme.
-document.addEventListener("nav", (e) => {
-  let theme = localStorage.getItem("theme") ?? getUserPreferredColorScheme()
-  Object.values(document.getElementsByTagName("article")[0]
-                        .getElementsByTagName("a")).forEach(a => {
-    if (a.href.endsWith(".svg")) {
-      if (theme === "dark") {
-        a.classList.remove('image-light');
-        a.classList.add('image-dark');
+    if (image.src && image.src.endsWith('svg')) {
+      // It consider image as light by default
+      if (savedTheme === "dark") {
+        image.classList.remove('image-light');
+        image.classList.add('image-dark');
       }
       else {
-        a.classList.remove('image-dark');
-        a.classList.add('image-light');
+        image.classList.remove('image-dark');
+        image.classList.add('image-light');
       }
     }
-  })
-})
+  }
+}
+
+document.addEventListener('nav', applyDarkModeFilter);
+document.addEventListener('themechange', applyDarkModeFilter);
