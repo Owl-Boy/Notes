@@ -58,5 +58,6 @@ function applyDarkModeFilter(): void {
     }
   }
 }
-// document.addEventListener('DOMContentLoaded', applyDarkModeFilter);
-// document.addEventListener('themechange', applyDarkModeFilter);
+document.addEventListener('DOMContentLoaded', applyDarkModeFilter);
+document.addEventListener('DocumentContentLoaded', applyDarkModeFilter);
+document.addEventListener('themechange', applyDarkModeFilter);

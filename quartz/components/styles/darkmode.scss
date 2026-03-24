@@ -18,6 +18,10 @@
     filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
     transition: opacity 0.1s ease;
   }
+
+  & img {
+    filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
+  }
 }
 
 :root[saved-theme="dark"] {
@@ -46,16 +50,10 @@
   }
 }
 
-.darkmode { 
-  & img {
-    filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
-  }
+.image-dark {
+  filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
 }
 
-// .image-dark {
-//   filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
-// }
-//
-// .image-light {
-//   filter: invert(52%) sepia(6%) saturate(1491%) hue-rotate(208deg) brightness(89%) contrast(89%);
-// }
+.image-light {
+  filter: invert(52%) sepia(6%) saturate(1491%) hue-rotate(208deg) brightness(89%) contrast(89%);
+}
