@@ -15,6 +15,7 @@
     height: 20px;
     top: calc(50% - 10px);
     fill: var(--light);
+    filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
     transition: opacity 0.1s ease;
   }
 }
