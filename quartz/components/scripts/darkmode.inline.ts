@@ -47,12 +47,14 @@ function applyDarkModeFilter(): void {
 
     if (image.src && image.src.endsWith('svg')) {
       // It consider image as light by default
-      if (savedTheme === "dark")
+      if (savedTheme === "dark") {
         image.classList.remove('image-light');
         image.classList.add('image-dark');
-      else
+      }
+      else {
         image.classList.remove('image-dark');
         image.classList.add('image-light');
+      }
     }
   }
 }
