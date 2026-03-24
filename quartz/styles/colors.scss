@@ -24,7 +24,9 @@
   --tertiary: #99d1db; // frappeColors.sky
   --highlight: #949cbb30; // frappeColors.overlay-2 at 20% opacity
 
-  & img,
+  & img {
+    filter: invert(88%) sepia(9%) saturate(427%) hue-rotate(206deg) brightness(83%) contrast(88%);
+  }
   & video {
     filter: grayscale(50%);
   }
@@ -58,7 +60,9 @@
   --tertiary: #04a5e5; // latteColors.sky
   --highlight: #7c7f9324; // latteColors.overlay-2 at 20% opacity
 
-  & img,
+  & img {
+    filter: invert(52%) sepia(6%) saturate(1491%) hue-rotate(208deg) brightness(89%) contrast(89%);
+  }
   & video {
     mix-blend-mode: multiply;
   }
