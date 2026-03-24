@@ -46,5 +46,9 @@
 }
 
 .image-dark {
-  fill: currentColor;
+  fill: var(--light);
+}
+
+.image-light {
+  fill: var(--dark);
 }
