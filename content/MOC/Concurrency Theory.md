@@ -42,6 +42,10 @@ sticker: lucide//map-pin
 - [[Information Pre-Order]]
   - [[Information Chains]]
 - [[Solving Synchronous Distributed Games]]
+  - [[Solving SDG is not re or co-re when information pre-order is not a tier list 1]]
+  - [[Solving SDG is not re or co-re when information pre-order is not a tier list 2]]
+  - [[Solving SDG is decidable when information pre-order is a tier list]]
+    - [[Quotienting Equivalent Players in SDG]]
 
 --- 
 ## MOCs

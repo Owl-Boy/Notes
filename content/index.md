@@ -25,6 +25,7 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
     - [[Category Theory]]
     - [[Homotopy Type Theory]]
     - [[Discrete Homotopy Theory]]
+    - [[Intro to Synthetic Homotopy Theory]]
 - 📓 Course Work
     - [[Model Theory]]
     - [[Concurrency Theory]]

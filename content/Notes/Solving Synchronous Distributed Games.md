@@ -16,13 +16,15 @@ Tags : [[Concurrency Theory]]
 > [!QUESTION] Solving a SDG
 > Given an SDG, does there exist a winning strategy?
 
+This problem, is neither [[Recursive and Recursively Eumberable Sets|recursive]] nor co-recursive.
+
 > [!QUESTION] Solving a SDG with finite memory
 > Given an SDG, does there exist a finite-memory winning strategy?
 
+This problem is recursive.
+
 > [!QUESTION] Finding a finite memory strategy for an SDA
 > Given an SGD, find a finite memory winning strategy
-
-All 3 problems are not decidable, they are neither [[Recursive and Recursively Eumberable Sets|Recursive]] nor co-recursive.
 
 > [!THM] Sufficient condition for undecidability 2
 > If the [[Information Pre-Order]] is not a tier-list (contains incomparable elements), then the first 2 problems are undecidable, even when the winning condition is given in [[Linear Temporal Logic|LTL]]. 
