@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Pattern Matching to Ordinary Lambda Calculus
 ---
 202311041711
 

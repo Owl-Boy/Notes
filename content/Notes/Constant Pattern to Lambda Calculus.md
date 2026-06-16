@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Constant Pattern to Lambda Calculus
 ---
 202311041811
 

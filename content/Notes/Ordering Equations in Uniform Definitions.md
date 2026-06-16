@@ -1,6 +1,8 @@
 ---
 tags:
   - Example
+aliases: []
+id: Ordering Equations in Uniform Definitions
 ---
 
 202310292137

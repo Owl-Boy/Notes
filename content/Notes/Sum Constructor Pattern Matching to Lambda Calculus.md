@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Sum Constructor Pattern Matching to Lambda Calculus
 ---
 202311041911
 

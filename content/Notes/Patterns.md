@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Patterns
 ---
 202310221810
 

@@ -1,6 +1,8 @@
 ---
 tags:
   - Example
+aliases: []
+id: Independence of meaning from changing the order on the left hand side implies uniform definition
 ---
 
 202310292154

@@ -1,6 +1,8 @@
 ---
 tags:
   - Example
+aliases: []
+id: False Assumptions easy to make about Patterns
 ---
 
 202310291633

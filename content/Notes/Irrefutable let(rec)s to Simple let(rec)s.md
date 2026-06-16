@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Irrefutable let(rec)s to Simple let(rec)s
 ---
 202311071911
 

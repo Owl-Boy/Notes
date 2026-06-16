@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Enriched Lambda Calculus
 ---
 202310201610
 

@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Conformality Transformation on let(rec) expressions
 ---
 202311071911
 

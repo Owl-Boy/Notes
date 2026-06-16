@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Optimisations for Expressions containing FAIL and Fatbar
 ---
 202310291410
 

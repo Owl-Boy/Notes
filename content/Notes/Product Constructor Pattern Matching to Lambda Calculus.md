@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Product Constructor Pattern Matching to Lambda Calculus
 ---
 202311041811
 

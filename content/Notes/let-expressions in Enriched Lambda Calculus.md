@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: let-expressions in Enriched Lambda Calculus
 ---
 202310201710
 

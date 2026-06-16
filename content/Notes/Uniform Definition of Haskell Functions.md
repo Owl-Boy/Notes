@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Uniform Definition of Haskell Functions
 ---
 202310291510
 

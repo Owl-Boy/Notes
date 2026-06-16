@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Translating Haskell Programs to Lambda Calculus
 ---
 202310210310
 

@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Match Function for Enriched Lambda Calculus
 ---
 202310251410
 

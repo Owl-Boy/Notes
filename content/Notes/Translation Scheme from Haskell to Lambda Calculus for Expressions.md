@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Translation Scheme from Haskell to Lambda Calculus for Expressions
 ---
 202310210310
 

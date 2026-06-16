@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: letrec-expressions in Enriched lambda Calculus
 ---
 202310201710
 

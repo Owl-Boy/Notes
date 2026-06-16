@@ -20,18 +20,11 @@ These are my notes for Maths and CS and whatever I think is related to this side
 
 For the full collection of maps look at [[0-Atlas]]. The section below gives a quick access to things that would be useful to me, and potentially to other people that have requested me for some of my notes.
 
-## College Work
+## Active Work
 - 📚 Things I am working on beside Course Work!
     - [[Category Theory]]
     - [[Homotopy Type Theory]]
-    - [[Discrete Homotopy Theory]]
-    - [[Intro to Synthetic Homotopy Theory]]
-- 📓 Course Work
-    - [[Model Theory]]
-    - [[Concurrency Theory]]
-- 🤓 Requested Notes
-    - [[Logic]]
-    - [[Logic, Automata and Games]]
+    - [[Programming Languages]]
 
 ---
 ## Important Stuff

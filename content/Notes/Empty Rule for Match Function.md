@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Empty Rule for Match Function
 ---
 202310251510
 

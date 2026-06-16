@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Converting Enriched Lambda Calculus to Ordinary Lambda Calculus
 ---
 202311051311
 

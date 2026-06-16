@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: letrec-expressions to Irrefurtable let-expressions
 ---
 202311072011
 

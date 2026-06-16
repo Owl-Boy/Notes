@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Converting Case Expressions to Ordinary Lambda Calculus
 ---
 202311051411
 

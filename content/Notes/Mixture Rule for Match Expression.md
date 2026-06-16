@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Mixture Rule for Match Expression
 ---
 202310251710
 

@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Optimisations for Overlapping Patterns
 ---
 202310290210
 

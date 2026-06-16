@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Irrefutable let(rec)
 ---
 202311071911
 

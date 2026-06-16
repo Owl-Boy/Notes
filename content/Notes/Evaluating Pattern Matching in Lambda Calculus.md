@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Evaluating Pattern Matching in Lambda Calculus
 ---
 202310251410
 

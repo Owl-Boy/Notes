@@ -2,6 +2,8 @@
 tags:
   - Note
   - Incomplete
+aliases: []
+id: Simple let expressions to Ordinary Lambda Calculus
 ---
 202311072011
 

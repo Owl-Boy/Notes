@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Constructor Rule for Match Function
 ---
 202310251710
 
