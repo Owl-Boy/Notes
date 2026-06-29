@@ -50,6 +50,8 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
     - [[Examples of Element Categories]]
     - [[Element Category is Isomorphic to Comma Category]]
     - [[Universal Elements are Universal Elements]]
+    - [[Exponential Objects]]
+
 ### Limits and Colimits
 - [[Diagram]]
 - [[Cones and Cocones]]
@@ -176,15 +178,18 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Kleisli Category and Eilenberg Moore Category in the Category of Adjunctions]]
 - [[Kleisli Category is the Category of Free Algebras]]
 - [[Free T-Algebra]]
+
 #### Monadic Functors
 - [[Monadic Functors]]
     - [[Examples of Monadic Functors]]
+
 #### Canonical Presentations using free Algebras
 - [[Canonical Presentations using Free Algebras]]
 - [[Split Coequalizer]]
     - [[U-split Coequalizer]]
     - [[Monadic forgetful functors strictly create coequalizers of Usplit pairs]]
     - [[Left Adjoint in a monadic adjunction create coequalizers]]
+
 #### Recognizing categories of Algebras
 - [[Monadicity Theorem]]
     - [[Some Monadic Adjunctions]]

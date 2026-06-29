@@ -25,6 +25,7 @@ For the full collection of maps look at [[0-Atlas]]. The section below gives a q
     - [[Category Theory]]
     - [[Homotopy Type Theory]]
     - [[Programming Languages]]
+    - [[Topos Theory]]
 
 ---
 ## Important Stuff

@@ -35,6 +35,7 @@ tags: []
 - [[Topics in Algorithms]]
 - [[Undecidability in Algebra and Topology]]
 - [[Weighted Automata and Transducers]]
+- [[Topos Theory]]
 
 ---
 ## Study Topics

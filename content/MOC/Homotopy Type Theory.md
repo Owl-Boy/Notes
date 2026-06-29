@@ -205,6 +205,8 @@ HoTT suggests a new conception of foundations of mathematics, with intrinsic hom
 ### Homotopy Theory
 - [[Homotopy Group(HoTT)|Homotopy Group]]
   - [[Fundamental Group of a Circle]]
+### Category Theory
+- [[Categories in Homotopy Type Theory]]
 ### Set Theory
 - [[Category of Sets (HoTT)|Category of Sets]]
   - [[Limits and Colimits in the category of sets (HoTT)|limits and colimits]]
