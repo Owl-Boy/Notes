@@ -50,7 +50,6 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
     - [[Examples of Element Categories]]
     - [[Element Category is Isomorphic to Comma Category]]
     - [[Universal Elements are Universal Elements]]
-    - [[Exponential Objects]]
 
 ### Limits and Colimits
 - [[Diagram]]
@@ -84,6 +83,8 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Any Category with Coproducts and Coequalizers is Cocomplete, with Products and Equalizers is Complete]]
 - [[Any category with Pullback and a terminal object has all finite limits, with pushouts and an initial object has all finite colimits]]
 - [[A Categorical notion of Equivalence Relation]]
+- [[Exponential Objects]]
+
 #### Complete and Cocomplete Categories
 - [[Set is Complete and Cocomplete]]
 - [[Top is Complete and Cocomplete]]

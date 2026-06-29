@@ -19,5 +19,9 @@ Consider a category $\cal C$ with objects $A, B, C$ in it, and consider a functi
 
 ![[exp.svg]]
 
+This construction simultaneously defines the  object $B^A$ along with the map $ev$ which takes $f : A -> B$ and $a : A$ and returns $f a : B$.
+
+If given any objects $x, y$ in a category, the object $x^y$ exists, then we say the category has exponentiation.
+
 # References
 
