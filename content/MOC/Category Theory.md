@@ -229,6 +229,7 @@ Micheal F Atiyah has described mathematics as the "Science of Analogy". In this 
 - [[Monoidal Category]]
 - [[Monoidal Closed Category]]
     - [[Cartesian Closed Category]]
+- [[Cartesian Closed Category with initial object]]
 
 ### Presentation
 - [[Yoneda Lemma (presentation)]]

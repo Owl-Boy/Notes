@@ -1,6 +1,8 @@
 ---
 tags:
   - Note
+aliases: []
+id: Subobjects
 ---
 202507210007
 
@@ -19,3 +21,4 @@ The induced map  from the limit to $c$ is a monomorphism. That means that the le
 # References
 - [[Monomorphisms and Epimorphisms]]
 - [[Limits and Colimits]]
+- [[Subobject Classifier]]

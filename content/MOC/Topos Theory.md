@@ -22,6 +22,18 @@ These 2 ideas together led to the development of Topoi which later also encompas
 
 
 ## Notes
+- [[Exponential Objects]]
+- [[Cartesian Closed Category]]
+  - [[Cartesian Closed Category with initial object]]
+- [[Subobject Classifier]]
+- [[Elementary Topos]]
+- Examples of Toposes
+  - [[Set is a topos]]
+  - [[Finset is a topos]]
+  - [[Finord is a topos]]
+  - [[Product of topoi is a topos]]
+  - [[Set arrow is a topos]]
+
 
 ## MOCs
 - [[Category Theory]]
